@@ -15,7 +15,9 @@ from models import Insight, get_session
 
 def load_insights_with_embeddings(
     session: Session,
-    insight_type: str = "pain_point"
+    insight_type: str = "pain_point",
+    embedding_type: str = "original",
+    n_components: int = 5
 ) -> Tuple[List[Insight], np.ndarray]:
     """
     Load insights that have embeddings
@@ -23,26 +25,60 @@ def load_insights_with_embeddings(
     Args:
         session: SQLAlchemy session
         insight_type: Type of insight to load
+        embedding_type: 'original' or 'reduced'
+        n_components: Number of dimensions (only for reduced)
 
     Returns:
         Tuple of (insights list, embeddings matrix)
     """
-    query = (
-        select(Insight)
-        .where(Insight.insight_type == insight_type)
-        .where(Insight.embedding.isnot(None))
-        .order_by(Insight.review_date.desc())
-    )
+    from sqlalchemy import text
 
-    insights = list(session.execute(query).scalars().all())
+    # Determine which embedding column to use
+    if embedding_type == "original":
+        embedding_column = "embedding"
+    else:
+        embedding_column = f"reduced_embedding_{n_components}"
 
-    if not insights:
+    # Build query dynamically since we need to check different columns
+    query_text = f"""
+        SELECT id, review_id, insight_text, insight_type, review_date,
+               extracted_at, embedding, {embedding_column}
+        FROM insights
+        WHERE insight_type = :type
+        AND {embedding_column} IS NOT NULL
+        ORDER BY review_date DESC
+    """
+
+    result = session.execute(text(query_text), {"type": insight_type})
+    rows = result.fetchall()
+
+    if not rows:
         return [], np.array([])
 
-    # Convert JSON embeddings to numpy array
+    # Reconstruct Insight objects and extract embeddings
+    insights = []
     embeddings = []
-    for insight in insights:
-        embedding_vector = json.loads(insight.embedding)
+
+    for row in rows:
+        from datetime import datetime as dt
+
+        # Create Insight object from row data
+        insight = Insight(
+            id=row[0],
+            review_id=row[1],
+            insight_text=row[2],
+            insight_type=row[3],
+            review_date=dt.fromisoformat(row[4]) if isinstance(row[4], str) else row[4],
+            extracted_at=dt.fromisoformat(row[5]) if isinstance(row[5], str) else row[5]
+        )
+        insights.append(insight)
+
+        # Get the appropriate embedding
+        if embedding_type == "original":
+            embedding_vector = json.loads(row[6])  # embedding column
+        else:
+            embedding_vector = json.loads(row[7])  # reduced_embedding_N column
+
         embeddings.append(embedding_vector)
 
     embeddings_matrix = np.array(embeddings)
@@ -53,7 +89,9 @@ def load_insights_with_embeddings(
 def cluster_insights(
     insight_type: str = "pain_point",
     min_cluster_size: int = 3,
-    min_samples: int = 2
+    min_samples: int = 2,
+    embedding_type: str = "original",
+    n_components: int = 5
 ) -> None:
     """
     Cluster insights using HDBSCAN
@@ -62,14 +100,19 @@ def cluster_insights(
         insight_type: Type of insight to cluster
         min_cluster_size: Minimum size of clusters
         min_samples: Minimum samples in a neighborhood for core points
+        embedding_type: 'original' or 'reduced'
+        n_components: Number of dimensions for reduced embeddings
     """
     # Create database session
     session = get_session()
     print(f"📊 Connected to database")
 
     # Load insights with embeddings
-    print(f"\n🔍 Loading {insight_type}s with embeddings...")
-    insights, embeddings = load_insights_with_embeddings(session, insight_type)
+    emb_desc = f"{n_components}-dim reduced" if embedding_type == "reduced" else "original 1536-dim"
+    print(f"\n🔍 Loading {insight_type}s with {emb_desc} embeddings...")
+    insights, embeddings = load_insights_with_embeddings(
+        session, insight_type, embedding_type, n_components
+    )
     session.close()
 
     if len(insights) == 0:
@@ -162,14 +205,27 @@ if __name__ == "__main__":
     parser.add_argument(
         "--min-cluster-size",
         type=int,
-        default=3,
+        default=5,
         help="Minimum size of clusters (default: 5)"
     )
     parser.add_argument(
         "--min-samples",
         type=int,
-        default=2,
+        default=3,
         help="Minimum samples in neighborhood (default: 3)"
+    )
+    parser.add_argument(
+        "--embedding-type",
+        type=str,
+        default="original",
+        choices=["original", "reduced"],
+        help="Type of embedding to use: 'original' (1536-dim) or 'reduced' (UMAP)"
+    )
+    parser.add_argument(
+        "--dimensions",
+        type=int,
+        default=5,
+        help="Number of dimensions for reduced embeddings (default: 5)"
     )
 
     args = parser.parse_args()
@@ -177,5 +233,7 @@ if __name__ == "__main__":
     cluster_insights(
         insight_type=args.type,
         min_cluster_size=args.min_cluster_size,
-        min_samples=args.min_samples
+        min_samples=args.min_samples,
+        embedding_type=args.embedding_type,
+        n_components=args.dimensions
     )

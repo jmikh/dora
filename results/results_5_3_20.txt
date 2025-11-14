@@ -1,0 +1,703 @@
+❯ python cluster_insights.py --type pain_point --embedding-type reduced --dimensions 20
+📊 Connected to database
+
+🔍 Loading pain_points with 20-dim reduced embeddings...
+✅ Loaded 208 pain_points with embeddings
+   Embedding dimension: 20
+
+🔬 Clustering with HDBSCAN...
+   min_cluster_size: 5
+   min_samples: 3
+
+
+================================================================================
+CLUSTERING RESULTS
+================================================================================
+
+Total insights: 208
+Number of clusters: 10
+Noise points (unclustered): 19
+
+================================================================================
+NOISE (Unclustered) - 19 insights
+================================================================================
+
+1. [159] (Date: 2025-10-22)
+   App installs itself without user consent
+
+2. [185] (Date: 2025-10-20)
+   Locked out of the majority of features for the first week
+
+3. [216] (Date: 2025-10-17)
+   Miss the group chats that were previously available
+
+4. [244] (Date: 2025-10-15)
+   Can't see previous days' stats
+
+5. [280] (Date: 2025-10-12)
+   Account access issues requiring support calls
+
+6. [284] (Date: 2025-10-12)
+   Difficult to find some things
+
+7. [288] (Date: 2025-10-12)
+   Pointless, time-wasting animations after making an addition
+
+8. [290] (Date: 2025-10-12)
+   Pop-ups after every activity cannot be turned off
+
+9. [302] (Date: 2025-10-12)
+   Clunky interface
+
+10. [304] (Date: 2025-10-12)
+   Habit tracking feels restrictive and overly guided
+
+11. [317] (Date: 2025-10-11)
+   Conflicting information from support about the treat day feature
+
+12. [318] (Date: 2025-10-11)
+   No announcement regarding the removal of the treat day feature
+
+13. [358] (Date: 2025-09-24)
+   Was never notified about trial ending
+
+14. [366] (Date: 2025-09-24)
+   Cluttered UI makes it hard to find features
+
+15. [374] (Date: 2025-09-24)
+   Lost all tracking data after update
+
+16. [388] (Date: 2025-09-22)
+   App has changed significantly, making it difficult to log daily activities
+
+17. [391] (Date: 2025-09-22)
+   Tracking information is limited behind a paywall
+
+18. [395] (Date: 2025-09-22)
+   App is a tedious way to track food
+
+19. [426] (Date: 2025-09-21)
+   Screen rotation to landscape mode only allows left orientation, causing upside down display for users with buttons on the left.
+
+================================================================================
+CLUSTER 0 - 6 insights
+================================================================================
+
+1. [228] (Date: 2025-10-16)
+   Bar video scanner does not work
+
+2. [230] (Date: 2025-10-16)
+   Issue with the bar scanner is getting worse
+
+3. [243] (Date: 2025-10-15)
+   Perimeter isn't working
+
+4. [247] (Date: 2025-10-15)
+   Body scan feature keeps failing
+
+5. [269] (Date: 2025-10-13)
+   Scanning barcodes and food recommendations don't work consistently
+
+6. [343] (Date: 2025-09-25)
+   Does not support body scan on Samsung Galaxy phone
+
+================================================================================
+CLUSTER 1 - 30 insights
+================================================================================
+
+1. [18] (Date: 2025-11-10)
+   Step counting works maybe 1 out of every 3 days
+
+2. [24] (Date: 2025-11-10)
+   App didn't count steps correctly
+
+3. [47] (Date: 2025-11-08)
+   Step count not displayed correctly on main screen
+
+4. [93] (Date: 2025-11-04)
+   App is inaccurate at counting steps compared to my watch
+
+5. [95] (Date: 2025-11-04)
+   Step tracking stops working completely
+
+6. [108] (Date: 2025-11-04)
+   Randomly deletes step counts
+
+7. [131] (Date: 2025-10-22)
+   Doesn't fully count steps
+
+8. [155] (Date: 2025-10-22)
+   Step tracking is no longer pairing
+
+9. [171] (Date: 2025-10-20)
+   Step counter stops tracking frequently
+
+10. [197] (Date: 2025-10-20)
+   Steps display incorrectly, showing current day's count regardless of selected date
+
+11. [198] (Date: 2025-10-20)
+   Need to click inside the steps option to see actual step count
+
+12. [201] (Date: 2025-10-19)
+   Isn't allowing step tracking
+
+13. [202] (Date: 2025-10-19)
+   Randomly assigning step goals that make no sense
+
+14. [204] (Date: 2025-10-19)
+   App doesn't recognize steps after a few weeks
+
+15. [213] (Date: 2025-10-18)
+   Not counting steps consistently
+
+16. [214] (Date: 2025-10-18)
+   Requires force stopping the app to restart step counting
+
+17. [215] (Date: 2025-10-18)
+   Step counting feature does not work multiple days in a row
+
+18. [218] (Date: 2025-10-17)
+   App not logging steps despite pedometer being set for Noom app
+
+19. [220] (Date: 2025-10-17)
+   App miscalculating steps
+
+20. [222] (Date: 2025-10-17)
+   App generates incorrect step counts
+
+21. [235] (Date: 2025-10-16)
+   Step count is incorrect
+
+22. [236] (Date: 2025-10-16)
+   Counts steps while in the car, leading to inaccurate tracking
+
+23. [268] (Date: 2025-10-13)
+   App hasn't registered any steps
+
+24. [296] (Date: 2025-10-12)
+   Syncing with Fitbit is a little glitchy
+
+25. [303] (Date: 2025-10-12)
+   Difficulty adjusting the daily step goal
+
+26. [323] (Date: 2025-09-26)
+   Randomly stopped tracking steps after 3 days of installation
+
+27. [330] (Date: 2025-09-25)
+   Refused to count steps after 5 days
+
+28. [331] (Date: 2025-09-25)
+   Did not give credit for steps even after correcting settings
+
+29. [344] (Date: 2025-09-25)
+   Stopped counting steps
+
+30. [407] (Date: 2025-09-21)
+   No way to know where your goal is
+
+================================================================================
+CLUSTER 2 - 9 insights
+================================================================================
+
+1. [15] (Date: 2025-11-10)
+   Tried to sell Noom-branded Ozempic
+
+2. [19] (Date: 2025-11-10)
+   Receiving 2 or 3 promotional emails daily from Noom
+
+3. [68] (Date: 2025-11-06)
+   Noom steps counter doesn't work
+
+4. [70] (Date: 2025-11-06)
+   No constructive help from Noom's response to the review
+
+5. [139] (Date: 2025-10-22)
+   Noom servers are unable to access my account
+
+6. [249] (Date: 2025-10-14)
+   Noom doesn't honor discount codes
+
+7. [250] (Date: 2025-10-14)
+   Noom Vibe doesn't payout on step redemption
+
+8. [279] (Date: 2025-10-12)
+   Cannot access Noom-Mood program within the app; must switch on the website
+
+9. [316] (Date: 2025-10-11)
+   System won't allow scheduling a treat day despite having 13 noom coins
+
+================================================================================
+CLUSTER 3 - 7 insights
+================================================================================
+
+1. [28] (Date: 2025-11-09)
+   Unable to use 269 seeds
+
+2. [29] (Date: 2025-11-09)
+   Cannot automatically bank seeds
+
+3. [30] (Date: 2025-11-09)
+   Annoying to manually bank seeds
+
+4. [124] (Date: 2025-10-23)
+   Results are grossly inaccurate
+
+5. [172] (Date: 2025-10-20)
+   Fails to keep accurate records of activities that give seeds
+
+6. [345] (Date: 2025-09-25)
+   No seeds received
+
+7. [404] (Date: 2025-09-21)
+   Can't appropriately gauge activities for insurance reimbursement
+
+================================================================================
+CLUSTER 4 - 17 insights
+================================================================================
+
+1. [38] (Date: 2025-11-09)
+   Not a one on one experience
+
+2. [69] (Date: 2025-11-06)
+   Tech support is unhelpful in resolving issues
+
+3. [79] (Date: 2025-11-05)
+   Terrible customer service
+
+4. [96] (Date: 2025-11-04)
+   No response to email support inquiry
+
+5. [109] (Date: 2025-11-04)
+   Tech support only provides bot responses
+
+6. [110] (Date: 2025-11-04)
+   Human agents ask to repeat previous steps
+
+7. [111] (Date: 2025-11-04)
+   Support tickets get closed without resolution
+
+8. [122] (Date: 2025-10-23)
+   Coaching seems to be solely AI-driven
+
+9. [133] (Date: 2025-10-22)
+   Chatbot instructions are unclear and lack necessary steps
+
+10. [134] (Date: 2025-10-22)
+   Customer service provides the same information as the chatbot
+
+11. [135] (Date: 2025-10-22)
+   Received multiple emails stating the issue was resolved when it was not
+
+12. [157] (Date: 2025-10-22)
+   Online chat help function defaults to unrelated bot responses
+
+13. [203] (Date: 2025-10-19)
+   Customer service is missing in action
+
+14. [225] (Date: 2025-10-16)
+   Tech support chat team rarely provides answers and escalation to email support is slow
+
+15. [294] (Date: 2025-10-12)
+   Tech support closed ticket without resolution
+
+16. [424] (Date: 2025-09-21)
+   Daily lessons are generic and not tailored to individual needs
+
+17. [430] (Date: 2025-09-20)
+   Customer support only provides automatic replies
+
+================================================================================
+CLUSTER 5 - 6 insights
+================================================================================
+
+1. [20] (Date: 2025-11-10)
+   Receiving unsolicited 'personal' emails from the CEO or someone else
+
+2. [90] (Date: 2025-11-04)
+   New noises/vibrations when entering data are annoying and startling
+
+3. [160] (Date: 2025-10-22)
+   App perceived as harassment or unwanted presence
+
+4. [326] (Date: 2025-09-26)
+   Dislike the encouraging messages that pop up every time I log something
+
+5. [337] (Date: 2025-09-25)
+   Annoying comments that are not taken seriously
+
+6. [425] (Date: 2025-09-21)
+   Next page button prompts are repetitive and unoriginal
+
+================================================================================
+CLUSTER 6 - 20 insights
+================================================================================
+
+1. [21] (Date: 2025-11-10)
+   Food logging feature does not recognize descriptions accurately
+
+2. [74] (Date: 2025-11-05)
+   App won't record meals
+
+3. [89] (Date: 2025-11-04)
+   Can't go back to enter meals once the day is over
+
+4. [105] (Date: 2025-11-04)
+   Can't go back to add a missed meal entry
+
+5. [120] (Date: 2025-10-23)
+   Difficult to log meals
+
+6. [145] (Date: 2025-10-22)
+   Can't figure out how to add custom meals
+
+7. [187] (Date: 2025-10-20)
+   Causes stress about eating certain foods like beans and vegetables
+
+8. [196] (Date: 2025-10-20)
+   Nutrition info and serving sizes are inaccurate
+
+9. [229] (Date: 2025-10-16)
+   Database of food items for the log is inconsistent
+
+10. [245] (Date: 2025-10-15)
+   Can't add activities
+
+11. [289] (Date: 2025-10-12)
+   Unable to return to Home screen after adding weight
+
+12. [293] (Date: 2025-10-12)
+   Unable to add custom foods
+
+13. [305] (Date: 2025-10-12)
+   Database of foods could be improved
+
+14. [341] (Date: 2025-09-25)
+   Keeps losing logged meals
+
+15. [342] (Date: 2025-09-25)
+   Does not remember custom food entries
+
+16. [370] (Date: 2025-09-24)
+   App goes round and round when trying to enter meals
+
+17. [371] (Date: 2025-09-24)
+   Difficult to edit meals
+
+18. [375] (Date: 2025-09-24)
+   Time-consuming to log meals, taking 20+ minutes daily
+
+19. [389] (Date: 2025-09-22)
+   Food tracker is disorganized and confusing
+
+20. [417] (Date: 2025-09-21)
+   The requirement to take pictures or describe meals is seen as extra work
+
+================================================================================
+CLUSTER 7 - 30 insights
+================================================================================
+
+1. [13] (Date: 2025-11-10)
+   App encourages unhealthy calorie counts
+
+2. [14] (Date: 2025-11-10)
+   Weight loss is not sustainable
+
+3. [113] (Date: 2025-11-04)
+   Incorrect calorie estimates
+
+4. [143] (Date: 2025-10-22)
+   Inconsistent food color coding based on caloric density
+
+5. [158] (Date: 2025-10-22)
+   Changes to macro and food color chart have created a weight management plateau
+
+6. [186] (Date: 2025-10-20)
+   Promotes disordered eating through the stoplight system
+
+7. [212] (Date: 2025-10-18)
+   The app seems to prioritize selling medication for weight loss over providing useful features
+
+8. [223] (Date: 2025-10-16)
+   Free version no longer includes weight tracking
+
+9. [255] (Date: 2025-10-14)
+   FitOn disappeared from the success kit on the free version
+
+10. [282] (Date: 2025-10-12)
+   Not Keto friendly
+
+11. [283] (Date: 2025-10-12)
+   Keto foods are labeled as orange foods
+
+12. [312] (Date: 2025-10-11)
+   Upgrade deleted ability to count calories
+
+13. [313] (Date: 2025-10-11)
+   Cannot track food intake in free version after upgrade
+
+14. [325] (Date: 2025-09-26)
+   App tries to sell GLP-1 with each use
+
+15. [346] (Date: 2025-09-25)
+   Severe vomiting and shaking for 3 days after taking the medication
+
+16. [347] (Date: 2025-09-25)
+   No weight loss after initial 7 lbs in one month
+
+17. [348] (Date: 2025-09-25)
+   Doctor in the app prescribed Zofran but did not address the underlying issues
+
+18. [355] (Date: 2025-09-25)
+   Only step tracker is available for free, other features are expensive
+
+19. [359] (Date: 2025-09-24)
+   Did not help with specific weight problems
+
+20. [365] (Date: 2025-09-24)
+   Can only use the app to log steps in the free version
+
+21. [372] (Date: 2025-09-24)
+   No longer tracks weight and hydration
+
+22. [387] (Date: 2025-09-23)
+   Calorie tracking has been moved behind the subscription model
+
+23. [390] (Date: 2025-09-22)
+   App promotes weight loss drugs that are not safe or healthy
+
+24. [406] (Date: 2025-09-21)
+   No calorie counting feature
+
+25. [413] (Date: 2025-09-21)
+   New free version does not allow tracking weight and calories
+
+26. [416] (Date: 2025-09-21)
+   After the new update, the app no longer allows manual input for tracking calories
+
+27. [419] (Date: 2025-09-21)
+   Plateaued in weight loss progress
+
+28. [423] (Date: 2025-09-21)
+   App is just a glorified calorie counting app
+
+29. [439] (Date: 2025-09-19)
+   App deleted a whole week of logs for food and exercise due to not upgrading to the paid plan
+
+30. [440] (Date: 2025-09-19)
+   Free plan is worthless for basic logging needs
+
+================================================================================
+CLUSTER 8 - 44 insights
+================================================================================
+
+1. [23] (Date: 2025-11-10)
+   App is slow
+
+2. [27] (Date: 2025-11-09)
+   App stopped working after 5 days
+
+3. [32] (Date: 2025-11-09)
+   App is not working
+
+4. [43] (Date: 2025-11-08)
+   Problem getting messages
+
+5. [44] (Date: 2025-11-08)
+   Can't open any messages received on the app
+
+6. [45] (Date: 2025-11-08)
+   Blank screen with continuous loading when trying to view messages
+
+7. [46] (Date: 2025-11-08)
+   App won't switch days if left open overnight
+
+8. [48] (Date: 2025-11-08)
+   Need to force close app and clear cache daily to fix issues
+
+9. [57] (Date: 2025-11-07)
+   App is bloated compared to alternatives
+
+10. [94] (Date: 2025-11-04)
+   Cannot see updates from previous days
+
+11. [104] (Date: 2025-11-04)
+   Losing access and usability with each update
+
+12. [106] (Date: 2025-11-04)
+   App periodically stops working
+
+13. [107] (Date: 2025-11-04)
+   App won't sync
+
+14. [117] (Date: 2025-11-04)
+   Upgrade is disappointing compared to previous version
+
+15. [121] (Date: 2025-10-23)
+   Community section does not allow reading replies or past messages
+
+16. [125] (Date: 2025-10-23)
+   App is worthless now
+
+17. [132] (Date: 2025-10-22)
+   Technical difficulties with the app
+
+18. [137] (Date: 2025-10-22)
+   Unable to log in to the app and portal
+
+19. [156] (Date: 2025-10-22)
+   Unable to post on community pages
+
+20. [161] (Date: 2025-10-21)
+   Had to delete and reinstall the app twice to get certain functions to work
+
+21. [169] (Date: 2025-10-21)
+   App says trouble connecting after loading and logging in
+
+22. [173] (Date: 2025-10-20)
+   Cannot log in without a Facebook account
+
+23. [174] (Date: 2025-10-20)
+   App requires Facebook to start
+
+24. [184] (Date: 2025-10-20)
+   App crashes frequently
+
+25. [190] (Date: 2025-10-20)
+   App does not open the dashboard after update
+
+26. [192] (Date: 2025-10-20)
+   App cannot connect to the server
+
+27. [193] (Date: 2025-10-20)
+   Cannot see or log anything
+
+28. [195] (Date: 2025-10-20)
+   App has stopped working after the latest update
+
+29. [199] (Date: 2025-10-20)
+   Updating, force stopping, and clearing cache do not resolve issues
+
+30. [221] (Date: 2025-10-17)
+   Manual updates don't save
+
+31. [224] (Date: 2025-10-16)
+   Issues with app functionality after updates requiring reinstall or cache clearing
+
+32. [277] (Date: 2025-10-13)
+   Cannot access data after changing phone and reinstalling the app
+
+33. [287] (Date: 2025-10-12)
+   Update reduced functionality
+
+34. [295] (Date: 2025-10-12)
+   Version 13.36.0 did not fix the issue
+
+35. [324] (Date: 2025-09-26)
+   Less features than before
+
+36. [340] (Date: 2025-09-25)
+   Used 5 GB of data in a few hours without WiFi
+
+37. [351] (Date: 2025-09-25)
+   Glitching in the middle of lessons when switching apps
+
+38. [373] (Date: 2025-09-24)
+   Previous version was simpler and more enjoyable to use
+
+39. [403] (Date: 2025-09-21)
+   Everything is broken now
+
+40. [405] (Date: 2025-09-21)
+   New update does nothing
+
+41. [408] (Date: 2025-09-21)
+   Android version is inferior to Apple version
+
+42. [414] (Date: 2025-09-21)
+   Free version feels worthless compared to previous version
+
+43. [429] (Date: 2025-09-20)
+   App has lots of hangups
+
+44. [438] (Date: 2025-09-20)
+   Doesn't run on multiple devices
+
+================================================================================
+CLUSTER 9 - 20 insights
+================================================================================
+
+1. [9] (Date: 2025-11-10)
+   Lack of transparency regarding pricing
+
+2. [10] (Date: 2025-11-10)
+   Confusing discounts offered only after unsubscribing
+
+3. [56] (Date: 2025-11-07)
+   Doesn't provide macros without payment
+
+4. [78] (Date: 2025-11-05)
+   Deceitful advertising
+
+5. [118] (Date: 2025-11-04)
+   App has become very expensive and unaffordable
+
+6. [138] (Date: 2025-10-22)
+   User feels forced to pay due to login issues
+
+7. [188] (Date: 2025-10-20)
+   Offensive pricing tactics with lower subscriptions offered after deciding to cancel
+
+8. [246] (Date: 2025-10-15)
+   Removed features to encourage paid subscriptions
+
+9. [266] (Date: 2025-10-13)
+   App asks too many questions before revealing payment requirements
+
+10. [267] (Date: 2025-10-13)
+   Long wait time of 20 minutes before payment is requested
+
+11. [270] (Date: 2025-10-13)
+   Too expensive compared to similar apps with more features behind paywalls
+
+12. [271] (Date: 2025-10-13)
+   No refund for subscription renewal
+
+13. [276] (Date: 2025-10-13)
+   Cannot access account without paying for a trial despite having an account for years
+
+14. [278] (Date: 2025-10-12)
+   App is expensive at $170 every six months
+
+15. [332] (Date: 2025-09-25)
+   App requires payment to access, preventing entry without payment
+
+16. [333] (Date: 2025-09-25)
+   High cost of $184 to use the app
+
+17. [334] (Date: 2025-09-25)
+   No free section available for low-income users
+
+18. [367] (Date: 2025-09-24)
+   Difficult onboarding process to get started
+
+19. [396] (Date: 2025-09-22)
+   Program is not upfront about its content
+
+20. [415] (Date: 2025-09-21)
+   Perception that the app is pushing users to buy the service
+
+================================================================================
+CLUSTER SUMMARY
+================================================================================
+Cluster 0: 6 insights
+Cluster 1: 30 insights
+Cluster 2: 9 insights
+Cluster 3: 7 insights
+Cluster 4: 17 insights
+Cluster 5: 6 insights
+Cluster 6: 20 insights
+Cluster 7: 30 insights
+Cluster 8: 44 insights
+Cluster 9: 20 insights
+Noise: 19 insights
+================================================================================
