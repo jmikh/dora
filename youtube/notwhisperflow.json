@@ -1,0 +1,1029 @@
+[
+  {
+    "title": "Workflows Gallery: Create and document tasks in less than 5 min",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "z9awFHrhFd8",
+    "url": "https://www.youtube.com/watch?v=z9awFHrhFd8",
+    "thumbnailUrl": "https://i.ytimg.com/vi/z9awFHrhFd8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLC7PtoDPcKLmymjv2bBf2SiYJvgPw",
+    "viewCount": 2923,
+    "date": "2025-02-19T01:28:19.000Z",
+    "likes": 15,
+    "location": null,
+    "channelName": "Wispr Flow AI",
+    "channelUrl": "https://www.youtube.com/@wisprflowai",
+    "channelUsername": "wisprflowai",
+    "collaborators": null,
+    "channelId": "UCzaXlOt3J2_rYQT1aEJMMFQ",
+    "numberOfSubscribers": 2040,
+    "duration": "00:01:52",
+    "commentsCount": 2,
+    "text": null,
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "today I'm sharing a really useful workflow that I use within chat GPT alongside flow and the main use case is to facilitate task creation or any requests that I may have for external vendors or internal team members so what I have already set up is a custom GPT which will provide me um a short form output and a longer form output based on the task that I want completed and then I can use this output either in a slack message in an email or even documented in notion so as an example I'll hit FN in space I've been reviewing the author collection pages and notice that the um authos schema markup is missing can we please add the authos schema in Json LD and add a same as object so that we can reference the social profiles of the author that's about it now obviously I do know what the task is uh and I have context of the task and then once I dictate it in I simply hit enter this will give me the output um as mentioned I can use this in slack and this I would um document within the task management system so this is what that would look like go to notion where I document my task add author schema to the author's collection Pages done open this task and I would simply copy this out paste it back in here and assign this to me now obviously I'd first want to review this but something that I've noticed is that jbt uh you know lays it out quite nicely and includes things that I may not have thought about so from here on out I just make notes um and then share this with the responsible team members or external vendors um hope you found this useful cheers"
+      }
+    ],
+    "order": 63,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Stop Typing, Start Talking to AI (Wispr Flow Walkthrough)",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "RLPqGXf_TQk",
+    "url": "https://www.youtube.com/watch?v=RLPqGXf_TQk",
+    "thumbnailUrl": "https://i.ytimg.com/vi/RLPqGXf_TQk/maxresdefault.jpg",
+    "viewCount": 107,
+    "date": "2025-08-24T21:00:24.000Z",
+    "likes": 4,
+    "location": null,
+    "channelName": "Mohamed Elgazzar | Voice AI",
+    "channelUrl": "https://www.youtube.com/@MohamedElgazzarAI",
+    "channelUsername": "MohamedElgazzarAI",
+    "collaborators": null,
+    "channelId": "UCFjvfXbNZ191Hcsntgm0-KQ",
+    "numberOfSubscribers": 477,
+    "duration": "00:04:45",
+    "commentsCount": 4,
+    "text": "🗓️ | Book a free consultation: https://cal.com/mohamed-sonor/chat\n———\n🤝 | Work with us: www.sonorai.co\n🌍 | LinkedIn:   / elgazzar-mohamed  \n———\n🎙️ | Vapi (affiliate): https://vapi.ai/?aff=mo\n\n———\n\n📄 Description\nI used to hate writing long prompts for AI tools until I discovered Whisperflow. This tool lets you just talk out loud and turns your words into clean, structured prompts for ChatGPT or Claude. It makes brainstorming, writing, and even sales prep so much easier. In this video, I’ll walk you through how I use it and why it completely changed the way I interact with AI.\n\n———\n\n⏱️ Timestamps\n0:00 📞 Why typing prompts is broken\n0:38 🔧 Intro to Whisperflow\n1:11 🤖 How to talk directly to your AI\n2:22 ✅ Brainstorming and writing with voice\n3:03 🎯 Using Whisperflow for sales prep",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://cal.com/mohamed-sonor/chat",
+        "text": "https://cal.com/mohamed-sonor/chat"
+      },
+      {
+        "url": "https://www.linkedin.com/in/elgazzar-mohamed",
+        "text": "  / elgazzar-mohamed  "
+      },
+      {
+        "url": "https://vapi.ai/?aff=mo",
+        "text": "https://vapi.ai/?aff=mo"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RLPqGXf_TQk",
+        "text": "0:00"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RLPqGXf_TQk&t=38s",
+        "text": "0:38"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RLPqGXf_TQk&t=71s",
+        "text": "1:11"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RLPqGXf_TQk&t=142s",
+        "text": "2:22"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RLPqGXf_TQk&t=183s",
+        "text": "3:03"
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "I used to really hate writing long prompts in my AI tools like chat GPT or claude and you know it was would make typos. I would lose my train of thought. It would be just like a consuming task. Then I discovered whisperflow which is able to take everything that I said and it's able to pretty much transfer it into proper formatted correct text. Hey, if we haven't met yet, I'm Mo from SAI and we build voice agents for small to mediumsiz businesses. And if you're interested to see how the technology could actually look into your business, then I do invite you for a free consultation. I leave links in the description below. And with that said, let's jump right into it. So yeah, here is the landing page of Whisper Flow. And to be clear, I'm not affiliated with this company at all. I just really love what they have offered. Um, and just want to share how much it changed the way that I interact with LLM models. So the idea is that you are let's say faced uh with claude or chd and the beautiful thing is that you're just able to pretty much click and you just talk out loud. So that means that you're able to really put out everything that you have in your head and you're able to give it as context into the LLM model of choice which in turn is going to really improve the way that you're going to um interact with the LM and thus the outputs are going to be as close as you know you actually wanted. So yeah, now if I type back, you can see that I will receive everything that I said. Um, and it's especially useful for example when it comes to brainstorming. So if you have a few ideas scattered around your head, um what I personally like to do is actually just like talk out loud, keep it there, have pauses, think and then let's say just overall ask the LM to then you know like give you a structured uh you know way to think about what you just said. Um or you you know you have something that is perhaps difficult to explain in writing. So what you do is that you just talk it out loud. And I found myself that it's really helping um when it comes to the uh also the thinking process that goes through it. And another handy way to use this tool is actually you know to respond to any email or any message that you receive like WhatsApp or personal or whatever. Um and you would just like quickly uh type it. And for those of you that are, let's say, like very specific and you want to be clean and clear when you write something, you just like type out or like dictate out what you want to respond with and just like go to FL LM or JP then ask it to improve what you uh your message uh essentially. So that is a really handy way uh to use whisper flow as well. And a interesting way that I actually like to use it is also when it comes to my sales preparation. So if I know that I have a sales call tomorrow and I want to be prepared um I try to go through let's say the outline of the sale the sales call uh and I just talk it through and I realize that whenever I talk it through I tend to have like diff different observations that I might not have thought of um if I just stayed in my head and had to type it or write it. So it's a really beautiful thing to like train but also yeah find different nuances um that you could leverage in your uh sales call and then you put it into the LM prop then it could think for you like in a more u dynamic way so you could find different pockets um of you know insights that you might have not realized yourself and it's really good to give you feedback um on let's say the approach that you want to Um so I really advise to use it for uh let's say this sales uh let's say preparation it can be really really handy. All right so with that said that was it for the introduction of whisper flow. Uh I hope this tool can be beneficial. Um if you've never used such a thing and I mean you don't have to use whisper flow necessarily. You could even just like go into the envel. Yeah, exactly. So, you're able to directly dictate what you want and yeah, it's it's a really good way to just like leverage uh let's say this feature to give context to VLM so it can really help you battle out. Cool. With that said, I thank you so much. Hope this was helpful and see you in the next"
+      }
+    ],
+    "order": 54,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Wispr Flow Review",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "KQ_CsuJSuB4",
+    "url": "https://www.youtube.com/watch?v=KQ_CsuJSuB4",
+    "thumbnailUrl": "https://i.ytimg.com/vi/KQ_CsuJSuB4/maxresdefault.jpg",
+    "viewCount": 4437,
+    "date": "2025-02-21T13:22:52.000Z",
+    "likes": 72,
+    "location": null,
+    "channelName": "Alex Christou",
+    "channelUrl": "https://www.youtube.com/@alexchristou_",
+    "channelUsername": "alexchristou_",
+    "collaborators": null,
+    "channelId": "UCHPNbnWIZ5gTqU4k863hzNQ",
+    "numberOfSubscribers": 2800,
+    "duration": "00:03:31",
+    "commentsCount": 6,
+    "text": "https://www.wisprflow.ai/?referral=AL...\n\nWhisperFlow Overview: The Dictation Tool for Power Users\n\n00:00 Introduction and Quick Review\n00:29 Why WhisperFlow is Worth Trying\n01:13 Cool Features of WhisperFlow\n01:39 Areas for Improvement\n02:23 Feature Requests and Final Thoughts",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://www.wisprflow.ai/?referral=ALEX65",
+        "text": "https://www.wisprflow.ai/?referral=AL..."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=KQ_CsuJSuB4",
+        "text": "00:00"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=KQ_CsuJSuB4&t=29s",
+        "text": "00:29"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=KQ_CsuJSuB4&t=73s",
+        "text": "01:13"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=KQ_CsuJSuB4&t=99s",
+        "text": "01:39"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=KQ_CsuJSuB4&t=143s",
+        "text": "02:23"
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "very quick whisper flow review here as you can see I'm a bit of a power user which is a weird flex but I'm using it a lot so off the bat is it good yes is it worth trying out definitely if you're writing code or doing any content work is it worth the money again I think if you're using AI a lot and talking to AI it makes it a much more smooth experience and even better you can try it for free using the code in the description no it's not an ad I've only got 77 Subs so not going to be retiring off that but let's jump in What makes whisper flow good what makes it great I think the obvious thing that makes it worth trying is that it's just a really strong dictation tool and if you've ever used dictation before um you know that it can save you a bit of time but je you'll have a lot of fluff in there a lot of filler words or maybe you change your mind or maybe say one thing but then actually Midway through C it you change your mind and you know normal dictation tools can't handle that whisper flow does AI processing to the dictation super quick and it cleans up all your text it removes all the fluff it removes all the filler words it makes it sound normal and looks good so yes for so for chatting with AIS or doing something in cursor for example it's amazing but even for like WhatsApp slack emails it can be good so what else is cool well I like how they've got a few stats here they've also got a dictionary here where you can add your words so when you speak it will understand and so it won't misspell common things that you're using I haven't actually used this but I probably should apparently it's autolearn Claude again pretty cool it's got a history as well where you can see all the stuff and everything is stored on device so any privacy concerns there is all good and yeah the fact that it's systemwide means you can literally use it anywhere there's a text input field which is nice no tool is perfect right what could make whisper flow even better I think making it feel a bit more native with Mac would be cool rast for example feels like such a native experience whisper flow you know has a shortcut where you can do it and you can see it here it does feel like it's slightly on top of Mac OS for now but I'm sure they're going to get there and this is just a nitpick it's a barely a small thing but for any of you product design nerds out there I was had some issues with a little button here on the dock bar which was annoying I couldn't find the button to hide it but it is in settings here so if you come to settings you've got the show up in Doc um no that's one this one here which again you know makes sense for getting people to use it but for whatever reason last week I couldn't remove that um again just a small thing and if I had a feature request maybe it would be cool to do a bit of postprocessing um perhaps I could give some prompts that would you know tweak tweak my text slightly for different apps maybe and you know be able to tweak and experiment with the The Prompt there and how it cleans up the text you know let's say I'm sending very formal emails maybe it'd be cool to have a formal voice where I could just speak normally and then it would um change it into that tone maybe there a separate product but I feel like it could sit within this pretty cool and uh maybe you could even have some shortcut keys for different voices for some different tone of voices bit farfetch but it's definitely possible like I said definitely worth a try and if you use this code that's in the description you get $15 I get $15 everyone's a winner and so do try out like I said especially if you're using these AI coding tools which if you're watching this video you may well be and on that topic check out my other videos for more content like this and do drop a subscribe we've got our eyes on 100 subscribers now and we're not a million miles off all the best"
+      }
+    ],
+    "order": 75,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Best Free & Paid Wispr Flow Alternatives for Voice-Dictation in 2025 | ClickUp Talk to Text and more",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "IKWVekDEyms",
+    "url": "https://www.youtube.com/watch?v=IKWVekDEyms",
+    "thumbnailUrl": "https://i.ytimg.com/vi/IKWVekDEyms/maxresdefault.jpg",
+    "viewCount": 560,
+    "date": "2025-10-17T03:30:19.000Z",
+    "likes": 6,
+    "location": null,
+    "channelName": "ClickUp",
+    "channelUrl": "https://www.youtube.com/@ClickUpProductivity",
+    "channelUsername": "ClickUpProductivity",
+    "collaborators": null,
+    "channelId": "UCJC7egHqghye211WgTuXMAw",
+    "numberOfSubscribers": 90000,
+    "duration": "00:03:27",
+    "commentsCount": 0,
+    "text": "Want voice-typing across apps but don’t want Wispr Flow’s price-tag or limitations?\n\nIn this video, we compare the best Wispr Flow alternatives to help you pick what's best for your workflow.\n\nYou’ll get:\n\n🎙️ A side-by-side look at ClickUp Talk to Text, Dictanote, Otter.ai & other top tools (pros + cons)\n\n🎙️ What you lose or gain when you give up Wispr Flow: local processing, open-source models, free payment options, privacy vs. cloud trade-offs \n\n🎙️ Use cases: dictation across apps, meeting transcription, quick notes, developer workflows \n\n🎙️ Which tools are best depending on your platform (macOS, Windows, Linux, mobile) and budget\n\nIf you’ve been frustrated with Wispr Flow’s limitations, this video will give you real options.\n\n#wisprflow #wispr #voicetotext #speechtotext #talktotext #speechtranscription #transcriptiontools #transcription #dictationtools #voicetyping \n\n🔑 Key Resources:\n\nClickUp Talk to Text\nhttps://clickup.com/brain/talk-to-text?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x \n\nClickUp Brain MAX\nhttps://clickup.com/brain/max?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x \n\nClickUp AI Notetaker\nhttps://clickup.com/brain/ai-notetaker?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x \n\nDiscover more top-notch voice-to-text tools and Wispr Flow alternatives\nhttps://clickup.com/blog/wispr-flow-alternatives/?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x   \n\nCheck out more productivity tips on the ClickUp blog\nhttps://clickup.com/blog/?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x",
+    "translatedText": "Want voice-typing across apps but don’t want Wispr Flow’s price-tag or limitations?\n\nIn this video, we compare the best Wispr Flow alternatives to help you pick what's best for your workflow.\n\nYou’ll get:\n\n🎙️ A side-by-side look at ClickUp Talk to Text, Dictanote, Otter.ai & other top tools (pros + cons)\n\n🎙️ What you lose or gain when you give up Wispr Flow: local processing, open-source models, free payment options, privacy vs. cloud trade-offs \n\n🎙️ Use cases: dictation across apps, meeting transcription, quick notes, developer workflows \n\n🎙️ Which tools are best depending on your platform (macOS, Windows, Linux, mobile) and budget\n\nIf you’ve been frustrated with Wispr Flow’s limitations, this video will give you real options.\n\n#wisprflow #wispr #voicetotext #speechtotext #talktotext #speechtranscription #transcriptiontools #transcription #dictationtools #voicetyping \n\n🔑 Key Resources:\n\nClickUp Talk to Text\nhttps://clickup.com/brain/talk-to-tex... \n\nClickUp Brain MAX\nhttps://clickup.com/brain/max?utm_sou... \n\nClickUp AI Notetaker\nhttps://clickup.com/brain/ai-notetake... \n\nDiscover more top-notch voice-to-text tools and Wispr Flow alternatives\nhttps://clickup.com/blog/wispr-flow-a...   \n\nCheck out more productivity tips on the ClickUp blog\nhttps://clickup.com/blog/?utm_source=...",
+    "descriptionLinks": [
+      {
+        "url": "https://www.youtube.com/hashtag/wisprflow",
+        "text": "#wisprflow"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/wispr",
+        "text": "#wispr"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/voicetotext",
+        "text": "#voicetotext"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/speechtotext",
+        "text": "#speechtotext"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/talktotext",
+        "text": "#talktotext"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/speechtranscription",
+        "text": "#speechtranscription"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/transcriptiontools",
+        "text": "#transcriptiontools"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/transcription",
+        "text": "#transcription"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/dictationtools",
+        "text": "#dictationtools"
+      },
+      {
+        "url": "https://www.youtube.com/hashtag/voicetyping",
+        "text": "#voicetyping"
+      },
+      {
+        "url": "https://clickup.com/brain/talk-to-text?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x",
+        "text": "https://clickup.com/brain/talk-to-tex..."
+      },
+      {
+        "url": "https://clickup.com/brain/max?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x",
+        "text": "https://clickup.com/brain/max?utm_sou..."
+      },
+      {
+        "url": "https://clickup.com/brain/ai-notetaker?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x",
+        "text": "https://clickup.com/brain/ai-notetake..."
+      },
+      {
+        "url": "https://clickup.com/blog/wispr-flow-alternatives/?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x",
+        "text": "https://clickup.com/blog/wispr-flow-a..."
+      },
+      {
+        "url": "https://clickup.com/blog/?utm_source=youtube&utm_medium=owned&utm_campaign=yt_owned_ar_aau_acq_content_all-devices_x_lp_x_all-departments_x_youtubeseo&utm_term=2022-01-01&utm_content=us_interest_x",
+        "text": "https://clickup.com/blog/?utm_source=..."
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Ever feel like your thoughts flow faster than your fingers can type? Yeah, that's because they actually do. We speak almost three times faster than we type. Which means every time you're stuck hammering on a keyboard, your ideas are already miles ahead. So, what do you do? You go to voice to text tools like Whisper Flow. They let you speak naturally and turn your words into text instantly. While whisper flow makes the process beautifully simple, it does have a lot of hiccups with background noise, editing control, and device compatibility. So, if you love Whisper Flow but wish it did just a little more, here are five powerful alternatives that take voice to text to the next level. [Music] So, let's start with the first one, ClickUp. ClickUp is the world's first converged AI workspace built to end work in AI sprawl. With its talkto text feature, you can capture ideas up to four times faster than typing in over 40 languages. And because it's powered by contextaware AI, it recognizes your teammates names, your projects, and even document titles as you speak. Then there's Brainax, your desktop AI super app that keeps your entire workspace connected. It can search through every note, doc, or task within your ClickUp workspace and connected apps to pull answers to get work done in seconds. ClickUp makes sure you never lose your best ideas to context switching and tab hopping. It's the one intelligent workspace that brings everything together. Moving on to our next tool, Otter AI. Otter listens to your conversations in real time and types them out verbatim for you. No matter what meeting you're taking or when you need the summary, Otter can figure things out for you. But remember, Otter sometimes needs a tuneup. If there's a lot of background noise or people talking over each other, you may not get the best results. Still, for fast and easy note-taking, Otter is a real lifesaver. Now, if Otter is your meeting sidekick, then Sony's AI is the language wizard, just one that lives in your pocket. Sonox is great if you've got teammates from different countries or you need your notes in more than one language. You just drop in your audio or video, and Sonics turns it to text in over 40 languages with no problem. You can polish your transcript, highlight the important stuff, and share it with others. But here's the catch. If you're using it a lot, you'll probably need to pay for extra transcriptions once the free trial runs out. The fourth tool on our list is Mac Whisper. This one is just for Mac users. What's cool about Mac Whisper is that it works even if you don't have internet access. Since everything is stored locally on your computer, your notes are also private and safe. Just record your voice and Mac Whisper turns it into text. No cloud dependency. No worries. The only thing is if you're not a Mac user, you're out of luck. Mac Whisper doesn't work on Windows or mobile devices. Last but not least, we have dictote. Dictote is kind of like talking to yourself. You can speak freely and it writes down what you say. You can even use voice in it. It's speechto text extension on the Chrome web store. This reduces the need for fast internet and helps keep your voice data more private. Dictote works best on Google Chrome. So, if you're using a different browser or want to use it on your phone, it might not be the perfect fit for you. And that wraps up our list. Five awesome alternatives to Whisper. Whether you want something for your team, need notes in different languages, or just want to keep things private, there's a tool here for you. Try them out and see which one makes your life easier. And hey, if you want accurate transcription that feeds into your work, plus a little AI magic, check out ClickUp at the link in the description."
+      }
+    ],
+    "order": 65,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [
+      "#wisprflow",
+      "#wispr",
+      "#voicetotext"
+    ],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Introducing WISPR SkyScout2 Series",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "41_6LGRS_hw",
+    "url": "https://www.youtube.com/watch?v=41_6LGRS_hw",
+    "thumbnailUrl": "https://i.ytimg.com/vi/41_6LGRS_hw/hqdefault.jpg",
+    "viewCount": 249,
+    "date": "2025-11-10T17:41:44.000Z",
+    "likes": 6,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:02:33",
+    "commentsCount": 1,
+    "text": "Introducing the #1 American-made surveying, mapping, and inspection drone on the market. \n\nThe WISPR SkyScout2 series is built with professionals in mind to deliver precision, reliability, and performance. SkyScout2 redefines what’s possible in professional drone operations.\n\nKey Features-\n• Seamless RTK & PPK integration - no additional base station required\n• SignalSheild™ Industry-leading EMI protection \n• TempGuard™ climate control, heat, and cold protection\n• PathGuard™ collision avoidance\n• Auto-Land Capabilities\n• Hot-swappable batteries and S-Port quick-attach payload system\n• Optional, blue-listed hand controller\n• Unmatched GNSS coverage for superior accuracy and signal reliability\n• Built in the USA for professionals who demand performance and dependability\n\nLearn More👉 https://wisprsystems.com/skyscout2/\n\nSchedule a demo today👉https://calendly.com/jmcarthur-wispr/...",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://wisprsystems.com/skyscout2/",
+        "text": "https://wisprsystems.com/skyscout2/"
+      },
+      {
+        "url": "https://calendly.com/jmcarthur-wispr/wispr-systems-discussion?month=2025-09",
+        "text": "https://calendly.com/jmcarthur-wispr/..."
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "The next [music] evolution in precision drone technology has arrived. Introducing the Sky Scout 2 and Sky Scout 2 Plus from Whisper Systems. An Americanmade [music] leader in drone technology. Designed with input from professionals in surveying, mapping, and inspection, Skyscout 2 delivers greater performance, resilience, and operator control. Fly further, safer, and more efficiently with key enhancements in this next generation of drone [music] technology. The SP quick attach system increases payload capacity to more than 3 and 12 lbs without sacrificing flight time. Tempguard's dynamic [music] climate control intelligently regulates air flow to keep components at peak operating temperature even in extreme [music] hot or cold environments. Smart Core, our smart power distribution system provides built-in protection against potential battery failures and a redundant [music] management system for maximum flight safety. The precision terrain follow system [music] with whispers terrain sense delivers unmatched altitude accuracy, better high altitude terrain mapping, and reliable lowaltitude guidance where GPS and barometers fall [music] short. The Pathguard longrange obstacle detection system features front and rear obstacle sensors with an amazing 164 ft range to help protect [music] the aircraft during mapping missions and manual flight. Signal Shield are electromagnetic inference [music] shielding, allowing operators to safely fly closer to power lines, cell towers, and other EMI sources without compromising [music] control, reliability, or data integrity. Skyscout 2 Plus delivers accurate, consistent fieldready data. Built for [music] dependable performance when it matters. From survey and mapping to inspection, Skyscout 2 Plus [music] delivers data you can trust and results you can use. Finally, Sky Scout 2 Plus adds the Whisper Sky [music] Boss smart controller, revolutionizing the operator experience. It combines a 7-in [music] screen with a brightness readable in sunlight and a rugged design that meets high standards for protection from drops and bad weather. Secure encrypted [music] transmission between the controller and drone ensures mission integrity, while multiple roll wheels, hot swappable batteries, and up to [music] 6 hours of runtime keep pilots in control all day. Mission planning on the Whisper Sky Boss is effortless with Whisper [music] ground control. Set flight paths in a few clicks and adapt on the fly. Ground control keeps missions seamless from start to finish. Precision, [music] durability, and compliance. Engineered by one of the most trusted US drone manufacturers, the Skyscout 2 and Sky Scout 2 Plus empower professionals to work [music] faster, longer, and with the confidence that only Whisper Innovation can provide. Whisper Sky [music] Scout 2 Plus, now NDAA compliant."
+      }
+    ],
+    "order": 87,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Wispr Flow vs Super whisper | which one is Better?",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "VBYtlBbYsa4",
+    "url": "https://www.youtube.com/watch?v=VBYtlBbYsa4",
+    "thumbnailUrl": "https://i.ytimg.com/vi/VBYtlBbYsa4/maxresdefault.jpg",
+    "viewCount": 86,
+    "date": "2025-07-24T09:00:45.000Z",
+    "likes": 0,
+    "location": null,
+    "channelName": "Checkmark Studio",
+    "channelUrl": "https://www.youtube.com/@checkmarkstudio",
+    "channelUsername": "checkmarkstudio",
+    "collaborators": null,
+    "channelId": "UC3GqJJ2YNODZH5a4kGrIEvw",
+    "numberOfSubscribers": 3030,
+    "duration": "00:01:25",
+    "commentsCount": 0,
+    "text": "Welcome to Checkmark Studio!!! In this tutorial video, I will show you Wispr Flow vs Super whisper | which one is Better?\n\n🎁🎁Get a 30-DAY FREE TRIAL for Amazon Prime 👉 https://amzn.to/3ZVjgV8\n🎁🎁 Get a 30-DAY FREE TRIAL for AUDIBLE here 👉 https://amzn.to/4dE9Xfc\n\n\n-------------------\nIf this video helped you out please consider leaving a like & commenting down below if this works! Thank you so much :)\n\n-------------------\nDisclaimer :- 👇\n\nCopyright Disclaimer under Section 107 of the copyright act 1976, allowance is made for fair use for purposes such as criticism, comment, news reporting, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. \n\nNotice:\nIf any content owners happen to find your art or images in my video please let me know. I will not hesitate to immediately remove said content and will gladly credit you. It is not my intent to in any way infringe on their content ownership. \nBusiness e-mail: mbgrts191@gmail.com",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://amzn.to/3ZVjgV8",
+        "text": "https://amzn.to/3ZVjgV8"
+      },
+      {
+        "url": "https://amzn.to/4dE9Xfc",
+        "text": "https://amzn.to/4dE9Xfc"
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Hello guys, in this video I'm going to make the comparison between whisper flow versus super whisper. Which voice detection tool is better? Whisper flow in the super whisper are both tools built on open AIS which model for speech to test voice detection but they have different strength depending on your use case. When you use whisper flow, you are mainly doing real time detection inside your browser. You want voice commands like com like punctuation and the formatting. You work in Google Docs, notion, Gmail and so forth. But when you use super whisper, you need offline private or bulk transcription. you often transcribe and record audio files or voice notes and with super whisper you can use Mac OS and native applications. So to conclude the best for realtime detection is in browser is whisper flow and the best for offline transcription and privacy is super whisper. So that's all for this video. If you find it helpful, like, subscribe, and see"
+      }
+    ],
+    "order": 89,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Processing WISPR 24 Mapper in Pix4Dmatic- Walkthrough",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "8_mbfrmEcuA",
+    "url": "https://www.youtube.com/watch?v=8_mbfrmEcuA",
+    "thumbnailUrl": "https://i.ytimg.com/vi/8_mbfrmEcuA/maxresdefault.jpg",
+    "viewCount": 99,
+    "date": "2025-04-21T18:19:36.000Z",
+    "likes": 1,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:03:55",
+    "commentsCount": 0,
+    "text": "This video is a walkthrough on how to process the WISPR 24 Mapper in Pix4Dmatic.\n\nHelp determining the output coordinate system: https://geodesy.noaa.gov/SPCS/maps.shtml\n\nWISPR Systems: https://wisprsystems.com/\n\n*Image coordinate reference system switches to Ellipsoid May 2025.*",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://geodesy.noaa.gov/SPCS/maps.shtml",
+        "text": "https://geodesy.noaa.gov/SPCS/maps.shtml"
+      },
+      {
+        "url": "https://wisprsystems.com/",
+        "text": "https://wisprsystems.com/"
+      }
+    ],
+    "subtitles": null,
+    "order": 85,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Mission Planning for Inertial Labs LiDAR using WISPR Ground Control (old)",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "FW608rHLQnI",
+    "url": "https://www.youtube.com/watch?v=FW608rHLQnI",
+    "thumbnailUrl": "https://i.ytimg.com/vi/FW608rHLQnI/maxresdefault.jpg",
+    "viewCount": 438,
+    "date": "2023-04-04T20:39:05.000Z",
+    "likes": 5,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:04:32",
+    "commentsCount": 2,
+    "text": "How to plan missions using WISPR Ground Control with Inertial Labs LiDAR.",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Mission planning with inertial Labs lidar using whisper Ground Control connect smart controller to mobile hotspot if maps are not pre-downloaded swipe down and click the Wi-Fi icon and connect to mobile hotspot then click the square and swipe right power on drone prior to opening whisper Ground Control open whisper Ground Control click the top left button to go to general settings select payload and then select recipe xt32 lidar you have the option to change manual or Mission flight speed change Mission flight speed to 5 meters per second for best results after completion click paper airplane button to return to in-flight screen click Mission planning button to begin planning mission set Waypoint altitude click take off button click pattern button click survey button click new basic pattern button play in polygon around survey area after polygon is planned select done with polygon you have the option to change your front and side overlap fifty percent front and side overlap are default slide the angle slider to rotate your flight line paths select terrain to enable terrain follow during your missions if needed click return button when you have finished Mission planning click upload required to send mission to drone click the button in the top left to return to the in-flight screen exit out of the start Mission slider to take off manually soft press button on lidar to power on unit and wait 30 seconds soft press button on lidar to start scanning and wait 30 seconds prior to taking off arm and takeoff drone manually and fly up to Mission altitude best practice to fly outside of mission path to start lidar calibration click lidar calibration button and Slide the slider to begin Slide the lidar calibration slider to begin calibration drone will run auto calibration and then begin Auto mission after landing remove plan from vehicle and close app soft press button on lidar to stop scanning and wait 30 seconds press and hold lidar button for 10 seconds to power off unit unplug battery from drone and you are complete"
+      }
+    ],
+    "order": 97,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Wispr Scout II Pro review at the Commercial UAV convention",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "_3JXycUe9NE",
+    "url": "https://www.youtube.com/watch?v=_3JXycUe9NE",
+    "thumbnailUrl": "https://i.ytimg.com/vi/_3JXycUe9NE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHOBYACgAqKAgwIABABGGUgWChMMA8=&rs=AOn4CLDnCx_B4tcpHdYfzl05W6Qk0yL5oQ",
+    "viewCount": 52,
+    "date": "2025-09-07T18:35:41.000Z",
+    "likes": 2,
+    "location": null,
+    "channelName": "3D Flight Maryland",
+    "channelUrl": "https://www.youtube.com/@3DFlightMaryland",
+    "channelUsername": "3DFlightMaryland",
+    "collaborators": null,
+    "channelId": "UCNG8YSug6PZpQ4yzzI1DaRA",
+    "numberOfSubscribers": 46,
+    "duration": "00:13:27",
+    "commentsCount": 0,
+    "text": null,
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "So, this you said is the new Sky Scout 2 Whisperer, a brand new drone. >> Yep. >> So, this is actually the plus version. >> Yeah. >> So, the Sky There's a Sky Scout 2 and a Sky Scout 2 Plus. The difference between them is nothing on the outside of the drone how it looks. It's the radio on the inside of the drone. >> Ah, okay. >> So, when you get to plus, then you get the new >> controller. That's a big controller. Yeah. So the the regular Sky Scout 2 will be run with like the blue herink. Let's That's a blue her link over there for the inspired flight. >> Yep. >> So the blue or the black her link will run the Sky Scout 2. There was a Sky Scout one. Everything has backwards and forwards compatible. So I can put all the same payloads on the two that I had on the one. I don't need to change anything or do anything if I change drones. >> It's got a whole new design on their on their uh front uh obstacle avoidance. >> Same within the back here. They got a new design. >> Okay. >> And then they have a have it underneath as well. And they also have a new laser rangefinder. So when you're landing, >> it now knows your your height over over the ground. Yep. >> Nice. >> Um >> we got dual batteries that are probably hot swappable, right? I assume. >> Absolutely. >> The same batteries that were on the one. >> Little bit more powerful than the one. >> Uh more you mean the amount of power they or the time? >> Uh the time is about the same. uh can carry a little bit more in the payload. Not much, but a little bit. But it's got all new redesigned landing gear and all new design controls. They made the whole unit modular. >> Okay. >> So, if I bought this as a Sky Scout 2 >> with a with the other controller, I can then send it back and they can actually upgrade it to this. >> So, uh what's the flight time with these batteries? >> You're going to be right around 30 minutes. >> Okay. You know, they I would say you're going to range from about 28 minutes to about 34 minutes depending on >> what you do. >> Heat, cold, wind, all the above. >> Yeah. And what does the battery cost? >> Battery on those, I believe, for a set of those is like 1,300. Okay. >> So, the batteries are about 650 a piece. >> Yep. >> About the same as everybody else, you know, even the little ones are now $3 $400. >> I know. I know. So the um as a payload for aerial mapping. >> So it's got an interchangeable payload. So I can put any of the uh Sony like the uh they have a Sony 24 megapixel that they they use with the Skyscout. There's the 61 megapixel ILXR1. Uh the Recep ultralight it can carry. And there's also a Rece uh light M2X which has a 24 megapixel camera instead of the 5 megapixel camera. >> Okay. Yeah. So you basically can do the LAR mapping all in one go. >> You can. Nobody does. >> Oh, okay. And the reason for that is when you're doing photoggramometry, you actually want your camera to move, right? It's going to go n it's going to go nater straight down, but it's going to go to the right and go to the left. And you have less passes, quicker flight time. >> Y >> with this this has a fixed camera. It's really the camera on this on the on the ultral light is 5 megapixels. So you're not going to map with it. What you're doing is you're coloring your point cloud with it. >> Yeah. And I and I guess you if you see something in the LAR, you can go to a visual and say, \"Oh, that's what it is.\" So you could technically map with the 24 megapixel camera, but it's it's stationary down. So you have to do more passes, have a tighter overlap, that kind of thing. So most people, like I said, if you really wanted to do photoggramometry, you can buy one of the other cameras and then just swap payloads and do a photoggramometry mission or light. >> So if you uh now I can't. See, this is what I mean. That's why I have to record it, right? Did you tell me the price of the drone itself? >> Price of the drone runs right around 28,000. >> Okay. So that's batteries, controller, the drone, no payload. >> No payload. the uh 24 uh megapixel one. >> 24 megapixel camera, you're going to be about 8 grand. >> Okay. >> Uh the 61 megapixel, you're going to be about 12. >> The Recep light here with with a first year of software and everything is going to run you around 27 26 27 somewhere in there. And then the software after that's about 3,000 a year. Okay. >> So, it's actually one of the lower cost. Reppies um PC Master Pro they call it um is one of the least expensive LAR softwares that you could purchase. uh does a great job. Most of our customers that what this can do for that price handles 85% of our customers. We got 15% and you're going to go to something like the Phoenix LAR over there. Their software is actually based off of >> this same type of software. >> It's just on steroids. It can do way more. And then your your yearly fee on their software is going to be between 7500 and 15 grand depending on all the bells and whistles you get with it. And I think this is your it's got the RTK, right? The lights. >> Full RTK. Uh the light will turn on. It will it will tell you red means you're not ready to fly. Yellow, you're getting GPS, but you're not ready. You know, caution, don't fly yet. When it goes green, you're ready to go. >> Perfect. Perfect. >> Um wow, there's a lot of information cuz we we a lot of us have been like, \"Hey, Whisper, Whistler. Whisper looks like one of the best options out there.\" >> Made in Batesville, Mississippi. Very good company. We've been a dealer with them since January of this year. can't say enough good things about them. Perfect. >> You know, they they when they they're like every other drone company, every drone on the market has issues of some kind. They they take care of them. They take care of their customers. Our our customers come back to Whisper because of the customer service they get from the manufacturer and from us. But, >> you know, they they do what's right if something happens and and and they got to make it right. They've always made it right for us. So, we've been very pleased with them. >> And all right, that's the Okay. Anything else that you as you have a lot of experience looking at some of the other drones on the market. So just as an FYI, I would it was just at ASCL, right, which have the M3 clone. Uh I talked to Flyby Robotics to I talked to Inspire Flight as you were a Yeah, the Inspire Blade. >> Yeah, we're an Inspired Flight dealer as well. >> Yeah. Um if you got to compare these, is it just like, hey, this is the uh the sedan and that's the minivan or what what do you see? So, like it's bigger, but price-wise, they're not that different. >> Uh, no. Once you go to once you go to >> Inspired Flight new controller, which is very similar to this, and the new DJI controller, they're all pretty much the same looking controller. >> Um, Inspired Flight's a little bit pricier than, you know, a thousand or two. >> Uh, the big difference is the Inspired Flight's going to carry a heavier payload. >> Okay. >> So, um, some of the new payloads that are coming >> I know six, right? >> Yeah. >> Yeah. So, the the the big one that's coming down the pipe right now is going to be the new Teladine Echo1. >> Mhm. >> Um it's a completely NDAA compliant LAR that's half a centimeter accuracy. Um and it's around 65,000. The next closest to that for a half a centimeter accuracy, you're looking at probably CHC. They're 120. And then you've got Regal, Phoenix, and some other ones that are $350,000 payloads >> to get you to that half centimeter. Wow. Okay, so this this one's changing. Sky Scouts working out. They came in a little over their spec and weight, so they're right at the max weight for the Sky Scout. So, we're hoping, fingers crossed, that all the testing goes well and you'll be able to run it on that. >> That will be able to lift a lot more than this. >> Yeah, it's about almost done. >> You know, the only difference between that is that this has the the um >> Let me turn this off. >> It's okay. >> Um this has the obstacle avoidance. That doesn't have any. >> Correct. one in my opinion. Um, they now have an RTK unit that you can put on top of that that you probably saw over at their booth. That's going to bring them well more into the photogometry and surveying and mapping market >> cuz surveyors are completely trained in RTK and they're not going to fly a photography mission without it. >> No. And >> so for the last year and a half that we've had that unit out, we've predominantly sold it with either inspection or LAR. Yeah, I could see if you like it because like you don't have to buy such an expensive drone for just inspection. >> Well, but you do if it has to be US. >> Yeah, that's true. >> Okay. And then >> by the way, how how is um >> NDA going to be on the green? It's on the green list. >> Okay. >> So, green list, blue list, NDA. Is this all the same? >> So, >> cuz sometime we get confused like what is one versus the other. >> Okay. So, the biggest thing with with NDAA is that the NDAA there are a new version of it every year. Yes. Okay. So, you kind of got to be there there are a lot of companies in this space that say, \"Oh, this is an NDA compliant drone.\" And you read in the fine print, NDA 2021. >> Ah, okay. >> Not up to >> not 2025. >> No. Gotcha. >> So, the blue list and the green list, in my opinion, the only person that should ever buy a Blue List drone is someone that's doing DoD government work and because they have to. Because while you're flying a true Blue List drone, if you flew it for anything else other than DoD, you're flying illegally because there's no remote ID. Oh, I didn't know that. So, wow. Wow. >> A blue list. Blue list means it's militarybased, which means it cannot have a remote ID. So if the military flies it somewhere where they don't want to know anybody, no one wants no one wants to see them. >> There's no robot ID for it because >> for a drone that's on a blue list or what's the difference between blue and green? >> So again, a blue list is military specs. >> Sorry, blue list is the same as NDA. No, they're all NDA. That's what I was starting to tell you.A NDAA is is the government budget >> for the military. Okay. >> So, the blue list was part of the NDAA that if your drone got blisted, it could be sold to the US military. >> Got it. >> Okay. And again, part of that requirement for blue list is there was no remote ID with it. So if you want it for any other work in the United States, you would have to go out and buy a remote ID that clipped on >> and as soon as you clip it on, it's no longer blue. So then you could uncip it and now it becomes blue list to get out. That's the that's the variation of >> and that's the ridiculousness of it. >> Yeah. >> The green list was brought out by AUVSI. So, AU AUVSI got recognized by the US government as a authoritary >> body um and they brought out their green list which means it's NDAA compliant for that year. So, if you're greenlisted in 2025 like this drone is, you are now NDA compliant for 2025. Okay. >> Thank But again, the if if you if someone says they're NDAA compliant, you got to look, you got to check the number and say cuz it could be 2019, it could be 2020, it could be 2022. >> That's a good point. I did not know that. >> So, >> cuz like for example, the blue hair link over there, that controller >> was NDAA approved in 2020. It is no longer NDAA approved. Good point. >> But because it was NDAA approved in 2020, it's going to get you through most government agencies. >> So again, For the most part, this whole thing is am I am I compliant with the people that I'm flying for? And if they're okay with it, then you're fine. >> Got it. >> But there are a lot of people out there that say, \"Oh, no. You have to have a Blue List drone to fly our our government project inside the city of whatever. It's not a DoD project. You're flying illegally if you bought a blue list drone and did perform their data.\" >> That is amazing. So, and I was just something just hit me. Saudia Nanzu Raptor. Let's say it is rain. Tomorrow my my M3 falls out of the sky, right? I mean, quickly a replacement. What is the price point going to of a Raptor at the moment? >> It's around the same price as the they're not that much different. >> Okay. So, >> the batteries are interchangeable. The RTK hats are interchangeable. >> Yeah. So, >> you're different software. >> Yeah. Because the thing is like price-wise, I think at one time I think they're about 7,000 now, right? Or >> with the T's. >> Oh, yeah. Okay. The regular one. >> The E. >> Yeah. Uh, you're going to be about 6 6,500 off the top of my head. I'd have to go look. >> I'm not holding you. It's more like >> cuz the T's T's are typically going to be more like 8 eight or nine now. Like the M3T, >> the M3E is going to be around six grand. The T is around 8,900. >> Yeah. One of my guys, >> the 4Ts are now around 11. >> An M3 M4E. He just picked one up. He's like, \"Hey, you know what? I I'm just making it up. I want to have, you know, a kind of peace of mind. >> So again, from our from our standpoint, there are some internet companies out there that sell them for dirt cheap. We can't get around the tariffs. There were tariffs on them, so we charge for the tariffs. >> Um, but ours are all true DJI North American drones. Okay? There's companies out there that are selling DJI South American drones in North America. >> I didn't even know there were two flavors, so to say. Multiple. >> There's a European one. There's an Asian one. There's a >> And if you get if you get a a South American drone here, you can fly it, but you have no warranty. >> Even if they say there's a warranty, DJI is going to honor it cuz they're not allowed to sell South American drones in North America. Just like we're not allowed. I can't sell stuff into Mexico or into South America. >> If that happens, DJI calls me and goes, \"Why'd you do this?\" Because wherever it's registered. Well, I really really appreciate your time because you I learned a number of very important things here that I was not even aware of that I didn't"
+      }
+    ],
+    "order": 93,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "WISPR HACK... HIGHER TEMP = BETTER VAPOR CLOUD",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "XnR2NdqyHrc",
+    "url": "https://www.youtube.com/watch?v=XnR2NdqyHrc",
+    "thumbnailUrl": "https://i.ytimg.com/vi/XnR2NdqyHrc/hqdefault.jpg",
+    "viewCount": 3696,
+    "date": "2013-04-11T00:25:51.000Z",
+    "likes": 12,
+    "location": null,
+    "channelName": "videostar66",
+    "channelUrl": "https://www.youtube.com/@videostar66",
+    "channelUsername": "videostar66",
+    "collaborators": null,
+    "channelId": "UCDs_V-Lde9YrKhm5HBkddKg",
+    "numberOfSubscribers": 20,
+    "duration": "00:01:55",
+    "commentsCount": 4,
+    "text": "Hack your WISPR for higer temperature and better vapor cloud.NO TOOLS, NO FUSS, NOOO WAAAAY!(yes way!)",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "hey what's up fellow vapers what we have here is the ever-popular iolite whisperer now a lot of people have been saying hey you know what this is a great unit but it lacks temperature control well I've found a way around that and here's what you do when you initially fire up your unit you notice that the LED or the burner indicator lamp it stays on for several seconds longer you know on the initial startup because it's cold and then what will happen is it'll reach its temperature and periodically turn on and turn off the best way to hack this unit for a higher temperature is you start beating it up let it cycle you know four times provided that your indoor you know at about 70 degrees and then shut the unit off and then wait about two minutes and reignite the unit and what's gonna happen is your chamber is already warmed up but by shutting unit off and then reigniting it after about two minutes you're achieving a longer burn the heating chamber it's actually bringing the temperature up way higher they know fewer just initially left it on and let it cycle it worked great for me and I can guarantee you if you're a whisper owner and you've been unsatisfied with the vapor quality try this and I'll guarantee you you'll have a whole new respect for this"
+      }
+    ],
+    "order": 84,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Wispr Flow & Superwhisper Alternative – 100% FREE & Super Accurate Voice-to-Text",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "27f_QNYAqDs",
+    "url": "https://www.youtube.com/watch?v=27f_QNYAqDs",
+    "thumbnailUrl": "https://i.ytimg.com/vi/27f_QNYAqDs/maxresdefault.jpg",
+    "viewCount": 717,
+    "date": "2025-09-03T13:48:22.000Z",
+    "likes": 5,
+    "location": null,
+    "channelName": "Leo Everyday Tech",
+    "channelUrl": "https://www.youtube.com/@LeoEverydayTech",
+    "channelUsername": "LeoEverydayTech",
+    "collaborators": null,
+    "channelId": "UCqi7SaPcQ3o_TTUjkspR2dg",
+    "numberOfSubscribers": 4730,
+    "duration": "00:06:20",
+    "commentsCount": 2,
+    "text": "The tool I'm introducing today is quite remarkable—it might be the most powerful speech input software currently available.\nWhisper Input is an open-source code repository on GitHub. I've translated it into English and introduced the simplest local deployment method.\n\nhttps://github.com/leosimon/Whisper-I...\nhttps://github.com/leosimon/Whisper-I...",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://github.com/leosimon/Whisper-Input-English/",
+        "text": "https://github.com/leosimon/Whisper-I..."
+      },
+      {
+        "url": "https://github.com/leosimon/Whisper-Input-English/blob/main/Quick%20deployment%20guide.md",
+        "text": "https://github.com/leosimon/Whisper-I..."
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Being able to express our thoughts directly in natural language is definitely much faster than typing. This is also a prerequisite for vital coding. The tool I'm introducing today is quite remarkable. It might be the most powerful speech input software currently available. Let me show you the results first. This software is based on OpenAI's whisper which is currently the best speech text tool available. Today I will introduce you two methods. The first one is an open-source code repository on GitHub. Awesome. This is super cool. Okay. And How about this? However, for most people, deploying this tool, deploying this code directly from Mac OS can be quite challenging. So, I've done two things. First, I translated it into English. Second, I summarized the simplest local deploy method. I believe that the vast majority of people should be able to master it following my tutorial. You see the results is so accurate. Of course, if you still find my steps too cumbersome, you can jump to the end of the video for the second method, installing a whisper keyboard application. That's a mature paid software with a $10 monthly subscription fee, but it might be more convenient to use. All right, without further ado, let's start explaining the complete free local deployment method for whisper input. Let's make sure you have Python 3.10 or higher installed on your Mac. Open terminal and type. You should see version 3.10 or higher. If not, please install Python first. Download the project. Let's start by downloading the source code. In your terminal, navigate to where you want to install the project and run these two commands. Step two, get your API key. You'll need an API key from Croc. Visit console.croc.com. Create account if you don't have one and copy your API key. We'll use this in the next step. Step three, initial setup. Now let's run the setup script. First run this code. Then run this. The script will create av file for you. When prompt edit this file and add your configuration. Basically, you need to set service platform to Krogue and set uh CRUG API key to the actual API key we got from step two. Step four, system permissions. This is the most important step. This app needs two permissions to work properly. Go to system preferences. Select privacy and security. Select accessibility. Then find terminal in the list and check the box. Also under privacy and security select microphone and find terminal and check the box. Launch the application. Now you are ready to start. Run this code. You should see initialization message and voice assistant started. That means it's working. Using whisper input is simple. Hold the option key and speak. Release to transcribe your speech. The text will appear at your cursor position in any application. The final step is optional. If you want to launch the app more easily, you can create a desktop shortcut using Automator. First open Automator from your application folder. Then select application as a document type. Next search for run shell script in the actions library and drag it to your workflow area. In the script box, enter a script in the video description session. Make sure to replace the path with your actual project path. Save this as an application to your desktop or application folder. Now you can doubleclick this app to start whisper input without opening the terminal. That's it. You now have the most powerful speech to text tool running on your Mac. The setup only takes a few minutes, but the time you save using voice input will be enormous. Alternatively, if you prefer native Mac OS application, Whisper Keyboard is an excellent option. However, the free version only allows 20 sentences per day, which is definitely not enough for regular use. For unlimited sentences, you need to pay uh $10 per month. Uh that said, I believe whisper input is already good enough for most users. For more help, check the GitHub repository issues. Happy voice typing. I see you in the next one. Bye-bye. [Music] I'm on my way. [Applause]"
+      }
+    ],
+    "order": 94,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Corridor Scans with Inertial Labs LiDAR using WISPR Ground Control (old)",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "GeV6HXGt3-g",
+    "url": "https://www.youtube.com/watch?v=GeV6HXGt3-g",
+    "thumbnailUrl": "https://i.ytimg.com/vi/GeV6HXGt3-g/maxresdefault.jpg",
+    "viewCount": 164,
+    "date": "2023-04-04T21:13:28.000Z",
+    "likes": 0,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:04:03",
+    "commentsCount": 0,
+    "text": "How to plan corridor scans with Inertial Labs LiDAR using WISPR Ground Control",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Corridor scan with inertial Labs lidar using whisper Ground Control connect smart controller to mobile hotspot if maps are not pre-downloaded swipe down and click the Wi-Fi icon and connect to mobile hotspot then click the square and swipe right power on drone prior to opening whisper Ground Control open whisper Ground Control click the top left button to go to general settings select payload and then select recipe xt32 lidar you have the option to change manual or Mission flight speed change Mission flight speed to 5 meters per second for best results after completion click paper airplane button to return to in-flight screen click Mission planning button to begin planning mission set Waypoint altitude click take off button click pattern button click Corridor scan button click new basic pattern button plain polygon around survey area after polygon is planned select done with polygon select terrain to enable terrain follow during your missions if needed click return button when you have finished Mission planning click upload required to send mission to drone click the button in the top left to return to the in-flight screen exit out of the start Mission slider to take off manually soft press button on lidar to power on unit and wait 30 seconds soft press button on lidar to start scanning and wait 30 seconds prior to taking off arm and takeoff drone manually and fly up to Mission altitude best practice to fly outside of mission path to start lidar calibration click lidar calibration button and Slide the slider to begin Slide the lidar calibration slider to begin calibration drone will run auto calibration and then begin Auto mission after landing remove plan from vehicle and close app soft press button on lidar to stop scanning and wait 30 seconds press and hold lidar button for 10 seconds to power off unit unplug battery from drone and you are complete"
+      }
+    ],
+    "order": 99,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Updating WISPR Ground Control on Herelink Smart Controller",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "OZiy-FwmxyI",
+    "url": "https://www.youtube.com/watch?v=OZiy-FwmxyI",
+    "thumbnailUrl": "https://i.ytimg.com/vi/OZiy-FwmxyI/maxresdefault.jpg",
+    "viewCount": 204,
+    "date": "2024-10-08T22:20:53.000Z",
+    "likes": 1,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:02:10",
+    "commentsCount": 0,
+    "text": "How to update WISPR Ground Control on Herelink Smart Controller",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "updating whisper Ground Control on Smart controller remove smart controller from case remove controller from Case by gently pulling up at the base of the antenna until it's out of the case download latest whisper Ground Control update next on your computer navigate to Whisperers systems.com under the support tab click downloads locate the most recent version of whisper ground control and click download Once downloaded navigate to your download folder click once on the zip file and then select extract all at the top of your browser plug the USB micro USB cable from computer to Smart controller power on Smart controller to install update plug in the US USB to micro USB cable from computer to Smart controller run install executable on computer to install update on Smart controller navigate into the extracted folder and select the windows folder if installing from a computer using Windows Windows will have a screen stating it protected your PC select run anyway accept the whisper terms and conditions stream install will be performed where the install will state if it's successful and to press any key to continue on your first update on your smart controller the message allow USB debugging will pop up when it does click the check box next to the description to always allow from this computer if you plan to use that computer in the future then click okay the unit will be good to update from this point whisper Ground Control update is now complete thank you for watching"
+      }
+    ],
+    "order": 102,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "WISPR SkyScout 2+ series",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "l_hB4Fm0tiw",
+    "url": "https://www.youtube.com/watch?v=l_hB4Fm0tiw",
+    "thumbnailUrl": "https://i.ytimg.com/vi/l_hB4Fm0tiw/hqdefault.jpg",
+    "viewCount": 269,
+    "date": "2025-09-06T19:29:39.000Z",
+    "likes": 6,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:03:07",
+    "commentsCount": 0,
+    "text": "Overview video showcasing the new SkyScout 2+ series from WISPR Systems.",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Introducing the next evolution in enterprise drone platforms from Whisper Systems, the Skyscout 2 Plus series. Our new flagship platform is designed to handle the toughest commercial applications. Skyscout 2 is purpose-built to be the endto-end solution for mapping, surveying, and inspection. Sky Scout 2 is a rugged small form drone with easy operation and swappable payloads for any mission. The setup is quick and streamlined so you are mission ready within minutes. [Music] Sport payload system. Quick attach mount that combines power and data into one secure interface making payload swap simple, fast, and flight ready. Smart core power system that delivers clean power and shields against battery faults, ensuring maximum flight safety, 40minute maximum flight time, an average of 30 minutes flight time with payload. Path guard obstacle detection, long range front and rear sensors with 164 ft coverage that protect the aircraft from hazards during autonomous missions and manual flight. Terrain sense precision following advanced altitude control that delivers unmatched accuracy from low-level inspections to high altitude mapping where GPS and barometers can't keep up. Teg Guard climate control intelligent heating and cooling that regulates air flow to keep components at peak performance in extreme hot or cold environments. Signal shield EMI protection. Best-in-lass shielding that blocks and dissipates interference, keeps avionics stable, sensors safe, and data clean even near power lines or towers. Precision positioning, integrated RTK with end trip and serial pass through, plus PPK geo tagging through whisper cloud for survey grade accuracy on every mission. 50 mph wind rating to keep you in the air even when situations are not the best. Whisper Sky Boss controller smart RC with a 7 in ultra bright 2000nit display, dual roll wheels, hot swappable batteries, and 6 plus hours of runtime built for all day control. Skyscout 2 Plus series utilizes whisper ground control which is a intuitive mission planning. Heads up display and in-flight controls are tailored to each payload. Whisper ground control ensures seamless aerial operations with a Sky Scout 2. Skyscout 2 is engineered with built-in reliability and redundancy, delivering a long life cycle with minimal upkeep, ensuring operators can count on consistent performance, lower costs, and mission success every time."
+      }
+    ],
+    "order": 95,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "WISPR Smart Battery Firmware Update Guide",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "TN3TUry_4NU",
+    "url": "https://www.youtube.com/watch?v=TN3TUry_4NU",
+    "thumbnailUrl": "https://i.ytimg.com/vi/TN3TUry_4NU/maxresdefault.jpg",
+    "viewCount": 86,
+    "date": "2025-07-28T18:31:47.000Z",
+    "likes": 1,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:03:38",
+    "commentsCount": 0,
+    "text": "This video is a walkthrough on how to update your WISPR Smart Batteries.\n\nDownload the update and update guide here: https://wisprsystems.atlassian.net/wi...\nLink to Download Mission Planner:\nhttps://ardupilot.org/planner/docs/mi...",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://wisprsystems.atlassian.net/wiki/spaces/CS/pages/79265793/Downloads",
+        "text": "https://wisprsystems.atlassian.net/wi..."
+      },
+      {
+        "url": "https://ardupilot.org/planner/docs/mission-planner-installation.html",
+        "text": "https://ardupilot.org/planner/docs/mi..."
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Hey guys, Chris here from Whisper Systems. Today I'm going to be showing you how to update the firmware on your smart batteries. The first step is going to be connecting the adapter to the battery connector on the drone itself. And that'll just slide right on there like so. Once you have the adapter connected to the drone itself, you're just going to place the smart battery on top of that adapter. The next step is going to be connecting a USB from your laptop to the drone using the lower of the two ports. Next, open Mission Planner. If you don't have Mission Planner, there will be a download link in the description of this video. Once Mission Planner is open, you're going to want to go to this drop-own menu right here, select auto, and then click connect. Mission Planner will then pull the parameters from the drone. This will only take a few seconds. Once you're connected, you're going to want to navigate to setup in the top left. And then you're going to want to go to optional hardware. Then you'll want to go to drone canavan. And then you will select Mavink CAN 2 at the top. Once we're connected, we're going to want to find GBMS051601 and click menu and then go to parameters. And then we're going to want to change the parameters on system enable firmware updates from zero to one. And then we'll click write parameters. and click okay. And then we'll click okay one more time. Next, we're going to want to pay attention to that 119 right there. That's going to correlate to which file we're going to use to update each battery. It'll either be 118 or 119. We also want to pay attention to the firmware version. It'll change to 1.4.0 when we're done. And then we want to click menu and update. It's going to ask us if we want to search the internet. Click no. And then since this is CAN node 119, we are going to use the 119 file from the update folder. Click that and the update will begin. The first update is always going to fail. So we'll close that. And you'll notice a another node will pop up on the screen. We're going to go to the menu of that node. and click update. And then it'll ask us if we want to use the internet. Click no. And then once again, because the batteries node is 119, we'll use the 119 file. And this time, the update will proceed. The update will take anywhere from 15 to 20 seconds. Once the update is complete, you'll notice that the SW version next to the battery will change from 1.3.0 0 to 1.4.0. And now the update is complete. After you've completed updating the first battery, repeat the process on the second battery in the pair."
+      }
+    ],
+    "order": 68,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Welcome to Wispr!",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "VjnX2eM1DyQ",
+    "url": "https://www.youtube.com/watch?v=VjnX2eM1DyQ",
+    "thumbnailUrl": "https://i.ytimg.com/vi/VjnX2eM1DyQ/maxresdefault.jpg",
+    "viewCount": 529,
+    "date": "2022-11-04T14:48:14.000Z",
+    "likes": 2,
+    "location": null,
+    "channelName": "Wispr",
+    "channelUrl": "https://www.youtube.com/@wispr912",
+    "channelUsername": "wispr912",
+    "collaborators": null,
+    "channelId": "UCvvknzFfYxUH4K6eFXFoGmw",
+    "numberOfSubscribers": 4,
+    "duration": "00:00:58",
+    "commentsCount": 0,
+    "text": null,
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "hi welcome to whisper have you ever wanted to give a small business private feedback rather than blowing them up on public review sites like Yelp and Google look at this guy he's chowing down on a hot dog that is insanely spicy but he had no idea because the menu didn't say so ah poor guy this is where whisper comes in hmm whisper is the universal suggestion box app for small businesses all you have to do is look up the business write up some feedback and send it it's as easy as sending a text to a friend and there you go and if you're a business owner now you can get private feedback from customers that want you to succeed and you can use it to provide a better experience at your business whisper people helping people it's a beautiful thing"
+      }
+    ],
+    "order": 101,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "WISPR Screen replacement.",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "4ZhI6PV5Jec",
+    "url": "https://www.youtube.com/watch?v=4ZhI6PV5Jec",
+    "thumbnailUrl": "https://i.ytimg.com/vi/4ZhI6PV5Jec/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AGOAoAC4AOKAgwIABABGDwgZShZMA8=&rs=AOn4CLAN-754XCFAVh66gbJ7n6imPfMu5Q",
+    "viewCount": 4802,
+    "date": "2012-10-02T21:36:36.000Z",
+    "likes": 11,
+    "location": null,
+    "channelName": "videostar66",
+    "channelUrl": "https://www.youtube.com/@videostar66",
+    "channelUsername": "videostar66",
+    "collaborators": null,
+    "channelId": "UCDs_V-Lde9YrKhm5HBkddKg",
+    "numberOfSubscribers": 20,
+    "duration": "00:01:40",
+    "commentsCount": 4,
+    "text": "A quick look at tools provided with your WISPR and Iolite.How to properly use them.",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Hi, this is just a quick video. I had gotten a request from a user uh asking about their screen replacement for your highlight. And uh if you notice when you purchased your unit, you had these two tools. And a lot of people uh thought that these tools were simply for packing your herb chamber down. That's true. But there also have other uses. Uh occasionally when you uh go to take your filling chamber out, oh, it'll get stuck and just the rubber will come out and the bowl will be, you know, firmly in place. And you're wondering, well, how the hell do I get it out? Well, that's where this threaded tool comes in. You simply apply the screw screw it in and that will allow you to pull the bowl free. Now, as for popping the screen out, second tool, you're using the smaller end. You can just put that firmly on a table. and just insert it. Pressing down. [Applause] Oops. Well, should keep an eye on it because it can go flying out. But anyway, that's it. Done. Popped out. Hope that explains"
+      }
+    ],
+    "order": 70,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Immigrant Founders: Convo with Tanay Kothari of Wispr Flow",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "tWu_JxlkGfM",
+    "url": "https://www.youtube.com/watch?v=tWu_JxlkGfM",
+    "thumbnailUrl": "https://i.ytimg.com/vi/tWu_JxlkGfM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHOBYACgAqKAgwIABABGDogTihyMA8=&rs=AOn4CLAJlBDkjgp0pi-Yn7m3t9elk30uVg",
+    "viewCount": 81,
+    "date": "2025-08-20T19:44:45.000Z",
+    "likes": 2,
+    "location": null,
+    "channelName": "Vinit on Startups",
+    "channelUrl": "https://www.youtube.com/@vinitonstartups",
+    "channelUsername": "vinitonstartups",
+    "collaborators": null,
+    "channelId": "UCJUOBVHtjHvwIQO4-KsSF1Q",
+    "numberOfSubscribers": 67,
+    "duration": "00:03:23",
+    "commentsCount": 0,
+    "text": null,
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Hey guys, I've been using this incredible app for the last few months. It's made my life amazingly useful. And today I had the good fortune to actually meeting Mr. Whisper Tan. Hey Tane, how are you buddy? >> Great to meet you, man. >> All right. Listen, we were having this conversation and you know, you've been an immigrant founder yourself. >> Yeah. >> Right. Right. And I want to just get a sense of what are the things that an immigrant founder finds, you know, maybe unfair, but you actually think it's it's not a liability. Give me a couple of things that you think are useful. >> That's actually the biggest thing. I think a lot of people have the mentality that being an immigrant is a liability and it's something that that deserves pity. But no, it's actually a superpower and it's something that I want people to be proud of. >> Okay? Because what you have as an immigrant is you are resourceful. You have gone through things over the years that have gotten you here in the first place. You have gone through a lot of people who said no to you repeatedly, but you still wanted to go past those obstacles. >> And I think that's a skill that and that's an opportunity that you have had in life that strengthens character. >> Okay. >> And the second thing immigrant immigrants have is honestly community. like there's thousands of people here right now all just to support each other >> and that's special. >> I absolutely love that. You know, one of the things that has happened to me in the last 2 months is I I moved to SF just 2 months ago and I've been posting a lot on LinkedIn and basically telling my friends and founders in India, you know, like the the AI action here is great, right? >> And what are two things you'd like to tell these founders who haven't yet booked their tickets to come to SF? what should they prepare for on this journey? >> The couple of things I'll say and this is coming from also having a lot of friends right now in India who are building companies and so I can compare and contrast. >> It is much much easier to raise funding here than it is in India and investors are way more happy to give you a lot more capital here which is fantastic. you probably see this yourself as a as a VC and even all my Indian founders are now raising from US VCs >> uh cuz it is better deals easier process all of the above and the second thing I'd say is if you are building in the space of actually pushing the frontier you're pushing the frontiers of AI you're pushing the frontiers of technology in any and always the ecosystem here actually supports you and promotes that they don't chase behind your gross margins and revenues and and all of that because what I think is unique about Silicon Valley is just the love for innovation >> and the realization that it takes it takes time and it takes energy and resources to actually build that and but that hard work is respected. >> Absolutely. I agree with you. Uh crazy anecdote, right? This founder messaged me on on LinkedIn in June that really I loved your content about coming to SF. I'm booking tickets. middle of July this person messages me that hey I'm landed can we meet >> right so it's the same day we met >> and 17 days later I get a WhatsApp update from him that beneath I've raised x million the speed here is incredible >> that's awesome this is exactly what happened 17 days yeah so thanks a lot for this man appreciate it and I'm hoping we'll catch up more in SF you're a neighbor done we'll make it happen thank you >> thank Yo."
+      }
+    ],
+    "order": 75,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "VoiceTypr - open source alternative to SuperWhisper, Whispr Flow alternative",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "t-vTy_oMa5U",
+    "url": "https://www.youtube.com/watch?v=t-vTy_oMa5U",
+    "thumbnailUrl": "https://i.ytimg.com/vi/t-vTy_oMa5U/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGF8gXyhfMA8=&rs=AOn4CLAt4xWh-cOYfXcAEUigsZNgUdAFNw",
+    "viewCount": 123,
+    "date": "2025-07-19T16:36:49.000Z",
+    "likes": 1,
+    "location": null,
+    "channelName": "Moinul Moin",
+    "channelUrl": "https://www.youtube.com/@moinulmoin",
+    "channelUsername": "moinulmoin",
+    "collaborators": null,
+    "channelId": "UCZ83Vz-VKENpUr1ll44yXKw",
+    "numberOfSubscribers": 32,
+    "duration": "00:02:28",
+    "commentsCount": 6,
+    "text": "VoiceTypr is open source ai voice to text dictation tool, alternative to Wispr Flow, SuperWisper for viber coders, super ai users. Pay once, User forever. Available for Macos and Windows\n\nhttps://voicetypr.com - limited launch offer going on!\n\n✨ Features\n\n🎙️ Instant Voice-to-Text\nSystem-wide hotkey for quick recording\nAutomatic text insertion at cursor position\nWorks in any app - cursor, claude code, chatgpt, slack, etc\n\n🤖 Powered by local AI\n100% offline transcription - your voice never leaves your device \nMultiple model sizes for accuracy vs speed tradeoffs\nSupport for 99+ languages out of the box\n\n🚀 Native Performance\nBuilt with Rust and Tauri for blazing-fast performance\nUniversal binary - optimized for both Intel and Apple Silicon\nMinimal resource usage with maximum efficiency\n\n🔒 Privacy First\nComplete offline operation - no cloud, no tracking (only trial check)\nYour recordings stay on your device\nOpen source for full transparency\n\n🎨 Clean Design\nClean, user interface\nMenubar integration for quick access\nVisual feedback during recording\nAuto-updates to keep you on the latest version",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://voicetypr.com/",
+        "text": "https://voicetypr.com"
+      }
+    ],
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "Oh hello guys. Um this is Brier A powered strip dictation tool which will help you write uh 5x faster with your voice. Okay. Insurance for microphone and the accessibility and download on no. So this if you speak English this is uh more than enough I believe and you have tries to download any other models. So that's real to be done soon. Okay. So, you can save your uh park key from here. This is it. That's uh all you need to do. Then you can start um giving voice. And by the way, when you install it, you will get to the two days trial. For that, you only need to buy get license. So, let's let's see um how it works. Hey there, I want to create an react app. [Music] Um let's say if you want to talk with the AI I'm sure or you can talk with your uh coworker. Hey man I made it to work. So you can send it you have to with this boy striper and it comes with the own thing price you pay your you forever. So this no upsell sun no he didn't charge was nothing else and all is in your device and we just like that event you can launch to start up things like that so the new will be cheap if they're needing a so thank you so"
+      }
+    ],
+    "order": 77,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Photogrammetry Mission Planning with WISPR Ground Control v2",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "sPagzi0Ffxw",
+    "url": "https://www.youtube.com/watch?v=sPagzi0Ffxw",
+    "thumbnailUrl": "https://i.ytimg.com/vi/sPagzi0Ffxw/maxresdefault.jpg",
+    "viewCount": 257,
+    "date": "2024-06-04T00:19:22.000Z",
+    "likes": 2,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:03:06",
+    "commentsCount": 0,
+    "text": "Quick Start on how to plan and execute photogrammetry mapping missions using WISPR Ground Control.",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": null,
+    "order": 97,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "Walkthrough- How to Upload a .KML File to WisprGroundControl",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "LW3JWevQYkw",
+    "url": "https://www.youtube.com/watch?v=LW3JWevQYkw",
+    "thumbnailUrl": "https://i.ytimg.com/vi/LW3JWevQYkw/maxresdefault.jpg",
+    "viewCount": 83,
+    "date": "2025-06-30T15:50:53.000Z",
+    "likes": 3,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:02:54",
+    "commentsCount": 0,
+    "text": "This video is a walkthrough on how to upload a .KML file to WISPR Ground Control.\n\nA step-by-step document can be found here- https://wisprsystems.atlassian.net/wi...\n\nFollow us on LinkedIn-   / wispr-systems  \nFollow us on Facebook-   / wisprsystems  \nFollow us on Instagram-   / wisprsystems  ",
+    "translatedText": null,
+    "descriptionLinks": [
+      {
+        "url": "https://wisprsystems.atlassian.net/wiki/spaces/CS/pages/761233414/How+to+upload+a+.KML+file+to+WISPR+Ground+Control",
+        "text": "https://wisprsystems.atlassian.net/wi..."
+      },
+      {
+        "url": "https://www.linkedin.com/company/wispr-systems",
+        "text": "  / wispr-systems  "
+      },
+      {
+        "url": "https://www.facebook.com/wisprsystems",
+        "text": "  / wisprsystems  "
+      },
+      {
+        "url": "https://www.instagram.com/wisprsystems/",
+        "text": "  / wisprsystems  "
+      }
+    ],
+    "subtitles": null,
+    "order": 93,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  },
+  {
+    "title": "LiDAR Missions with WISPR Ground Control",
+    "translatedTitle": null,
+    "type": "video",
+    "id": "_XUSOyx8taE",
+    "url": "https://www.youtube.com/watch?v=_XUSOyx8taE",
+    "thumbnailUrl": "https://i.ytimg.com/vi/_XUSOyx8taE/maxresdefault.jpg",
+    "viewCount": 183,
+    "date": "2024-10-18T22:33:15.000Z",
+    "likes": 1,
+    "location": null,
+    "channelName": "WISPR Systems",
+    "channelUrl": "https://www.youtube.com/@wisprsystems3533",
+    "channelUsername": "wisprsystems3533",
+    "collaborators": null,
+    "channelId": "UCK32rlwWTco1kFO4Uf0WT7A",
+    "numberOfSubscribers": 392,
+    "duration": "00:02:40",
+    "commentsCount": 0,
+    "text": "How to video showing how plan LiDAR missions with WISPR Ground Control.",
+    "translatedText": null,
+    "descriptionLinks": null,
+    "subtitles": [
+      {
+        "srtUrl": null,
+        "type": "auto_generated",
+        "language": "en",
+        "srt": "click the W then click settings select payload then select light R payload reboot drone to set payload settings click W and then Mission planning set Mission altitude select Mission speed select takeoff this Auto sets takeoff where the Drone is and can be moved around option to change takeoff altitude on the left column select light R Cal and move lar calibration pattern as necessary on the left column select pattern select survey select basic pattern when complete click done with polygon adjust overlap input light R sensors field of view modify polygon height select to enable terrain follow adjust pattern angle click to rotate the entry point for the mission select to refly Mission at 90° offset more information about your survey is seen at the bottom on the left click return to set RTL location click upload to vehicle to upload mission to drone click W to return to inflight page click to view map view click to view video feed if flying light are manually Auto calibration button is available for manual flight slide to Auto takeoff and execute Mission or manually take off and slide to confirm to start mission after landing save from Mission start or clear Mission if mission was not complete then resume from last Waypoint option is available thank you for watching"
+      }
+    ],
+    "order": 77,
+    "commentsTurnedOff": false,
+    "fromYTUrl": "https://www.youtube.com/results?search_query=Wispr+Flow",
+    "isMonetized": null,
+    "hashtags": [],
+    "formats": [],
+    "isMembersOnly": false,
+    "input": "Wispr Flow"
+  }
+]

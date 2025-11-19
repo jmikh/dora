@@ -1,0 +1,38 @@
+[
+  {
+    "rating": 5.0,
+    "title": "Total game changer",
+    "review": "I used to put off writing or responding to long emails until the end of day because I knew it would take a long time to translate my thoughts to a well-structured communication. Wispr Flow has completely changed my daily workflow, which means much more time in the evenings for things I'd rather be doing!",
+    "author": "Daniel",
+    "date": "2025-03-18",
+    "helpful_up": 1,
+    "helpful_down": 0
+  },
+  {
+    "rating": 2.0,
+    "title": "WONT WORK",
+    "review": "so basically i was using this for a google doc what happens? it doesn't even LOAD",
+    "author": "Jake",
+    "date": "2025-11-16",
+    "helpful_up": 0,
+    "helpful_down": 0
+  },
+  {
+    "rating": 5.0,
+    "title": "I didn't know I hated typing",
+    "review": "I didn't know how frustrating typing was until I used Flow for the first time... Somehow, every single voice experience I've used before this has conditioned me to think that I have to write everything by hand. Now, with Flow, I can send all of my emails and messages three times faster. And I'm so much more responsive to everybody!",
+    "author": "Sahaj",
+    "date": "2025-05-19",
+    "helpful_up": 0,
+    "helpful_down": 0
+  },
+  {
+    "rating": 2.0,
+    "title": "Sadly unreliable",
+    "review": "Although the technology itself is very accurate as far as the speech to text portion of it, there's just way too many bugs regarding it Not actually typing where you selected at all. So if you're interested in constantly having to open an interface to copy the last paragraph of text from your last conversation so you can copy it and then paste it where it where it should have gone then go right ahead and knock yourself out. The built in speech to text that's in Windows is much more reliable in this regard and it works in real time so if it's not recognizing your text area or theres a mic glitch you at least you'll be able to tell before you go on and on speaking entire paragraphs to then find out it wasn't listening all along or it had no idea where you wanted that text to go. I'll revisit this software in 6 months to a year when they work out all of these kinks and hopefully they'll get that flushed out.",
+    "author": "Naydee",
+    "date": "2025-09-14",
+    "helpful_up": 0,
+    "helpful_down": 0
+  }
+]

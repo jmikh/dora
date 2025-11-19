@@ -14,7 +14,6 @@ from sqlalchemy.orm import Session
 
 from models import Insight, get_session, DB_FILE
 
-
 def ensure_column_exists(conn: sqlite3.Connection, column_name: str) -> None:
     """
     Add reduced embedding column if it doesn't exist
@@ -40,23 +39,23 @@ def ensure_column_exists(conn: sqlite3.Connection, column_name: str) -> None:
     else:
         print(f"✓ Column '{column_name}' already exists")
 
-
 def load_insights_with_embeddings(
     session: Session,
-    insight_type: str
-) -> Tuple[List[Insight], np.ndarray]:
+    company_name: str,
+    insight_type: str) -> Tuple[List[Insight], np.ndarray]:
     """
     Load all insights with embeddings for a given type
 
     Args:
         session: SQLAlchemy session
+        company_name: Company name to filter insights
         insight_type: Type of insight to load
-
     Returns:
         Tuple of (insights list, embeddings matrix)
     """
     query = (
         select(Insight)
+        .where(Insight.company_name == company_name)
         .where(Insight.insight_type == insight_type)
         .where(Insight.embedding.isnot(None))
         .order_by(Insight.id)  # Important: maintain consistent order
@@ -77,23 +76,22 @@ def load_insights_with_embeddings(
 
     return insights, embeddings_matrix
 
-
 def generate_reduced_embeddings(
+    company_name: str,
     insight_type: str = "pain_point",
     n_components: int = 5,
-    force: bool = False
-) -> None:
+    force: bool = False) -> None:
     """
     Generate reduced-dimension embeddings using UMAP
 
     Args:
+        company_name: Company name to filter insights
         insight_type: Type of insight to process
         n_components: Number of dimensions for reduced embedding
         force: Regenerate even if column already has data
     """
     column_name = f"reduced_embedding_{n_components}"
-
-    print(f"📊 Generating {n_components}-dimensional embeddings for {insight_type}s")
+    print(f"🏢 Company: {company_name}")
     print("="*60)
 
     # Create SQLAlchemy session
@@ -108,17 +106,15 @@ def generate_reduced_embeddings(
 
     # Load insights with embeddings
     print(f"\n🔍 Loading {insight_type}s with embeddings...")
-    insights, embeddings = load_insights_with_embeddings(session, insight_type)
+    insights, embeddings = load_insights_with_embeddings(session, company_name, insight_type)
 
     if len(insights) == 0:
-        print(f"\n❌ No {insight_type}s with embeddings found!")
         print("Run generate_embeddings.py first.")
         session.close()
         return
 
-    print(f"✅ Loaded {len(insights):,} {insight_type}s")
+    print(f"✅ Loaded {len(insights):} {insight_type}s")
     print(f"   Original dimension: {embeddings.shape[1]}")
-
     # Check if we need to regenerate
     if not force:
         # Check how many already have reduced embeddings
@@ -133,7 +129,7 @@ def generate_reduced_embeddings(
         existing_count = result.scalar()
 
         if existing_count == len(insights):
-            print(f"\n✅ All {insight_type}s already have {n_components}-dim embeddings")
+            print(f"\n✅ All {insight_type}s (prompt v{prompt_version}) already have {n_components}-dim embeddings")
             print("Use --force to regenerate")
             session.close()
             return
@@ -181,11 +177,10 @@ def generate_reduced_embeddings(
     print("✅ REDUCED EMBEDDING GENERATION COMPLETE")
     print("="*60)
     print(f"Insight type: {insight_type}")
-    print(f"Total processed: {len(insights):,}")
+    print(f"Total processed: {len(insights):}")
     print(f"Dimensions: {embeddings.shape[1]} → {n_components}")
     print(f"Column: {column_name}")
     print("="*60)
-
 
 if __name__ == "__main__":
     import argparse
@@ -195,8 +190,7 @@ if __name__ == "__main__":
         "--type",
         type=str,
         default="pain_point",
-        choices=["pain_point", "feature_request", "praise"],
-        help="Type of insight to process"
+        help="Type of insight to process (e.g., pain_point, feature_request, praise, use_case)"
     )
     parser.add_argument(
         "--dimensions",
@@ -209,11 +203,17 @@ if __name__ == "__main__":
         action="store_true",
         help="Regenerate even if reduced embeddings already exist"
     )
+    parser.add_argument(
+        "--company",
+        type=str,
+        required=True,
+        help="Company name (e.g., 'noom', 'myfitnesspal')"
+    )
 
     args = parser.parse_args()
 
     generate_reduced_embeddings(
+        company_name=args.company,
         insight_type=args.type,
         n_components=args.dimensions,
-        force=args.force
-    )
+        force=args.force)

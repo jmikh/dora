@@ -19,6 +19,7 @@ load_dotenv()
 
 def get_insights_without_embeddings(
     session: Session,
+    company_name: str,
     insight_type: str = "pain_point",
     limit: Optional[int] = None
 ) -> List[Insight]:
@@ -27,6 +28,7 @@ def get_insights_without_embeddings(
 
     Args:
         session: SQLAlchemy session
+        company_name: Company name to filter insights
         insight_type: Type of insight to filter ('pain_point', 'feature_request', 'praise')
         limit: Maximum number of insights to fetch
 
@@ -35,6 +37,7 @@ def get_insights_without_embeddings(
     """
     query = (
         select(Insight)
+        .where(Insight.company_name == company_name)
         .where(Insight.insight_type == insight_type)
         .where(Insight.embedding.is_(None))
         .order_by(Insight.review_date.desc())
@@ -66,6 +69,7 @@ def generate_embedding(client: OpenAI, text: str) -> List[float]:
 
 
 def generate_embeddings(
+    company_name: str,
     insight_type: str = "pain_point",
     limit: Optional[int] = None
 ) -> None:
@@ -73,6 +77,7 @@ def generate_embeddings(
     Generate embeddings for insights without them
 
     Args:
+        company_name: Company name to filter insights
         insight_type: Type of insight to process
         limit: Maximum number to process
     """
@@ -87,9 +92,10 @@ def generate_embeddings(
     # Create database session
     session = get_session()
     print(f"📊 Connected to database")
+    print(f"🏢 Company: {company_name}")
 
     # Get insights without embeddings
-    insights = get_insights_without_embeddings(session, insight_type, limit)
+    insights = get_insights_without_embeddings(session, company_name, insight_type, limit)
     total_insights = len(insights)
 
     if total_insights == 0:
@@ -145,11 +151,20 @@ if __name__ == "__main__":
         "--type",
         type=str,
         default="pain_point",
-        choices=["pain_point", "feature_request", "praise"],
-        help="Type of insight to process"
+        help="Type of insight to process (e.g., pain_point, feature_request, praise, use_case)"
+    )
+    parser.add_argument(
+        "--company",
+        type=str,
+        required=True,
+        help="Company name (e.g., 'noom', 'myfitnesspal')"
     )
     parser.add_argument("--limit", type=int, help="Limit number of insights to process")
 
     args = parser.parse_args()
 
-    generate_embeddings(insight_type=args.type, limit=args.limit)
+    generate_embeddings(
+        company_name=args.company,
+        insight_type=args.type,
+        limit=args.limit
+    )

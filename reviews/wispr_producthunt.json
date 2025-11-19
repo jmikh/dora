@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Victoria Liang",
+    "rating": 5,
+    "review_text": "I used to be extremely skeptical of voice-to-text. I type so fast, and I was used to all the options being extremely inaccurate. Wispr Flow changed everything, and I'm a believer now. No matter how fast you type, it's a total gamechanger for prompting ChatGPT with more context or answering texts while walking. They also recently added snippets, which let me just say a command instead of typing or copying + pasting the same things over and over.",
+    "whats_great": ["high accuracy (14)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-11-16"
+  },
+  {
+    "name": "Andrew Stewart",
+    "rating": 5,
+    "review_text": "It's often much more relaxing to just say what I want to type instead of having to type it. And, it doesn't get in the way when I'm not using it.",
+    "whats_great": ["productivity boost (20)", "high accuracy (14)"],
+    "needs_improvement": ["The product's basic functionality works so well that I didn't even explore other features like snippets."],
+    "helpful_count": null,
+    "date_inferred": "2025-10-22"
+  },
+  {
+    "name": "Tashneema Waquar",
+    "rating": 5,
+    "review_text": "An app which makes the keyboard useless. No need for manual typing—just convey what you want to write and it works effortlessly. It will take a few tries to personalize it.",
+    "whats_great": ["voice-powered dictation (16)", "productivity boost (20)", "easy to use (8)"],
+    "needs_improvement": ["complex setup (3)"],
+    "helpful_count": 1,
+    "date_inferred": "2025-10-17"
+  },
+  {
+    "name": "RushT",
+    "rating": 5,
+    "review_text": "I came across this app while attending a webinar on generative AI. The presenters used it effortlessly to write during the webinar. I used it to write blogs and articles as a digital marketer, and my dependency on the keyboard has gone down drastically.",
+    "whats_great": ["voice-powered dictation (16)", "easy to use (8)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-10-17"
+  },
+  {
+    "name": "Reuben Nathaniel",
+    "rating": 5,
+    "review_text": "This app was recommended to me by Twitter friends, and it's been super impressive. I really enjoy the intuitive feel; it's very easy, and the transcription is fantastic.",
+    "whats_great": ["high accuracy (14)", "easy to use (8)", "user-friendly interface (1)", "reliable performance (1)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-09-17"
+  },
+  {
+    "name": "Luca Tomasino",
+    "rating": 5,
+    "review_text": "Amazing product. Fast, useful, reliable. Only note would maybe be the pricing, but if you actually use it, it can save a lot of time monthly—especially if you work with LLMs a lot.",
+    "whats_great": ["fast performance (12)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-08-17"
+  },
+  {
+    "name": "Sagar Shiroya",
+    "rating": 5,
+    "review_text": "Superb app for speech to text and AI dictation. It makes sentences prettier with proper casing and keeps the context of what you spoke. I don't want to try any other alternative.",
+    "whats_great": ["voice-powered dictation (16)", "real-time auto-edits (2)", "high quality outputs (2)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-08-17"
+  },
+  {
+    "name": "George Z",
+    "rating": 2,
+    "review_text": "Was one of my favourite apps, but suddenly broke and support is nowhere to be found. Instead of transcribing what I say, it's either transcribing a chatbot's response or opening a browser tab and sending transcription to Perplexity. Highly undesirable for privacy or productivity.",
+    "whats_great": [],
+    "needs_improvement": ["privacy concerns (3)", "system integration issues (2)", "browser integration issues (1)"],
+    "helpful_count": null,
+    "date_inferred": "2025-08-17"
+  },
+  {
+    "name": "Marc Kleinmann",
+    "rating": 4,
+    "review_text": "Great on Mac since launch. Had initial issues on Windows due to modified keyboard shortcuts. Got it sorted after trial and error. Only giving four stars because support took over a week to respond on a high-urgency issue.",
+    "whats_great": [],
+    "needs_improvement": ["system integration issues (2)", "complex setup (3)"],
+    "helpful_count": null,
+    "date_inferred": "2025-07-17"
+  },
+  {
+    "name": "Aleksi Tukiainen",
+    "rating": 5,
+    "review_text": "Works great! Way better than using the iPhone transcription which makes too many mistakes. Both the mobile and desktop apps are great, slick experiences.",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-07-17"
+  },
+  {
+    "name": "Eric Chen",
+    "rating": 5,
+    "review_text": "Warp's voice mode that lets you speak in natural language to your ADE leverages Wispr Flow! They're an awesome team to work with.",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": 1,
+    "date_inferred": "2025-06-17"
+  },
+  {
+    "name": "Philip Louis Policarpio",
+    "rating": 5,
+    "review_text": "Wispr Flow has been such a game-changer for me! I usually forget to write things down when I say them out loud, but this app makes it so easy to capture my thoughts as they come. It’s helped me organize my ideas so much better and made my creative process a lot smoother.",
+    "whats_great": ["voice-powered dictation (16)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-06-17"
+  },
+  {
+    "name": "Ali",
+    "rating": 2,
+    "review_text": "It's become very slow. Very annoying. It's actually quicker to type out the messages 60-70% of the time. When it works quickly, that's great, but not as common lately. I'm likely going to cancel and try something else.",
+    "whats_great": [],
+    "needs_improvement": ["slow performance (1)"],
+    "helpful_count": null,
+    "date_inferred": "2025-05-17"
+  },
+  {
+    "name": "Radomir Basta",
+    "rating": 5,
+    "review_text": "Wispr Flow improved my quality of day-to-day life by 2, maybe even 3%. Ridiculously usable solution. When the Android app arrives, it will be perfect.",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-05-17"
+  },
+  {
+    "name": "Mahmudul Hasan Manik",
+    "rating": 5,
+    "review_text": "Using last 2 months and it's amazing. Even my keyboard feels safe now.",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-05-17"
+  },
+  {
+    "name": "Théo Savoy",
+    "rating": 5,
+    "review_text": "This is my go-to transcription app! I use it around 100 times a day. It's super responsive with almost no errors. The UX is great. My only issue is that the CPU usage can be a bit high sometimes.",
+    "whats_great": ["fast performance (12)", "high accuracy (14)", "easy to use (8)"],
+    "needs_improvement": ["high CPU usage (2)"],
+    "helpful_count": null,
+    "date_inferred": "2025-04-17"
+  },
+  {
+    "name": "Rajiv Ayyangar",
+    "rating": 5,
+    "review_text": "Still loving Wispr Flow for vibe coding and dictation in general.",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Max Zinko",
+    "rating": 4,
+    "review_text": "The idea is nice, but the implementation is on level. I have a specific case that's not working for me because they're using the clipboard, and for me on a remote machine, I cannot use the same clipboard between local and remote. They gave me an educational discount, so I think it does add up to a great product.",
+    "whats_great": [],
+    "needs_improvement": ["clipboard dependency"],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Phil Alampi",
+    "rating": 5,
+    "review_text": "It's an everyday, must-have app that has accelerated my efficiency more than any other AI tool. I'm slowly forgetting how to type. It's so much easier to speak prompts than type them. AI can translate any little punctuation mistakes, so you save infinite time.",
+    "whats_great": ["voice-powered dictation (16)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Ali Hesari",
+    "rating": 5,
+    "review_text": "Hey, I really like this tool! It helped me to be more productive and write faster. I don't like writing too much with keyboard, and this tool is very useful for me.",
+    "whats_great": ["productivity boost (20)", "fast performance (12)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Miroslav Horňák",
+    "rating": 5,
+    "review_text": "As someone who is not a native speaker, this really gives me confidence when writing anything to my colleagues via email. It's incredibly accurate, and I can't imagine coming back to just a keyboard anymore. And yes, I wrote this via Wispr as well.",
+    "whats_great": ["high accuracy (14)", "voice-powered dictation (16)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Rajiv Ayyangar",
+    "rating": 5,
+    "review_text": "I used Wispr Flow for the prompt and all instructions in Replit Agent. It's becoming a pretty ingrained habit at this point!",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": 1,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Rostyslav Dzhohola",
+    "rating": 5,
+    "review_text": "This message is written with the Wispr tool. I was able to adopt her thanks to a recommendation, an amazing tool – very precise and easy to use! I hope someday they will introduce a local-only version for when I am offline.",
+    "whats_great": ["high accuracy (14)", "easy to use (8)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Doug Kerwin",
+    "rating": 5,
+    "review_text": "I use WisprFlow with Cursor to speed things up so I can get my thoughts across to the LLM effectively without the speed of typing slowing me down!",
+    "whats_great": ["fast performance (12)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Alex Combessie",
+    "rating": 5,
+    "review_text": "Really hands-down the best AI dictation tool on a Mac, very deeply integrated, simple configuration including multilingual input. Compared with Apple Dictation and SuperWhisper, Wispr Flow is clearly much better out of the box. I write 80% of my content with Wispr. It completely changed the game for speed and ease.",
+    "whats_great": ["voice-powered dictation (16)", "multilingual support (4)", "fast performance (12)", "excellent integration (2)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Matt Waters",
+    "rating": 5,
+    "review_text": "Wispr Flow is the best speech-to-text software that I have used, and I use it every single day. I am using Wispr Flow to write this very review.",
+    "whats_great": ["voice-powered dictation (16)", "cross-app functionality (4)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Ahmet Dedeler",
+    "rating": 5,
+    "review_text": "Amazing product, great support, loving it.",
+    "whats_great": [],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-03-17"
+  },
+  {
+    "name": "Mark McCoy",
+    "rating": 4,
+    "review_text": "Wispr Flow is a daily driver for me. Voice has become my main input device despite typing fast. I'd give it 4.5 stars because I've experienced hiccups—specifically around some transcripts not loading or issues with some transcriptions. I expect improvements soon.",
+    "whats_great": ["voice-powered dictation (16)", "cross-app functionality (4)"],
+    "needs_improvement": ["high accuracy (1)"],
+    "helpful_count": null,
+    "date_inferred": "2025-02-17"
+  },
+  {
+    "name": "Trevor Gehman",
+    "rating": 4,
+    "review_text": "Amazing so far, however the hotkey cannot be assigned to anything that doesn't contain Fn, Cmd, Opt, or Ctrl. So you can't assign it to a mouse button or a function key, which is surprisingly limited.",
+    "whats_great": [],
+    "needs_improvement": ["hotkey limitations"],
+    "helpful_count": null,
+    "date_inferred": "2025-01-17"
+  },
+  {
+    "name": "MacAutomationTips.com",
+    "rating": 5,
+    "review_text": "Since upgrading to the M4 Mac mini, I've been experimenting with four AI voice-to-text apps. Wispr Flow is probably the fastest and easiest to use. I'm dictating thoughts and ideas far more than I have in years. Some features could be added, but overall it's excellent.",
+    "whats_great": ["fast performance (12)", "easy to use (8)", "productivity boost (20)"],
+    "needs_improvement": [],
+    "helpful_count": null,
+    "date_inferred": "2025-01-17"
+  }
+]
