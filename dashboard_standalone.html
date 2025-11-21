@@ -11829,7 +11829,7 @@
                                 </div>
                                 <div id="${reviewId}" style="font-size: 13px; color: #4a5568;" data-full-text="${fullText.replace(/"/g, '&quot;')}">"${truncatedText}"</div>
                                 ${isTruncated ? `
-                                    <button onclick="toggleReviewText('${reviewId}')" style="margin-top: 6px; background: none; border: none; color: #667eea; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline;">
+                                    <button onclick="toggleReviewText('${reviewId}', this)" style="margin-top: 6px; background: none; border: none; color: #667eea; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline;">
                                         Show more
                                     </button>
                                 ` : ''}
@@ -11946,7 +11946,7 @@
                             </div>
                             <div id="${reviewId}" class="review-text" data-full-text="${fullText.replace(/"/g, '&quot;')}">"${truncatedText}"</div>
                             ${isTruncated ? `
-                                <button onclick="toggleReviewText('${reviewId}')" style="margin-top: 6px; background: none; border: none; color: #667eea; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline;">
+                                <button onclick="toggleReviewText('${reviewId}', this)" style="margin-top: 6px; background: none; border: none; color: #667eea; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline;">
                                     Show more
                                 </button>
                             ` : ''}
@@ -11967,21 +11967,19 @@
             document.getElementById('clusterModal').style.display = 'none';
         }
 
-        function toggleReviewText(reviewId) {
+        function toggleReviewText(reviewId, buttonElement) {
             const reviewDiv = document.getElementById(reviewId);
-            const button = event.target;
             const fullText = reviewDiv.getAttribute('data-full-text');
-            const currentText = reviewDiv.textContent;
 
-            if (button.textContent === 'Show more') {
+            if (buttonElement.textContent.trim() === 'Show more') {
                 // Expand to full text
                 reviewDiv.textContent = `"${fullText}"`;
-                button.textContent = 'Show less';
+                buttonElement.textContent = 'Show less';
             } else {
                 // Collapse to truncated text
                 const truncatedText = fullText.substring(0, 300) + '...';
                 reviewDiv.textContent = `"${truncatedText}"`;
-                button.textContent = 'Show more';
+                buttonElement.textContent = 'Show more';
             }
         }
 
