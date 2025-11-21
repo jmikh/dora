@@ -29,7 +29,7 @@ This dashboard contains a snapshot of Wispr Flow review insights:
 - 116 use cases
 - Timeline: July 2025 - November 2025
 
-Generated: November 18, 2025 at 04:38 PM
+Generated: November 21, 2025 at 04:32 PM
 
 ## Troubleshooting
 

@@ -1045,6 +1045,11 @@
 
                     if (insight.review_text) {
                         const stars = '★'.repeat(insight.rating || 0) + '☆'.repeat(5 - (insight.rating || 0));
+                        const reviewId = `review-${insight.insight_id}`;
+                        const isTruncated = insight.review_text.length > 300;
+                        const truncatedText = isTruncated ? insight.review_text.substring(0, 300) + '...' : insight.review_text;
+                        const fullText = insight.review_text;
+
                         html += `
                             <div class="review-context" style="margin-top: 8px; padding: 10px; background: white; border-left: 3px solid #667eea; border-radius: 4px;">
                                 <div style="font-size: 12px; color: #718096; margin-bottom: 4px;">
@@ -1052,7 +1057,12 @@
                                     ${insight.user_name ? '• ' + insight.user_name : ''}
                                     ${insight.review_date ? '• ' + new Date(insight.review_date).toLocaleDateString() : ''}
                                 </div>
-                                <div style="font-size: 13px; color: #4a5568;">"${insight.review_text.substring(0, 200)}${insight.review_text.length > 200 ? '...' : ''}"</div>
+                                <div id="${reviewId}" style="font-size: 13px; color: #4a5568;" data-full-text="${fullText.replace(/"/g, '&quot;')}">"${truncatedText}"</div>
+                                ${isTruncated ? `
+                                    <button onclick="toggleReviewText('${reviewId}')" style="margin-top: 6px; background: none; border: none; color: #667eea; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline;">
+                                        Show more
+                                    </button>
+                                ` : ''}
                             </div>
                         `;
                     }
@@ -1145,6 +1155,11 @@
             sortedInsights.forEach(insight => {
                 const stars = '⭐'.repeat(insight.rating);
                 const sourceColor = SOURCE_COLORS[insight.source] || '#3182ce';
+                const reviewId = `review-cluster-${insight.insight_id}`;
+                const isTruncated = insight.review_text && insight.review_text.length > 300;
+                const truncatedText = isTruncated ? insight.review_text.substring(0, 300) + '...' : insight.review_text;
+                const fullText = insight.review_text || '';
+
                 bodyHtml += `
                     <div class="insight-item">
                         <div class="insight-text">
@@ -1159,7 +1174,12 @@
                                 <span>•</span>
                                 <span>${formatDate(insight.review_date)}</span>
                             </div>
-                            <div class="review-text">"${insight.review_text}"</div>
+                            <div id="${reviewId}" class="review-text" data-full-text="${fullText.replace(/"/g, '&quot;')}">"${truncatedText}"</div>
+                            ${isTruncated ? `
+                                <button onclick="toggleReviewText('${reviewId}')" style="margin-top: 6px; background: none; border: none; color: #667eea; font-size: 13px; cursor: pointer; padding: 0; text-decoration: underline;">
+                                    Show more
+                                </button>
+                            ` : ''}
                         </div>
                     </div>
                 `;
@@ -1175,6 +1195,24 @@
 
         function closeModal() {
             document.getElementById('clusterModal').style.display = 'none';
+        }
+
+        function toggleReviewText(reviewId) {
+            const reviewDiv = document.getElementById(reviewId);
+            const button = event.target;
+            const fullText = reviewDiv.getAttribute('data-full-text');
+            const currentText = reviewDiv.textContent;
+
+            if (button.textContent === 'Show more') {
+                // Expand to full text
+                reviewDiv.textContent = `"${fullText}"`;
+                button.textContent = 'Show less';
+            } else {
+                // Collapse to truncated text
+                const truncatedText = fullText.substring(0, 300) + '...';
+                reviewDiv.textContent = `"${truncatedText}"`;
+                button.textContent = 'Show more';
+            }
         }
 
         function formatMonth(monthStr) {
