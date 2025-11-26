@@ -1,0 +1,1430 @@
+================================================================================
+COMPLAINT CATEGORIES REPORT
+================================================================================
+
+Total complaints: 333
+Categories: 16
+Min confidence filter: 0.95
+
+================================================================================
+CATEGORY: "customer support not responsive" - 48 complaints
+================================================================================
+
+1. [ID: 24] Many unresolved issues, no support response
+   Quote: "Am having so many issues and no response from support."
+   Confidence: 1.00 | Reasoning: The complaint clearly states a lack of response from support, indicating a specific issue with customer service.
+
+2. [ID: 45] No response from support team yet
+   Quote: "I've sent support requests but no response as of yet from your team."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received a response from the support team, which directly fits the category.
+
+3. [ID: 66] Support unresponsive to ticket
+   Quote: "I did submit a support ticket, but I haven't heard back yet."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received a response to their support ticket, which directly matches the category.
+
+4. [ID: 100] Unresponsive customer support
+   Quote: "There was no response from the customer service team about this."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the customer service team did not respond, which directly matches the category.
+
+5. [ID: 148] Unresponsive customer service
+   Quote: "Unfortunately, customer service has been unresponsive."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that customer service has been unresponsive, matching the specific category.
+
+6. [ID: 309] No customer support response
+   Quote: "support hasn’t responded to multiple emails"
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received a response from customer support, which directly matches the category.
+
+7. [ID: 338] Unresponsive customer support
+   Quote: "The support team is unresponsive so this is the only way to get their attention probably."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the support team is unresponsive, which directly matches the category.
+
+8. [ID: 355] Poor customer service response
+   Quote: "I am still waiting for someone to contact me"
+   Confidence: 1.00 | Reasoning: The complaint clearly indicates a lack of response from customer service.
+
+9. [ID: 359] In-app support unresponsive
+   Quote: "I didn't get a reply"
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the in-app support did not reply, which directly matches the category.
+
+10. [ID: 370] Poor customer support response
+   Quote: "my subsequent missives have gone unanswered"
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received any replies to their messages, indicating unresponsive customer support.
+
+11. [ID: 380] Unresponsive customer support
+   Quote: "it's been three days and as many emails and I have no response from the support team (kinda frustrat..."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received any response from the support team after multiple attempts, indicating unresponsiveness.
+
+12. [ID: 393] No response from support
+   Quote: "Support doesn't reply"
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the support team is unresponsive, which directly matches the category.
+
+13. [ID: 406] No customer support response
+   Quote: "No replies from customer support about the issue even days later"
+   Confidence: 1.00 | Reasoning: The complaint clearly states that there has been no response from customer support, making it an obvious match for this category.
+
+14. [ID: 453] No reply to support ticket
+   Quote: "I've been trying to raise a ticket which was acknowledged by auto-reply but can't get a reply."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received a reply to their support ticket, indicating unresponsiveness from customer support.
+
+15. [ID: 458] No response from support email
+   Quote: "Already emailed to that address, no response."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received a response from the support team after emailing.
+
+16. [ID: 461] Support unresponsive
+   Quote: "emailed support.  Nothing."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has emailed support and received no response, indicating unresponsiveness.
+
+17. [ID: 525] Support not responding to emails
+   Quote: "someone on the support side needs to read and respond to my emails..."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the support team is not responding to emails, which directly fits the category of unresponsive customer support.
+
+18. [ID: 528] No response to support tickets
+   Quote: "I’ve also added several tickets about this issue, but I’m still without a solution or without a resp..."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received any response to their support tickets, which directly fits the category of unresponsive customer support.
+
+19. [ID: 590] No customer support
+   Quote: "I've requested for support like a million times, but no one ever responds."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received any responses from customer support, indicating a lack of responsiveness.
+
+20. [ID: 599] No customer support response
+   Quote: "I've purchased the monthly subscription and written a number of emails through my hotmail.com accoun..."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the user has not received any response from customer support regarding their inquiries.
+
+21. [ID: 605] Unresponsive customer support
+   Quote: "their support was not responsive, their explanation was they'd been changing up the customer service..."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the customer support was unresponsive, which directly matches the category.
+
+22. [ID: 70] Slow support ticket responses
+   Quote: "I submitted tickets, but it's been very slow to get responses - this has been going on for weeks for..."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a delay in receiving responses to support tickets, which directly aligns with the category of unresponsive customer support.
+
+23. [ID: 75] Support unresponsive for Command Mode issue
+   Quote: "Also, I've been waiting for over 30 days to get a response for an service issue ticket I submitted a..."
+   Confidence: 0.98 | Reasoning: The complaint clearly states that the user has not received a response from support regarding their issue with Command Mode, indicating a lack of responsiveness from customer support.
+
+24. [ID: 102] Unresponsive support and no recourse for downtime
+   Quote: "Pro or Pro trial users lost five to ten days of app usability with no recourse."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates issues with unresponsive support and lack of recourse for users affected by downtime.
+
+25. [ID: 226] No customer support
+   Quote: "the team has shown a wanton disregard for addressing these issues."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of response from the customer support team.
+
+26. [ID: 395] Poor customer support
+   Quote: "the support is unable to respond to requests"
+   Confidence: 0.98 | Reasoning: The complaint clearly states that the support team is unable to respond to requests, which directly aligns with the category of unresponsive customer support.
+
+27. [ID: 397] No customer support
+   Quote: "no custemer support - full of bugs - do not pay for subscription"
+   Confidence: 0.98 | Reasoning: The user explicitly states there is no customer support, indicating a lack of responsiveness from the support team.
+
+28. [ID: 404] No customer support available
+   Quote: "they obviously don't have a minimum number of staff or anyone who can respond"
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of available customer support and responsiveness.
+
+29. [ID: 409] Poor customer support
+   Quote: "Support is almost non-existent."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of adequate customer support, making it a strong match for this category.
+
+30. [ID: 420] Poor customer support
+   Quote: "support is nowhere to be found"
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of response from customer support, fitting the specific category.
+
+31. [ID: 422] Slow customer support response
+   Quote: "Only giving four stars because support took over a week to respond on a high-urgency issue."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a delay in customer support response, which fits the category of unresponsive support.
+
+32. [ID: 455] No response to in-app support reports
+   Quote: "I reported the issue in the app several days ago and heard nothing back."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of response from the support team regarding in-app reports.
+
+33. [ID: 533] No response to feedback emails
+   Quote: "I did already feedback, and mail and I stay without answer."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of response from the support team regarding feedback emails.
+
+34. [ID: 554] Poor support and transparency
+   Quote: "definitely felt really off when the Slack closed plus no one replied to my 5+ bug issue emails."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a lack of response from the support team regarding multiple bug issue emails.
+
+35. [ID: 133] Cannot submit support ticket
+   Quote: "Without login I can't tap submit button."
+   Confidence: 0.95 | Reasoning: The complaint is about the inability to submit a support ticket, indicating a lack of access to customer support.
+
+36. [ID: 139] Poor customer support
+   Quote: "I think the company really needs to focus on customer service and product bugs before scaling."
+   Confidence: 0.95 | Reasoning: The complaint explicitly mentions poor customer support, indicating a clear issue with responsiveness.
+
+37. [ID: 200] Terrible tech support
+   Quote: "Terrible tech support"
+   Confidence: 0.95 | Reasoning: The complaint clearly indicates dissatisfaction with the tech support, which falls under unresponsive customer service.
+
+38. [ID: 239] Difficult to contact support
+   Quote: "they make it very difficult to contact support"
+   Confidence: 0.95 | Reasoning: The complaint clearly indicates difficulty in contacting support, which aligns with the category of unresponsive customer support.
+
+39. [ID: 314] Poor app support for iPhone
+   Quote: "Wispr Flow has poor support for use in the apps on my iPhone."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the lack of adequate support for the app on iPhone, indicating a customer service issue.
+
+40. [ID: 341] Lack of support
+   Quote: "Not much by way of support either."
+   Confidence: 0.95 | Reasoning: The complaint clearly indicates a lack of support, which fits the category of unresponsive customer support.
+
+41. [ID: 358] No resolution after multiple attempts
+   Quote: "Tried several times. Restarted my phone, uninstalled and reinstalled…didn’t work once."
+   Confidence: 0.95 | Reasoning: The user indicates multiple attempts to resolve an issue without receiving any resolution, highlighting a lack of responsive support.
+
+42. [ID: 394] Paid subscription not usable
+   Quote: "cancelled my subscription and have to use another tool even though i paid for the whole month ahead ..."
+   Confidence: 0.95 | Reasoning: The user indicates they had to cancel their subscription and switch tools, suggesting a lack of support or resolution for their issue with the paid subscription.
+
+43. [ID: 400] False support promises
+   Quote: "one of the features of the team's subscription is that you get support within one business day, whic..."
+   Confidence: 0.95 | Reasoning: The complaint directly addresses unfulfilled promises regarding support response times, indicating a lack of responsiveness from the support team.
+
+44. [ID: 405] Sign-in email not received
+   Quote: "Sign in email doesn't arrive and no replies from customer support"
+   Confidence: 0.95 | Reasoning: The complaint indicates a lack of response from customer support regarding the issue of not receiving the sign-in email.
+
+45. [ID: 431] Unhelpful support feedback
+   Quote: "Additionally, "Hey Flow" has been non-operational for the past days, and feedback on this issue has ..."
+   Confidence: 0.95 | Reasoning: The user indicates that the support feedback has not been useful, which aligns with unresponsive customer support.
+
+46. [ID: 456] Unclear how to get support
+   Quote: "How should I get support in future."
+   Confidence: 0.95 | Reasoning: The user is expressing confusion about how to obtain support, indicating a lack of clear communication from the support team.
+
+47. [ID: 463] Slow critical-issue resolution
+   Quote: "Yep, broken for me as well. Super frustrating, likely switching products as well. Something this cri..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the slow resolution of a critical issue, indicating a lack of responsiveness from customer support.
+
+48. [ID: 557] Lack of transparency and poor communication
+   Quote: "There's barely any maintenance or any communication to loyal customers."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses poor communication and lack of maintenance, indicating issues with customer support responsiveness.
+
+================================================================================
+CATEGORY: "AI/Smart formatting issues" - 37 complaints
+================================================================================
+
+1. [ID: 51] Cannot disable AI formatting
+   Quote: "the forced AI formatting makes the application unusable for work, because the editing effort is far ..."
+   Confidence: 1.00 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to issues with Smart Formatting.
+
+2. [ID: 84] Cannot disable AI formatting
+   Quote: "When will there finally be an option to completely disable the forced AI formatting that always drag..."
+   Confidence: 1.00 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to issues with Smart Formatting.
+
+3. [ID: 219] Cannot disable AI formatting
+   Quote: "It is incredibly frustrating to have to edit every output again and again because the forced AI form..."
+   Confidence: 1.00 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to issues with Smart Formatting.
+
+4. [ID: 504] Cannot disable AI formatting
+   Quote: "After a recent update, the option to disable AI formatting seems to have been removed."
+   Confidence: 1.00 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to the category of AI/Smart formatting issues.
+
+5. [ID: 505] Cannot disable AI formatting
+   Quote: "there are times like OP himself where I need it to dictate exactly what I say."
+   Confidence: 1.00 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to the category of AI/Smart formatting issues.
+
+6. [ID: 507] Cannot disable AI formatting
+   Quote: "I am now forced to use other speech-to-text applications, because the editing workload with Wisprflo..."
+   Confidence: 1.00 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to issues with Smart Formatting.
+
+7. [ID: 9] Cannot disable formatting
+   Quote: "I don't want to separate it or format it in any way. Unfortunately, I wasn't able to turn it off"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable formatting, which directly relates to AI/Smart formatting issues.
+
+8. [ID: 11] Unclear how to disable Smart Formatting
+   Quote: "I don't quite understand. How do I toggle it?"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses confusion about toggling Smart Formatting, which directly relates to AI/Smart formatting issues.
+
+9. [ID: 12] No hotkey to toggle Smart Formatting
+   Quote: "I see, is there a hotkey or option to turn it on off on the go?"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the lack of a hotkey to toggle Smart Formatting, which directly relates to AI/Smart formatting issues.
+
+10. [ID: 13] No per-context Smart Formatting toggle
+   Quote: "So for like an email its on and for a long text or note it is off.?"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to toggle Smart Formatting on a per-context basis, which directly relates to AI/Smart formatting issues.
+
+11. [ID: 15] AI formatting cannot be disabled
+   Quote: "Even when it is disabled, AI formatting still occurs."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable AI formatting, which directly relates to issues with Smart Formatting.
+
+12. [ID: 17] Forced Smart Formatting slows app
+   Quote: "I have stopped using Wispr Flow because its forced AI formatting makes the application too slow."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the issue of forced AI formatting causing the application to slow down, which directly relates to AI/Smart formatting issues.
+
+13. [ID: 27] Inserts space and lowercases first letter in Notion
+   Quote: "I've seen a few users run into the same thing, and I was able to reproduce it on my side as well."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses unwanted formatting behavior in Notion, indicating a problem with AI formatting.
+
+14. [ID: 28] Inserts extra space then lowercases letter
+   Quote: "This issue has persisted for some time and has already been discussed on Slack. However, it remains ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions issues with unwanted formatting, such as inserting extra spaces and changing letter case, which aligns with AI/Smart formatting issues.
+
+15. [ID: 36] ClickUp insertion adds leading space
+   Quote: "For some reason, whenever I use Wispr Flow to create a message in Click Up, it adds a space when it ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses an issue with the formatting of text being inserted into ClickUp, indicating a problem with Smart Formatting.
+
+16. [ID: 38] Smart AI formatting causes insertion issues
+   Quote: "Did you try playing with the toggle and turning off and turning on Smart AI formatting?"
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions issues related to Smart AI formatting, indicating a problem with that feature.
+
+17. [ID: 39] Adds leading space and lowercases text in Click Up
+   Quote: "If it’s still adding the space afterward and starting with lowercase, feel free to reach back out an..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses unwanted formatting changes (leading space and lowercase text) which are related to AI/Smart formatting features.
+
+18. [ID: 54] AI editing persists with Smart Formatting off
+   Quote: "Even now, with Smart Formatting disabled, AI editing still takes place."
+   Confidence: 0.98 | Reasoning: The complaint clearly states that AI editing continues despite Smart Formatting being turned off, indicating a specific issue with the AI formatting feature.
+
+19. [ID: 56] Overrides Gmail default font
+   Quote: "it keeps changing the font part of the way through. Instead of Verdana (which is my default font in ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses an issue with the app changing the font in Gmail, which relates to AI formatting behavior.
+
+20. [ID: 57] Pastes unformatted text causing font changes
+   Quote: "Flow pastes clean, unformatted text by default to ensure consistency across apps, which is why Gmail..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses issues with how text is pasted, indicating a problem with Smart Formatting.
+
+21. [ID: 58] Auto-inserts periods after text
+   Quote: "There are some applications where I don't want it to insert a period after the text, such as my to d..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses unwanted auto-insertion of periods, which relates directly to AI formatting behavior.
+
+22. [ID: 87] Cannot disable Smart Formatting
+   Quote: "Even when I disable Smart Formatting, as shown in the image, the output is edited. Specifically, par..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable Smart Formatting and the unwanted AI editing that occurs, making it a clear match for this category.
+
+23. [ID: 88] Slow output due to forced editing
+   Quote: "This causes significant delays in the output."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions delays caused by forced editing, which relates directly to issues with AI formatting.
+
+24. [ID: 92] Auto paragraph breaks during long dictation
+   Quote: "when I dictate longer passages, Flow starts inserting blank lines between sentences."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses unwanted formatting changes, such as auto paragraph breaks, which falls under AI/Smart formatting issues.
+
+25. [ID: 95] Cannot disable em dash usage
+   Quote: "Is there a way to instruct Wispr Flow to never use the em dash symbol. And to always replace em dash..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable the use of em dashes, which falls under issues with AI formatting.
+
+26. [ID: 119] No hotkey to paste unedited transcripts
+   Quote: "I wish there was a way to paste the un AI-edited transcripts similar to the way Shift-Alt-C works ri..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the lack of a feature related to AI editing, which falls under AI/Smart formatting issues.
+
+27. [ID: 158] Casual mode does not work as expected
+   Quote: "the only difference I've noticed is that it doesn't put a period at the end of your sentence."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a problem with the functionality of Casual mode related to punctuation, indicating an issue with AI formatting.
+
+28. [ID: 204] Cannot disable AI polish on mobile
+   Quote: "remove AI polish on mobile"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable a feature related to AI formatting, which falls under AI/Smart formatting issues.
+
+29. [ID: 222] Unclear if disabling AI formatting stops AI edits
+   Quote: "What if you were to disable AI formatting in your settings? Would that work, or would Wispr Flow sti..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the uncertainty about the functionality of disabling AI formatting, which directly relates to AI/Smart formatting issues.
+
+30. [ID: 223] Cannot disable AI formatting per transcription
+   Quote: "I think that would work, but my issue is I want to disable AI formatting on very certain transcripti..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable AI formatting for certain transcriptions, which directly relates to AI/Smart formatting issues.
+
+31. [ID: 509] Cannot disable Smart Formatting
+   Quote: "Even when I disable Smart Formatting, the text is not transcribed word-for-word as I dictate it; ins..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to disable Smart Formatting, which directly relates to AI formatting issues.
+
+32. [ID: 510] AI Formatting introduces noticeable delay
+   Quote: "There is a noticeable delay caused by AI Formatting."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a delay caused by AI Formatting, which directly relates to issues with that feature.
+
+33. [ID: 522] No leading space on paste when resuming
+   Quote: "It's adding spaces other than when I stop dictating, let the app paste, then begin again. That's whe..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses an issue with how the app formats text when resuming dictation, indicating a problem with Smart Formatting.
+
+34. [ID: 14] No Raycast plugin to toggle Smart Formatting
+   Quote: "Raycast plugin would be good too if there is such a thing to toggle it."
+   Confidence: 0.95 | Reasoning: The complaint specifically requests a feature related to toggling Smart Formatting, which falls under AI/Smart formatting issues.
+
+35. [ID: 120] UI doesn't update to show unedited transcript
+   Quote: "When this happens in the Wispr UI, it should also update to not show the transcript without the AI e..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the issue of the UI not reflecting the unedited transcript due to AI formatting, which falls under AI/Smart formatting issues.
+
+36. [ID: 197] Formatting issues
+   Quote: "the formatting is annoying"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions formatting issues, which aligns with problems related to AI/Smart formatting.
+
+37. [ID: 242] Cannot disable or turn off
+   Quote: "IT WON’T TURN OFF!"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions an inability to disable a feature, which aligns with issues related to AI/Smart formatting.
+
+================================================================================
+CATEGORY: "other" - 34 complaints
+================================================================================
+
+1. [ID: 558] CTO engaged in astroturfing on Reddit
+   Quote: "Astroturfing was NOT done by a contractor, but by YOUR CTO ( linked here is evidence: [https://www.r..."
+   Confidence: 0.99 | Reasoning: The complaint does not fit any specific category related to the app's functionality or user experience, but rather addresses a broader issue of alleged unethical behavior.
+
+2. [ID: 72] Cannot set custom auto-off timeout
+   Quote: "would we be able to customize the time frames, instead of just having the options "immediately/5 min..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into the predefined categories.
+
+3. [ID: 76] No Raycast extension with dictionary/snippet commands
+   Quote: "I would love if we had an extension with commands such as 
+
+* add a word to dictionary 
+* report fee..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for an extension that does not fit into the predefined categories.
+
+4. [ID: 77] Escape key triggers other app actions
+   Quote: "Whenever I use Wispr Flow and want to cancel transcription by clicking Escape, it executes other fun..."
+   Confidence: 0.95 | Reasoning: The complaint describes a specific issue with the Escape key triggering unintended actions, which does not fit into any of the predefined categories.
+
+5. [ID: 81] No per-app personalization or templates
+   Quote: "When will be able to personalize individual apps instead of anything that is not emails and messages..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into the predefined categories.
+
+6. [ID: 91] Cannot customize app-style mappings
+   Quote: "is it possible to customize the apps? i use an app called beeper for messaging and it uses the style..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for customization that does not fit into the predefined categories.
+
+7. [ID: 123] No hotkey for quick edit menu
+   Quote: "Create a hotkey to open a quick edit menu."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+8. [ID: 127] Free trial stops after 2000 words
+   Quote: "I activated a free Pro trial  but after 2000 words it stopped working “No words remaining”."
+   Confidence: 0.95 | Reasoning: The complaint does not fit any specific category related to app functionality or performance, but rather pertains to a limitation of the free trial.
+
+9. [ID: 135] Support site submit button out of bounds
+   Quote: "Checked in Safari, but the submit button is still out of bounds. :)))"
+   Confidence: 0.95 | Reasoning: The complaint pertains to a UI issue on the support site, which does not fit into any of the specified categories.
+
+10. [ID: 179] Difficult to cancel in app
+   Quote: "when you try to cancel in the app, you can't hit the button"
+   Confidence: 0.95 | Reasoning: The complaint about difficulty canceling in the app does not fit any of the specific categories provided.
+
+11. [ID: 240] No information about CarPlay compatibility
+   Quote: "I have a very simple question if Wispr Flow will work with CarPlay"
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request or compatibility question that does not fit into the specified categories.
+
+12. [ID: 245] Lacks watch app integration
+   Quote: "I'd love to have it be a watch app as well, or just sync to there so I don't have to pull out my pho..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+13. [ID: 276] No cloud sync for transcription history
+   Quote: "Right now, each device stores everything locally, and I think having our transcripts synced across a..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for cloud sync, which does not fit into the predefined categories.
+
+14. [ID: 283] Outdated keyboard UI
+   Quote: "The only recommendation I can make for the team is to update the Wispr Flow keyboard UI to be up-to-..."
+   Confidence: 0.95 | Reasoning: The complaint about the keyboard UI not being updated does not fit any of the specific categories provided.
+
+15. [ID: 287] No personalized AI model
+   Quote: "If you store the transcription history, you can use it as training data to make a more custom, fine-..."
+   Confidence: 0.95 | Reasoning: The complaint does not fit any specific category related to the app's current features or issues, as it suggests a new feature rather than addressing an existing problem.
+
+16. [ID: 302] No thumbs-up feedback for transcripts
+   Quote: "I think it would be beneficial to suggest a thumbs-up icon for specific transcripts as a feature req..."
+   Confidence: 0.95 | Reasoning: The complaint is a feature request and does not fit into any of the specific categories provided.
+
+17. [ID: 329] Cannot disable hot key shortcuts
+   Quote: "it annoys me I can’t simply disable some of the hot key shortcuts on the Mac app"
+   Confidence: 0.95 | Reasoning: The complaint about disabling hot key shortcuts does not fit any of the specific categories provided.
+
+18. [ID: 434] No @file tagging support in VS Code
+   Quote: "I really would like to use it within VSCode and Claude Code, more specifically with the @file taggin..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature not being available in specific applications, which does not fit any of the predefined categories.
+
+19. [ID: 446] No API for integration
+   Quote: "So does Wispr Flow have an API similar to Deepgram or OpenAI?"
+   Confidence: 0.95 | Reasoning: The complaint is about the absence of an API, which does not fit into any of the specified categories.
+
+20. [ID: 448] No bulk import for dictionary/snippets
+   Quote: "has anyone figured out a way to **bulk import** a vocabulary pack? For example, importing a CSV or J..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+21. [ID: 484] No shortcut to add dictionary words
+   Quote: "we did not have to open the dictionary manually and add this word. It's very inefficient. Would be p..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into the predefined categories.
+
+22. [ID: 492] Hotkey conflicts with system settings
+   Quote: "The default shortcut (Fn + Cmd) might clash with system settings or your keyboard. You can change th..."
+   Confidence: 0.95 | Reasoning: The complaint about hotkey conflicts does not fit any of the specific categories provided and is more of a feature or usability issue.
+
+23. [ID: 512] Unclear 'apps' count label
+   Quote: "Oh, in that case, AWESOME! Just reword it to 115 "apps or websites" or something like that. I'm happ..."
+   Confidence: 0.95 | Reasoning: The complaint is about a labeling issue and does not fit into any of the specific categories provided.
+
+24. [ID: 542] No quick snippet selection menu
+   Quote: "Or an even better idea would be to add a shortcut menu where you finish talking and then press a but..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+25. [ID: 543] Lacks keyboard-shortcut features
+   Quote: "u/CristiCotovan something I use in addition to Wispr Flow is r/raycastapp which is perfect for the k..."
+   Confidence: 0.95 | Reasoning: The complaint about lacking keyboard-shortcut features does not fit any of the specific categories provided.
+
+26. [ID: 544] No Raycast snippets integration
+   Quote: "Would be cool if it played well with Raycast snippets - generally would love to see a tighter integr..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for integration with Raycast snippets, which does not fit into any of the specified categories.
+
+27. [ID: 559] No daily data wipe on desktop
+   Quote: "One of the features I really like in the iOS app is that it wipes all of the data every day. If you ..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for the desktop version that does not fit into the predefined categories.
+
+28. [ID: 564] No centralized feature request tool
+   Quote: "Did you ever consider using tools like Canny for feature request management, like all the other tool..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request management tool, which does not fit into any of the specified categories.
+
+29. [ID: 567] Feedback requires Reddit account
+   Quote: "Having to create a Reddit account just to give feedback on another tool and searching for subreddits..."
+   Confidence: 0.95 | Reasoning: The complaint is about a requirement related to feedback submission and does not fit into any of the specific categories provided.
+
+30. [ID: 572] No web extension
+   Quote: "it only works on Windows, Mac, and iOS. There's no web extension or anything like that"
+   Confidence: 0.95 | Reasoning: The complaint about the lack of a web extension does not fit into any of the specified categories and is too general.
+
+31. [ID: 613] No CarPlay hands-free support
+   Quote: "I'd like to use this app in my truck with CarPlay (vs Siri).  I want to be able to do this "Hands Fr..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for CarPlay support, which does not fit into the predefined categories.
+
+32. [ID: 623] No Android app
+   Quote: "I'm on an Android phone, so i'm basically on the hunt for a solution that has both a Mac and Android..."
+   Confidence: 0.95 | Reasoning: The complaint is about the absence of an Android app, which does not fit into any of the specified categories.
+
+33. [ID: 637] Electron-based (not native macOS)
+   Quote: "What I got was a barely-disguised Electron app that runs like a pig."
+   Confidence: 0.95 | Reasoning: The complaint about being an Electron-based app does not fit into any of the specific categories provided.
+
+34. [ID: 642] Lacks customization options
+   Quote: "something that's pretty simple and not really customizable needs to really be re-evaluated."
+   Confidence: 0.95 | Reasoning: The complaint about lacking customization options does not fit any of the specific categories provided.
+
+================================================================================
+CATEGORY: "privacy concerns" - 34 complaints
+================================================================================
+
+1. [ID: 89] Privacy concerns over data access
+   Quote: "it asks for full access to your keyboard so anything you type can be stored"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses worries about data access and storage, which directly relates to privacy concerns.
+
+2. [ID: 90] Accusations of credential harvesting
+   Quote: "I see this app as nothing more than a credential harvesting site"
+   Confidence: 0.98 | Reasoning: The complaint directly relates to worries about data privacy and security, specifically regarding credential harvesting.
+
+3. [ID: 163] Concerns about security
+   Quote: "they try to make you change your password to steal your information"
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses worries about security and potential information theft, which aligns with privacy concerns.
+
+4. [ID: 188] Concerns about data privacy
+   Quote: "These apps collecting our data to personalize the ads and sell our data to the ads people."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses worries about data privacy and the collection of personal data for advertising purposes.
+
+5. [ID: 195] Concerns about data collection
+   Quote: "The data collection is concerning, I op-ed out but it still collects data"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses worries about data collection and privacy.
+
+6. [ID: 321] Clipboard logging / privacy concern
+   Quote: "I thought the input logging was bad enough, but **what are y'all clipboard logging my shit for? 😡**"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses concerns about clipboard logging, which directly relates to data privacy issues.
+
+7. [ID: 465] Lack of privacy transparency
+   Quote: "Wisprflow's lack of privacy transparency is still a gap in your business model."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses issues related to privacy transparency, which fits directly into the privacy concerns category.
+
+8. [ID: 469] Data used for model training
+   Quote: "If privacy mode is off, we keep a copy and use it for model training."
+   Confidence: 0.98 | Reasoning: The complaint directly addresses concerns about data usage and privacy related to model training.
+
+9. [ID: 556] Collects and exposes user data without consent
+   Quote: "- collecting data that also wasn't even made aware to users (like screenshots of users' computers)."
+   Confidence: 0.98 | Reasoning: The complaint clearly addresses issues related to data collection and user consent, which falls under privacy concerns.
+
+10. [ID: 594] Stores user screenshots
+   Quote: "Why does a dictation app need to send a screenshot of my desktop?"
+   Confidence: 0.98 | Reasoning: The complaint directly addresses concerns about data privacy related to the app storing user screenshots.
+
+11. [ID: 595] Sends massive telemetry without anonymization
+   Quote: "they are storing user screenshots and sending massive amounts of telemetry data back to their server..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses data privacy issues related to telemetry data and user screenshots.
+
+12. [ID: 596] Uploads raw audio recordings
+   Quote: "What are they doing with the raw audio of my private conversations, client calls, and personal notes..."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses worry about the handling of raw audio recordings, indicating a concern for data privacy.
+
+13. [ID: 597] Misleading privacy policy claims
+   Quote: "I did a deep dive into Wispr Flow's network traffic and their privacy policy claims are an absolute ..."
+   Confidence: 0.98 | Reasoning: The complaint directly addresses issues related to the privacy policy and concerns about data handling.
+
+14. [ID: 600] Stores desktop screenshots
+   Quote: "Why does a dictation app need to send a screenshot of my desktop?"
+   Confidence: 0.98 | Reasoning: The user is expressing concern about the app's behavior of sending desktop screenshots, which raises data privacy issues.
+
+15. [ID: 601] Uploads raw audio recordings
+   Quote: "What are they doing with the raw audio of my private conversations, client calls, and personal notes..."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses worry about the handling of raw audio recordings, indicating a concern for data privacy.
+
+16. [ID: 603] Collects user data despite claiming not to
+   Quote: "He's basically saying that Wispr Flow collects your data even though they advertise how they're full..."
+   Confidence: 0.98 | Reasoning: The complaint directly addresses issues related to data collection and transparency, which falls under privacy concerns.
+
+17. [ID: 645] Keyboard access captures all typed data
+   Quote: "That you enable the keyboard, so they have access to everything you type, even outside of the app, e..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses concerns about data privacy related to keyboard access capturing sensitive information.
+
+18. [ID: 652] Stores user screenshots
+   Quote: "they are storing user screenshots and sending massive amounts of telemetry data back to their server..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses worries about data storage and telemetry data, which directly relates to privacy concerns.
+
+19. [ID: 653] Sends telemetry without anonymization
+   Quote: "sending massive amounts of telemetry data back to their servers without proper anonymization"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses concerns about data privacy related to telemetry data being sent without anonymization.
+
+20. [ID: 654] Uploads raw audio recordings
+   Quote: "What are they doing with the raw audio of my private conversations, client calls, and personal notes..."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses worry about the handling of raw audio recordings, indicating a concern for data privacy.
+
+21. [ID: 42] Unclear whether admin can view team transcripts
+   Quote: "With teams does the admin get to see all the team members transcripts of recordings?"
+   Confidence: 0.95 | Reasoning: The complaint directly relates to concerns about data privacy and whether admin access to transcripts poses a security issue.
+
+22. [ID: 249] Unwanted conversation storage
+   Quote: "I don’t wanna do that. I wanted to just put the text where it needs to go."
+   Confidence: 0.95 | Reasoning: The complaint about unwanted conversation storage indicates a concern regarding data privacy and how user data is handled.
+
+23. [ID: 352] Privacy concerns
+   Quote: "had to delete the app for this reason, privacy concerns"
+   Confidence: 0.95 | Reasoning: The complaint explicitly states concerns about privacy, making it a clear match for the privacy concerns category.
+
+24. [ID: 421] Privacy concerns
+   Quote: "Highly undesirable for privacy or productivity"
+   Confidence: 0.95 | Reasoning: The complaint explicitly mentions privacy concerns, making it a clear match for this category.
+
+25. [ID: 468] Privacy documentation ambiguous
+   Quote: "If you still see or experience ambiguity, please flag it and we'll continue to clean it up."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses ambiguity in privacy documentation, which directly relates to data privacy worries.
+
+26. [ID: 470] Security and privacy concerns
+   Quote: "I've been concerned about security / privacy, but based on your other clarifcation post a few weeks ..."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions security and privacy concerns, which directly aligns with the category.
+
+27. [ID: 602] Misleading privacy claims
+   Quote: "They claim to be "fully compliant" with all the major privacy regulations, but their backend behavio..."
+   Confidence: 0.95 | Reasoning: The complaint directly addresses concerns about privacy claims and backend behavior, making it a clear match for privacy concerns.
+
+28. [ID: 609] Unclear privacy policy
+   Quote: "the privacy policy being a bit fuzzy"
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the clarity of the privacy policy, which directly relates to privacy concerns.
+
+29. [ID: 617] Unclear privacy/data handling
+   Quote: "Privacy policy doesn’t spell out data handling clearly."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses issues with the clarity of the privacy policy regarding data handling.
+
+30. [ID: 632] Requires privacy mode for sensitive data
+   Quote: "If you're working with sensitive data, definitely check their privacy policy and maybe stick to thei..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the need for a privacy mode due to concerns about handling sensitive data.
+
+31. [ID: 635] Sends data to the cloud
+   Quote: "Also they send everything to the cloud."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses concerns about data being sent to the cloud, which relates directly to privacy issues.
+
+32. [ID: 643] Privacy concerns
+   Quote: "There are concerns with privacy though."
+   Confidence: 0.95 | Reasoning: The complaint explicitly mentions concerns related to privacy, making it a clear match for the category.
+
+33. [ID: 644] Unclear privacy policy
+   Quote: "What specifically concerned you about their privacy policy?"
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses concerns about the privacy policy, which directly relates to data privacy worries.
+
+34. [ID: 655] Privacy policy claims are false
+   Quote: "their privacy policy claims are an absolute lie"
+   Confidence: 0.95 | Reasoning: The complaint directly addresses issues with the privacy policy, indicating concerns about data privacy and security.
+
+================================================================================
+CATEGORY: "too expensive" - 31 complaints
+================================================================================
+
+1. [ID: 180] High annual cost
+   Quote: "if you got charged for the one-year instead of the one-month, then it's an issue, and you get stuck ..."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses concern about the high annual cost of the subscription.
+
+2. [ID: 209] Too expensive for functionality
+   Quote: "When you charge more than dragon for your product and do so much less"
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses concerns about the pricing relative to the functionality offered.
+
+3. [ID: 227] Too expensive for value
+   Quote: "charging a $15 subscription fee for negative value delivered."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses concerns about the subscription cost relative to the perceived value, fitting the 'too expensive' category.
+
+4. [ID: 233] Concerns about subscription cost
+   Quote: "This review is written before I find out how much it's going to cost me a month or a year to keep Wi..."
+   Confidence: 0.98 | Reasoning: The user expresses concerns specifically about the subscription cost, indicating a clear issue with pricing.
+
+5. [ID: 237] Yearly pricing is expensive
+   Quote: "Yearly pricing is a bit expensive."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses concern about the yearly pricing being expensive.
+
+6. [ID: 306] High subscription cost
+   Quote: "extremely expensive"
+   Confidence: 0.98 | Reasoning: The user explicitly mentions the subscription cost as being extremely expensive, which directly aligns with the category for pricing concerns.
+
+7. [ID: 322] Overpriced for the value
+   Quote: "it's a bit overpriced for that. Actually kind of a lot overpriced for that"
+   Confidence: 0.98 | Reasoning: The user explicitly states that the product is overpriced, indicating a clear concern about pricing.
+
+8. [ID: 334] High subscription price
+   Quote: "the price is a little bit steep for the subscription for what you're getting"
+   Confidence: 0.98 | Reasoning: The user explicitly mentions the subscription price being steep, indicating a concern about the cost.
+
+9. [ID: 610] Unnecessary monthly transcription fees
+   Quote: "I will never understand why anyone who has an M series laptop with at least 16GB of RAM would ever p..."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses dissatisfaction with the monthly transcription fees, indicating a concern about pricing.
+
+10. [ID: 641] Expensive subscription pricing
+   Quote: "the subscription prices are absolutely insane."
+   Confidence: 0.98 | Reasoning: The complaint clearly expresses dissatisfaction with the subscription pricing, making it a direct match to the 'too expensive' category.
+
+11. [ID: 659] Expensive pricing
+   Quote: "Wispr flow and all these voice-typing solutions are damn expensive"
+   Confidence: 0.98 | Reasoning: The user explicitly mentions that the pricing of Wispr Flow and similar solutions is expensive, clearly indicating a concern about cost.
+
+12. [ID: 670] Higher subscription cost
+   Quote: "Looking at the price comparison for the subscription for wispr flow and Spokenly, it seems like wisp..."
+   Confidence: 0.98 | Reasoning: The user is specifically expressing concern about the higher subscription cost compared to another service.
+
+13. [ID: 41] No one-time purchase option
+   Quote: "Do you guys plan on offering a one-time fee that you can pay and you get to own it forever?"
+   Confidence: 0.95 | Reasoning: The complaint is about the pricing model and the desire for a one-time purchase option, which falls under concerns about cost.
+
+14. [ID: 140] Charging subscription before fixing bugs
+   Quote: "Before taking $12 per month"
+   Confidence: 0.95 | Reasoning: The complaint directly addresses the subscription cost in relation to unresolved bugs, indicating a concern about value for money.
+
+15. [ID: 191] Auto-renewal concerns
+   Quote: "I need to figure how to not accidentally get charged for an auto renew $143/yr"
+   Confidence: 0.95 | Reasoning: The complaint is about concerns regarding auto-renewal charges, which relates to pricing and subscription costs.
+
+16. [ID: 218] Price increase after upgrade
+   Quote: "it is asking me to upgrade at a more expensive price than I already agreed to pay"
+   Confidence: 0.95 | Reasoning: The complaint clearly indicates a concern about a price increase after an upgrade, which directly relates to pricing issues.
+
+17. [ID: 354] Unexpected charges for free account
+   Quote: "I do not appreciate being charged for something that is advertised as free"
+   Confidence: 0.95 | Reasoning: The complaint is about unexpected charges related to a free account, which directly relates to pricing concerns.
+
+18. [ID: 376] Pro version pricing strategy
+   Quote: "you need to seriously shift your strategy because you're not going to make money selling this pro no..."
+   Confidence: 0.95 | Reasoning: The complaint directly addresses concerns about the pricing strategy of the pro version, indicating a perception of it being too expensive.
+
+19. [ID: 410] Poor value for Pro version
+   Quote: "Don’t pay for the Pro version, you're wasting your money."
+   Confidence: 0.95 | Reasoning: The complaint clearly expresses dissatisfaction with the value of the Pro version, indicating a pricing concern.
+
+20. [ID: 417] Concerns about pricing
+   Quote: "Only note would maybe be the pricing"
+   Confidence: 0.95 | Reasoning: The user explicitly mentions concerns about pricing, which directly aligns with the 'too expensive' category.
+
+21. [ID: 471] No extended free subscription or student discount
+   Quote: "i'd be open to an extended free sub + student status btw!"
+   Confidence: 0.95 | Reasoning: The complaint is about the lack of discounts and extended free subscription options, which relates to pricing concerns.
+
+22. [ID: 573] Costs money; free alternatives available
+   Quote: "Plenty of free alternatives out there."
+   Confidence: 0.95 | Reasoning: The user is expressing concerns about the pricing of the app compared to free alternatives.
+
+23. [ID: 586] Requires subscription
+   Quote: "We originally used Whisper Flow and paid for the subscription because it worked well."
+   Confidence: 0.95 | Reasoning: The complaint directly addresses the subscription requirement and implies a concern about its cost.
+
+24. [ID: 592] Annual plan poor value
+   Quote: "I feel like I wasted my money on their annual plan."
+   Confidence: 0.95 | Reasoning: The user explicitly states that they feel they wasted money on the annual plan, indicating a concern about its value.
+
+25. [ID: 611] Exploits users' ignorance to charge fees
+   Quote: "As with all the STT apps that have monthly costs, they are counting on your ignorance that there is ..."
+   Confidence: 0.95 | Reasoning: The complaint directly addresses concerns about pricing and perceived exploitation related to subscription costs.
+
+26. [ID: 627] High price for poor quality
+   Quote: "the developers decided to slap a high price tag on."
+   Confidence: 0.95 | Reasoning: The complaint clearly expresses dissatisfaction with the pricing in relation to perceived quality, fitting the 'too expensive' category.
+
+27. [ID: 629] No free or one-time purchase option
+   Quote: "There are far better, more reliable, and more trustworthy free or one-time cost alternatives out the..."
+   Confidence: 0.95 | Reasoning: The complaint is about the lack of free or one-time purchase options, indicating a concern about pricing and value.
+
+28. [ID: 633] Free month implies subscription
+   Quote: "Month sounds like subscription, doesn‘t it?"
+   Confidence: 0.95 | Reasoning: The complaint relates to the perception of a free month as a subscription, indicating a concern about pricing and value.
+
+29. [ID: 634] Subscription required
+   Quote: "Yes they have a subscription model."
+   Confidence: 0.95 | Reasoning: The complaint indicates a concern about the subscription model, which aligns with pricing concerns.
+
+30. [ID: 639] Overpriced for poor quality
+   Quote: "It's a prime example of lazy development being sold at a premium price."
+   Confidence: 0.95 | Reasoning: The complaint clearly expresses concerns about pricing and perceived value for the quality of the product.
+
+31. [ID: 648] Not free (costs money)
+   Quote: "They provide a ton of value, but they all cost money."
+   Confidence: 0.95 | Reasoning: The complaint clearly expresses concern about the cost of the service.
+
+================================================================================
+CATEGORY: "issues with command mode" - 30 complaints
+================================================================================
+
+1. [ID: 488] Command Mode not working
+   Quote: "Command mode is not working anymore for three days."
+   Confidence: 0.99 | Reasoning: The complaint specifically states that Command Mode is not functioning, which directly aligns with the category for issues related to Command Mode.
+
+2. [ID: 29] Command Mode inconsistent and fails
+   Quote: "In recent weeks it’s been inconsistent and often fails."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inconsistency and failure of Command Mode, making it a clear match for this category.
+
+3. [ID: 30] No timeline for Command Mode fixes
+   Quote: "I’m curious how it’s behaving for others and whether the team can share plans or timelines for fixes..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses concerns about the Command Mode feature and the lack of communication regarding its fixes.
+
+4. [ID: 31] Command Mode fails with server overload
+   Quote: "It has been failing for me too, claiming that the servers are overloaded."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a failure in Command Mode due to server overload, which directly relates to issues with that feature.
+
+5. [ID: 32] No ready button/auto-retry for Command Mode
+   Quote: "I wish there was a ready button or it would keep trying because I hate having to re-say my command m..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a feature request related to Command Mode functionality.
+
+6. [ID: 48] Cannot fully disable commands
+   Quote: "I have commands disabled in Settings, but Wispr Flow still performs actions instead of only transcri..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the inability to fully disable command functionality, which directly relates to issues with command mode.
+
+7. [ID: 53] Interprets structured phrases as commands
+   Quote: "That will stop Flow from interpreting structured phrases like “write an email,” though it may also m..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the app interpreting structured phrases as commands, which directly relates to issues with command mode.
+
+8. [ID: 63] Command mode servers busy
+   Quote: "I keep getting the message that the command mode servers are busy."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a problem with command mode indicating that the servers are busy, which directly relates to the functionality of that feature.
+
+9. [ID: 65] Command mode servers busy
+   Quote: "The fact that it brings up the message saying the servers are busy makes me think that I'm using com..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a problem with command mode indicating that the servers are busy, which directly relates to the functionality of that feature.
+
+10. [ID: 69] Command mode servers busy
+   Quote: "I am still having this problem too."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a problem with command mode, indicating a server issue related to that feature.
+
+11. [ID: 83] Command mode lacks template access
+   Quote: "I would love to see giving command mode access to some custom templates or formats that I can refere..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a limitation within Command Mode regarding access to templates, making it a clear fit for the 'issues with command mode' category.
+
+12. [ID: 107] Command Mode always 'servers are busy'
+   Quote: "Command Mode never activates and always returns that servers are busy."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a failure in Command Mode, indicating that it is not activating due to server issues.
+
+13. [ID: 113] Fn key stops invoking recording
+   Quote: "after like 30 minutes, using the function key does not invoke recording."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions that the function key, which is likely used for command input, stops working to invoke recording, indicating a command recognition failure.
+
+14. [ID: 115] Function key stops invoking recording
+   Quote: "Or you could also try setting the default as something other than function."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a problem with the function key not invoking recording, which relates directly to command functionality.
+
+15. [ID: 124] Missing command-mode transcription history
+   Quote: "When you use command mode, it should show:
+
+* What the input text was
+* What the feedback or command..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a feature related to command mode and its functionality.
+
+16. [ID: 151] Voice-triggered snippets not recognized
+   Quote: "But if I'm using Flow and *speak* the keyword, Raycast of course doesn't recognize my keyword."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the failure of voice-triggered commands to be recognized, which falls under issues with command mode.
+
+17. [ID: 429] Hey Flow voice command unreliable
+   Quote: "I'm having trouble with the voice command "Hey Flow," which activates dictation mode instead of exec..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with the voice command functionality, indicating a failure in command recognition.
+
+18. [ID: 445] No snippets in command mode
+   Quote: "I am enjoying command mode and curious if snippets for it are on the roadmap."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a feature related to command mode, indicating a clear issue with that functionality.
+
+19. [ID: 480] Command Mode not functioning
+   Quote: "I'm eager to use the command mode function, but I'm unable to get it to work, regardless of the keyb..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the non-functionality of the command mode feature.
+
+20. [ID: 481] Command Mode not working on iOS/Mac/Windows
+   Quote: "I think I remember them mentioning that on their Tuesday update they're going to fix command mode fo..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the functionality of Command Mode not working across multiple platforms, making it a clear match for this category.
+
+21. [ID: 482] Command Mode not working
+   Quote: "Having this feature functional would save a ton of time for me."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions that Command Mode is not working, which directly aligns with the category for issues related to that feature.
+
+22. [ID: 485] Command mode not available on iOS keyboard
+   Quote: "Adding it on the iOS keyboard would be super awesome as well as it would also save me a lot of time ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the absence of Command Mode on the iOS keyboard, which is a clear feature-related issue.
+
+23. [ID: 487] Command Mode not available on iOS
+   Quote: "Also just curious if the command mode is available on iOS by chance right now or no? I just took a l..."
+   Confidence: 0.98 | Reasoning: The complaint specifically inquires about the availability of Command Mode on iOS, which directly relates to issues with that feature.
+
+24. [ID: 489] Command Mode not working
+   Quote: "Command Mode isn’t working in your Wispr Flow desktop app (version 1.3.454 on darwin/arm64) likely b..."
+   Confidence: 0.98 | Reasoning: The complaint specifically states that Command Mode is not working, which directly matches the category for issues related to that feature.
+
+25. [ID: 491] Command Mode unreliable during update
+   Quote: "Command Mode is being updated and may not work reliably right now."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions unreliability of Command Mode, which directly fits the category of issues with command mode.
+
+26. [ID: 493] Wake phrase can trigger Command Mode
+   Quote: "Avoid starting dictation with phrases like "Hey, Flow," which can trigger Command Mode by mistake."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses a problem with Command Mode being triggered unintentionally by the wake phrase.
+
+27. [ID: 561] Unclear iOS developer/command mode support
+   Quote: "You know how on macOS or on Windows PC you are able to use developer mode or command mode to enrich,..."
+   Confidence: 0.98 | Reasoning: The user is inquiring specifically about the availability of command mode features on iOS, which directly relates to issues with command mode.
+
+28. [ID: 570] No commands to compose or edit text
+   Quote: "Specifically, I mean the ability to issue commands such as “compose an email” or “edit this text” di..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the lack of command functionality for composing or editing text, which falls under issues with command mode.
+
+29. [ID: 125] No retry for command updates
+   Quote: "This should also let us retry the command updates as well (incase if a poor edit)."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses a feature related to command updates, indicating a problem with the command mode functionality.
+
+30. [ID: 621] Global button fails to start audio mode
+   Quote: "Interesting, this bug popped up for me today too"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions a failure to start audio mode, which relates to a command mode issue.
+
+================================================================================
+CATEGORY: "latency in transcription" - 20 complaints
+================================================================================
+
+1. [ID: 16] Noticeable delay in output
+   Quote: "The delay is noticeable in the output, making this application significantly slower than other speec..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a noticeable delay in output, which directly relates to the speed of transcription.
+
+2. [ID: 40] Slow transcription latency on iOS
+   Quote: "Like, it would take a solid 1 second or even 1.5 seconds before it actually transcribes everything t..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a delay in transcription speed, which directly aligns with the category of latency in transcription.
+
+3. [ID: 55] Output delayed by AI processing
+   Quote: "Consequently, the output experiences a certain delay because we must wait for the input to pass thro..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a delay in output due to AI processing, which aligns with slow transcription speed.
+
+4. [ID: 168] Long transcription lag (~30s)
+   Quote: "Suddenly, it started lagging so that there's like a 30-second delay before things pop up in whicheve..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a 30-second delay in transcription, which clearly fits the category of latency in transcription.
+
+5. [ID: 170] Slow speech-to-text conversion
+   Quote: "It takes about 4-5 seconds before the speech is converted into text."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a delay in the conversion of speech to text, which directly aligns with latency in transcription.
+
+6. [ID: 184] Long delay after hotkey release
+   Quote: "it takes multiple seconds (5, 10, even 12) from when I release the hotkey to when the text is pasted..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a long delay in the transcription process after releasing the hotkey, which directly relates to transcription speed.
+
+7. [ID: 228] Severely slow transcription recently
+   Quote: "It’s been totally unusable for me for the last few days unfortunately."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions slow transcription, indicating a clear issue with the speed of text appearing after speech input.
+
+8. [ID: 232] Slow transcription speed
+   Quote: "Ugh very slow."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a specific issue with the speed of transcription, matching the category for latency in transcription.
+
+9. [ID: 236] Significant lag in transcription
+   Quote: "frequently it can take up to 30 seconds or longer to transcribe dictation"
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a significant delay in the transcription process, which directly aligns with latency in transcription.
+
+10. [ID: 318] Win+V slow and duplicates pastes
+   Quote: "And when I press `Win+V` and click on something earlier, it takes like five seconds just to respond,..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a delay in response time when using the paste function, indicating a slow transcription speed.
+
+11. [ID: 425] Frequent delays in dictation
+   Quote: "It's actually quicker to type out the messages 60-70% of the time."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions delays in dictation, which directly relates to the speed of transcription.
+
+12. [ID: 577] Slow transcription and processing lag
+   Quote: "By the time it processes what I said, I could’ve just typed it myself."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions slow transcription and processing lag, which directly aligns with latency in transcription.
+
+13. [ID: 615] Slower transcription speed
+   Quote: "Slightly laggy, has been slower than Aqua in every test."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions slower transcription speed, which directly aligns with latency in transcription.
+
+14. [ID: 94] Long processing times
+   Quote: "with long processing times."
+   Confidence: 0.95 | Reasoning: The complaint about 'long processing times' directly relates to delays in transcription speed.
+
+15. [ID: 173] Slow speech-to-text during AWS outage
+   Quote: "This is probably related to the AWS outage that's going on nationwide right now. A lot of services a..."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions slow speech-to-text performance, which aligns with latency in transcription.
+
+16. [ID: 186] Slow paste after hotkey release
+   Quote: "I thought it might be AWS related but it’s been flagging for me for days"
+   Confidence: 0.95 | Reasoning: The complaint indicates a delay in pasting text after a hotkey release, which aligns with slow transcription speed.
+
+17. [ID: 235] Unclear cause of slow transcription
+   Quote: "I thought it was my internet connectivity."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions slow transcription, which directly aligns with the category of latency in transcription.
+
+18. [ID: 248] Delays in processing
+   Quote: "it told me that it was taking too long"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions delays in processing, which aligns with slow transcription speed.
+
+19. [ID: 252] Slow processing time
+   Quote: "this has truly had some issues with the long processing time"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions 'long processing time', which directly relates to the speed of transcription.
+
+20. [ID: 391] Inconsistent dictation speed
+   Quote: "Sometimes, when you dictate, you may not get the dictation for 20-30 seconds or at all."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions delays in receiving dictation, which aligns with slow transcription speed.
+
+================================================================================
+CATEGORY: "freezes and crashes" - 19 complaints
+================================================================================
+
+1. [ID: 43] Frequently crashes on Windows 11 system
+   Quote: "it's extremely buggy and frequently crashes on my Windows 11 system."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions frequent crashes, which directly aligns with the 'freezes and crashes' category.
+
+2. [ID: 207] Frequent crashes
+   Quote: "Between the app crashing or just refusing to work, it’s almost useless."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions frequent crashes, which directly aligns with the 'freezes and crashes' category.
+
+3. [ID: 211] Dictation button freezes
+   Quote: "the dictation button remains frozen"
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions the dictation button freezing, which directly relates to the app becoming unresponsive.
+
+4. [ID: 326] Causes Ctrl+C and Win+V to hang
+   Quote: "The only solution that actually works is turning off Wispr Flow."
+   Confidence: 0.98 | Reasoning: The complaint indicates that the app causes system functions to hang, which aligns with freezing or crashing behavior.
+
+5. [ID: 349] Freezes when pasting with Ctrl+V
+   Quote: "When I’m using Wispr Flow and paste from the clipboard with Ctrl+V, these freezes start happening."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions the app freezing when performing a certain action, which clearly fits the 'freezes and crashes' category.
+
+6. [ID: 369] Freezes when dictating while editing text
+   Quote: "This is also a problem that I've recently come across, and it's starting to become kind of an annoya..."
+   Confidence: 0.98 | Reasoning: The complaint clearly describes the app freezing during a specific action, which fits the 'freezes and crashes' category.
+
+7. [ID: 372] Freezes during voice input and editing
+   Quote: "it started freezing and working just terribly."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions freezing during voice input, which clearly fits the 'freezes and crashes' category.
+
+8. [ID: 587] Frequent glitches and crashes
+   Quote: "The app constantly glitches. One minute it works, the next it freezes or disconnects for no reason."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions frequent glitches and crashes, which directly aligns with the category for app freezing and crashing.
+
+9. [ID: 657] Frequent crashes
+   Quote: "I tried it before and it kept crashing"
+   Confidence: 0.98 | Reasoning: The complaint clearly states that the app keeps crashing, which directly matches the 'freezes and crashes' category.
+
+10. [ID: 661] Frequent freezes when pasting (Ctrl+V)
+   Quote: "When I’m using Wispr Flow and paste from the clipboard with Ctrl+V, these freezes start happening."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions frequent freezes occurring during a specific action (pasting), which clearly fits the 'freezes and crashes' category.
+
+11. [ID: 663] Frequent freezes and high CPU usage
+   Quote: "I ran into similar issues with Wispr Flow on Windows — the freezes and high CPU usage drove me mad."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions frequent freezes, which aligns directly with the 'freezes and crashes' category.
+
+12. [ID: 665] Frequent freezes and system lockups
+   Quote: "ran into the same issues with Wispr Flow on Windows (freezing, messing up the clipboard, etc.)."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions frequent freezes and system lockups, which directly aligns with the category of 'freezes and crashes'.
+
+13. [ID: 669] App freezes and hangs other apps
+   Quote: "no issues with the clipboard and no freezing"
+   Confidence: 0.98 | Reasoning: The complaint clearly states that the app freezes and hangs other apps, which directly aligns with the 'freezes and crashes' category.
+
+14. [ID: 192] Dynamic window mic disappears after ~45s
+   Quote: "After 35 to 45 seconds of dictation the orange microphone in the dynamic window goes away and Wispr ..."
+   Confidence: 0.95 | Reasoning: The complaint indicates that the microphone becomes unresponsive after a certain period, suggesting a freezing or crashing issue.
+
+15. [ID: 317] Ctrl+C hangs apps
+   Quote: "I can't even copy with `Ctrl+C` without any of my windows freezing up for more than 10 seconds."
+   Confidence: 0.95 | Reasoning: The complaint clearly indicates that using `Ctrl+C` causes applications to freeze, which fits the 'freezes and crashes' category.
+
+16. [ID: 331] Clipboard shortcuts cause freezes/delays
+   Quote: "Has there been any updates on this. I think I'm dealing with the same thing"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions freezes and delays, which aligns directly with the 'freezes and crashes' category.
+
+17. [ID: 333] Some crashes
+   Quote: "Sometimes it's a little bit crashy"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions crashes, indicating a clear issue with the app freezing or becoming unresponsive.
+
+18. [ID: 336] Keyboard shortcuts cause hangs and delays
+   Quote: "Can someone post a resolution to this as I have a client with this exact problem."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions hangs and delays, which aligns with app freezing or crashing issues.
+
+19. [ID: 562] Retrievals fail for ~4–5 minute recordings
+   Quote: "when they hit about the 4-5 minute mark, sometimes those retrievals fail and I have to go to the app..."
+   Confidence: 0.95 | Reasoning: The complaint indicates that the app fails to retrieve recordings after a certain duration, suggesting a technical issue that aligns with freezing or crashing behavior.
+
+================================================================================
+CATEGORY: "accuracy issues" - 18 complaints
+================================================================================
+
+1. [ID: 269] Incorrect dictation of words
+   Quote: "your app writes the word 'Kama' when I voice dictate the word comma"
+   Confidence: 0.99 | Reasoning: The complaint clearly indicates a transcription error where the app misrecognizes the spoken word 'comma' as 'Kama', which falls under accuracy issues.
+
+2. [ID: 167] Inaccurate word recognition
+   Quote: "words sound the but are completely different words"
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates problems with word recognition, which directly relates to transcription accuracy.
+
+3. [ID: 221] Poor dictation accuracy
+   Quote: "doesn’t even pick up the correct dictation"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with the correctness of the dictation output.
+
+4. [ID: 243] Picks up background audio
+   Quote: "this app typed in what the TV was saying, even as I was typing"
+   Confidence: 0.98 | Reasoning: The complaint indicates that the app is incorrectly transcribing background audio, which relates directly to transcription errors.
+
+5. [ID: 262] Not 100% accurate
+   Quote: "They aren't quite at 100% yet"
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a concern about the accuracy of the transcription, which fits directly into the 'accuracy issues' category.
+
+6. [ID: 332] Initial correction time wasted
+   Quote: "wasting so much time correcting all the mistakes that it’s not worth the time savings versus just ty..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the time wasted due to mistakes in transcription, indicating problems with accuracy.
+
+7. [ID: 357] Frequent errors during dictation
+   Quote: "Every dictation I tried failed and resulted in an error."
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates frequent errors during dictation, which directly relates to transcription accuracy.
+
+8. [ID: 475] Misses words in noisy environments
+   Quote: "the microphone is trying to pick up all the distracting noises in the background along with my voice..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the microphone's inability to accurately capture speech in noisy environments, leading to missed words, which falls under accuracy issues.
+
+9. [ID: 496] Poor transcription accuracy
+   Quote: "a bad transcription"
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates a problem with the quality of transcription, which directly relates to accuracy issues.
+
+10. [ID: 537] Poor phone voice transcription
+   Quote: "when I have to type something on my phone I have to actually still type because the voice thing SUCK..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions poor transcription quality, indicating issues with the accuracy of the voice-to-text conversion.
+
+11. [ID: 575] Poor background noise recognition
+   Quote: "it keeps mishearing things if there’s even a little background noise like I said AWS lambda logs and..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses misrecognition of words due to background noise, which directly relates to transcription accuracy.
+
+12. [ID: 579] First word missing in transcription
+   Quote: "aqua voice &amp; wispr flow both has that first word missing problem. mahasen voice is the only app ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a missing first word in transcription, which directly relates to transcription errors and misrecognition.
+
+13. [ID: 616] Misses first words
+   Quote: "Often misses the first word of a sentence."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the issue of transcription errors related to missing the first word of a sentence, which falls under accuracy issues.
+
+14. [ID: 622] Missed first words
+   Quote: "There was a bug like a month ago where it wouldn't catch the first or second word."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a bug related to not capturing the first or second words, which directly relates to transcription accuracy.
+
+15. [ID: 626] Unreliable transcription
+   Quote: "the core functionality (transcription) is unreliable."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the unreliability of transcription, which directly relates to accuracy issues.
+
+16. [ID: 360] Requires loud input to function
+   Quote: "I had to YELL one word a second for it to work"
+   Confidence: 0.95 | Reasoning: The complaint indicates that the app requires excessively loud input for proper function, suggesting issues with its ability to accurately recognize speech.
+
+17. [ID: 467] Strange transcription results
+   Quote: "ambiguous billing into, odd transcription results etc."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions 'odd transcription results,' indicating problems with the accuracy of the transcriptions.
+
+18. [ID: 630] Unreliable transcription
+   Quote: "This is true of most dictation software."
+   Confidence: 0.95 | Reasoning: The complaint about 'unreliable transcription' directly relates to the quality of the transcription output, which falls under accuracy issues.
+
+================================================================================
+CATEGORY: "punctuation issues" - 15 complaints
+================================================================================
+
+1. [ID: 25] Inserts space and lowercases next letter
+   Quote: "I notice sometimes it inserts a space, and then the first letter of the word is not capitalized."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses issues with spacing and capitalization, which fall under punctuation problems.
+
+2. [ID: 37] Adds space and lowercases first letter in ClickUp
+   Quote: "Yeah, I have this same issue as well."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions issues with spacing and capitalization, which directly relates to punctuation problems.
+
+3. [ID: 169] Fails to auto-punctuate
+   Quote: "It's not punctuating stuff."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a failure to auto-punctuate, which directly relates to punctuation issues.
+
+4. [ID: 198] Space not added after stopping
+   Quote: "there is a bug where it won’t put a space at the end of the sentence if you stop and then continue t..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the absence of a space at the end of a sentence, which directly relates to punctuation.
+
+5. [ID: 288] Capitalization errors in German
+   Quote: "in German it doesn't capitalize properly. Nouns, for example."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses capitalization errors, which fall under punctuation issues.
+
+6. [ID: 292] Capitalization issues
+   Quote: "I've noticed that it sometimes has trouble capitalizing the first letter of sentences"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with capitalization, which falls under punctuation issues.
+
+7. [ID: 295] Inconsistent capitalization in messages
+   Quote: "It also capitalizes properly in most places—except in text messages."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses inconsistent capitalization, which falls under punctuation issues.
+
+8. [ID: 345] No space after pressing Fn key
+   Quote: "This is a video of what happens if I dictate a sentence, then lift my finger from the Fn key and pre..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the absence of a space between dictated sentences, which falls under punctuation issues.
+
+9. [ID: 378] Does not capitalize first word in iMessage
+   Quote: "Does not capitalize the first word in a sentence when you start dictating."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the failure to capitalize the first word in a sentence, which falls under punctuation issues.
+
+10. [ID: 402] Punctuation insertion is difficult
+   Quote: "we find it difficult to insert punctuation"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses difficulties with inserting punctuation, which directly aligns with the category for punctuation issues.
+
+11. [ID: 483] Breaks up sentences in wrong place
+   Quote: "My most common issue with Wispr Flow, is that it breaks up my sentences in the wrong place."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses incorrect sentence breaks, which relates directly to punctuation issues.
+
+12. [ID: 497] Incorrect capitalization
+   Quote: "a capitalization issue"
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a capitalization issue, which falls under punctuation problems.
+
+13. [ID: 521] Doesn't insert space before new sentence
+   Quote: "it would really be nice to have the app insert a space before a new sentence, especially if the prec..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the issue of missing spaces before new sentences, which falls under punctuation issues.
+
+14. [ID: 523] Missing space after period when resuming dictation
+   Quote: "Notice the lack of a space between the two sentences after the period which follows dog."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the absence of a space after a period, which directly relates to punctuation errors.
+
+15. [ID: 614] Poor punctuation in messaging ('casual voice')
+   Quote: "Doesn't understand when to put in exclamation points or question marks."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with punctuation, such as the incorrect use of exclamation points and question marks.
+
+================================================================================
+CATEGORY: "microphone runs in the background" - 11 complaints
+================================================================================
+
+1. [ID: 212] Mic stays on in background
+   Quote: "my mic usage indicator tells me that Wispr Flow is accessing my microphone even when I'm not using i..."
+   Confidence: 1.00 | Reasoning: The complaint clearly states that the microphone remains active when not in use, which directly matches the category.
+
+2. [ID: 74] Mic causes phone issues when active
+   Quote: "since having the mic on does seem to cause other wonky issues with the phone, it would be great to h..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions issues caused by the microphone being active, indicating a concern about the microphone not turning off when needed.
+
+3. [ID: 281] Microphone indicator issue
+   Quote: "the app signifies in the floating island that the microphone is always being used even when the keyb..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the microphone indicator showing that the microphone is always active, indicating a technical issue with the microphone not turning off.
+
+4. [ID: 297] Mic can't stay off
+   Quote: "Does the mic always have to be on? I turned it off in the setting but then every time I use it it ha..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the microphone not staying off and the inconvenience caused by it being active when not needed.
+
+5. [ID: 351] Cannot turn off microphone
+   Quote: "the microphone is listening at all times and can’t turn it off"
+   Confidence: 0.98 | Reasoning: The complaint clearly states that the microphone is always active and cannot be turned off, which directly relates to the issue of the microphone running in the background.
+
+6. [ID: 363] Stays on continuously
+   Quote: "the only downside is flow stays on continuously"
+   Confidence: 0.98 | Reasoning: The complaint clearly indicates that the microphone remains active continuously, which fits the category of microphone running in the background.
+
+7. [ID: 667] Always-on background processes
+   Quote: "works when you hold down a hotkey and stops listening when you let go, so no always-on background pr..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the issue of the microphone being active in the background, which aligns with the category of 'microphone runs in the background'.
+
+8. [ID: 162] Toggle doesn't override immediate turn-off
+   Quote: "It still turns off as soon as the first event to trigger the "immediately turn off microphone" happe..."
+   Confidence: 0.95 | Reasoning: The complaint indicates an issue with the microphone not staying on as intended, which relates to the microphone's behavior.
+
+9. [ID: 177] Must open app to dictate
+   Quote: "it has to open the app then it waits for you to accept the 'Allow Wisper flow to open [app]'"
+   Confidence: 0.95 | Reasoning: The complaint indicates that the app requires opening and permission acceptance, suggesting a concern about the microphone not being active until the app is opened.
+
+10. [ID: 550] Requires constant re-enabling of mic access
+   Quote: "Another hurdle is that I need to constantly jump back into the app to re-enable mic access, especial..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the need to constantly re-enable microphone access, indicating an issue with the microphone not functioning as expected.
+
+11. [ID: 651] Requires re-enabling mic access
+   Quote: "I have to constantly jump back into the app to re-enable mic access, especially when I change input ..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses the issue of needing to re-enable microphone access, indicating a problem with how the microphone is managed by the app.
+
+================================================================================
+CATEGORY: "drains battery or high cpu usage" - 10 complaints
+================================================================================
+
+1. [ID: 62] High battery drain in always-on mode
+   Quote: "If I set up Wispr Flow so that it never turns off, how much will that affect my iPhone’s battery lif..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses high battery drain due to the app's always-on mode, which directly relates to battery performance.
+
+2. [ID: 67] High battery drain when running in background
+   Quote: "it definitely does drain your battery quite a bit, especially if you keep it on and run it in the ba..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions high battery drain when the app is running in the background, which directly aligns with the category.
+
+3. [ID: 68] Prevents screen auto-lock causing battery drain
+   Quote: "It drains my battery a lot. It seems to be preventing the iPhone from auto-locking the screen even i..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions battery drain caused by the app preventing the screen from auto-locking, which directly relates to high battery usage.
+
+4. [ID: 189] High battery drain
+   Quote: "Drained 30% of battery in a couple hours running in the background."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions high battery drain, which directly fits the category.
+
+5. [ID: 636] High CPU and battery usage
+   Quote: "It's constantly draining my battery and making my whole system lag."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions high CPU usage and battery drain, which directly aligns with the chosen category.
+
+6. [ID: 640] High battery and CPU usage
+   Quote: "it's been killing my MacBook and it's been giving it a really hard time."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions high battery and CPU usage, which directly aligns with the chosen category.
+
+7. [ID: 353] Battery drain
+   Quote: "this will drain the battery"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions battery drain, which directly aligns with the category for battery drain issues.
+
+8. [ID: 428] High CPU usage
+   Quote: "My only issue is that the CPU usage can be a bit high sometimes."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions high CPU usage, which directly fits the category.
+
+9. [ID: 589] Uses too much memory
+   Quote: "it seems to be a really clunky electron app. It's always taking up a massive chunk of my computer's ..."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions high memory usage, which directly relates to performance impact on the device.
+
+10. [ID: 607] High CPU usage
+   Quote: "big CPU usage"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions high CPU usage, which directly fits the category.
+
+================================================================================
+CATEGORY: "language detection issues" - 9 complaints
+================================================================================
+
+1. [ID: 366] Limited non-English support
+   Quote: "This does not render non-English words well"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with rendering non-English words, which aligns with issues related to language detection.
+
+2. [ID: 479] Language switching causes wrong-language transcription
+   Quote: "When you push the button to dictate in French and then stop, push again to switch to English, there ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with language switching leading to incorrect transcription, which fits the category of language detection issues.
+
+3. [ID: 526] Autodetect mixes French and English
+   Quote: "When I use Autodetect or select two languages, in my case French and English, whenever I speak in Fr..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with the autodetect feature mixing French and English, which clearly falls under language detection issues.
+
+4. [ID: 530] Inconsistent language auto-detection
+   Quote: "I'm dictating this message from a WhisperFlow competitor that has the same problem and is set to Eng..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with the app's language auto-detection feature, indicating it incorrectly detects French instead of English.
+
+5. [ID: 532] Unreliable language auto-detection
+   Quote: "I am talking basic function, like i speak in english my text and it translate it in French ( while a..."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses problems with the app's ability to correctly detect and translate spoken language, which fits the category of language detection issues.
+
+6. [ID: 535] Auto language detection mixes languages
+   Quote: "Same issue on 2 différents computers. And on IOS App also sometimes"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the problem of auto language detection mixing languages, which directly fits the category of language detection issues.
+
+7. [ID: 52] Cyrillic characters get corrupted
+   Quote: "As for the Cyrillic text issue, Flow works best when dictating in a single language. Mixed text (lik..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses issues with mixed language dictation leading to encoding problems, which aligns with language detection issues.
+
+8. [ID: 536] Unclear how to fix language auto-detect
+   Quote: "u/VictoriaAtWispr  any ideas ? feedback ? thx"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions a problem with language auto-detection, which directly relates to language detection issues.
+
+9. [ID: 662] Corrupts non-Latin clipboard text encoding
+   Quote: "Another issue is that I often use voice input with languages that have non-Latin scripts, and Wispr ..."
+   Confidence: 0.95 | Reasoning: The complaint specifically addresses issues with handling non-Latin scripts, which falls under language detection problems.
+
+================================================================================
+CATEGORY: "no offline or local model" - 9 complaints
+================================================================================
+
+1. [ID: 18] No local Parakeet model support
+   Quote: "Currently, I am using other applications that utilize the Parakeet local model, which provides outpu..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions the lack of support for a local model, which directly fits the category of no offline or local model.
+
+2. [ID: 433] Lacks offline capabilities
+   Quote: "I hope someday they will introduce a local-only version for when I am offline"
+   Confidence: 0.98 | Reasoning: The complaint specifically requests a local-only version, which directly relates to the lack of offline capabilities.
+
+3. [ID: 571] No local language models
+   Quote: "Would be perfect to have some local language models for faster response, especially for a command mo..."
+   Confidence: 0.98 | Reasoning: The complaint specifically requests local language models, which directly relates to the lack of offline or local processing options.
+
+4. [ID: 581] No local model/BYO API support
+   Quote: "Spokenly is a solid alternative that can do a lot of what Wispr Flow does—free if you use local mode..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions the lack of a local model, which directly fits the category.
+
+5. [ID: 585] No local model support
+   Quote: "Everything can run locally and you only use the cloud if you choose to add your own API key."
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the lack of local model support, which directly fits the category of no offline or local model.
+
+6. [ID: 598] No local or BYOK model support
+   Quote: "for fully local and free or Spokenly for BYOK :))"
+   Confidence: 0.98 | Reasoning: The complaint specifically requests support for local or Bring Your Own Key (BYOK) models, which directly relates to the lack of offline or local processing options.
+
+7. [ID: 671] No local model or BYO API keys
+   Quote: "Spokenly, you can use it 100% for free with the local models and you can even bring your own API key..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions the absence of a local model and the ability to use personal API keys, which directly relates to the lack of offline or local processing options.
+
+8. [ID: 101] Slower performance and no offline mode
+   Quote: "I find Super Whisper a tad faster with the current AI model that I'm using, and it is offline."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions the lack of an offline mode, which directly fits the category.
+
+9. [ID: 574] No offline support
+   Quote: "it works offline if needed"
+   Confidence: 0.95 | Reasoning: The complaint clearly states a lack of offline support, which directly matches the category for offline or local model issues.
+
+================================================================================
+CATEGORY: "no dark mode" - 5 complaints
+================================================================================
+
+1. [ID: 263] Lacks dark mode support
+   Quote: "Please support dark mode on all your apps."
+   Confidence: 1.00 | Reasoning: The complaint specifically requests the addition of dark mode support, which directly matches the category for missing dark mode features.
+
+2. [ID: 335] Lacks Dark Mode
+   Quote: "Please give us Dark mode."
+   Confidence: 1.00 | Reasoning: The complaint specifically requests the addition of a Dark Mode feature, which directly matches the category.
+
+3. [ID: 362] Lacks dark mode feature
+   Quote: "it needs a dark mode - the actual app itself."
+   Confidence: 1.00 | Reasoning: The complaint specifically requests the addition of a dark mode feature, which directly matches the 'no dark mode' category.
+
+4. [ID: 231] Blindingly white interface
+   Quote: "Why is the app blindingly white?"
+   Confidence: 0.98 | Reasoning: The complaint specifically addresses the app's bright interface, indicating a request for a dark mode feature.
+
+5. [ID: 230] No dark mode option
+   Quote: "Instead I am now forced into pro mode trial that I didn’t ask for"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions the absence of a dark mode option, which directly fits the 'no dark mode' category.
+
+================================================================================
+CATEGORY: "lag in starting recording" - 3 complaints
+================================================================================
+
+1. [ID: 298] Significant activation delay
+   Quote: "There is a significant delay between when I tap the hot key to start the program and when it starts ..."
+   Confidence: 0.98 | Reasoning: The complaint specifically mentions a delay in starting the program to begin recording, which fits the category of lag in starting recording.
+
+2. [ID: 193] Issues with starting/stopping dictation
+   Quote: "there are issues with starting and stopping dictations using wispr flow via voice control"
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions issues with starting dictation, which aligns with the category of lag in starting recording.
+
+3. [ID: 343] Activation delay in messaging
+   Quote: "It requires manual activation and delays before working, if it begins at all."
+   Confidence: 0.95 | Reasoning: The complaint specifically mentions a delay in activation before the messaging feature works, indicating a lag in starting recording.
+
+================================================================================
+CATEGORY SUMMARY
+================================================================================
+customer support not responsive: 48 (14.4%)
+AI/Smart formatting issues: 37 (11.1%)
+other: 34 (10.2%)
+privacy concerns: 34 (10.2%)
+too expensive: 31 (9.3%)
+issues with command mode: 30 (9.0%)
+latency in transcription: 20 (6.0%)
+freezes and crashes: 19 (5.7%)
+accuracy issues: 18 (5.4%)
+punctuation issues: 15 (4.5%)
+microphone runs in the background: 11 (3.3%)
+drains battery or high cpu usage: 10 (3.0%)
+language detection issues: 9 (2.7%)
+no offline or local model: 9 (2.7%)
+no dark mode: 5 (1.5%)
+lag in starting recording: 3 (0.9%)
+================================================================================

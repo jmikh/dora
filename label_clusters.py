@@ -140,13 +140,12 @@ Summary rules:
 {insights_text}"""
 
     completion = client.beta.chat.completions.parse(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message},
         ],
         response_format=ClusterLabeling,
-        temperature=0.3
     )
 
     return completion.choices[0].message.parsed

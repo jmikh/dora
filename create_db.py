@@ -9,7 +9,7 @@ from pathlib import Path
 
 # File paths
 CSV_FILE = Path(__file__).parent / "noom_playstore_reviews.csv"
-DB_FILE = Path(__file__).parent / "noom_playstore_reviews.db"
+DB_FILE = Path(__file__).parent / "dora.db"
 
 def create_database():
     """Create SQLite database and load data from CSV"""

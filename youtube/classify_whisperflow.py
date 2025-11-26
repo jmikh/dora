@@ -47,7 +47,7 @@ Answer with just "YES" or "NO"."""
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-mini",
             messages=[
                 {"role": "system", "content": "You are a precise classifier. Answer only with YES or NO."},
                 {"role": "user", "content": prompt}

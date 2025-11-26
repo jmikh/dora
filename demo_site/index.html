@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wispr Flow - Complaints Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <img src="https://styles.redditmedia.com/t5_ckro6f/styles/communityIcon_byv66pj34dkf1.png" alt="Wispr Flow" class="logo">
+                <div class="header-text">
+                    <h1>Wispr Flow</h1>
+                    <p class="subtitle">Complaints Analytics Dashboard</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value" id="total-complaints">--</span>
+                        <span class="stat-label">Total Complaints</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="total-categories">--</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Panel: Charts -->
+            <section class="charts-panel">
+                <!-- Top Issues Chart Card -->
+                <div class="chart-card">
+                    <div class="chart-title-row">
+                        <h2 class="chart-title">Top Issues</h2>
+                        <button class="other-category-btn" id="other-category-btn">
+                            <span class="other-label" id="other-label">View uncategorized</span>
+                        </button>
+                        <div class="other-tooltip" id="other-tooltip"></div>
+                    </div>
+
+                    <!-- Time Filter -->
+                    <div class="time-filter">
+                        <button class="filter-btn" data-range="3m">3M</button>
+                        <button class="filter-btn" data-range="6m">6M</button>
+                        <button class="filter-btn" data-range="1y">1Y</button>
+                        <button class="filter-btn active" data-range="all">All</button>
+                    </div>
+
+                    <!-- Time Series Chart -->
+                    <div class="chart-container time-chart-container">
+                        <canvas id="time-chart"></canvas>
+                    </div>
+
+                    <!-- Bar Chart -->
+                    <div class="chart-container bar-chart-container">
+                        <canvas id="bar-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Details -->
+            <aside class="details-panel">
+                <div class="details-loading" id="details-loading">
+                    <div class="loading-spinner"></div>
+                </div>
+                <div class="details-content" id="details-content">
+                    <!-- Category Info & AI Summary -->
+                    <div class="ai-summary-card" id="ai-summary-card">
+                        <h2 class="selected-category-name" id="selected-category-name">--</h2>
+                        <div class="ai-summary-content">
+                            <div class="ai-summary-header">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
+                                    <path d="M12 2a10 10 0 0 1 10 10"/>
+                                    <circle cx="12" cy="12" r="6"/>
+                                </svg>
+                                <span>AI Summary</span>
+                            </div>
+                            <p class="ai-summary" id="selected-category-summary"></p>
+                        </div>
+                    </div>
+
+                    <!-- Complaints Card (includes sources) -->
+                    <div class="complaints-section">
+                        <!-- Source Breakdown -->
+                        <div class="source-breakdown">
+                            <div class="section-header">
+                                <span class="section-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                    </svg>
+                                </span>
+                                <h3>Sources</h3>
+                            </div>
+                            <div class="source-badges" id="source-badges"></div>
+                        </div>
+
+                        <!-- Complaints List -->
+                        <div class="section-header">
+                            <span class="section-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </span>
+                            <h3>Complaints</h3>
+                        </div>
+                        <div class="complaints-list" id="complaints-list"></div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <span>© 2025 Dora. All rights reserved.</span>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

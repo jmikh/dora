@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 """
-Cluster insights using HDBSCAN based on embeddings
+Cluster complaints or use cases using HDBSCAN based on embeddings
 """
 
 import json
 import numpy as np
-from typing import List, Dict, Tuple
-from sqlalchemy import select, delete, update, and_
-from sqlalchemy.orm import Session
+from typing import List, Dict, Tuple, Literal
+from sqlalchemy import and_
 import hdbscan
 
-from models import Insight, Cluster, get_session
+from models import (
+    ComplaintEmbedding, UseCaseEmbedding,
+    Complaint, UseCase,
+    Cluster, Company, RedditContent, Review,
+    get_session
+)
 from datetime import datetime
 
 
 def clear_existing_clusters(
-    session: Session,
+    session,
     company_name: str,
-    insight_type: str,
     embedding_type: str,
-    n_components: int
+    n_components: int,
+    cluster_type: str = "complaints"
 ) -> None:
     """
     Clear existing clusters and cluster assignments for the given parameters
@@ -27,26 +31,27 @@ def clear_existing_clusters(
     Args:
         session: SQLAlchemy session
         company_name: Company name
-        insight_type: Type of insight
-        embedding_type: Embedding type
-        n_components: Number of components for reduced embeddings
+        embedding_type: Embedding type ('original' or 'reduced')
+        n_components: Number of components for embeddings
+        cluster_type: Type of clustering ('complaints' or 'use_cases')
     """
     from models import ClusterGroupAssignment
 
     # Build the WHERE clause based on embedding type
     conditions = [
         Cluster.company_name == company_name,
-        Cluster.insight_type == insight_type,
-        Cluster.embedding_type == embedding_type
+        Cluster.embedding_type == embedding_type,
+        Cluster.cluster_type == cluster_type
     ]
 
-    # For reduced embeddings, match n_components; for original, match NULL n_components
+    # For reduced embeddings, match n_components; for original, match 1536
     if embedding_type == "reduced":
         conditions.append(Cluster.n_components == n_components)
     else:
-        conditions.append(Cluster.n_components.is_(None))
+        conditions.append(Cluster.n_components == 1536)
 
     # Find clusters to delete
+    from sqlalchemy import select, delete
     clusters_to_delete = session.execute(
         select(Cluster.id).where(and_(*conditions))
     ).scalars().all()
@@ -59,53 +64,44 @@ def clear_existing_clusters(
             )
         )
 
-        # 2. Clear cluster_id from insights
-        session.execute(
-            update(Insight).where(
-                Insight.cluster_id.in_(clusters_to_delete)
-            ).values(cluster_id=None)
-        )
-
-        # 3. Delete clusters
+        # 2. Delete clusters
         session.execute(
             delete(Cluster).where(Cluster.id.in_(clusters_to_delete))
         )
         session.commit()
-        print(f"🗑️  Cleared {len(clusters_to_delete)} existing clusters")
+        print(f"  Cleared {len(clusters_to_delete)} existing clusters")
 
 
 def save_clusters_to_db(
-    session: Session,
+    session,
     company_name: str,
-    insights: List[Insight],
+    embeddings_list: List,
     cluster_labels: np.ndarray,
-    embeddings: np.ndarray,
-    insight_type: str,
     embedding_type: str,
-    n_components: int
+    n_components: int,
+    cluster_type: str = "complaints"
 ) -> Dict[int, int]:
     """
-    Save clusters to database and update insight cluster_ids
+    Save clusters to database
 
     Args:
         session: SQLAlchemy session
         company_name: Company name
-        insights: List of insights
+        embeddings_list: List of embedding objects
         cluster_labels: Cluster labels from HDBSCAN (-1 for noise)
-        embeddings: Embedding matrix
-        insight_type: Type of insight
-        embedding_type: Embedding type
-        n_components: Number of components
+        embedding_type: Embedding type ('original' or 'reduced')
+        n_components: Number of dimensions
+        cluster_type: Type of clustering ('complaints' or 'use_cases')
 
     Returns:
         Dict mapping cluster label to database cluster ID
     """
-    # Organize insights by cluster
-    clusters_map: Dict[int, List[Insight]] = {}
-    for insight, label in zip(insights, cluster_labels):
+    # Organize items by cluster
+    clusters_map: Dict[int, List] = {}
+    for emb, label in zip(embeddings_list, cluster_labels):
         if label not in clusters_map:
             clusters_map[label] = []
-        clusters_map[label].append(insight)
+        clusters_map[label].append(emb)
 
     # Create database entries for each cluster (excluding noise -1)
     label_to_db_id = {}
@@ -115,15 +111,16 @@ def save_clusters_to_db(
             # Noise points don't get a cluster entry
             continue
 
-        cluster_insights = clusters_map[cluster_label]
+        cluster_items = clusters_map[cluster_label]
 
         # Create cluster record
         cluster = Cluster(
             company_name=company_name,
-            insight_type=insight_type,
+            insight_type=None,
             embedding_type=embedding_type,
-            n_components=n_components if embedding_type == "reduced" else None,
-            size=len(cluster_insights),
+            n_components=n_components,
+            cluster_type=cluster_type,
+            size=len(cluster_items),
             created_at=datetime.now()
         )
         session.add(cluster)
@@ -131,152 +128,230 @@ def save_clusters_to_db(
 
         label_to_db_id[cluster_label] = cluster.id
 
-        # Update insights with cluster_id
-        for insight in cluster_insights:
-            session.execute(
-                update(Insight).where(Insight.id == insight.id).values(cluster_id=cluster.id)
-            )
-
-    # Set noise points to NULL cluster_id
-    if -1 in clusters_map:
-        for insight in clusters_map[-1]:
-            session.execute(
-                update(Insight).where(Insight.id == insight.id).values(cluster_id=None)
-            )
-
     session.commit()
 
     num_clusters = len([c for c in clusters_map.keys() if c != -1])
-    print(f"💾 Saved {num_clusters} clusters to database")
+    print(f"  Saved {num_clusters} clusters to database")
 
     return label_to_db_id
 
 
-def load_insights_with_embeddings(
-    session: Session,
+def load_complaint_embeddings(
+    session,
     company_name: str,
-    insight_type: str = "pain_point",
-    embedding_type: str = "original",
-    n_components: int = 5
-) -> Tuple[List[Insight], np.ndarray]:
-    """
-    Load insights that have embeddings
-
-    Args:
-        session: SQLAlchemy session
-        company_name: Company name to filter insights
-        insight_type: Type of insight to load
-        embedding_type: 'original' or 'reduced'
-        n_components: Number of dimensions (only for reduced)
-
-    Returns:
-        Tuple of (insights list, embeddings matrix)
-    """
-    from sqlalchemy import text
-
-    # Determine which embedding column to use
-    if embedding_type == "original":
-        embedding_column = "embedding"
-    else:
-        embedding_column = f"reduced_embedding_{n_components}"
-
-    # Build query dynamically since we need to check different columns
-    query_text = f"""
-        SELECT id, review_id, insight_text, insight_type, review_date,
-               extracted_at, embedding, {embedding_column}
-        FROM insights
-        WHERE company_name = :company
-        AND insight_type = :type
-        AND {embedding_column} IS NOT NULL
-        ORDER BY review_date DESC
-    """
-
-    params = {"company": company_name, "type": insight_type}
-    result = session.execute(text(query_text), params)
-    rows = result.fetchall()
-
-    if not rows:
+    dimensions: int = 50,
+    category: str = None
+) -> Tuple[List[ComplaintEmbedding], np.ndarray]:
+    """Load complaint embeddings for a given company"""
+    # Get company
+    company = session.query(Company).filter(Company.name == company_name).first()
+    if not company:
+        print(f"Company '{company_name}' not found")
         return [], np.array([])
 
-    # Reconstruct Insight objects and extract embeddings
-    insights = []
-    embeddings = []
+    # Get complaint IDs for this company from both Reddit and Reviews
+    reddit_complaint_ids = (
+        session.query(Complaint.id)
+        .join(RedditContent, and_(
+            Complaint.source_id == RedditContent.id,
+            Complaint.source_table == 'reddit_content'
+        ))
+        .filter(RedditContent.company_id == company.id)
+        .distinct()
+    )
 
-    for row in rows:
-        from datetime import datetime as dt
+    review_complaint_ids = (
+        session.query(Complaint.id)
+        .join(Review, and_(
+            Complaint.source_id == Review.review_id,
+            Complaint.source_table == 'reviews'
+        ))
+        .filter(Review.company_id == company.id)
+        .distinct()
+    )
 
-        # Create Insight object from row data
-        insight = Insight(
-            id=row[0],
-            review_id=row[1],
-            insight_text=row[2],
-            insight_type=row[3],
-            review_date=dt.fromisoformat(row[4]) if isinstance(row[4], str) else row[4],
-            extracted_at=dt.fromisoformat(row[5]) if isinstance(row[5], str) else row[5]
+    # Combine complaint IDs
+    all_ids = set()
+    for cid_tuple in reddit_complaint_ids.all():
+        all_ids.add(cid_tuple[0])
+    for cid_tuple in review_complaint_ids.all():
+        all_ids.add(cid_tuple[0])
+
+    if not all_ids:
+        return [], np.array([])
+
+    # Filter by category if specified
+    if category:
+        import sqlite3
+        conn = sqlite3.connect("dora.db")
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT complaint_id FROM complaint_categories WHERE category = ?",
+            (category,)
         )
-        insights.append(insight)
+        category_complaint_ids = {row[0] for row in cursor.fetchall()}
+        conn.close()
 
-        # Get the appropriate embedding
-        if embedding_type == "original":
-            embedding_vector = json.loads(row[6])  # embedding column
-        else:
-            embedding_vector = json.loads(row[7])  # reduced_embedding_N column
+        # Intersect with company complaints
+        all_ids = all_ids.intersection(category_complaint_ids)
 
+        if not all_ids:
+            return [], np.array([])
+
+    # Load embeddings
+    embeddings_list = (
+        session.query(ComplaintEmbedding)
+        .filter(
+            ComplaintEmbedding.complaint_id.in_(all_ids),
+            ComplaintEmbedding.dimensions == dimensions
+        )
+        .order_by(ComplaintEmbedding.complaint_id)
+        .all()
+    )
+
+    if not embeddings_list:
+        return [], np.array([])
+
+    # Convert to numpy array
+    embeddings = []
+    for emb in embeddings_list:
+        embedding_vector = json.loads(emb.embedding)
         embeddings.append(embedding_vector)
 
-    embeddings_matrix = np.array(embeddings)
-
-    return insights, embeddings_matrix
+    return embeddings_list, np.array(embeddings)
 
 
-def cluster_insights(
+def load_use_case_embeddings(
+    session,
     company_name: str,
-    insight_type: str = "pain_point",
-    min_cluster_size: int = 3,
-    min_samples: int = 2,
-    embedding_type: str = "original",
-    n_components: int = 5
+    dimensions: int = 50
+) -> Tuple[List[UseCaseEmbedding], np.ndarray]:
+    """Load use case embeddings for a given company"""
+    # Get company
+    company = session.query(Company).filter(Company.name == company_name).first()
+    if not company:
+        print(f"Company '{company_name}' not found")
+        return [], np.array([])
+
+    # Get use case IDs for this company from both Reddit and Reviews
+    reddit_use_case_ids = (
+        session.query(UseCase.id)
+        .join(RedditContent, and_(
+            UseCase.source_id == RedditContent.id,
+            UseCase.source_table == 'reddit_content'
+        ))
+        .filter(RedditContent.company_id == company.id)
+        .distinct()
+    )
+
+    review_use_case_ids = (
+        session.query(UseCase.id)
+        .join(Review, and_(
+            UseCase.source_id == Review.review_id,
+            UseCase.source_table == 'reviews'
+        ))
+        .filter(Review.company_id == company.id)
+        .distinct()
+    )
+
+    # Combine use case IDs
+    all_ids = set()
+    for uid_tuple in reddit_use_case_ids.all():
+        all_ids.add(uid_tuple[0])
+    for uid_tuple in review_use_case_ids.all():
+        all_ids.add(uid_tuple[0])
+
+    if not all_ids:
+        return [], np.array([])
+
+    # Load embeddings
+    embeddings_list = (
+        session.query(UseCaseEmbedding)
+        .filter(
+            UseCaseEmbedding.use_case_id.in_(all_ids),
+            UseCaseEmbedding.dimensions == dimensions
+        )
+        .order_by(UseCaseEmbedding.use_case_id)
+        .all()
+    )
+
+    if not embeddings_list:
+        return [], np.array([])
+
+    # Convert to numpy array
+    embeddings = []
+    for emb in embeddings_list:
+        embedding_vector = json.loads(emb.embedding)
+        embeddings.append(embedding_vector)
+
+    return embeddings_list, np.array(embeddings)
+
+
+def cluster_items(
+    company_name: str,
+    cluster_type: Literal["complaints", "use_cases"] = "complaints",
+    min_cluster_size: int = 5,
+    min_samples: int = 3,
+    dimensions: int = 50,
+    category: str = None
 ) -> None:
     """
-    Cluster insights using HDBSCAN
+    Cluster complaints or use cases using HDBSCAN
 
     Args:
-        company_name: Company name to filter insights
-        insight_type: Type of insight to cluster
+        company_name: Company name to filter items
+        cluster_type: Type to cluster ('complaints' or 'use_cases')
         min_cluster_size: Minimum size of clusters
         min_samples: Minimum samples in a neighborhood for core points
-        embedding_type: 'original' or 'reduced'
-        n_components: Number of dimensions for reduced embeddings
+        dimensions: Dimension of embeddings to use (e.g., 1536, 50, 20)
+        category: Optional LLM category to filter by (only for complaints)
     """
     # Create database session
     session = get_session()
-    print(f"📊 Connected to database")
-    print(f"🏢 Company: {company_name}")
+    print(f"Connected to database")
+    print(f"Company: {company_name}")
+    print(f"Type: {cluster_type}")
+    if category and cluster_type == "complaints":
+        print(f"Filtering by category: \"{category}\"")
+
+    # Determine embedding type
+    embedding_type = "original" if dimensions == 1536 else "reduced"
 
     # Clear existing clusters for these parameters
-    print(f"\n🗑️  Clearing existing clusters...")
-    clear_existing_clusters(session, company_name, insight_type, embedding_type, n_components)
+    print(f"\nClearing existing clusters...")
+    clear_existing_clusters(session, company_name, embedding_type, dimensions, cluster_type)
 
-    # Load insights with embeddings
-    emb_desc = f"{n_components}-dim reduced" if embedding_type == "reduced" else "original 1536-dim"
-    print(f"\n🔍 Loading {insight_type}s with {emb_desc} embeddings...")
-    insights, embeddings = load_insights_with_embeddings(
-        session, company_name, insight_type, embedding_type, n_components
-    )
+    # Load embeddings based on type
+    print(f"\nLoading {cluster_type} embeddings ({dimensions}D)...")
 
-    if len(insights) == 0:
-        print(f"\n❌ No {insight_type}s with embeddings found!")
-        print("Run generate_embeddings.py first.")
+    if cluster_type == "complaints":
+        embeddings_list, embeddings = load_complaint_embeddings(
+            session, company_name, dimensions, category
+        )
+        id_field = "complaint_id"
+        text_field = "complaint_text"
+        item_name = "complaint"
+    else:
+        embeddings_list, embeddings = load_use_case_embeddings(
+            session, company_name, dimensions
+        )
+        id_field = "use_case_id"
+        text_field = "use_case_text"
+        item_name = "use_case"
+
+    if len(embeddings_list) == 0:
+        print(f"\nNo {cluster_type} with {dimensions}D embeddings found!")
+        print("Run generate_embeddings.py and generate_reduced_embeddings.py first.")
         session.close()
         return
 
-    print(f"✅ Loaded {len(insights):,} {insight_type}s with embeddings")
-    print(f"   Embedding dimension: {embeddings.shape[1]}")
+    print(f"Loaded {len(embeddings_list):,} {cluster_type} embeddings")
+    print(f"Embedding dimension: {embeddings.shape[1]}")
 
     # Cluster using HDBSCAN
-    print(f"\n🔬 Clustering with HDBSCAN...")
-    print(f"   min_cluster_size: {min_cluster_size}")
-    print(f"   min_samples: {min_samples}")
+    print(f"\nClustering with HDBSCAN...")
+    print(f"  min_cluster_size: {min_cluster_size}")
+    print(f"  min_samples: {min_samples}")
 
     clusterer = hdbscan.HDBSCAN(
         min_cluster_size=min_cluster_size,
@@ -288,80 +363,122 @@ def cluster_insights(
     cluster_labels = clusterer.fit_predict(embeddings)
 
     # Save clusters to database
-    print(f"\n💾 Saving clusters to database...")
+    print(f"\nSaving clusters to database...")
     label_to_db_id = save_clusters_to_db(
-        session, company_name, insights, cluster_labels, embeddings,
-        insight_type, embedding_type, n_components
+        session, company_name, embeddings_list, cluster_labels,
+        embedding_type, dimensions, cluster_type
     )
 
-    # Organize insights by cluster
-    clusters: Dict[int, List[Insight]] = {}
-    for insight, label in zip(insights, cluster_labels):
+    # Organize items by cluster
+    clusters: Dict[int, List] = {}
+    for emb, label in zip(embeddings_list, cluster_labels):
         if label not in clusters:
             clusters[label] = []
-        clusters[label].append(insight)
+        clusters[label].append(emb)
 
     # Print results
-    print("\n" + "="*80)
-    print("CLUSTERING RESULTS")
-    print("="*80)
+    print("\n" + "=" * 80)
+    print(f"CLUSTERING RESULTS ({cluster_type.upper()})")
+    print("=" * 80)
 
     # Count clusters (excluding noise which is -1)
     num_clusters = len([c for c in clusters.keys() if c != -1])
     num_noise = len(clusters.get(-1, []))
 
-    print(f"\nTotal insights: {len(insights):,}")
+    print(f"\nTotal {cluster_type}: {len(embeddings_list):,}")
     print(f"Number of clusters: {num_clusters}")
     print(f"Noise points (unclustered): {num_noise}")
     print()
 
     # Print each cluster
     for cluster_id in sorted(clusters.keys()):
-        cluster_insights = clusters[cluster_id]
+        cluster_items = clusters[cluster_id]
 
         if cluster_id == -1:
-            print("="*80)
-            print(f"NOISE (Unclustered) - {len(cluster_insights)} insights")
-            print("="*80)
+            print("=" * 80)
+            print(f"NOISE (Unclustered) - {len(cluster_items)} {cluster_type}")
+            print("=" * 80)
         else:
             db_id = label_to_db_id.get(cluster_id, "N/A")
-            print("="*80)
-            print(f"CLUSTER {cluster_id} (DB ID: {db_id}) - {len(cluster_insights)} insights")
-            print("="*80)
+            print("=" * 80)
+            print(f"CLUSTER {cluster_id} (DB ID: {db_id}) - {len(cluster_items)} {cluster_type}")
+            print("=" * 80)
 
-        for i, insight in enumerate(cluster_insights, 1):
-            print(f"\n{i}. [{insight.id}] (Date: {insight.review_date.date()})")
-            print(f"   {insight.insight_text}")
+        for i, emb in enumerate(cluster_items, 1):
+            item_id = getattr(emb, id_field)
+            item_text = getattr(emb, text_field)
+
+            print(f"\n{i}. [ID: {item_id}]")
+            print(f"   {item_name.title()}: {item_text}")
+
+            # Get quote from related object
+            if cluster_type == "complaints":
+                quote = emb.complaint.quote if emb.complaint else "N/A"
+            else:
+                quote = emb.use_case.quote if emb.use_case else "N/A"
+            print(f"   Quote: \"{quote}\"")
 
         print()
 
     # Summary statistics
-    print("="*80)
+    print("=" * 80)
     print("CLUSTER SUMMARY")
-    print("="*80)
+    print("=" * 80)
     for cluster_id in sorted([c for c in clusters.keys() if c != -1]):
         size = len(clusters[cluster_id])
         db_id = label_to_db_id.get(cluster_id, "N/A")
-        print(f"Cluster {cluster_id} (DB ID: {db_id}): {size} insights")
+        print(f"Cluster {cluster_id} (DB ID: {db_id}): {size} {cluster_type}")
 
     if -1 in clusters:
-        print(f"Noise: {len(clusters[-1])} insights")
+        print(f"Noise: {len(clusters[-1])} {cluster_type}")
 
-    print("="*80)
+    print("=" * 80)
 
     # Close session
     session.close()
 
 
+# Backward compatibility
+def cluster_complaints(
+    company_name: str,
+    min_cluster_size: int = 5,
+    min_samples: int = 3,
+    dimensions: int = 50,
+    category: str = None
+) -> None:
+    """Backward compatible function for clustering complaints"""
+    cluster_items(
+        company_name=company_name,
+        cluster_type="complaints",
+        min_cluster_size=min_cluster_size,
+        min_samples=min_samples,
+        dimensions=dimensions,
+        category=category
+    )
+
+
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Cluster insights using HDBSCAN")
+    parser = argparse.ArgumentParser(description="Cluster complaints or use cases using HDBSCAN")
+    parser.add_argument(
+        "--company",
+        type=str,
+        required=True,
+        help="Company name (e.g., 'wispr')"
+    )
     parser.add_argument(
         "--type",
         type=str,
-        default="pain_point",
-        help="Type of insight to cluster (e.g., pain_point, feature_request, praise, use_case)"
+        choices=["complaints", "use_cases"],
+        default="complaints",
+        help="Type of items to cluster (default: complaints)"
+    )
+    parser.add_argument(
+        "--dimensions",
+        type=int,
+        default=50,
+        help="Dimension of embeddings to use (default: 50)"
     )
     parser.add_argument(
         "--min-cluster-size",
@@ -376,32 +493,18 @@ if __name__ == "__main__":
         help="Minimum samples in neighborhood (default: 3)"
     )
     parser.add_argument(
-        "--embedding-type",
+        "--category",
         type=str,
-        default="original",
-        choices=["original", "reduced"],
-        help="Type of embedding to use: 'original' (1536-dim) or 'reduced' (UMAP)"
-    )
-    parser.add_argument(
-        "--dimensions",
-        type=int,
-        default=5,
-        help="Number of dimensions for reduced embeddings (default: 5)"
-    )
-    parser.add_argument(
-        "--company",
-        type=str,
-        required=True,
-        help="Company name (e.g., 'noom', 'myfitnesspal')"
+        help="Filter by LLM category (only for complaints)"
     )
 
     args = parser.parse_args()
 
-    cluster_insights(
+    cluster_items(
         company_name=args.company,
-        insight_type=args.type,
+        cluster_type=args.type,
+        dimensions=args.dimensions,
         min_cluster_size=args.min_cluster_size,
         min_samples=args.min_samples,
-        embedding_type=args.embedding_type,
-        n_components=args.dimensions
+        category=args.category
     )

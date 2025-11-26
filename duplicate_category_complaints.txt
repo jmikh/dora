@@ -1,0 +1,648 @@
+====================================================================================================
+CASE 1: [customization issues]
+Source: reddit_content / t1_nerd9ij
+----------------------------------------------------------------------------------------------------
+  Complaint ID 541: Cannot assign multiple trigger phrases
+    Quote: "One thing that would be amazing is if you could either create multiple trigger phrases for the same result (different types of phrases that will bring up the same link or content)."
+
+  Complaint ID 542: No quick snippet selection menu
+    Quote: "Or an even better idea would be to add a shortcut menu where you finish talking and then press a button to show you all the snippets. You just select the one you want, and it inserts it in line. Bonus points if you can organize them by folders or tags or something."
+
+====================================================================================================
+CASE 2: [lack of public roadmap or feature requests]
+Source: reddit_content / t1_nev30me
+----------------------------------------------------------------------------------------------------
+  Complaint ID 564: No centralized feature request tool
+    Quote: "Did you ever consider using tools like Canny for feature request management, like all the other tools out there?"
+
+  Complaint ID 565: No public roadmap or progress visibility
+    Quote: "Also, you can request a feature in progress or include it in something like a roadmap that everyone wants to see."
+
+====================================================================================================
+CASE 3: [lack of public roadmap or feature requests]
+Source: reddit_content / t1_nfkbwcz
+----------------------------------------------------------------------------------------------------
+  Complaint ID 567: Feedback requires Reddit account
+    Quote: "Having to create a Reddit account just to give feedback on another tool and searching for subreddits, while reading each one to find the one with the same intent, feels like an unnecessary hurdle."
+
+  Complaint ID 568: No public roadmap
+    Quote: "There’s no roadmap transparency, and if activity really does scale, things will quickly become completely unmanageable."
+
+====================================================================================================
+CASE 4: [privacy concerns]
+Source: reddit_content / t1_nfnznv9
+----------------------------------------------------------------------------------------------------
+  Complaint ID 468: Privacy documentation ambiguous
+    Quote: "If you still see or experience ambiguity, please flag it and we'll continue to clean it up."
+
+  Complaint ID 469: Data used for model training
+    Quote: "If privacy mode is off, we keep a copy and use it for model training."
+
+====================================================================================================
+CASE 5: [customer support not responsive]
+Source: reddit_content / t1_ngaet3b
+----------------------------------------------------------------------------------------------------
+  Complaint ID 455: No response to in-app support reports
+    Quote: "I reported the issue in the app several days ago and heard nothing back."
+
+  Complaint ID 456: Unclear how to get support
+    Quote: "How should I get support in future."
+
+====================================================================================================
+CASE 6: [AI/Smart formatting issues]
+Source: reddit_content / t1_ngh78ak
+----------------------------------------------------------------------------------------------------
+  Complaint ID 509: Cannot disable Smart Formatting
+    Quote: "Even when I disable Smart Formatting, the text is not transcribed word-for-word as I dictate it; instead, an AI alters it."
+
+  Complaint ID 510: AI Formatting introduces noticeable delay
+    Quote: "There is a noticeable delay caused by AI Formatting."
+
+====================================================================================================
+CASE 7: [issues with command mode]
+Source: reddit_content / t1_ngtag4e
+----------------------------------------------------------------------------------------------------
+  Complaint ID 489: Command Mode not working
+    Quote: "Command Mode isn’t working in your Wispr Flow desktop app (version 1.3.454 on darwin/arm64) likely because of:"
+
+  Complaint ID 491: Command Mode unreliable during update
+    Quote: "Command Mode is being updated and may not work reliably right now."
+
+  Complaint ID 493: Wake phrase can trigger Command Mode
+    Quote: "Avoid starting dictation with phrases like "Hey, Flow," which can trigger Command Mode by mistake."
+
+====================================================================================================
+CASE 8: [too expensive]
+Source: reddit_content / t1_ni4vwjm
+----------------------------------------------------------------------------------------------------
+  Complaint ID 610: Unnecessary monthly transcription fees
+    Quote: "I will never understand why anyone who has an M series laptop with at least 16GB of RAM would ever pay for transcription."
+
+  Complaint ID 611: Exploits users' ignorance to charge fees
+    Quote: "As with all the STT apps that have monthly costs, they are counting on your ignorance that there is *anything* better."
+
+====================================================================================================
+CASE 9: [other]
+Source: reddit_content / t1_nk39odk
+----------------------------------------------------------------------------------------------------
+  Complaint ID 284: Local storage fills up quickly
+    Quote: "Storing everything locally adds up pretty quickly."
+
+  Complaint ID 285: No cloud sync across devices
+    Quote: "Syncing what you have on mobile to desktop is a little difficult."
+
+  Complaint ID 286: No search for old transcriptions
+    Quote: "I would love to have the ability to search my old notes, maybe for the past week or month."
+
+====================================================================================================
+CASE 10: [mobile keyboard issues]
+Source: reddit_content / t1_nk8wo0u
+----------------------------------------------------------------------------------------------------
+  Complaint ID 258: No autocorrect on mobile keyboard
+    Quote: "auto-correct"
+
+  Complaint ID 259: No word predictions on mobile keyboard
+    Quote: "predictions"
+
+  Complaint ID 260: No emoji predictions on mobile keyboard
+    Quote: "emoji predictions"
+
+  Complaint ID 261: No swipe typing on mobile keyboard
+    Quote: "swiping"
+
+====================================================================================================
+CASE 11: [mobile keyboard issues]
+Source: reddit_content / t1_nkkx864
+----------------------------------------------------------------------------------------------------
+  Complaint ID 255: No basic letter keyboard
+    Quote: "I will emphasize this again; I really believe you guys need to add, at the very least, a basic lettering keyboard asap."
+
+  Complaint ID 256: Keyboard switching is cumbersome with multiple languages
+    Quote: "For context, anyone who has more than the English keyboard added switching to Wispr Flow becomes a giant hassle of cycling through all the keyboards that you have selected, so having to continuously switch back and forth between the English and the Wispr one makes it too much work."
+
+====================================================================================================
+CASE 12: [microphone compatibility issues]
+Source: reddit_content / t1_nl3g1aa
+----------------------------------------------------------------------------------------------------
+  Complaint ID 121: Poor Bluetooth microphone support
+    Quote: "My buetooth airpods really did not work at all with the app."
+
+  Complaint ID 122: Docs don't mention wireless mic compatibility
+    Quote: "You better mention this in your docs because **I was about to cancel my subscription until the wireless mic idea crossed my mind**"
+
+====================================================================================================
+CASE 13: [customization issues]
+Source: reddit_content / t1_nm17zuh
+----------------------------------------------------------------------------------------------------
+  Complaint ID 80: Limited to preset styles
+    Quote: "When will we have the ability to make custom modifications instead of being limited to just formal, causal and excited?"
+
+  Complaint ID 81: No per-app personalization or templates
+    Quote: "When will be able to personalize individual apps instead of anything that is not emails and messages being in 1 bucket?"
+
+====================================================================================================
+CASE 14: [other]
+Source: reddit_content / t1_nmc148h
+----------------------------------------------------------------------------------------------------
+  Complaint ID 477: Frequent bugs and issues
+    Quote: "I've been having way too many issues and bugs with them"
+
+  Complaint ID 478: Quality has declined
+    Quote: "I find that it's not as good as it once was."
+
+====================================================================================================
+CASE 15: [freezes and crashes]
+Source: reddit_content / t1_nmhgfvc
+----------------------------------------------------------------------------------------------------
+  Complaint ID 665: Frequent freezes and system lockups
+    Quote: "ran into the same issues with Wispr Flow on Windows (freezing, messing up the clipboard, etc.)."
+
+  Complaint ID 666: Breaks clipboard functionality
+    Quote: "ran into the same issues with Wispr Flow on Windows (freezing, messing up the clipboard, etc.)."
+
+====================================================================================================
+CASE 16: [AI/Smart formatting issues]
+Source: reddit_content / t1_nn0p51m
+----------------------------------------------------------------------------------------------------
+  Complaint ID 87: Cannot disable Smart Formatting
+    Quote: "Even when I disable Smart Formatting, as shown in the image, the output is edited. Specifically, paragraphs are inserted. In the background, it performs forced AI editing."
+
+  Complaint ID 88: Slow output due to forced editing
+    Quote: "This causes significant delays in the output."
+
+====================================================================================================
+CASE 17: [customer support not responsive]
+Source: reddit_content / t1_no8fcsy
+----------------------------------------------------------------------------------------------------
+  Complaint ID 45: No response from support team yet
+    Quote: "I've sent support requests but no response as of yet from your team."
+
+  Complaint ID 46: Promoted before fixing current paid-customer issues
+    Quote: "Not responsible of you to promote this app without taking care of current issues and paid customers first."
+
+====================================================================================================
+CASE 18: [issues with command mode]
+Source: reddit_content / t1_nohncqt
+----------------------------------------------------------------------------------------------------
+  Complaint ID 31: Command Mode fails with server overload
+    Quote: "It has been failing for me too, claiming that the servers are overloaded."
+
+  Complaint ID 32: No ready button/auto-retry for Command Mode
+    Quote: "I wish there was a ready button or it would keep trying because I hate having to re-say my command multiple times for it to get through."
+
+====================================================================================================
+CASE 19: [AI/Smart formatting issues]
+Source: reddit_content / t1_npe59qz
+----------------------------------------------------------------------------------------------------
+  Complaint ID 12: No hotkey to toggle Smart Formatting
+    Quote: "I see, is there a hotkey or option to turn it on off on the go?"
+
+  Complaint ID 13: No per-context Smart Formatting toggle
+    Quote: "So for like an email its on and for a long text or note it is off.?"
+
+  Complaint ID 14: No Raycast plugin to toggle Smart Formatting
+    Quote: "Raycast plugin would be good too if there is such a thing to toggle it."
+
+====================================================================================================
+CASE 20: [mobile keyboard issues]
+Source: reddit_content / t3_1nd0koy
+----------------------------------------------------------------------------------------------------
+  Complaint ID 649: Can't set as default keyboard
+    Quote: "I can’t set it as the default keyboard. I’ve already moved it to the top in the iOS keyboard settings (so technically it should be the default), but every time I switch apps, I still have to manually bring it up again, which is super annoying."
+
+  Complaint ID 650: Not a full keyboard
+    Quote: "Wispr Flow isn’t a “full” keyboard—it only has a number pad and a voice input button."
+
+====================================================================================================
+CASE 21: [mobile keyboard issues]
+Source: reddit_content / t3_1nd16r5
+----------------------------------------------------------------------------------------------------
+  Complaint ID 548: Doesn't stay default keyboard
+    Quote: "I’ve already dragged Wispr Flow to the top of my iOS keyboard list (so it should technically be the default), but whenever I switch to a new app, I still have to manually bring it up."
+
+  Complaint ID 549: Limited iOS keyboard (only number pad & mic)
+    Quote: "From what I understand, it might be because Wispr Flow isn’t a “full” keyboard—it only has a number pad and a mic button."
+
+====================================================================================================
+CASE 22: [lack of public roadmap or feature requests]
+Source: reddit_content / t3_1nk4hoc
+----------------------------------------------------------------------------------------------------
+  Complaint ID 514: Hard to manage duplicate feature requests
+    Quote: "It's incredibly difficult for you to manage duplicate and triplicate requests here"
+
+  Complaint ID 515: Feature requests cumbersome on Reddit
+    Quote: "it's also very cumbersome for users to submit feature requests on Reddit."
+
+  Complaint ID 516: Lacks dedicated feature-request site and roadmap
+    Quote: "Additionally, having a dedicated website makes the process much more professional, and there is also a roadmap function."
+
+  Complaint ID 517: Low interest in submitting feature requests
+    Quote: "the interest in submitting new requests is not very high."
+
+====================================================================================================
+CASE 23: [privacy concerns]
+Source: reddit_content / t3_1nkfbtm
+----------------------------------------------------------------------------------------------------
+  Complaint ID 502: No bulk or time-based deletion
+    Quote: "The ability to delete all recordings and transcriptions would be great.  Or the option to delete anything older than the last n days/months."
+
+  Complaint ID 503: Cannot delete audio but keep transcript
+    Quote: "The option to keep the transcription and delete the audio recordings would be even better but I ask a lot - I know 😅"
+
+====================================================================================================
+CASE 24: [other]
+Source: reddit_content / t3_1nrszlc
+----------------------------------------------------------------------------------------------------
+  Complaint ID 588: Connection issues
+    Quote: "sometimes it says it can't connect even though my WiFi is fine."
+
+  Complaint ID 591: Not native Mac app
+    Quote: "it seems to be a really clunky electron app."
+
+====================================================================================================
+CASE 25: [other]
+Source: reddit_content / t3_1o293oc
+----------------------------------------------------------------------------------------------------
+  Complaint ID 319: Must exit app to use computer
+    Quote: "**I have to exit Wispr Flow if I wanna use my computer normally again.**"
+
+  Complaint ID 320: Bloated with extra features
+    Quote: "Why can't it be as simple and lightweight as possible without adding in all these extra BS features. Just need to keep it as simple as possible and stop bloating."
+
+====================================================================================================
+CASE 26: [hotkey issues]
+Source: reddit_content / t3_1o2xeih
+----------------------------------------------------------------------------------------------------
+  Complaint ID 310: Cannot bind hyper-key combos
+    Quote: "I was trying to bind ctrl+cmd+opt+shift+3 to whispr fow, but it's not allowed for some reason:"
+
+  Complaint ID 311: Cannot remove keyboard shortcut
+    Quote: "Also, I will not be using push to talk, but there is no way of removing keyboard shortcut. Just allow us to use esc for that - I definitely won't be binding anything to esc."
+
+====================================================================================================
+CASE 27: [subscription problems]
+Source: reddit_content / t3_1odgavb
+----------------------------------------------------------------------------------------------------
+  Complaint ID 127: Free trial stops after 2000 words
+    Quote: "I activated a free Pro trial  but after 2000 words it stopped working “No words remaining”."
+
+  Complaint ID 128: Quota not synced across platforms
+    Quote: "But on Mac it still works"
+
+====================================================================================================
+CASE 28: [issues with command mode]
+Source: reddit_content / t3_1odrv5t
+----------------------------------------------------------------------------------------------------
+  Complaint ID 124: Missing command-mode transcription history
+    Quote: "When you use command mode, it should show:
+
+* What the input text was
+* What the feedback or command was
+* What the output was"
+
+  Complaint ID 125: No retry for command updates
+    Quote: "This should also let us retry the command updates as well (incase if a poor edit)."
+
+====================================================================================================
+CASE 29: [AI/Smart formatting issues]
+Source: reddit_content / t3_1odrv8s
+----------------------------------------------------------------------------------------------------
+  Complaint ID 119: No hotkey to paste unedited transcripts
+    Quote: "I wish there was a way to paste the un AI-edited transcripts similar to the way Shift-Alt-C works right now, except for it to remove the AI edits and paste the unedited transcripts."
+
+  Complaint ID 120: UI doesn't update to show unedited transcript
+    Quote: "When this happens in the Wispr UI, it should also update to not show the transcript without the AI edits (the way it would if you manually took the button)."
+
+====================================================================================================
+CASE 30: [microphone compatibility issues]
+Source: reddit_content / t3_1oe7cc4
+----------------------------------------------------------------------------------------------------
+  Complaint ID 117: Poor Bluetooth microphone support
+    Quote: "I tried to use it with my AirPods, and them being Bluetooth, it doesn't understand anything I say at all"
+
+  Complaint ID 118: Internal mic fails in clamshell mode
+    Quote: "putting it in clamshell mode makes the internal microphone not work properly"
+
+====================================================================================================
+CASE 31: [issues with command mode]
+Source: reddit_content / t3_1oemial
+----------------------------------------------------------------------------------------------------
+  Complaint ID 113: Fn key stops invoking recording
+    Quote: "after like 30 minutes, using the function key does not invoke recording."
+
+  Complaint ID 114: Finish and paste doesn't work
+    Quote: "It seems to be recording but the "finish and paste" does nothing."
+
+====================================================================================================
+CASE 32: [issues with command mode]
+Source: reddit_content / t3_1otao71
+----------------------------------------------------------------------------------------------------
+  Complaint ID 29: Command Mode inconsistent and fails
+    Quote: "In recent weeks it’s been inconsistent and often fails."
+
+  Complaint ID 30: No timeline for Command Mode fixes
+    Quote: "I’m curious how it’s behaving for others and whether the team can share plans or timelines for fixes and the feature’s future."
+
+====================================================================================================
+CASE 33: [privacy concerns]
+Source: reddit_content / t3_1owplbw
+----------------------------------------------------------------------------------------------------
+  Complaint ID 600: Stores desktop screenshots
+    Quote: "Why does a dictation app need to send a screenshot of my desktop?"
+
+  Complaint ID 601: Uploads raw audio recordings
+    Quote: "What are they doing with the raw audio of my private conversations, client calls, and personal notes?"
+
+  Complaint ID 602: Misleading privacy claims
+    Quote: "They claim to be "fully compliant" with all the major privacy regulations, but their backend behavior is incredibly sketchy."
+
+====================================================================================================
+CASE 34: [privacy concerns]
+Source: reddit_content / t3_1owpnpu
+----------------------------------------------------------------------------------------------------
+  Complaint ID 594: Stores user screenshots
+    Quote: "Why does a dictation app need to send a screenshot of my desktop?"
+
+  Complaint ID 595: Sends massive telemetry without anonymization
+    Quote: "they are storing user screenshots and sending massive amounts of telemetry data back to their servers without proper anonymization."
+
+  Complaint ID 596: Uploads raw audio recordings
+    Quote: "What are they doing with the raw audio of my private conversations, client calls, and personal notes?"
+
+  Complaint ID 597: Misleading privacy policy claims
+    Quote: "I did a deep dive into Wispr Flow's network traffic and their privacy policy claims are an absolute lie."
+
+====================================================================================================
+CASE 35: [privacy concerns]
+Source: reddit_content / t3_1owpt0g
+----------------------------------------------------------------------------------------------------
+  Complaint ID 652: Stores user screenshots
+    Quote: "they are storing user screenshots and sending massive amounts of telemetry data back to their servers without proper anonymization"
+
+  Complaint ID 653: Sends telemetry without anonymization
+    Quote: "sending massive amounts of telemetry data back to their servers without proper anonymization"
+
+  Complaint ID 654: Uploads raw audio recordings
+    Quote: "What are they doing with the raw audio of my private conversations, client calls, and personal notes?"
+
+  Complaint ID 655: Privacy policy claims are false
+    Quote: "their privacy policy claims are an absolute lie"
+
+====================================================================================================
+CASE 36: [subscription problems]
+Source: reddit_content / t3_1oy2zzp
+----------------------------------------------------------------------------------------------------
+  Complaint ID 19: Mac purchase routed to Stripe
+    Quote: "Just tried to purchase the pro version on Mac but kept getting routed to Stripe."
+
+  Complaint ID 20: Cannot confirm Mac app update
+    Quote: "I was able to purchase on the iPhone, but would like to be able to confirm that the Mac is updated as well."
+
+====================================================================================================
+CASE 37: [reliability and performance problems]
+Source: reviews / 12735025031
+----------------------------------------------------------------------------------------------------
+  Complaint ID 382: Reliability issues
+    Quote: "I can type faster, which is more reliable than this program"
+
+  Complaint ID 383: Poor performance on iPad
+    Quote: "the results were not good. It's easier and more reliable to use the iPad built-in microphone"
+
+====================================================================================================
+CASE 38: [other]
+Source: reviews / 12745392246
+----------------------------------------------------------------------------------------------------
+  Complaint ID 374: Annoying marketing emails
+    Quote: "I don't need recurring marketing emails sent to me multiple times after I download the app."
+
+  Complaint ID 375: Frequent notifications
+    Quote: "I don't need notifications popping up on my phone from this app telling me about your other features."
+
+====================================================================================================
+CASE 39: [hotkey issues]
+Source: reviews / 13080764952
+----------------------------------------------------------------------------------------------------
+  Complaint ID 329: Cannot disable hot key shortcuts
+    Quote: "it annoys me I can’t simply disable some of the hot key shortcuts on the Mac app"
+
+  Complaint ID 330: Limited customization for shortcuts
+    Quote: "It’s very limiting what you can even set them to"
+
+====================================================================================================
+CASE 40: [other]
+Source: reviews / 13082603203
+----------------------------------------------------------------------------------------------------
+  Complaint ID 327: Cannot drop recordings into the app
+    Quote: "I can't drop a recording into Wispr Flow"
+
+  Complaint ID 328: Not perfect
+    Quote: "It's not perfect, but life ain't perfect"
+
+====================================================================================================
+CASE 41: [microphone runs in the background]
+Source: reviews / 13166711425
+----------------------------------------------------------------------------------------------------
+  Complaint ID 281: Microphone indicator issue
+    Quote: "the app signifies in the floating island that the microphone is always being used even when the keyboard is not actively on"
+
+  Complaint ID 282: Interference with other apps
+    Quote: "This has interference with Hey Siri which is annoying"
+
+====================================================================================================
+CASE 42: [mobile keyboard issues]
+Source: reviews / 13171762958
+----------------------------------------------------------------------------------------------------
+  Complaint ID 272: Keyboard unusable
+    Quote: "Bizarre unusable keyboard"
+
+  Complaint ID 273: No text on the keyboard
+    Quote: "Only numbers on the keyboard? There is no text?"
+
+  Complaint ID 274: Difficult emoji access
+    Quote: "I don’t want to have more than a single keyboard an emoji otherwise I have to click the globe"
+
+  Complaint ID 275: Lacks iOS keyboard features
+    Quote: "Seems like they could just copy the iOS keyboard exactly with a dictation icon at the bottom right"
+
+====================================================================================================
+CASE 43: [accuracy issues]
+Source: reviews / 13215757248
+----------------------------------------------------------------------------------------------------
+  Complaint ID 250: Loses transcripts in noisy environments
+    Quote: "it keeps on losing my transcription every time I do something long-form, especially when I'm using my AirPods"
+
+  Complaint ID 253: Not robust for noise
+    Quote: "This needs to be more robust to noise and work better"
+
+====================================================================================================
+CASE 44: [other]
+Source: reviews / 13215757248
+----------------------------------------------------------------------------------------------------
+  Complaint ID 251: Struggles in everyday settings
+    Quote: "works terribly in any other situation"
+
+  Complaint ID 254: Issues with long-form content on iOS
+    Quote: "it also needs to work for longer form content which is in particular an issue on the iOS app"
+
+====================================================================================================
+CASE 45: [no dark mode]
+Source: reviews / 13272633504
+----------------------------------------------------------------------------------------------------
+  Complaint ID 230: No dark mode option
+    Quote: "Instead I am now forced into pro mode trial that I didn’t ask for"
+
+  Complaint ID 231: Blindingly white interface
+    Quote: "Why is the app blindingly white?"
+
+====================================================================================================
+CASE 46: [other]
+Source: reviews / 13300422549
+----------------------------------------------------------------------------------------------------
+  Complaint ID 215: Sudden loss of functionality
+    Quote: "it suddenly doesn’t work at all. It will mostly not even begin transcribing"
+
+  Complaint ID 216: Annoying startup process
+    Quote: "the app opening then swipe back to what you’re using the app in process is RIDICULOUSLY irritating"
+
+====================================================================================================
+CASE 47: [other]
+Source: reviews / 13304342629
+----------------------------------------------------------------------------------------------------
+  Complaint ID 206: Lacks features beyond speech to text
+    Quote: "If the App actually did more than speech to text, I might be willing to pay them monthly."
+
+  Complaint ID 208: App delays and typos
+    Quote: "I’ve run into nothing but app delays and typos or it just not working."
+
+====================================================================================================
+CASE 48: [privacy concerns]
+Source: reviews / 13323071372
+----------------------------------------------------------------------------------------------------
+  Complaint ID 187: Requires full access to keyboard and microphone
+    Quote: "I doesn’t allow me to use it till get full access to my keyboard and collect all data I use keyboard for, full access to my microphone."
+
+  Complaint ID 188: Concerns about data privacy
+    Quote: "These apps collecting our data to personalize the ads and sell our data to the ads people."
+
+====================================================================================================
+CASE 49: [other]
+Source: reviews / 13341879781
+----------------------------------------------------------------------------------------------------
+  Complaint ID 181: Not optimized for iPad
+    Quote: "WisprFlow for iOS is useless."
+
+  Complaint ID 182: Full of bugs
+    Quote: "Full of bugs and no ability to adapt to the different UI"
+
+====================================================================================================
+CASE 50: [subscription problems]
+Source: reviews / 13341984699
+----------------------------------------------------------------------------------------------------
+  Complaint ID 178: Subscription cancellation issues
+    Quote: "it doesn't come up under your subscriptions, so you can't cancel it there"
+
+  Complaint ID 179: Difficult to cancel in app
+    Quote: "when you try to cancel in the app, you can't hit the button"
+
+====================================================================================================
+CASE 51: [other]
+Source: reviews / 13345239969
+----------------------------------------------------------------------------------------------------
+  Complaint ID 174: Limited for AI use
+    Quote: "Para un uso en otras AI está limitando o no está como me lo esperaba"
+
+  Complaint ID 175: Room for improvement
+    Quote: "Tiene margen de mejora"
+
+====================================================================================================
+CASE 52: [other]
+Source: reviews / 13351417782
+----------------------------------------------------------------------------------------------------
+  Complaint ID 171: Constant errors on mobile
+    Quote: "It errors on an almost constant basis."
+
+  Complaint ID 172: Frustrating usability on phone
+    Quote: "It is frustrating to the points that I almost can’t use it at all on my phone."
+
+====================================================================================================
+CASE 53: [other]
+Source: reviews / 13363316234
+----------------------------------------------------------------------------------------------------
+  Complaint ID 160: Popup gesturing issues
+    Quote: "WHAT IS UP WITH THE POPUP GESTURING TO GO BACK TO MESSAGES USING THE APP SWITCHER."
+
+  Complaint ID 161: Need for more seamlessness
+    Quote: "SO MUCH POTENTIAL for growth in regards to Whisper Flow, Need seamlessness."
+
+====================================================================================================
+CASE 54: [privacy concerns]
+Source: reviews / 13399439775
+----------------------------------------------------------------------------------------------------
+  Complaint ID 89: Privacy concerns over data access
+    Quote: "it asks for full access to your keyboard so anything you type can be stored"
+
+  Complaint ID 90: Accusations of credential harvesting
+    Quote: "I see this app as nothing more than a credential harvesting site"
+
+====================================================================================================
+CASE 55: [reliability and performance problems]
+Source: reviews / 63da6d9da628c930bad23e276abe141e
+----------------------------------------------------------------------------------------------------
+  Complaint ID 424: Performance has slowed down
+    Quote: "It's become very slow. Very annoying."
+
+  Complaint ID 426: Inconsistent performance
+    Quote: "When it works quickly, that's great, but not as common lately."
+
+====================================================================================================
+CASE 56: [customer support not responsive]
+Source: reviews / 68713d93604f5b9e94c02b19
+----------------------------------------------------------------------------------------------------
+  Complaint ID 405: Sign-in email not received
+    Quote: "Sign in email doesn't arrive and no replies from customer support"
+
+  Complaint ID 406: No customer support response
+    Quote: "No replies from customer support about the issue even days later"
+
+====================================================================================================
+CASE 57: [customer support not responsive]
+Source: reviews / 68b87a58e3183167ad2b5f39
+----------------------------------------------------------------------------------------------------
+  Complaint ID 397: No customer support
+    Quote: "no custemer support - full of bugs - do not pay for subscription"
+
+  Complaint ID 400: False support promises
+    Quote: "one of the features of the team's subscription is that you get support within one business day, which is simply a lie"
+
+====================================================================================================
+CASE 58: [customer support not responsive]
+Source: reviews / 68e3b26dd10fb0cdf25ad822
+----------------------------------------------------------------------------------------------------
+  Complaint ID 393: No response from support
+    Quote: "Support doesn't reply"
+
+  Complaint ID 394: Paid subscription not usable
+    Quote: "cancelled my subscription and have to use another tool even though i paid for the whole month ahead few days ago"
+
+====================================================================================================
+CASE 59: [other]
+Source: reviews / 691ac90567a8d1e753caeecc
+----------------------------------------------------------------------------------------------------
+  Complaint ID 388: Misleading AI functionality
+    Quote: "It promises AI... But its not."
+
+  Complaint ID 389: Lacks context in dictation
+    Quote: "does not have any context (like the email thread), so its pretty useless."
+
+====================================================================================================
+CASE 60: [other]
+Source: reviews / da61aea83a1dc979aff7b5408f13d105
+----------------------------------------------------------------------------------------------------
+  Complaint ID 418: Stopped functioning correctly
+    Quote: "Was one of my favourite apps, but suddenly broke"
+
+  Complaint ID 419: Transcribing unwanted responses
+    Quote: "it's either transcribing a chatbot's response or opening a browser tab"
+
+====================================================================================================
+Total: 60 cases with duplicate categories from same source

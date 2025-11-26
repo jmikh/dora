@@ -77,7 +77,7 @@ Examples of good groups:
 Identify the main thematic groups and assign each cluster to exactly one group."""
 
     completion = client.beta.chat.completions.parse(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message},

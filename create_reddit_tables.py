@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Migration script to create cluster_groups and cluster_group_assignments tables
+Migration script to create Reddit tables (companies, reddit_communities, reddit_posts, reddit_comments)
 """
 
 from pathlib import Path
 from models import Base, get_engine
 
 
-def create_cluster_groups_tables():
-    """Create cluster_groups and cluster_group_assignments tables"""
+def create_reddit_tables():
+    """Create Reddit-related tables"""
     print("=" * 80)
-    print("CREATING CLUSTER GROUPS TABLES")
+    print("CREATING REDDIT TABLES")
     print("=" * 80)
 
     # Get engine and create tables
@@ -21,8 +21,10 @@ def create_cluster_groups_tables():
     # Create only the new tables (won't affect existing ones)
     Base.metadata.create_all(engine, checkfirst=True)
 
-    print("   ✅ cluster_groups table created")
-    print("   ✅ cluster_group_assignments table created")
+    print("   ✅ companies table created")
+    print("   ✅ reddit_communities table created")
+    print("   ✅ reddit_posts table created")
+    print("   ✅ reddit_comments table created")
 
     # Verify tables exist
     from sqlalchemy import inspect
@@ -36,9 +38,9 @@ def create_cluster_groups_tables():
     print("\n" + "=" * 80)
     print("✅ MIGRATION COMPLETE")
     print("=" * 80)
-    print("Ready to store semantic cluster groups!")
+    print("Ready to ingest Reddit data!")
     print("=" * 80)
 
 
 if __name__ == "__main__":
-    create_cluster_groups_tables()
+    create_reddit_tables()

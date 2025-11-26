@@ -55,6 +55,6 @@ Thumbs.db
 *.log
 
 # Project specific
-noom_playstore_reviews.db
+dora.db
 #noom_reviews*.csv
 #*.csv

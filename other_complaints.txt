@@ -1,0 +1,1145 @@
+================================================================================
+COMPLAINT CATEGORIES REPORT
+================================================================================
+
+Total complaints: 658
+Categories: 1
+Min confidence filter: 0.00
+
+================================================================================
+CATEGORY: "other" - 281 complaints
+================================================================================
+
+1. [ID: 91] Cannot customize app-style mappings
+   Quote: "is it possible to customize the apps? i use an app called beeper for messaging and it uses the style..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request for customization that does not fit into the predefined categories.
+
+2. [ID: 245] Lacks watch app integration
+   Quote: "I'd love to have it be a watch app as well, or just sync to there so I don't have to pull out my pho..."
+   Confidence: 0.95 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+3. [ID: 558] CTO engaged in astroturfing on Reddit
+   Quote: "Astroturfing was NOT done by a contractor, but by YOUR CTO ( linked here is evidence: [https://www.r..."
+   Confidence: 0.95 | Reasoning: The complaint does not fit any specific category related to the app's functionality or user experience, but rather addresses a concern about the company's conduct.
+
+4. [ID: 20] Cannot confirm Mac app update
+   Quote: "I was able to purchase on the iPhone, but would like to be able to confirm that the Mac is updated a..."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+5. [ID: 21] Hard to install
+   Quote: "I had a hard time installing it"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not fit any specific category related to the app's functionality or features.
+
+6. [ID: 22] Hard to use
+   Quote: "a really hard time using it"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issues or features that are hard to use.
+
+7. [ID: 23] Persistent unresolved issue
+   Quote: "I have just sent you a DM with my email and also another persistent issue."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue that fits into the defined categories.
+
+8. [ID: 26] Posts are automatically removed by subreddit
+   Quote: "Why in the heck are my posts automatically removed. This is a bit ridiculous."
+   Confidence: 0.90 | Reasoning: The complaint is about subreddit moderation, which does not fit any of the specified categories related to Wispr Flow.
+
+9. [ID: 33] On-screen speak popup cannot be moved
+   Quote: "is there anyway to move the black pop up notification that shows up when speaking. in figma it cover..."
+   Confidence: 0.90 | Reasoning: The complaint is about a UI feature that is not covered by the existing categories, making it too vague for a specific classification.
+
+10. [ID: 34] No listening indicator if popup disabled
+   Quote: "I believe I can turn it off, but then I have no idea when whsipr is actually listening to me."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature related to user interface feedback, which does not fit clearly into the specified categories.
+
+11. [ID: 35] Cannot move on-screen listening pop-up
+   Quote: "I've got the same issue, would love to know how to move that thingy. 😊"
+   Confidence: 0.90 | Reasoning: The complaint about not being able to move the on-screen listening pop-up does not fit any specific category and is too vague.
+
+12. [ID: 44] Stops pasting dictated text into apps
+   Quote: "it no longer pastes text into apps"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any specific category related to the app's functionality.
+
+13. [ID: 47] Alters Cyrillic Unicode
+   Quote: "the Cyrillic  text that was copied before starting the voice recording gets its Unicode changed and ..."
+   Confidence: 0.90 | Reasoning: The complaint about altering Cyrillic Unicode does not fit any specific category and is too vague to classify clearly.
+
+14. [ID: 60] Recurring white screen after login on Windows 11
+   Quote: "It's just a normal bug that's pretty much reoccurring every time for this company, so I wouldn't str..."
+   Confidence: 0.90 | Reasoning: The complaint describes a recurring bug but does not fit into any specific category related to the defined issues.
+
+15. [ID: 61] Buggy on Windows 11
+   Quote: "Honestly this tool is so buggy it's doing my head in."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issues or features that are buggy.
+
+16. [ID: 71] Prevents iPhone from auto-locking
+   Quote: "Hi, I really hope that an issue that prevents iPhone from auto-lock will be resolved because I could..."
+   Confidence: 0.90 | Reasoning: The complaint is about a specific issue with the iPhone's auto-lock feature, which does not fit into any of the predefined categories.
+
+17. [ID: 72] Cannot set custom auto-off timeout
+   Quote: "would we be able to customize the time frames, instead of just having the options "immediately/5 min..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for customization that does not fit into the predefined categories.
+
+18. [ID: 73] No quick mic toggle (widget/action button)
+   Quote: "- a widget. or the action button. currently the only thing the only option i see available those rou..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for a quick mic toggle, which does not fit into the predefined categories.
+
+19. [ID: 76] No Raycast extension with dictionary/snippet commands
+   Quote: "I would love if we had an extension with commands such as 
+
+* add a word to dictionary 
+* report fee..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for an extension that does not fit into the predefined categories.
+
+20. [ID: 80] Limited to preset styles
+   Quote: "When will we have the ability to make custom modifications instead of being limited to just formal, ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for customization, which does not fit into the predefined categories.
+
+21. [ID: 81] No per-app personalization or templates
+   Quote: "When will be able to personalize individual apps instead of anything that is not emails and messages..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for per-app personalization, which does not fit into the predefined categories.
+
+22. [ID: 82] No custom email templates
+   Quote: "For example, in situations like with my email, I would happily wait a few extra seconds for it to al..."
+   Confidence: 0.90 | Reasoning: The complaint about custom email templates does not fit any of the specific categories provided and is too vague.
+
+23. [ID: 96] No always-lowercase style option available
+   Quote: "i want it to be always lowercase! please ship this feature - maybe smth like extreme casual"
+   Confidence: 0.90 | Reasoning: The complaint is about a specific feature request that does not fit into the predefined categories.
+
+24. [ID: 97] No custom prompt support
+   Quote: "You can do this using an iOS app named SuperWhisper. You can set up custom prompts for specific requ..."
+   Confidence: 0.90 | Reasoning: The complaint about custom prompt support does not fit any of the specified categories and is too vague.
+
+25. [ID: 99] iPhone app stopped working for days
+   Quote: "I recently tried Super Whisper after WisprFlow on my iPhone stopped working for a few days."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue with the app, making it unclear which specific category it fits into.
+
+26. [ID: 103] Unresolved issues (student offers)
+   Quote: "several other issues, such as student offers, are still pending resolution."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+27. [ID: 104] Confusing onboarding, no skip button
+   Quote: "Give me ONE BUTTON that says "I'm not an idiot, give me the full experience" and let me click it."
+   Confidence: 0.90 | Reasoning: The complaint is about the onboarding experience and a feature request, which does not fit into the specific categories provided.
+
+28. [ID: 105] Persistent purple icon
+   Quote: "that little purple icon that won't go away."
+   Confidence: 0.90 | Reasoning: The complaint about a persistent purple icon does not clearly fit into any of the specified categories and lacks specific context.
+
+29. [ID: 108] Onboarding repeats on every login
+   Quote: "Everytime you login or reset the app, you’d have to go through the entire process again."
+   Confidence: 0.90 | Reasoning: The complaint about onboarding repeating on every login does not fit any of the specific categories provided.
+
+30. [ID: 109] Onboarding flow won't stop
+   Quote: "Do you know what is the simplest way to simply make it stop? I almost feel like I only got out of it..."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+31. [ID: 110] Cannot skip onboarding flow
+   Quote: "You’d need to go through the initial setup atleast."
+   Confidence: 0.90 | Reasoning: The complaint about not being able to skip the onboarding flow does not fit any of the specific categories provided.
+
+32. [ID: 111] Onboarding wizard doesn't detect completion
+   Quote: "Is there a simple way just to complete the onboarding flow? My challenge is that when I try to do th..."
+   Confidence: 0.90 | Reasoning: The complaint is about a specific issue with the onboarding wizard not detecting completion, which does not fit into any of the predefined categories.
+
+33. [ID: 114] Finish and paste doesn't work
+   Quote: "It seems to be recording but the "finish and paste" does nothing."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any specific category related to the app's features or performance.
+
+34. [ID: 116] Finish and paste (copy) doesn't work
+   Quote: "Although that wouldn't fix the problem of copying the recording not working."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+35. [ID: 117] Poor Bluetooth microphone support
+   Quote: "I tried to use it with my AirPods, and them being Bluetooth, it doesn't understand anything I say at..."
+   Confidence: 0.90 | Reasoning: The complaint about poor Bluetooth microphone support does not fit any specific category and is too vague.
+
+36. [ID: 118] Internal mic fails in clamshell mode
+   Quote: "putting it in clamshell mode makes the internal microphone not work properly"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+37. [ID: 121] Poor Bluetooth microphone support
+   Quote: "My buetooth airpods really did not work at all with the app."
+   Confidence: 0.90 | Reasoning: The complaint about poor Bluetooth microphone support does not fit any specific category and is too vague.
+
+38. [ID: 122] Docs don't mention wireless mic compatibility
+   Quote: "You better mention this in your docs because **I was about to cancel my subscription until the wirel..."
+   Confidence: 0.90 | Reasoning: The complaint is about documentation and feature compatibility, which does not fit into any of the specific categories provided.
+
+39. [ID: 126] Student sign-in white screen
+   Quote: "I tried to activate my student account but it doesn’t work (just white screen when I try to sign in)"
+   Confidence: 0.90 | Reasoning: The complaint about a white screen during sign-in does not clearly fit into any of the specified categories and is too vague.
+
+40. [ID: 128] Quota not synced across platforms
+   Quote: "But on Mac it still works"
+   Confidence: 0.90 | Reasoning: The complaint about quota syncing across platforms is too vague and does not clearly fit into any of the specified categories.
+
+41. [ID: 129] Trial features only work in Notes
+   Quote: "The only place where It works now is notes in the Whispr Flow app"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+42. [ID: 132] Website login verification code not received
+   Quote: "I can’t login through your website. I don’t get a code. All other emails from you I get"
+   Confidence: 0.90 | Reasoning: The complaint is about a login issue related to email verification, which does not fit any of the specified categories.
+
+43. [ID: 134] Support site scrolling broken
+   Quote: "I’ve tried vertical and horizontal layouts but scrolling doesn't work"
+   Confidence: 0.90 | Reasoning: The complaint about scrolling issues on the support site does not fit any of the specific categories related to the Wispr Flow app.
+
+44. [ID: 135] Support site submit button out of bounds
+   Quote: "Checked in Safari, but the submit button is still out of bounds. :)))"
+   Confidence: 0.90 | Reasoning: The complaint is about a UI issue on the support site, which does not fit into any of the specified categories.
+
+45. [ID: 137] Errors persist after reinstall and reset
+   Quote: "I’ve already uninstalled reinstalled reset all my settings and I’m still getting these errors."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the type of errors or issues, making it unclear which specific category it fits into.
+
+46. [ID: 141] Excessive time troubleshooting bugs
+   Quote: "Haha, that’s right. You’d spend more time fixing the problem or finding solutions to fix the app tha..."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear issue that fits into the defined categories.
+
+47. [ID: 144] Bug report submission fails on desktop
+   Quote: "It tried to report the issue on desktop but there was an error when I clicked submit."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's features or performance, making it too vague for a clear classification.
+
+48. [ID: 145] Unclear how to refresh app on iOS
+   Quote: "How does CMD + R work on an iOS device exactly?"
+   Confidence: 0.90 | Reasoning: The complaint is about a specific functionality on iOS that does not fit into any of the predefined categories.
+
+49. [ID: 147] Bug persists after troubleshooting
+   Quote: "I’ve attempted to sign in, reinstall the app, and follow all the usual troubleshooting steps, but to..."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the bug or the specific issue encountered.
+
+50. [ID: 150] Cannot use placeholders in snippets
+   Quote: "It would be cool if within our snippets we could reference placeholders, such as {{copied text}}, or..."
+   Confidence: 0.90 | Reasoning: The complaint is a feature request that does not fit into any of the specified categories.
+
+51. [ID: 152] Drag-to-Trash and Launchpad delete fail
+   Quote: "Cannot drag it into the trash (doesn't work), cannot ctrl + delete in the launchpad."
+   Confidence: 0.90 | Reasoning: The complaint pertains to issues with deleting applications, which does not fit any of the specified categories.
+
+52. [ID: 153] Toggle doesn't override 'immediately turn off'
+   Quote: "When using the “immediately turn off Wispr Flow” setting, the in-app toggle button doesn’t function ..."
+   Confidence: 0.90 | Reasoning: The complaint describes a specific functionality issue with a toggle button that doesn't fit neatly into the predefined categories.
+
+53. [ID: 154] Toggle UI out of sync with mic
+   Quote: "when I return to the app after this happens, the toggle still shows as “on” even though the micropho..."
+   Confidence: 0.90 | Reasoning: The complaint describes a UI synchronization issue that does not clearly fit into any of the specified categories.
+
+54. [ID: 155] Poor keyboard integration
+   Quote: "I wish the keyboard was integrated better"
+   Confidence: 0.90 | Reasoning: The complaint about keyboard integration is too vague and does not clearly fit into any of the specified categories.
+
+55. [ID: 156] Manual toggle doesn't override immediate turn-off
+   Quote: "When I manually toggle Flow on, I expect it to stay active until I either turn it off myself or clos..."
+   Confidence: 0.90 | Reasoning: The complaint describes a feature expectation that doesn't fit clearly into the existing categories, making it ambiguous.
+
+56. [ID: 157] No live preview while dictating
+   Quote: "It won’t show you what you’re saying as you’re typing."
+   Confidence: 0.90 | Reasoning: The complaint about not having a live preview while dictating does not fit any of the specific categories provided.
+
+57. [ID: 159] Needs adjustment to new workflow
+   Quote: "I need to retrain how I think about using my computer and my phone."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any specific category related to technical issues or features.
+
+58. [ID: 160] Popup gesturing issues
+   Quote: "WHAT IS UP WITH THE POPUP GESTURING TO GO BACK TO MESSAGES USING THE APP SWITCHER."
+   Confidence: 0.90 | Reasoning: The complaint about popup gesturing does not clearly fit into any of the specified categories and is too vague.
+
+59. [ID: 161] Need for more seamlessness
+   Quote: "SO MUCH POTENTIAL for growth in regards to Whisper Flow, Need seamlessness."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear issue or feature related to the app.
+
+60. [ID: 164] Not working on iMessage
+   Quote: "Doesn’t work on iMessage Apple 26.x"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue with iMessage, making it unclear.
+
+61. [ID: 165] Unclear access permissions
+   Quote: "it is unclear what 'full access' grants"
+   Confidence: 0.90 | Reasoning: The complaint about unclear access permissions does not fit any specific category related to the app's functionality or features.
+
+62. [ID: 166] Cannot customize app access
+   Quote: "it would be nice if the app allowed for dynamic composability of how I wish to use its feature set"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+63. [ID: 171] Constant errors on mobile
+   Quote: "It errors on an almost constant basis."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the errors, making it unclear which specific category it fits into.
+
+64. [ID: 172] Frustrating usability on phone
+   Quote: "It is frustrating to the points that I almost can’t use it at all on my phone."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the app's functionality or features.
+
+65. [ID: 174] Limited for AI use
+   Quote: "Para un uso en otras AI está limitando o no está como me lo esperaba"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specific categories provided.
+
+66. [ID: 175] Room for improvement
+   Quote: "Tiene margen de mejora"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue or category.
+
+67. [ID: 181] Not optimized for iPad
+   Quote: "WisprFlow for iOS is useless."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the defined categories.
+
+68. [ID: 182] Full of bugs
+   Quote: "Full of bugs and no ability to adapt to the different UI"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify particular issues that fit into the defined categories.
+
+69. [ID: 183] No horizontal configuration
+   Quote: "not even horizontal configuration"
+   Confidence: 0.90 | Reasoning: The complaint about 'no horizontal configuration' does not clearly fit into any of the specified categories.
+
+70. [ID: 185] App switching required
+   Quote: "I wish Apple would not require app switching"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+71. [ID: 187] Requires full access to keyboard and microphone
+   Quote: "I doesn’t allow me to use it till get full access to my keyboard and collect all data I use keyboard..."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specific categories provided.
+
+72. [ID: 190] Confusing setup
+   Quote: "Confusing"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the defined categories.
+
+73. [ID: 194] Broken shortcut installation
+   Quote: "there is a shortcut on their website that you can install but it is currently broken unfortunately"
+   Confidence: 0.90 | Reasoning: The complaint about a broken shortcut installation does not clearly fit into any of the specified categories.
+
+74. [ID: 199] Not better than competitors
+   Quote: "don’t see a benefit over iOS dictation for phone as of yet"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the app's functionality or features.
+
+75. [ID: 201] Not functioning correctly
+   Quote: "It doesn’t work at all."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue, making it unclear which category it fits into.
+
+76. [ID: 202] Limit on word count despite Pro account
+   Quote: "No word remaining after 2000 words on pro account with unlimited words"
+   Confidence: 0.90 | Reasoning: The complaint about a word count limit on a Pro account does not fit any specific category and is too vague.
+
+77. [ID: 203] Word limit restriction
+   Quote: "you cannot talk a lot... limited by 200 words per day"
+   Confidence: 0.90 | Reasoning: The complaint about a word limit restriction does not fit any of the specified categories and is too vague.
+
+78. [ID: 205] Can't copy direct transcription
+   Quote: "copy direct transcription"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+79. [ID: 206] Lacks features beyond speech to text
+   Quote: "If the App actually did more than speech to text, I might be willing to pay them monthly."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify which features are lacking, making it difficult to categorize into a specific issue.
+
+80. [ID: 208] App delays and typos
+   Quote: "I’ve run into nothing but app delays and typos or it just not working."
+   Confidence: 0.90 | Reasoning: The complaint mentions both app delays and typos, which are two distinct issues that do not clearly fit into a single category.
+
+81. [ID: 210] Update rendered app useless
+   Quote: "current update has rendered it useless"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue or feature affected by the update.
+
+82. [ID: 213] App does not obey settings
+   Quote: "the app does not obey"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify which settings are not being obeyed, making it unclear.
+
+83. [ID: 214] Critical bug or security flaw
+   Quote: "This is a critical bug or intentional security flaw"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+84. [ID: 215] Sudden loss of functionality
+   Quote: "it suddenly doesn’t work at all. It will mostly not even begin transcribing"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue that fits into the defined categories.
+
+85. [ID: 216] Annoying startup process
+   Quote: "the app opening then swipe back to what you’re using the app in process is RIDICULOUSLY irritating"
+   Confidence: 0.90 | Reasoning: The complaint about the startup process is too vague and does not clearly fit into any of the specific categories provided.
+
+86. [ID: 220] Promised feature not implemented
+   Quote: "It was promised, but nothing has been done to implement it."
+   Confidence: 0.90 | Reasoning: The complaint refers to a promised feature that is not implemented, which does not fit into any of the specific categories provided.
+
+87. [ID: 225] Critical bugs not fixed
+   Quote: "Developers refuse to address long list of critical bugs."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the critical bugs or how they affect the app.
+
+88. [ID: 234] Apple's limitations on dictation choice
+   Quote: "Apple really should have an option to change dictation to any app that has been approved"
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request related to Apple's dictation options, which does not fit into the specified categories.
+
+89. [ID: 238] Speech-to-text not working for three days
+   Quote: "It doesn’t work for me 3 days already :)"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact nature of the issue with the speech-to-text functionality.
+
+90. [ID: 240] No information about CarPlay compatibility
+   Quote: "I have a very simple question if Wispr Flow will work with CarPlay"
+   Confidence: 0.90 | Reasoning: The complaint is about a feature inquiry that does not fit into the specified categories.
+
+91. [ID: 244] No basic letter keyboard
+   Quote: "I would prefer if you guys can add a letter keyboard WITHOUT the fancy stuff NOW, and add the other ..."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+92. [ID: 246] No full mobile keyboard implemented
+   Quote: "they at least have a full keyboard so you don't have to switch and fix errors."
+   Confidence: 0.90 | Reasoning: The complaint about a full mobile keyboard not being implemented does not fit any specific category and is too vague.
+
+93. [ID: 247] Slow feature rollout despite recent funding
+   Quote: "Given the size of Wispr Flow and the amount of funding that they just raised, this should be impleme..."
+   Confidence: 0.90 | Reasoning: The complaint is about the pace of feature rollout and funding, which does not fit into any specific technical or support-related category.
+
+94. [ID: 251] Struggles in everyday settings
+   Quote: "works terribly in any other situation"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear issue related to the app's functionality or features.
+
+95. [ID: 253] Not robust for noise
+   Quote: "This needs to be more robust to noise and work better"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any specific category related to the app's functionality or features.
+
+96. [ID: 254] Issues with long-form content on iOS
+   Quote: "it also needs to work for longer form content which is in particular an issue on the iOS app"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear technical issue or feature request related to the app's functionality.
+
+97. [ID: 255] No basic letter keyboard
+   Quote: "I will emphasize this again; I really believe you guys need to add, at the very least, a basic lette..."
+   Confidence: 0.90 | Reasoning: The complaint about a 'basic letter keyboard' does not fit into any of the specified categories and is too vague.
+
+98. [ID: 257] Missing feature reduces conversions
+   Quote: "I personally have referred multiple people who didn’t end up paying because this wasn't a feature."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+99. [ID: 261] No swipe typing on mobile keyboard
+   Quote: "swiping"
+   Confidence: 0.90 | Reasoning: The complaint about swipe typing on the mobile keyboard does not fit any of the specific categories provided.
+
+100. [ID: 265] Auto mic switching issue
+   Quote: "it doesn’t auto switch mics"
+   Confidence: 0.90 | Reasoning: The complaint about auto mic switching does not clearly fit into any of the specified categories.
+
+101. [ID: 266] Frequent interruptions
+   Quote: "either Wispr Flow or Apple keeps kicking me out of Wispr Flow and throwing me back to Apple keyboard"
+   Confidence: 0.90 | Reasoning: The complaint about frequent interruptions and being thrown back to the Apple keyboard is too vague and does not clearly fit into any of the specific categories provided.
+
+102. [ID: 267] Authentication issues on multiple devices
+   Quote: "although you may have some issues with authentication"
+   Confidence: 0.90 | Reasoning: The complaint about authentication issues does not clearly fit into any of the specified categories.
+
+103. [ID: 268] No haptic feedback on mobile keyboard
+   Quote: "Also, please add haptics to your existing keyboard."
+   Confidence: 0.90 | Reasoning: The complaint about haptic feedback on the mobile keyboard does not fit any of the specified categories and is too vague.
+
+104. [ID: 271] Some improvement needed
+   Quote: "虽然说也有改进空间"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify any particular issue or feature.
+
+105. [ID: 272] Keyboard unusable
+   Quote: "Bizarre unusable keyboard"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue with the keyboard.
+
+106. [ID: 273] No text on the keyboard
+   Quote: "Only numbers on the keyboard? There is no text?"
+   Confidence: 0.90 | Reasoning: The complaint about the keyboard having no text does not fit any specific category and is too vague.
+
+107. [ID: 274] Difficult emoji access
+   Quote: "I don’t want to have more than a single keyboard an emoji otherwise I have to click the globe"
+   Confidence: 0.90 | Reasoning: The complaint about emoji access does not fit any specific category related to the app's functionality or performance.
+
+108. [ID: 275] Lacks iOS keyboard features
+   Quote: "Seems like they could just copy the iOS keyboard exactly with a dictation icon at the bottom right"
+   Confidence: 0.90 | Reasoning: The complaint is about missing features related to the iOS keyboard, which does not fit into the specified categories.
+
+109. [ID: 276] No cloud sync for transcription history
+   Quote: "Right now, each device stores everything locally, and I think having our transcripts synced across a..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for cloud sync, which does not fit into the predefined categories.
+
+110. [ID: 277] High local storage usage
+   Quote: "Local storage is becoming a real issue. My phone already has over 1GB of documents just for the app,..."
+   Confidence: 0.90 | Reasoning: The complaint about high local storage usage does not fit any specific category related to the app's functionality or features.
+
+111. [ID: 278] No one-click transcription to notes
+   Quote: "Feature Request: ability to upgrade transcriptions into notes with one click"
+   Confidence: 0.90 | Reasoning: The complaint is a feature request that does not fit into any of the specified categories.
+
+112. [ID: 282] Interference with other apps
+   Quote: "This has interference with Hey Siri which is annoying"
+   Confidence: 0.90 | Reasoning: The complaint about interference with other apps does not fit any specific category and is too vague.
+
+113. [ID: 283] Outdated keyboard UI
+   Quote: "The only recommendation I can make for the team is to update the Wispr Flow keyboard UI to be up-to-..."
+   Confidence: 0.90 | Reasoning: The complaint about the keyboard UI being outdated does not fit any specific category related to the app's functionality or performance.
+
+114. [ID: 284] Local storage fills up quickly
+   Quote: "Storing everything locally adds up pretty quickly."
+   Confidence: 0.90 | Reasoning: The complaint about local storage filling up does not clearly fit into any of the specified categories and is too vague.
+
+115. [ID: 285] No cloud sync across devices
+   Quote: "Syncing what you have on mobile to desktop is a little difficult."
+   Confidence: 0.90 | Reasoning: The complaint about syncing across devices does not fit any of the specified categories and is too vague.
+
+116. [ID: 286] No search for old transcriptions
+   Quote: "I would love to have the ability to search my old notes, maybe for the past week or month."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the provided list and is more of a feature request.
+
+117. [ID: 287] No personalized AI model
+   Quote: "If you store the transcription history, you can use it as training data to make a more custom, fine-..."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's current features or issues, as it suggests a new feature rather than addressing an existing problem.
+
+118. [ID: 289] Does not initialize on iPad
+   Quote: "Did not pick up voice during initialization"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any specific category related to the app's functionality.
+
+119. [ID: 290] Access settings not recognized
+   Quote: "indicated I didn't specify full access in settings when I did"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+120. [ID: 291] Simulated keystrokes ignored (Multitouch)
+   Quote: "The problem is that when I try to use a third-party app that simulates keystrokes—like **Multitouch*..."
+   Confidence: 0.90 | Reasoning: The complaint is about a specific third-party app feature that does not fit into the predefined categories.
+
+121. [ID: 293] Doesn't auto-add corrections to dictionary
+   Quote: "Sometimes after performing a transcription and making a correction, Wispr Flow doesn't pick it up an..."
+   Confidence: 0.90 | Reasoning: The complaint about not auto-adding corrections to the dictionary does not fit any specific category and is too vague.
+
+122. [ID: 294] Needs minor tweaks
+   Quote: "just need a few minor tweaks but totally usable"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify any clear issue or category.
+
+123. [ID: 296] Cannot bulk import dictionary
+   Quote: "Any way to bulk import dictionary?"
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's features or issues as listed.
+
+124. [ID: 299] No live preview while dictating
+   Quote: "you can't see what you're typing until you click the button again"
+   Confidence: 0.90 | Reasoning: The complaint about not having a live preview while dictating does not fit any specific category and is too vague.
+
+125. [ID: 300] Unclear recording status
+   Quote: "it's hard to tell whether the dictation is on or not so I have often dictated for a while only to re..."
+   Confidence: 0.90 | Reasoning: The complaint about unclear recording status does not fit any specific category and is too vague.
+
+126. [ID: 301] Cannot mix typing and dictation
+   Quote: "you can't alternatively type, and then speak in order to edit or create bullet points"
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is more about a feature limitation.
+
+127. [ID: 302] No thumbs-up feedback for transcripts
+   Quote: "I think it would be beneficial to suggest a thumbs-up icon for specific transcripts as a feature req..."
+   Confidence: 0.90 | Reasoning: The complaint is a feature request and does not fit into any of the specific categories provided.
+
+128. [ID: 303] Clunky mobile experience
+   Quote: "Mobile on the other hand is pretty clunky."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the defined categories.
+
+129. [ID: 304] Too much complexity for integration
+   Quote: "a little bit too much back-and-forth for it to really flow in a practical way"
+   Confidence: 0.90 | Reasoning: The complaint about complexity for integration does not fit any specific category and is too vague.
+
+130. [ID: 305] Poor keyboard integration
+   Quote: "I wish that iOS would allow them to integrate a native keyboard"
+   Confidence: 0.90 | Reasoning: The complaint about poor keyboard integration does not clearly fit into any of the specified categories and is too vague.
+
+131. [ID: 307] Frequent sign-in required
+   Quote: "annoying to have to sign in multiple times a day"
+   Confidence: 0.90 | Reasoning: The complaint about frequent sign-in does not clearly fit into any of the specified categories and is too vague.
+
+132. [ID: 308] Account login issues
+   Quote: "got logged out, and now have no way to recover my account"
+   Confidence: 0.90 | Reasoning: The complaint about account login issues does not fit any of the specific categories provided.
+
+133. [ID: 312] Some limitations on iPhone
+   Quote: "My understanding is that some of those are limitations of the iPhone itself rather than the applicat..."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the app itself.
+
+134. [ID: 315] No live dictation feedback
+   Quote: "it doesn't show live dictation as you're speaking."
+   Confidence: 0.90 | Reasoning: The complaint about 'no live dictation feedback' does not clearly fit into any of the specified categories and is somewhat vague.
+
+135. [ID: 316] Limited functionality in basic apps
+   Quote: "I can't even use it in some basic text-based note-taking apps."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify which functionalities are limited or which apps are affected.
+
+136. [ID: 319] Must exit app to use computer
+   Quote: "**I have to exit Wispr Flow if I wanna use my computer normally again.**"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+137. [ID: 320] Bloated with extra features
+   Quote: "Why can't it be as simple and lightweight as possible without adding in all these extra BS features...."
+   Confidence: 0.90 | Reasoning: The complaint is about the overall complexity and feature set of the app, which does not fit into any of the specific categories provided.
+
+138. [ID: 324] Lost dictation due to inactivity
+   Quote: "on three occasions it lost the entire section. I dictated due to the app falling asleep because of i..."
+   Confidence: 0.90 | Reasoning: The complaint is about losing dictation due to inactivity, which does not clearly fit into any of the specified categories.
+
+139. [ID: 325] Desires more app integrations
+   Quote: "I’d love to see continued improvements in functionality, like deeper app integrations and smarter co..."
+   Confidence: 0.90 | Reasoning: The complaint is about a desire for more features and improvements, which does not fit into any specific category provided.
+
+140. [ID: 327] Cannot drop recordings into the app
+   Quote: "I can't drop a recording into Wispr Flow"
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is too vague regarding the specific issue.
+
+141. [ID: 328] Not perfect
+   Quote: "It's not perfect, but life ain't perfect"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear issue or category.
+
+142. [ID: 339] Issues after recent update
+   Quote: "Something wrong with the recent update."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact nature of the issues experienced after the update.
+
+143. [ID: 340] Frequent outages
+   Quote: "they’ve been having outages pretty regularly."
+   Confidence: 0.90 | Reasoning: The complaint about 'frequent outages' is too vague and does not clearly fit into any of the specific categories provided.
+
+144. [ID: 342] Messaging integration issues
+   Quote: "Wispr Flow does not integrate seamlessly with text messaging."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact nature of the messaging integration issues.
+
+145. [ID: 344] Installation issues on macOS
+   Quote: "The site repeatedly redirects between 'Download' and 'Get Started.'"
+   Confidence: 0.90 | Reasoning: The complaint about installation issues on macOS does not fit any of the specific categories provided and is too vague.
+
+146. [ID: 346] Full access not enabled
+   Quote: "It just comes back saying you have not enabled full access"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+147. [ID: 347] Not seamless activation
+   Quote: "it is not seamless. It’s hard to activate"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specific categories provided.
+
+148. [ID: 348] Wants a single action button
+   Quote: "A huge thing that I would be requesting to developers is that they add an action button for where yo..."
+   Confidence: 0.90 | Reasoning: The request for a single action button does not fit into any of the specified categories and is too vague.
+
+149. [ID: 350] Cursor jumps unexpectedly
+   Quote: "Sometimes the cursor even jumps around unexpectedly."
+   Confidence: 0.90 | Reasoning: The complaint about the cursor jumping unexpectedly does not clearly fit into any of the specified categories.
+
+150. [ID: 356] App never worked
+   Quote: "I installed it, tried it out, and it never worked once."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue with the app.
+
+151. [ID: 361] Frequent pop-up interruptions
+   Quote: "Review request to star pops up while I’m writing notes again again and again."
+   Confidence: 0.90 | Reasoning: The complaint about frequent pop-up interruptions does not clearly fit into any of the specified categories and is too vague.
+
+152. [ID: 364] Keeps asking to turn on feature
+   Quote: "it just went back to 'Turn On Flow' again and again"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+153. [ID: 367] No clear value
+   Quote: "Just a useless app"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the app's functionality or features.
+
+154. [ID: 368] Lacks full keyboard experience
+   Quote: "I really wish there was a full keyboard experience to go with it."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+155. [ID: 371] No live preview while dictating
+   Quote: "I wish it would show what you're saying while you're speaking"
+   Confidence: 0.90 | Reasoning: The complaint about not having a live preview while dictating does not fit any specific category and is too vague.
+
+156. [ID: 373] Login issues
+   Quote: "I keep getting an error every time I login"
+   Confidence: 0.90 | Reasoning: The complaint about login issues does not fit any of the specific categories provided.
+
+157. [ID: 374] Annoying marketing emails
+   Quote: "I don't need recurring marketing emails sent to me multiple times after I download the app."
+   Confidence: 0.90 | Reasoning: The complaint about marketing emails does not fit any of the specific categories related to app functionality or performance.
+
+158. [ID: 375] Frequent notifications
+   Quote: "I don't need notifications popping up on my phone from this app telling me about your other features..."
+   Confidence: 0.90 | Reasoning: The complaint about frequent notifications does not clearly fit into any of the specified categories and is more of a general feedback issue.
+
+159. [ID: 377] Too many steps to use
+   Quote: "Have to jump through too many hoops just to use the app."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear issue related to the defined categories.
+
+160. [ID: 379] Doesn't recognize microphone
+   Quote: "My wispr is no longer recognizing my mic, regardless of which mic input I use."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+161. [ID: 381] Not compatible with certain programs
+   Quote: "Wispr does not always work with some of my programs, which is frustrating"
+   Confidence: 0.90 | Reasoning: The complaint about compatibility with certain programs does not fit any specific category and is too vague.
+
+162. [ID: 384] Annoying keyboard
+   Quote: "much better but with an annoying keyboard"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify what issues are being experienced with the keyboard.
+
+163. [ID: 385] External mic causes app to fail
+   Quote: "Now it only works if the laptop does not have an external mic/preamp plugged into it."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+164. [ID: 386] Erases dictated text
+   Quote: "The App dictates everything but then immediately erases it in any app."
+   Confidence: 0.90 | Reasoning: The complaint about the app erasing dictated text does not clearly fit into any of the specified categories and is too vague.
+
+165. [ID: 388] Misleading AI functionality
+   Quote: "It promises AI... But its not."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any specific category related to functionality or performance issues.
+
+166. [ID: 389] Lacks context in dictation
+   Quote: "does not have any context (like the email thread), so its pretty useless."
+   Confidence: 0.90 | Reasoning: The complaint about lacking context in dictation does not clearly fit into any of the specified categories and is too vague.
+
+167. [ID: 390] Not 100% perfect
+   Quote: "It isn’t 100% perfect"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue that fits into the defined categories.
+
+168. [ID: 396] Keyboard switches off unexpectedly
+   Quote: "my only issue is the keyboard switch itself off"
+   Confidence: 0.90 | Reasoning: The complaint about the keyboard switching off unexpectedly does not clearly fit into any of the specified categories.
+
+169. [ID: 401] Microphone not recognized
+   Quote: "I have the same issue, has just sudenly stopped working uninstalled, reinstalled, works ni other app..."
+   Confidence: 0.90 | Reasoning: The complaint about the microphone not being recognized is too vague and does not clearly fit into any of the specific categories provided.
+
+170. [ID: 403] Cannot use the app due to issues
+   Quote: "I have not been able to use the product for over a week"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issues preventing app usage.
+
+171. [ID: 408] Full of bugs
+   Quote: "It is full of bugs."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the types of bugs or issues encountered.
+
+172. [ID: 411] Does not load
+   Quote: "it doesn't even LOAD"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the loading issue.
+
+173. [ID: 412] Cannot update app
+   Quote: "Can’t update the app."
+   Confidence: 0.90 | Reasoning: The complaint about not being able to update the app is too vague and does not fit any specific category.
+
+174. [ID: 413] Dictation not working
+   Quote: "Dictation not working."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the dictation issue.
+
+175. [ID: 414] Too many bugs
+   Quote: "there's just way too many bugs regarding it Not actually typing where you selected at all"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify the exact nature of the bugs, making it difficult to categorize into a specific issue.
+
+176. [ID: 415] Lacks real-time feedback
+   Quote: "if it's not recognizing your text area or there's a mic glitch you at least you'll be able to tell"
+   Confidence: 0.90 | Reasoning: The complaint about lacking real-time feedback does not clearly fit into any of the specified categories and is too vague.
+
+177. [ID: 416] Initial personalization needed
+   Quote: "It will take a few tries to personalize it"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+178. [ID: 418] Stopped functioning correctly
+   Quote: "Was one of my favourite apps, but suddenly broke"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issue or behavior, making it unclear which specific category it fits into.
+
+179. [ID: 419] Transcribing unwanted responses
+   Quote: "it's either transcribing a chatbot's response or opening a browser tab"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specific categories provided.
+
+180. [ID: 427] Wants Android app
+   Quote: "When the Android app arrives, it will be perfect."
+   Confidence: 0.90 | Reasoning: The complaint is a feature request for an Android app, which does not fit into any of the specified categories.
+
+181. [ID: 432] Clipboard functionality issue
+   Quote: "I have a specific case that's not working for me because they're using the clipboard"
+   Confidence: 0.90 | Reasoning: The complaint about clipboard functionality does not fit any of the specific categories provided.
+
+182. [ID: 434] No @file tagging support in VS Code
+   Quote: "I really would like to use it within VSCode and Claude Code, more specifically with the @file taggin..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature not being available in specific applications, which does not fit any of the predefined categories.
+
+183. [ID: 435] Transcripts not loading
+   Quote: "I've experienced hiccups—specifically around some transcripts not loading"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any specific category related to the provided options.
+
+184. [ID: 436] Transcription issues
+   Quote: "issues with some transcriptions"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify whether the issues are related to accuracy, latency, or another specific aspect of transcription.
+
+185. [ID: 438] Could use additional features
+   Quote: "Some features could be added"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify which features are needed, making it unclear.
+
+186. [ID: 439] Auto-paste stopped working
+   Quote: "auto-paste suddenly died."
+   Confidence: 0.90 | Reasoning: The complaint about 'auto-paste' not working does not clearly fit into any of the specified categories.
+
+187. [ID: 440] Fails in IDE integrations (VSCode, Cursor)
+   Quote: "Wispr Flow stops working in IDEs like VSCode or Cursor."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+188. [ID: 441] Auto-paste stopped working
+   Quote: "Yeah same. Started yesterday"
+   Confidence: 0.90 | Reasoning: The complaint about auto-paste not working is too vague and does not clearly fit into any of the specified categories.
+
+189. [ID: 442] Breaks in IDEs when NumLock is on
+   Quote: "I had the same issue and can confirm turning number lock off fixes it :)"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+190. [ID: 446] No API for integration
+   Quote: "So does Wispr Flow have an API similar to Deepgram or OpenAI?"
+   Confidence: 0.90 | Reasoning: The complaint is about the absence of an API, which does not fit into any of the specified categories.
+
+191. [ID: 447] No Android app
+   Quote: "Android
+Are there any updates when this might be or become available?"
+   Confidence: 0.90 | Reasoning: The complaint is about the absence of an Android app, which does not fit into any of the specified categories.
+
+192. [ID: 448] No bulk import for dictionary/snippets
+   Quote: "has anyone figured out a way to **bulk import** a vocabulary pack? For example, importing a CSV or J..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+193. [ID: 449] No bulk import for dictionary/snippets
+   Quote: "Second to this, other softwares like Wispr Type support this."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature that is not included in the app, which does not fit any of the specified categories.
+
+194. [ID: 450] No Android app
+   Quote: "Also waiting (patiently) for Wispr Flow Android app!"
+   Confidence: 0.90 | Reasoning: The complaint is about the absence of an Android app, which does not fit into any of the specified categories.
+
+195. [ID: 451] No bulk import for snippets/dictionary
+   Quote: "Im also want this feature"
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+196. [ID: 454] Permissions unclear in docs
+   Quote: "I suspect it's likely a permissions issue but I've checked the usual suspects and the docs and can't..."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories, as it discusses documentation rather than a specific issue with the app.
+
+197. [ID: 459] Auto-paste stopped working
+   Quote: "Without auto-paste, the product is like 90% less valuable"
+   Confidence: 0.90 | Reasoning: The complaint about auto-paste not working does not fit into any of the specific categories provided.
+
+198. [ID: 460] Auto-paste stopped working
+   Quote: "Same here"
+   Confidence: 0.90 | Reasoning: The complaint about auto-paste not working is too vague and does not clearly fit into any of the specified categories.
+
+199. [ID: 462] Auto-paste stopped working
+   Quote: "Yep, broken for me as well. Super frustrating, likely switching products as well. Something this cri..."
+   Confidence: 0.90 | Reasoning: The complaint about auto-paste not working does not clearly fit into any of the specified categories and is too vague.
+
+200. [ID: 464] Just a UI on a cheap API
+   Quote: "you still need a lot more than just a wacky UI around a very cheap API model."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specific categories provided.
+
+201. [ID: 472] No whisper mode
+   Quote: "Honestly, the whisper mode would be super beneficial for me."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request (whisper mode) that does not fit into any of the specified categories.
+
+202. [ID: 473] Unclear how to use Whisper Mode in public
+   Quote: "How do you go about whispering in public? Do you have the earphone mic near to your mouth? Or are yo..."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to technical issues or features, as it is more of a general inquiry about usage.
+
+203. [ID: 474] Poor AirPods microphone support
+   Quote: "my AirPods microphone don't pick up too well and it doesn't  work too well with wispr flow."
+   Confidence: 0.90 | Reasoning: The complaint is about compatibility with AirPods, which does not fit into the specified categories.
+
+204. [ID: 476] Laptop mic struggles in cafes
+   Quote: "For me, I always use Wispr Flow on laptop, which is why I'm having trouble in the cafes and so on."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any specific category related to the app's functionality.
+
+205. [ID: 477] Frequent bugs and issues
+   Quote: "I've been having way too many issues and bugs with them"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the bugs or issues, making it unclear which specific category it fits into.
+
+206. [ID: 478] Quality has declined
+   Quote: "I find that it's not as good as it once was."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear issue related to the defined categories.
+
+207. [ID: 484] No shortcut to add dictionary words
+   Quote: "we did not have to open the dictionary manually and add this word. It's very inefficient. Would be p..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for a shortcut to add words to the dictionary, which does not fit into the predefined categories.
+
+208. [ID: 486] Dictionary auto-add unreliable
+   Quote: "it seems like Flow used to much more frequently auto-add to the dictionary for me, but lately, even ..."
+   Confidence: 0.90 | Reasoning: The complaint about the dictionary auto-add feature not working reliably does not fit clearly into any of the specified categories.
+
+209. [ID: 495] Reinstall doesn't update app version
+   Quote: "Did it same version as I have already installed? Was being downloaded, no change after reinstallatio..."
+   Confidence: 0.90 | Reasoning: The complaint is about an app version not updating after reinstallation, which does not fit any specific category listed.
+
+210. [ID: 498] Lacks hands-free editing workflow
+   Quote: "What is the intended, relatively hands-free way to do that?"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+211. [ID: 499] Retry Transcript hidden in three-dot menu
+   Quote: "*Fewer clicks*: Current option is hidden behind the three-dot menu"
+   Confidence: 0.90 | Reasoning: The complaint is about the user interface and accessibility of a feature, which does not fit into the specified categories.
+
+212. [ID: 500] No auto-copy on retry
+   Quote: "*Automatically copy the new transcript to clipboard*"
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is more of a feature request.
+
+213. [ID: 502] No bulk or time-based deletion
+   Quote: "The ability to delete all recordings and transcriptions would be great.  Or the option to delete any..."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's core functionalities or issues, making it too vague and feature-specific.
+
+214. [ID: 503] Cannot delete audio but keep transcript
+   Quote: "The option to keep the transcription and delete the audio recordings would be even better but I ask ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request that does not fit into the predefined categories.
+
+215. [ID: 506] Can't find delete recordings feature on iOS
+   Quote: "Is it also possible on the iOS app? Couldn't find it anywhere there."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's functionality or performance, as it is a feature request or inquiry.
+
+216. [ID: 508] Stuck on old version
+   Quote: "I am still stuck on the old version 1.3.454"
+   Confidence: 0.90 | Reasoning: The complaint about being stuck on an old version does not clearly fit into any of the specified categories.
+
+217. [ID: 511] Inaccurate app usage statistics
+   Quote: "Wispr Flow stats tell me that I've used it in 115 apps. I don't even think that I use 115 apps. Is t..."
+   Confidence: 0.90 | Reasoning: The complaint about inaccurate app usage statistics does not clearly fit into any of the specified categories and is more of a general concern.
+
+218. [ID: 512] Unclear 'apps' count label
+   Quote: "Oh, in that case, AWESOME! Just reword it to 115 "apps or websites" or something like that. I'm happ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a labeling issue and does not fit into any of the specific categories provided.
+
+219. [ID: 514] Hard to manage duplicate feature requests
+   Quote: "It's incredibly difficult for you to manage duplicate and triplicate requests here"
+   Confidence: 0.90 | Reasoning: The complaint is about managing feature requests, which does not fit into any of the specific categories provided.
+
+220. [ID: 515] Feature requests cumbersome on Reddit
+   Quote: "it's also very cumbersome for users to submit feature requests on Reddit."
+   Confidence: 0.90 | Reasoning: The complaint is about the process of submitting feature requests, which does not fit into any of the specific categories provided.
+
+221. [ID: 516] Lacks dedicated feature-request site and roadmap
+   Quote: "Additionally, having a dedicated website makes the process much more professional, and there is also..."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's functionality or performance, making it too vague for categorization.
+
+222. [ID: 517] Low interest in submitting feature requests
+   Quote: "the interest in submitting new requests is not very high."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to technical issues or features, making it too vague for categorization.
+
+223. [ID: 518] Lacks gen-z lowercase mode on desktop
+   Quote: "I remember calling Tanay and asking for a gen-z mode for iOS back in beta where texts on messaging p..."
+   Confidence: 0.90 | Reasoning: The complaint is about a specific feature request that does not fit into any of the predefined categories.
+
+224. [ID: 519] Dislikes 'Gen-Z mode' feature name
+   Quote: "I hope it's not called Gen-Z mode. Some of us Xennials have also done the hard work to change our ha..."
+   Confidence: 0.90 | Reasoning: The complaint is about the naming of a feature, which does not fit into any of the specific categories provided.
+
+225. [ID: 520] No Gen-Z Mode for desktop
+   Quote: "yessss would love this too!"
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request that does not fit into any of the specified categories.
+
+226. [ID: 524] Mic input not working
+   Quote: "my mic input issue is resolved"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+227. [ID: 527] No shortcut to switch languages
+   Quote: "It would be better to add a shortcut for each voice to avoid this problem."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for a shortcut that does not fit into the predefined categories.
+
+228. [ID: 529] No per-language shortcut
+   Quote: "This is so obvious that there should be a different shortcut for each language (In my case, also Fre..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for language-specific shortcuts, which does not fit into the predefined categories.
+
+229. [ID: 531] No per-language shortcut for language switching
+   Quote: "This is to compensate for the fact that, unfortunately, in conventional keyboards there are only a v..."
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is more about a feature request rather than a specific issue.
+
+230. [ID: 534] No language switch shortcut
+   Quote: "That s why If for any reason you are not in capacity de fix that, the shortcut by language could be ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a missing feature (language switch shortcut) but does not clearly fit into the predefined categories.
+
+231. [ID: 538] No Android app
+   Quote: "Need Wispr on Android.  Please."
+   Confidence: 0.90 | Reasoning: The complaint is about the absence of an Android app, which does not fit into any of the specified categories.
+
+232. [ID: 539] No Android app
+   Quote: "Yes, I would love an Android app."
+   Confidence: 0.90 | Reasoning: The complaint is about the absence of an Android app, which does not fit into any of the specified categories.
+
+233. [ID: 540] Hard to remember snippet trigger phrases
+   Quote: "Snippets are amazing but my main problem with them is I never remember EXACTLY what my trigger phras..."
+   Confidence: 0.90 | Reasoning: The complaint is about difficulty remembering trigger phrases for snippets, which does not fit into any of the specific categories provided.
+
+234. [ID: 541] Cannot assign multiple trigger phrases
+   Quote: "One thing that would be amazing is if you could either create multiple trigger phrases for the same ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request that does not fit into the predefined categories.
+
+235. [ID: 542] No quick snippet selection menu
+   Quote: "Or an even better idea would be to add a shortcut menu where you finish talking and then press a but..."
+   Confidence: 0.90 | Reasoning: The complaint is a feature request for a specific functionality that does not fit into the predefined categories.
+
+236. [ID: 544] No Raycast snippets integration
+   Quote: "Would be cool if it played well with Raycast snippets - generally would love to see a tighter integr..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for integration with Raycast snippets, which does not fit into the predefined categories.
+
+237. [ID: 546] No explicit trigger keyword for snippets
+   Quote: "I wonder if you should listen for a keyword of “insert” in order to trigger a snippet?"
+   Confidence: 0.90 | Reasoning: The complaint is about a feature suggestion rather than a specific issue with the app's functionality.
+
+238. [ID: 547] Unclear if Snippets can open links/apps
+   Quote: "can snippets open links directly or open apps like vscode.exe ?"
+   Confidence: 0.90 | Reasoning: The complaint is about a feature inquiry that does not fit into the predefined categories.
+
+239. [ID: 551] Pauses other audio when mic active
+   Quote: "Is it possible on iOS that when the Flow mic is active, it pauses or mutes any other audio playing? ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request related to audio management, which does not fit into the predefined categories.
+
+240. [ID: 552] Poor iOS keyboard UX
+   Quote: "The UX is far from helpful unlike on macos where it integrates seamlessly."
+   Confidence: 0.90 | Reasoning: The complaint about poor iOS keyboard UX does not fit any specific category and is too vague.
+
+241. [ID: 553] Poor iPad keyboard experience
+   Quote: "And please improve the experience on iPad."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the exact issues with the iPad keyboard experience.
+
+242. [ID: 555] No direct paste after dictation
+   Quote: "The Wispr Flow since a week has been unable to directly paste the text when I stop speaking. Why we ..."
+   Confidence: 0.90 | Reasoning: The complaint describes a loss of functionality without clearly fitting into the specified categories, making it too vague for a specific classification.
+
+243. [ID: 559] No daily data wipe on desktop
+   Quote: "One of the features I really like in the iOS app is that it wipes all of the data every day. If you ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for the desktop version that does not fit into the existing categories.
+
+244. [ID: 560] No automated daily data wipe on desktop
+   Quote: "If that could be automated like on mobile, that would be a bonus."
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is more of a feature request.
+
+245. [ID: 563] Unclear how to submit in-app report
+   Quote: "Sure thing, happy to do that. How do I submit an in-app report? Can you walk me through on how to do..."
+   Confidence: 0.90 | Reasoning: The complaint is about a lack of clarity on a feature rather than a specific technical issue or problem with the app.
+
+246. [ID: 564] No centralized feature request tool
+   Quote: "Did you ever consider using tools like Canny for feature request management, like all the other tool..."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's functionality or performance, but rather suggests a feature management tool.
+
+247. [ID: 565] No public roadmap or progress visibility
+   Quote: "Also, you can request a feature in progress or include it in something like a roadmap that everyone ..."
+   Confidence: 0.90 | Reasoning: The complaint is about a lack of transparency regarding future features, which does not fit into any of the specific categories provided.
+
+248. [ID: 566] Prioritizes promotion over user needs
+   Quote: "However, in my view, it’s the wrong approach to prioritize promotion over user intention."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+249. [ID: 567] Feedback requires Reddit account
+   Quote: "Having to create a Reddit account just to give feedback on another tool and searching for subreddits..."
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to Wispr Flow's functionality or features, but rather addresses a general inconvenience with the feedback process.
+
+250. [ID: 568] No public roadmap
+   Quote: "There’s no roadmap transparency, and if activity really does scale, things will quickly become compl..."
+   Confidence: 0.90 | Reasoning: The complaint about a lack of a public roadmap does not fit into any of the specific categories provided.
+
+251. [ID: 569] Missing features compared to competitors
+   Quote: "other tools are emerging quickly, and they have features I absolutely miss in Wispr."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify which features are missing, making it unclear.
+
+252. [ID: 572] No web extension
+   Quote: "it only works on Windows, Mac, and iOS. There's no web extension or anything like that"
+   Confidence: 0.90 | Reasoning: The complaint about the lack of a web extension does not fit into any of the specified categories and is too vague.
+
+253. [ID: 576] Forgets context after pauses
+   Quote: "It also forgets context constantly, like if I pause for a second, it just loses the thread entirely."
+   Confidence: 0.90 | Reasoning: The complaint about forgetting context after pauses does not clearly fit into any of the specified categories and is too vague.
+
+254. [ID: 578] Clunky execution; not as smooth as alternatives
+   Quote: "Way smoother."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not specify a clear technical issue or feature request.
+
+255. [ID: 580] Requires near-silent environment
+   Quote: "these tools always feel like they’re built for monks in soundproof cubes"
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specified categories.
+
+256. [ID: 582] Limited power and customization
+   Quote: "If you need more power and customization there's VoiceInk, Superwhisper (my favorite), and a bunch m..."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+257. [ID: 583] Limited customization options
+   Quote: "I prefer all the customization that Superwhisper gives me."
+   Confidence: 0.90 | Reasoning: The complaint about limited customization options does not clearly fit into any of the specified categories.
+
+258. [ID: 584] Limited access to premium models
+   Quote: "I can use it the same way as Wispr Flow, but I also rely heavily on the AI features (and having unli..."
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is more about feature availability rather than a specific issue with the app.
+
+259. [ID: 588] Connection issues
+   Quote: "sometimes it says it can't connect even though my WiFi is fine."
+   Confidence: 0.90 | Reasoning: The complaint about connection issues is too vague and does not clearly fit into any of the specified categories.
+
+260. [ID: 591] Not native Mac app
+   Quote: "it seems to be a really clunky electron app."
+   Confidence: 0.90 | Reasoning: The complaint about the app being a clunky electron app does not fit any specific category related to functionality or performance issues.
+
+261. [ID: 593] Reviews seem marketing-driven
+   Quote: "Now, I wonder if it's for the sake of marketing. Lol"
+   Confidence: 0.90 | Reasoning: The complaint about reviews being marketing-driven does not fit any specific technical or feature-related category.
+
+262. [ID: 604] Login blocked in UAE
+   Quote: "apparently the UAE blocked their server or something, and no one in the country was able to log in, ..."
+   Confidence: 0.90 | Reasoning: The complaint about being unable to log in due to a regional server block does not fit any specific category related to the app's functionality or features.
+
+263. [ID: 606] Limited customization options
+   Quote: "I personally prefer customization so simple options feel super limiting to me."
+   Confidence: 0.90 | Reasoning: The complaint about limited customization options does not clearly fit into any of the specified categories.
+
+264. [ID: 608] Auto re-adds to login items
+   Quote: "auto‑readding itself to login items"
+   Confidence: 0.90 | Reasoning: The complaint about auto re-adding to login items does not fit any of the specified categories and is too vague.
+
+265. [ID: 612] Hard to install Whisper locally
+   Quote: "the average layman has no idea where to start with installing whisper locally. Its highly technical."
+   Confidence: 0.90 | Reasoning: The complaint is about the difficulty of installation, which does not fit into any of the specified categories.
+
+266. [ID: 613] No CarPlay hands-free support
+   Quote: "I'd like to use this app in my truck with CarPlay (vs Siri).  I want to be able to do this "Hands Fr..."
+   Confidence: 0.90 | Reasoning: The complaint is about a feature request for CarPlay support, which does not fit into the predefined categories.
+
+267. [ID: 618] Has many bugs
+   Quote: "Wispr Flow has the most bugs, so I don’t like it and haven’t subscribed."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the types of bugs or issues encountered.
+
+268. [ID: 619] Unclear how to configure per-app prompts
+   Quote: "So you have setup prompt for each type of application like gmail, terminal etc? Do you have some def..."
+   Confidence: 0.90 | Reasoning: The complaint does not clearly fit into any of the specified categories and is more of a feature inquiry.
+
+269. [ID: 623] No Android app
+   Quote: "I'm on an Android phone, so i'm basically on the hunt for a solution that has both a Mac and Android..."
+   Confidence: 0.90 | Reasoning: The complaint is about the absence of an Android app, which does not fit into any of the specified categories.
+
+270. [ID: 624] Buggy, half-baked features
+   Quote: "The features are half-baked"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify which features are problematic or how they are buggy.
+
+271. [ID: 631] Overhyped AI claims
+   Quote: "AI, my tatted ass."
+   Confidence: 0.90 | Reasoning: The complaint is vague and does not clearly fit into any of the specific categories provided.
+
+272. [ID: 637] Electron-based (not native macOS)
+   Quote: "What I got was a barely-disguised Electron app that runs like a pig."
+   Confidence: 0.90 | Reasoning: The complaint about being an Electron-based app does not fit any specific category related to functionality or performance issues listed.
+
+273. [ID: 642] Lacks customization options
+   Quote: "something that's pretty simple and not really customizable needs to really be re-evaluated."
+   Confidence: 0.90 | Reasoning: The complaint about lacking customization options does not fit any specific category and is too vague.
+
+274. [ID: 646] Hard to make dictation a habit
+   Quote: "I tried both as I love the concept of voice transcription but struggled to turn it into a permanent ..."
+   Confidence: 0.90 | Reasoning: The complaint is about difficulty in forming a habit rather than a specific technical issue or feature request.
+
+275. [ID: 647] Requires multiple voice apps
+   Quote: "That sounds like I'd need to different voice apps just to get through my work day."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+276. [ID: 650] Not a full keyboard
+   Quote: "Wispr Flow isn’t a “full” keyboard—it only has a number pad and a voice input button."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specified categories.
+
+277. [ID: 656] iOS app stopped working entirely
+   Quote: "Tbh my Wispr Flow stopped working on iOS entirely and I have no idea why"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify the nature of the issue, making it unclear which specific category it fits into.
+
+278. [ID: 658] No improvement over Mac dictation
+   Quote: "I found the app to be no better than regular Mac dictation and deleted it completely."
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not specify a clear issue related to the app's functionality or features.
+
+279. [ID: 660] No option to use own API key
+   Quote: "any free solution where I can enter my own api key and use ?"
+   Confidence: 0.90 | Reasoning: The complaint does not fit any specific category related to the app's features or issues, as it is a general request for a feature not currently offered.
+
+280. [ID: 664] Poor Windows support
+   Quote: "It's built for windows-first rather than mac-first, so fewer issues there:)"
+   Confidence: 0.90 | Reasoning: The complaint is too vague and does not clearly fit into any of the specific categories provided.
+
+281. [ID: 668] Unreliable clipboard integration
+   Quote: "no issues with the clipboard and no freezing"
+   Confidence: 0.90 | Reasoning: The complaint about clipboard integration does not fit any of the specific categories provided and is too vague.
+
+================================================================================
+CATEGORY SUMMARY
+================================================================================
+other: 281 (42.7%)
+================================================================================
