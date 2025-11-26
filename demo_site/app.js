@@ -305,14 +305,14 @@ function addHoverLine(categoryName) {
     timeChart.data.datasets.push({
         label: categoryName + ' (hover)',
         data: filteredData,
-        borderColor: CHART_COLORS.pink,
-        backgroundColor: CHART_COLORS.pink + '20',
+        borderColor: CHART_COLORS.tealLighter,
+        backgroundColor: CHART_COLORS.tealLighter + '20',
         borderWidth: 3,
         tension: 0.3,
         fill: false,
         pointRadius: 2,
         pointHoverRadius: 4,
-        pointBackgroundColor: CHART_COLORS.pink,
+        pointBackgroundColor: CHART_COLORS.tealLighter,
         isHoverLine: true  // Custom flag to identify hover line
     });
 
@@ -337,9 +337,9 @@ function updateBarColors() {
     const colors = barChart.data.datasets[0].backgroundColor;
     for (let i = 0; i < colors.length; i++) {
         if (i === selectedBarIndex) {
-            colors[i] = CHART_COLORS.green; // Selected = green
+            colors[i] = CHART_COLORS.pinkDark; // Selected = dark pink
         } else if (i === hoveredBarIndex) {
-            colors[i] = CHART_COLORS.pink; // Hovered = pink
+            colors[i] = CHART_COLORS.tealLighter; // Hovered = lighter teal
         } else {
             colors[i] = CHART_COLORS.teal; // Default = teal
         }
@@ -381,14 +381,14 @@ function selectCategory(categoryName, barIndex) {
             timeChart.data.datasets.push({
                 label: categoryName,
                 data: filteredData,
-                borderColor: CHART_COLORS.green,
-                backgroundColor: CHART_COLORS.green + '20',
+                borderColor: CHART_COLORS.pinkDark,
+                backgroundColor: CHART_COLORS.pinkDark + '20',
                 borderWidth: 3,
                 tension: 0.3,
                 fill: false,
                 pointRadius: 3,
                 pointHoverRadius: 5,
-                pointBackgroundColor: CHART_COLORS.green,
+                pointBackgroundColor: CHART_COLORS.pinkDark,
                 isSelectedLine: true  // Custom flag to identify selected line
             });
 
@@ -423,9 +423,7 @@ function showCategoryDetails(categoryName) {
 
     // Update sub-header - show "Uncategorized" for "other" category
     const displayName = category.name.toLowerCase() === 'other' ? 'Uncategorized' : category.name;
-    const timeFilteredComplaints = filterComplaintsByTime(category.complaints);
     document.getElementById('selected-category-name').textContent = displayName;
-    document.getElementById('selected-category-count').textContent = `${timeFilteredComplaints.length} complaints`;
     document.getElementById('selected-category-summary').textContent = category.aiSummary;
 
     // Reset source filter when changing categories
@@ -722,10 +720,6 @@ function setupTimeFilter() {
             if (selectedCategory) {
                 const category = data.categories.find(c => c.name.toLowerCase() === selectedCategory.toLowerCase());
                 if (category) {
-                    // Update complaint count in sub-header
-                    const timeFilteredComplaints = filterComplaintsByTime(category.complaints);
-                    document.getElementById('selected-category-count').textContent = `${timeFilteredComplaints.length} complaints`;
-
                     // Update source badges and complaints list
                     updateSourceBadges(category);
                     renderComplaints(category);
@@ -807,14 +801,14 @@ function selectOtherCategory() {
         timeChart.data.datasets.push({
             label: otherKey,
             data: filteredData,
-            borderColor: CHART_COLORS.green,
-            backgroundColor: CHART_COLORS.green + '20',
+            borderColor: CHART_COLORS.pinkDark,
+            backgroundColor: CHART_COLORS.pinkDark + '20',
             borderWidth: 3,
             tension: 0.3,
             fill: false,
             pointRadius: 3,
             pointHoverRadius: 5,
-            pointBackgroundColor: CHART_COLORS.green,
+            pointBackgroundColor: CHART_COLORS.pinkDark,
             isSelectedLine: true
         });
 

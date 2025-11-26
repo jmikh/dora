@@ -284,8 +284,8 @@ body {
 }
 
 .other-category-btn.active {
-    background: #22c55e;
-    color: white;
+    background: var(--pink);
+    color: var(--text-primary);
 }
 
 /* Custom tooltip for other button (matches Chart.js style) */
