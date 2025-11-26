@@ -279,6 +279,7 @@ body {
     gap: var(--spacing-sm);
     padding: var(--spacing-sm) var(--spacing-md);
     margin-top: var(--spacing-md);
+    margin-left: 120px;
     background: var(--teal);
     border: 1px solid var(--teal);
     border-radius: var(--radius-sm);
@@ -286,6 +287,7 @@ body {
     font-size: 0.875rem;
     color: white;
     transition: var(--transition-fast);
+    width: fit-content;
 }
 
 .uncategorized-btn:hover {
