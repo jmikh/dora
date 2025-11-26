@@ -49,6 +49,7 @@ async function init() {
         // Setup event listeners
         setupTimeFilter();
         setupOtherButton();
+        setupModal();
 
         // Pre-select first category
         const categories = data.categories.filter(c => c.name.toLowerCase() !== 'other');
@@ -143,8 +144,8 @@ function initBarChart() {
             datasets: [{
                 data: categories.map(c => c.count),
                 backgroundColor: colors,
-                borderColor: colors,
-                borderWidth: 0,
+                borderColor: colors.map(() => 'transparent'),
+                borderWidth: colors.map(() => 0),
                 borderRadius: 3,
                 barThickness: 18,
                 categoryPercentage: 0.8,
@@ -167,7 +168,11 @@ function initBarChart() {
                     borderWidth: 1,
                     padding: 12,
                     callbacks: {
-                        label: (context) => `${context.raw} complaints`
+                        label: (context) => {
+                            const total = context.dataset.data.reduce((sum, val) => sum + val, 0);
+                            const percentage = ((context.raw / total) * 100).toFixed(1);
+                            return `${context.raw} complaints (${percentage}%)`;
+                        }
                     }
                 }
             },
@@ -335,13 +340,21 @@ function removeHoverLine() {
 function updateBarColors() {
     if (!barChart) return;
     const colors = barChart.data.datasets[0].backgroundColor;
+    const borderColors = barChart.data.datasets[0].borderColor;
+    const borderWidths = barChart.data.datasets[0].borderWidth;
     for (let i = 0; i < colors.length; i++) {
         if (i === selectedBarIndex) {
             colors[i] = CHART_COLORS.pinkDark; // Selected = dark pink
+            borderColors[i] = '#000000'; // Black border for selected
+            borderWidths[i] = 2;
         } else if (i === hoveredBarIndex) {
             colors[i] = CHART_COLORS.tealLighter; // Hovered = lighter teal
+            borderColors[i] = 'transparent';
+            borderWidths[i] = 0;
         } else {
             colors[i] = CHART_COLORS.teal; // Default = teal
+            borderColors[i] = 'transparent';
+            borderWidths[i] = 0;
         }
     }
     barChart.update(); // Full update to re-evaluate scriptable tick options
@@ -353,12 +366,10 @@ function selectCategory(categoryName, barIndex) {
     if (selectedCategory === categoryName) {
         return;
     } else {
-        // Deselect "Other" button if it was selected
-        const otherBtn = document.getElementById('other-category-btn');
-        const otherLabel = document.getElementById('other-label');
+        // Deselect "View uncategorized" button if it was selected
+        const otherBtn = document.getElementById('view-uncategorized-btn');
         if (otherBtn) {
             otherBtn.classList.remove('active');
-            if (otherLabel) otherLabel.textContent = 'View uncategorized';
         }
 
         // Select new category
@@ -731,28 +742,16 @@ function setupTimeFilter() {
 
 // Setup "Other" category button
 function setupOtherButton() {
-    const btn = document.getElementById('other-category-btn');
-    const tooltip = document.getElementById('other-tooltip');
+    const btn = document.getElementById('view-uncategorized-btn');
+    const countSpan = document.getElementById('uncategorized-count');
 
-    // Find "other" category and set tooltip content
+    // Find "other" category and set count
     const otherCategory = data.categories.find(c => c.name.toLowerCase() === 'other');
-    if (otherCategory) {
-        tooltip.textContent = `${otherCategory.count} complaints`;
+    if (otherCategory && countSpan) {
+        countSpan.textContent = otherCategory.count;
     }
 
-    // Show tooltip on hover
-    btn.addEventListener('mouseenter', (e) => {
-        const rect = btn.getBoundingClientRect();
-        const parentRect = btn.parentElement.getBoundingClientRect();
-        tooltip.style.top = (rect.bottom - parentRect.top + 6) + 'px';
-        tooltip.style.right = '0px';
-        tooltip.classList.add('visible');
-    });
-
-    btn.addEventListener('mouseleave', () => {
-        tooltip.classList.remove('visible');
-    });
-
+    // Click handler
     btn.addEventListener('click', () => {
         selectOtherCategory();
     });
@@ -760,8 +759,7 @@ function setupOtherButton() {
 
 // Select "Other" category
 function selectOtherCategory() {
-    const btn = document.getElementById('other-category-btn');
-    const label = document.getElementById('other-label');
+    const btn = document.getElementById('view-uncategorized-btn');
     const otherCategory = data.categories.find(c => c.name.toLowerCase() === 'other');
 
     if (!otherCategory) return;
@@ -777,7 +775,6 @@ function selectOtherCategory() {
 
     // Update button state
     btn.classList.add('active');
-    if (label) label.textContent = 'Viewing uncategorized';
 
     // Update selected category
     selectedCategory = 'other';
@@ -896,6 +893,169 @@ function updateChartsForTimeRange() {
         return sum + filterComplaintsByTime(cat.complaints).length;
     }, 0);
     document.getElementById('total-complaints').textContent = totalFiltered;
+}
+
+// Setup modal functionality
+function setupModal() {
+    const expandBtn = document.getElementById('expand-complaints-btn');
+    const modal = document.getElementById('complaints-modal');
+    const closeBtn = document.getElementById('modal-close-btn');
+
+    // Open modal
+    expandBtn.addEventListener('click', () => {
+        openComplaintsModal();
+    });
+
+    // Close modal on X button
+    closeBtn.addEventListener('click', () => {
+        closeComplaintsModal();
+    });
+
+    // Close modal on overlay click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeComplaintsModal();
+        }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeComplaintsModal();
+        }
+    });
+}
+
+// Open complaints modal
+function openComplaintsModal() {
+    const modal = document.getElementById('complaints-modal');
+    const modalCategoryName = document.getElementById('modal-category-name');
+    const modalSources = document.getElementById('modal-sources');
+    const modalComplaintsList = document.getElementById('modal-complaints-list');
+
+    // Get current category
+    const category = data.categories.find(c => c.name === selectedCategory);
+    if (!category) return;
+
+    // Filter complaints by time
+    const timeFilteredComplaints = filterComplaintsByTime(category.complaints);
+    const totalComplaints = timeFilteredComplaints.length;
+
+    // Calculate percentage of all complaints across all categories
+    const allCategoriesTotal = data.categories.reduce((sum, cat) => {
+        return sum + filterComplaintsByTime(cat.complaints).length;
+    }, 0);
+    const categoryPercentage = ((totalComplaints / allCategoriesTotal) * 100).toFixed(1);
+
+    // Set category name with count and percentage
+    modalCategoryName.textContent = `${category.name} — ${totalComplaints} complaints (${categoryPercentage}%)`;
+
+    // Build source badges with percentages
+    modalSources.innerHTML = '';
+    const sourceIcons = {
+        'reddit': 'icons/reddit.png',
+        'appstore': 'icons/appstore.png',
+        'producthunt': 'icons/producthunt.png',
+        'trustpilot': 'icons/trustpilot.png',
+        'microsoft': 'icons/windows.png'
+    };
+    const sourceNames = {
+        'reddit': 'Reddit',
+        'appstore': 'App Store',
+        'producthunt': 'Product Hunt',
+        'trustpilot': 'Trustpilot',
+        'microsoft': 'Microsoft'
+    };
+
+    // Count by platform
+    const platformCounts = {};
+    timeFilteredComplaints.forEach(complaint => {
+        let platform;
+        if (complaint.sourceType === 'reddit_content') {
+            platform = 'reddit';
+        } else {
+            platform = (complaint.source.platform || 'unknown').toLowerCase().replace(/\s+/g, '');
+        }
+        platformCounts[platform] = (platformCounts[platform] || 0) + 1;
+    });
+
+    // Sort by count descending
+    const sortedPlatforms = Object.entries(platformCounts).sort((a, b) => b[1] - a[1]);
+
+    for (const [platform, count] of sortedPlatforms) {
+        const badge = document.createElement('div');
+        badge.className = 'source-badge';
+        badge.dataset.source = platform;
+        if (selectedSource === platform) {
+            badge.classList.add('active');
+        }
+        badge.innerHTML = `
+            <img src="${sourceIcons[platform] || 'icons/reddit.png'}" alt="${platform}">
+            <span>${sourceNames[platform] || platform}</span>
+            <span class="count">${count}</span>
+        `;
+        badge.addEventListener('click', () => {
+            // Toggle selection
+            if (selectedSource === platform) {
+                selectedSource = null;
+                modalSources.querySelectorAll('.source-badge').forEach(b => b.classList.remove('active'));
+            } else {
+                selectedSource = platform;
+                modalSources.querySelectorAll('.source-badge').forEach(b => {
+                    b.classList.toggle('active', b.dataset.source === platform);
+                });
+            }
+            // Re-render modal complaints
+            renderModalComplaints(category);
+            // Also update main panel
+            document.querySelectorAll('#source-badges .source-badge').forEach(b => {
+                b.classList.toggle('active', b.dataset.source === selectedSource);
+            });
+            renderComplaints(category);
+        });
+        modalSources.appendChild(badge);
+    }
+
+    // Render complaints in modal (show all, not limited to 50)
+    renderModalComplaints(category);
+
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Render complaints in modal
+function renderModalComplaints(category) {
+    const modalComplaintsList = document.getElementById('modal-complaints-list');
+    modalComplaintsList.innerHTML = '';
+
+    // Filter complaints by current time range
+    let filteredComplaints = filterComplaintsByTime(category.complaints);
+
+    // Filter by selected source/platform if any
+    if (selectedSource) {
+        filteredComplaints = filteredComplaints.filter(c => {
+            if (selectedSource === 'reddit') {
+                return c.sourceType === 'reddit_content';
+            } else {
+                const platform = (c.source.platform || '').toLowerCase().replace(/\s+/g, '');
+                return platform === selectedSource;
+            }
+        });
+    }
+
+    // Show all complaints in modal (no limit)
+    filteredComplaints.forEach(complaint => {
+        const card = createComplaintCard(complaint);
+        modalComplaintsList.appendChild(card);
+    });
+}
+
+// Close complaints modal
+function closeComplaintsModal() {
+    const modal = document.getElementById('complaints-modal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // Start the app

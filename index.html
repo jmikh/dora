@@ -63,6 +63,12 @@
                     <div class="chart-container bar-chart-container">
                         <canvas id="bar-chart"></canvas>
                     </div>
+
+                    <!-- Uncategorized Button -->
+                    <button class="uncategorized-btn" id="view-uncategorized-btn">
+                        Uncategorized
+                        <span class="uncategorized-count" id="uncategorized-count"></span>
+                    </button>
                 </div>
             </section>
 
@@ -89,7 +95,7 @@
                     </div>
 
                     <!-- Complaints Card (includes sources) -->
-                    <div class="complaints-section">
+                    <div class="complaints-section" id="complaints-section">
                         <!-- Source Breakdown -->
                         <div class="source-breakdown">
                             <div class="section-header">
@@ -101,6 +107,14 @@
                                     </svg>
                                 </span>
                                 <h3>Sources</h3>
+                                <button class="expand-btn" id="expand-complaints-btn" title="Expand">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <polyline points="9 21 3 21 3 15"/>
+                                        <line x1="21" y1="3" x2="14" y2="10"/>
+                                        <line x1="3" y1="21" x2="10" y2="14"/>
+                                    </svg>
+                                </button>
                             </div>
                             <div class="source-badges" id="source-badges"></div>
                         </div>
@@ -123,6 +137,25 @@
         <footer class="footer">
             <span>© 2025 Dora. All rights reserved.</span>
         </footer>
+    </div>
+
+    <!-- Expanded Complaints Modal -->
+    <div class="modal-overlay" id="complaints-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-category-name">Complaints</h2>
+                <button class="modal-close-btn" id="modal-close-btn" title="Close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-sources" id="modal-sources"></div>
+                <div class="modal-complaints-list" id="modal-complaints-list"></div>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
