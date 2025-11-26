@@ -266,47 +266,50 @@ body {
     height: 850px;
 }
 
-/* Other category button */
-.other-category-btn {
-    padding: 4px 10px;
+/* Other category button - hidden */
+.other-category-btn,
+.other-tooltip {
+    display: none;
+}
+
+/* Uncategorized button at bottom of bar chart */
+.uncategorized-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-top: var(--spacing-md);
     background: var(--teal);
-    border: none;
+    border: 1px solid var(--teal);
     border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: var(--transition-fast);
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: white;
+    transition: var(--transition-fast);
 }
 
-.other-category-btn:hover {
+.uncategorized-btn:hover {
+    background: var(--teal-light);
+    border-color: var(--teal-light);
+}
+
+.uncategorized-btn.active {
     background: var(--pink);
     color: var(--text-primary);
+    border-color: var(--pink-dark);
+    font-weight: 600;
 }
 
-.other-category-btn.active {
-    background: var(--pink);
-    color: var(--text-primary);
+.uncategorized-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
-/* Custom tooltip for other button (matches Chart.js style) */
-.other-tooltip {
-    position: absolute;
-    background: #ffffff;
-    color: #5a5a52;
-    border: 1px solid #e5e5d6;
-    border-radius: var(--radius-sm);
-    padding: 8px 12px;
-    font-size: 0.8125rem;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 100ms ease;
-    white-space: nowrap;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
-
-.other-tooltip.visible {
-    opacity: 1;
+.uncategorized-btn.active .uncategorized-count {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Details panel */
@@ -613,6 +616,122 @@ body {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+/* Expand button */
+.expand-btn {
+    margin-left: auto;
+    padding: var(--spacing-xs);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expand-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--teal);
+    border-color: var(--teal);
+}
+
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease, visibility 200ms ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+    transition: transform 200ms ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.modal-header h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.modal-close-btn {
+    padding: var(--spacing-xs);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+}
+
+.modal-close-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+}
+
+.modal-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-complaints-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
 }
 
 /* Responsive adjustments */
