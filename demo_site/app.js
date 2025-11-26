@@ -751,6 +751,20 @@ function setupOtherButton() {
         countSpan.textContent = otherCategory.count;
     }
 
+    // Hover handlers - show line on time chart
+    btn.addEventListener('mouseenter', () => {
+        if (selectedCategory !== 'other') {
+            const otherCat = data.categories.find(c => c.name.toLowerCase() === 'other');
+            if (otherCat) {
+                addHoverLine(otherCat.name);
+            }
+        }
+    });
+
+    btn.addEventListener('mouseleave', () => {
+        removeHoverLine();
+    });
+
     // Click handler
     btn.addEventListener('click', () => {
         selectOtherCategory();
