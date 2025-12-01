@@ -15,14 +15,14 @@
                 <img src="https://styles.redditmedia.com/t5_ckro6f/styles/communityIcon_byv66pj34dkf1.png" alt="Wispr Flow" class="logo">
                 <div class="header-text">
                     <h1>Wispr Flow</h1>
-                    <p class="subtitle">Complaints Analytics Dashboard</p>
+                    <p class="subtitle" id="dashboard-subtitle">Complaints Analytics Dashboard</p>
                 </div>
             </div>
             <div class="header-right">
                 <div class="stats">
                     <div class="stat">
-                        <span class="stat-value" id="total-complaints">--</span>
-                        <span class="stat-label">Total Complaints</span>
+                        <span class="stat-value" id="total-items">--</span>
+                        <span class="stat-label" id="total-items-label">Total Complaints</span>
                     </div>
                     <div class="stat">
                         <span class="stat-value" id="total-categories">--</span>
@@ -32,6 +32,14 @@
             </div>
         </header>
 
+        <!-- Data Type Toggle -->
+        <div class="data-toggle-container">
+            <div class="data-toggle">
+                <button class="toggle-btn active" data-type="complaints">Complaints</button>
+                <button class="toggle-btn" data-type="useCases">Use Cases</button>
+            </div>
+        </div>
+
         <!-- Main Content -->
         <main class="main-content">
             <!-- Left Panel: Charts -->
@@ -39,7 +47,7 @@
                 <!-- Top Issues Chart Card -->
                 <div class="chart-card">
                     <div class="chart-title-row">
-                        <h2 class="chart-title">Top Issues</h2>
+                        <h2 class="chart-title" id="chart-title">Top Complaints</h2>
                         <button class="other-category-btn" id="other-category-btn">
                             <span class="other-label" id="other-label">View uncategorized</span>
                         </button>
@@ -119,14 +127,14 @@
                             <div class="source-badges" id="source-badges"></div>
                         </div>
 
-                        <!-- Complaints List -->
+                        <!-- Items List -->
                         <div class="section-header">
                             <span class="section-icon">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                                 </svg>
                             </span>
-                            <h3>Complaints</h3>
+                            <h3 id="items-list-title">Complaints</h3>
                         </div>
                         <div class="complaints-list" id="complaints-list"></div>
                     </div>
