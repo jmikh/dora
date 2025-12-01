@@ -10,6 +10,29 @@ let barChart = null;
 let selectedCategory = null;
 let currentTimeRange = 'all';
 let selectedSource = null;
+let currentDataType = 'complaints'; // 'complaints' or 'useCases'
+
+// Data type configuration
+const DATA_CONFIG = {
+    complaints: {
+        file: 'data/complaints.json',
+        subtitle: 'Complaints Analytics Dashboard',
+        chartTitle: 'Top Complaints',
+        totalLabel: 'Total Complaints',
+        itemsTitle: 'Complaints',
+        itemKey: 'complaints',
+        metaKey: 'totalComplaints'
+    },
+    useCases: {
+        file: 'data/use_cases.json',
+        subtitle: 'Use Cases Analytics Dashboard',
+        chartTitle: 'Top Use Cases',
+        totalLabel: 'Total Use Cases',
+        itemsTitle: 'Use Cases',
+        itemKey: 'useCases',
+        metaKey: 'totalUseCases'
+    }
+};
 
 // Chart colors - Wispr Flow theme (teal & pink)
 const CHART_COLORS = {
@@ -34,22 +57,66 @@ function generateCategoryColors(count) {
 
 // Initialize dashboard
 async function init() {
+    // Setup data toggle first
+    setupDataToggle();
+
+    // Load initial data
+    await loadData(currentDataType);
+}
+
+// Load data for the specified type
+async function loadData(dataType) {
+    const config = DATA_CONFIG[dataType];
+
     try {
-        const response = await fetch('data/complaints.json');
+        const response = await fetch(config.file);
         data = await response.json();
 
+        // Normalize data structure - use 'complaints' key for items regardless of type
+        // This allows reusing the existing rendering functions
+        if (dataType === 'useCases') {
+            data.categories.forEach(cat => {
+                cat.complaints = cat.useCases || [];
+            });
+        }
+
+        // Update labels
+        updateLabels(config);
+
         // Update stats
-        document.getElementById('total-complaints').textContent = data.meta.totalComplaints;
+        document.getElementById('total-items').textContent = data.meta[config.metaKey] || data.meta.totalComplaints || data.meta.totalUseCases;
         document.getElementById('total-categories').textContent = data.meta.totalCategories;
+
+        // Reset state
+        selectedCategory = null;
+        selectedBarIndex = null;
+        selectedSource = null;
+        hoveredBarIndex = null;
+
+        // Destroy existing charts if they exist
+        if (timeChart) {
+            timeChart.destroy();
+            timeChart = null;
+        }
+        if (barChart) {
+            barChart.destroy();
+            barChart = null;
+        }
 
         // Initialize charts
         initTimeChart();
         initBarChart();
 
-        // Setup event listeners
-        setupTimeFilter();
-        setupOtherButton();
-        setupModal();
+        // Setup event listeners (only once)
+        if (!window.listenersInitialized) {
+            setupTimeFilter();
+            setupOtherButton();
+            setupModal();
+            window.listenersInitialized = true;
+        } else {
+            // Update uncategorized count
+            updateUncategorizedCount();
+        }
 
         // Pre-select first category
         const categories = data.categories.filter(c => c.name.toLowerCase() !== 'other');
@@ -59,8 +126,47 @@ async function init() {
     } catch (error) {
         console.error('Failed to load data:', error);
         document.querySelector('.charts-panel').innerHTML =
-            '<div class="loading">Failed to load data. Please run generate_data.py first.</div>';
+            `<div class="loading">Failed to load data: ${error.message}</div>`;
     }
+}
+
+// Update uncategorized button count
+function updateUncategorizedCount() {
+    const otherCategory = data.categories.find(c => c.name.toLowerCase() === 'other');
+    const countSpan = document.getElementById('uncategorized-count');
+    if (otherCategory && countSpan) {
+        countSpan.textContent = otherCategory.count;
+    } else if (countSpan) {
+        countSpan.textContent = '0';
+    }
+}
+
+// Update UI labels based on data type
+function updateLabels(config) {
+    document.getElementById('dashboard-subtitle').textContent = config.subtitle;
+    document.getElementById('chart-title').textContent = config.chartTitle;
+    document.getElementById('total-items-label').textContent = config.totalLabel;
+    document.getElementById('items-list-title').textContent = config.itemsTitle;
+}
+
+// Setup data type toggle
+function setupDataToggle() {
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const newType = btn.dataset.type;
+            if (newType === currentDataType) return;
+
+            // Update active state
+            toggleBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update current type and reload data
+            currentDataType = newType;
+            await loadData(newType);
+        });
+    });
 }
 
 // Initialize time series chart
@@ -135,6 +241,12 @@ function initBarChart() {
     const categories = data.categories
         .filter(c => c.name.toLowerCase() !== 'other');
 
+    // Dynamically set container height based on number of categories
+    // ~30px per bar to match complaints layout
+    const barHeight = 30;
+    const containerHeight = Math.max(300, categories.length * barHeight);
+    document.querySelector('.bar-chart-container').style.height = `${containerHeight}px`;
+
     const colors = generateCategoryColors(categories.length);
 
     barChart = new Chart(ctx, {
@@ -171,7 +283,8 @@ function initBarChart() {
                         label: (context) => {
                             const total = context.dataset.data.reduce((sum, val) => sum + val, 0);
                             const percentage = ((context.raw / total) * 100).toFixed(1);
-                            return `${context.raw} complaints (${percentage}%)`;
+                            const itemLabel = currentDataType === 'useCases' ? 'use cases' : 'complaints';
+                            return `${context.raw} ${itemLabel} (${percentage}%)`;
                         }
                     }
                 }
@@ -191,6 +304,10 @@ function initBarChart() {
                 y: {
                     grid: {
                         display: false
+                    },
+                    afterFit: (scale) => {
+                        // Fix width to prevent shift when text becomes bold
+                        scale.width = 180;
                     },
                     ticks: {
                         autoSkip: false,
@@ -906,7 +1023,7 @@ function updateChartsForTimeRange() {
     const totalFiltered = data.categories.reduce((sum, cat) => {
         return sum + filterComplaintsByTime(cat.complaints).length;
     }, 0);
-    document.getElementById('total-complaints').textContent = totalFiltered;
+    document.getElementById('total-items').textContent = totalFiltered;
 }
 
 // Setup modal functionality
@@ -962,7 +1079,8 @@ function openComplaintsModal() {
     const categoryPercentage = ((totalComplaints / allCategoriesTotal) * 100).toFixed(1);
 
     // Set category name with count and percentage
-    modalCategoryName.textContent = `${category.name} — ${totalComplaints} complaints (${categoryPercentage}%)`;
+    const itemLabel = currentDataType === 'useCases' ? 'use cases' : 'complaints';
+    modalCategoryName.textContent = `${category.name} — ${totalComplaints} ${itemLabel} (${categoryPercentage}%)`;
 
     // Build source badges with percentages
     modalSources.innerHTML = '';

@@ -158,6 +158,45 @@ body {
     color: white;
 }
 
+/* Data Type Toggle */
+.data-toggle-container {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md) var(--spacing-lg) 0;
+}
+
+.data-toggle {
+    display: inline-flex;
+    background: var(--bg-tertiary);
+    border-radius: 100px;
+    padding: 4px;
+    gap: 4px;
+    border: 1px solid var(--border);
+}
+
+.toggle-btn {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 100px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.toggle-btn:hover:not(.active) {
+    background: rgba(3, 79, 70, 0.1);
+    color: var(--text-primary);
+}
+
+.toggle-btn.active {
+    background: var(--teal);
+    color: white;
+    box-shadow: 0 2px 4px rgba(3, 79, 70, 0.2);
+}
+
 /* Main content */
 .main-content {
     display: flex;
@@ -263,7 +302,8 @@ body {
 }
 
 .bar-chart-container {
-    height: 850px;
+    min-height: 300px;
+    /* Height set dynamically by JS based on category count */
 }
 
 /* Other category button - hidden */
