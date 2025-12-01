@@ -129,7 +129,9 @@ def main():
         time_series_data: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
         for row in results:
-            category = row.category or "other"
+            raw_category = row.category or "other"
+            # Normalize category: title case for consistency
+            category = raw_category.replace("_", " ").title()
 
             # Initialize category if needed
             if category not in categories_data:
