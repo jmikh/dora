@@ -147,6 +147,12 @@ function updateLabels(config) {
     document.getElementById('chart-title').textContent = config.chartTitle;
     document.getElementById('total-items-label').textContent = config.totalLabel;
     document.getElementById('items-list-title').textContent = config.itemsTitle;
+
+    // Hide uncategorized button for use cases (no "other" category)
+    const uncategorizedBtn = document.getElementById('view-uncategorized-btn');
+    if (uncategorizedBtn) {
+        uncategorizedBtn.style.display = currentDataType === 'useCases' ? 'none' : 'flex';
+    }
 }
 
 // Setup data type toggle
@@ -307,7 +313,8 @@ function initBarChart() {
                     },
                     afterFit: (scale) => {
                         // Fix width to prevent shift when text becomes bold
-                        scale.width = 180;
+                        // Use cases have shorter names than complaints
+                        scale.width = currentDataType === 'useCases' ? 180 : 340;
                     },
                     ticks: {
                         autoSkip: false,

@@ -133,6 +133,8 @@ def main():
                 continue
             # Normalize category: replace underscores with spaces
             category = raw_category.replace("_", " ").title()
+            # Fix specific category names
+            category = category.replace("Llm", "LLMs")
 
             # Initialize category if needed
             if category not in categories_data:
