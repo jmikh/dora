@@ -2,7 +2,7 @@
 
 ## Your Task
 
-You are an expert analyst extracting **value drivers** about **Wispr Flow**, a voice-to-text dictation app, from Reddit posts. You will be given a single Reddit post (title + body) and need to extract WHY users love Wispr Flow.
+You are an expert analyst extracting **value drivers** about **Wispr Flow**, a voice-to-text dictation app, from Reddit posts. You will be given a single Reddit post and need to classify WHY users love Wispr Flow into predefined categories.
 
 {{COMMON_RULES}}
 
@@ -14,24 +14,28 @@ Return a JSON object with the following structure:
 {
   "value_drivers": [
     {
-      "value_driver": "Concise description of the benefit",
+      "category": "productivity",
       "quote": "Exact quote from post"
     }
   ]
 }
 ```
 
+For the `other` category, include a description:
+
+```json
+{
+  "category": "other",
+  "other_description": "Helps with creative writing flow",
+  "quote": "Exact quote from post"
+}
+```
+
 ### Field Definitions:
 
-- **value_driver**: A concise description of the benefit/value the user experiences (5-15 words)
+- **category**: One of: `productivity`, `speed`, `accuracy`, `reliability`, `ease_of_use`, `accessibility`, `formatting`, `contextual_understanding`, `universality`, `other`
+- **other_description**: (Only for `other` category) Brief description of the value driver
 - **quote**: Direct quote from the post supporting this value driver
-
-### Rules:
-
-- Only extract value drivers clearly about Wispr Flow
-- Focus on WHY they love it, not WHAT they use it for
-- Each value driver should describe a specific benefit
-- Return empty array if no value drivers found
 
 ---
 
@@ -43,9 +47,9 @@ Return a JSON object with the following structure:
 
 ```
 Title: Wispr Flow changed how I work
-Body: I've been using Wispr Flow for 3 months and it's transformed my workflow. The speed is insane - I write emails 4x faster now. But what really gets me is how it cleans up my rambling into professional text. I just speak naturally and it formats everything perfectly. No more staring at a blank screen trying to find the right words.
+Body: I've been using Wispr Flow for 3 months and it's transformed my workflow. I write emails 4x faster now. The transcription is incredibly accurate - it even gets technical terms right. What really gets me is how it cleans up my rambling into professional text. I just speak naturally and it formats everything perfectly with proper punctuation and paragraphs.
 
-Also, my wrist pain from years of typing has basically disappeared since I switched to voice.
+Also, my wrist pain from years of typing has basically disappeared.
 
 Community: r/ProductivityApps
 ```
@@ -56,23 +60,23 @@ Community: r/ProductivityApps
 {
   "value_drivers": [
     {
-      "value_driver": "4x faster than typing for emails",
+      "category": "productivity",
       "quote": "I write emails 4x faster now"
     },
     {
-      "value_driver": "Transforms rambling speech into professional text",
+      "category": "accuracy",
+      "quote": "The transcription is incredibly accurate - it even gets technical terms right"
+    },
+    {
+      "category": "contextual_understanding",
       "quote": "it cleans up my rambling into professional text"
     },
     {
-      "value_driver": "Automatic formatting without manual effort",
-      "quote": "I just speak naturally and it formats everything perfectly"
+      "category": "formatting",
+      "quote": "it formats everything perfectly with proper punctuation and paragraphs"
     },
     {
-      "value_driver": "Eliminates writer's block",
-      "quote": "No more staring at a blank screen trying to find the right words"
-    },
-    {
-      "value_driver": "Reduces wrist pain from typing",
+      "category": "accessibility",
       "quote": "my wrist pain from years of typing has basically disappeared"
     }
   ]
@@ -81,13 +85,13 @@ Community: r/ProductivityApps
 
 ---
 
-### Example 2: Use Cases vs Value Drivers
+### Example 2: Use Case vs Value Driver
 
 **POST:**
 
 ```
 Title: Using Wispr for coding
-Body: I use Wispr Flow with Cursor every day. The accuracy is incredible - it even gets my variable names right. I added them to my personal dictionary and now it never misses.
+Body: I use Wispr Flow with Cursor every day. The accuracy is incredible - it gets my variable names right. It works in literally every app which is amazing.
 
 Community: r/WisprFlow
 ```
@@ -98,21 +102,20 @@ Community: r/WisprFlow
 {
   "value_drivers": [
     {
-      "value_driver": "High accuracy for technical terms and variable names",
-      "quote": "The accuracy is incredible - it even gets my variable names right"
+      "category": "accuracy",
+      "quote": "The accuracy is incredible - it gets my variable names right"
     },
     {
-      "value_driver": "Personal dictionary learns custom vocabulary",
-      "quote": "I added them to my personal dictionary and now it never misses"
+      "category": "universality",
+      "quote": "It works in literally every app"
     }
   ]
 }
 ```
 
 **Why this output?**
-- ❌ "I use Wispr Flow with Cursor" → NOT extracted (that's a use case, not a value driver)
-- ✅ "accuracy is incredible" → Extracted (that's WHY they love it)
-- ✅ "personal dictionary" → Extracted (benefit of learning their vocabulary)
+- ❌ "I use Wispr Flow with Cursor" → NOT extracted (use case, not value driver)
+- ✅ "accuracy is incredible" → Extracted (WHY they love it)
 
 ---
 
@@ -121,8 +124,8 @@ Community: r/WisprFlow
 **POST:**
 
 ```
-Title: Question about Wispr Flow
-Body: Does Wispr Flow work on Windows? I'm thinking about trying it for my work emails.
+Title: Question about Wispr
+Body: Does Wispr Flow work on Windows? I'm thinking about trying it.
 
 Community: r/WisprFlow
 ```
@@ -134,8 +137,6 @@ Community: r/WisprFlow
   "value_drivers": []
 }
 ```
-
-**Why:** This is just a question, no value drivers expressed.
 
 ---
 

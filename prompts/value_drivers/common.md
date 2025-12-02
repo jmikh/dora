@@ -12,31 +12,35 @@ Value drivers are the **reasons WHY users love the product** - the benefits, adv
 - **Use cases** = WHAT users do with Wispr (emails, coding, notes)
 - **Value drivers** = WHY users love Wispr (speed, accuracy, convenience)
 
-## Examples of Value Drivers
+## PREDEFINED VALUE DRIVER CATEGORIES
 
-- "It's 4x faster than typing" → Speed/efficiency
-- "The transcription is incredibly accurate" → Accuracy
-- "It automatically formats my text perfectly" → Smart formatting
-- "I can finally write without wrist pain" → Physical relief
-- "It works in every app" → Universal compatibility
-- "I sound more professional in emails" → Better output quality
-- "I can capture ideas before I forget them" → Idea capture
-- "It understands what I mean, not just what I say" → Intent understanding
-- "No more typos" → Error reduction
-- "It learns my vocabulary" → Personalization
+You MUST classify each value driver into one of these predefined categories:
+
+| Category | Description | Examples |
+|----------|-------------|----------|
+| `productivity` | Getting work done faster, time savings | "4x faster than typing", "get more done", "saves hours" |
+| `speed` | Fast transcription, low latency | "transcribes instantly", "no delay", "real-time", "keeps up with my speech" |
+| `accuracy` | Quality of transcription | "gets every word right", "no typos", "accurate even with technical terms" |
+| `reliability` | Consistent performance | "works every time", "never crashes", "dependable", "stable" |
+| `ease_of_use` | Simple, intuitive experience | "easy to set up", "just works", "intuitive", "simple UX", "no learning curve" |
+| `accessibility` | Helps with physical/speech conditions | "helps with my stutter", "no more wrist pain", "arthritis relief", "understands my accent" |
+| `formatting` | Auto-formatting capabilities | "adds punctuation", "capitalizes properly", "creates lists", "formats paragraphs" |
+| `contextual_understanding` | Understands intent, not just words | "knows what I mean", "cleans up my rambling", "writes what I intended", "captures intent" |
+| `universality` | Works everywhere | "works in every app", "use it anywhere", "universal compatibility" |
+| `other` | Anything that doesn't fit above | Specify what it is |
+
+## CRITICAL RULES
+
+1. Extract value drivers ONLY about **Wispr Flow** from the content
+2. Each value driver MUST map to one of the predefined categories above
+3. If it doesn't fit any category, use `other` and specify what it is
+4. Only extract from genuinely positive statements (not sarcasm)
+5. Focus on WHY they love it, not WHAT they use it for (that's use cases)
+6. **EACH CATEGORY CAN ONLY APPEAR ONCE** - if multiple quotes support the same category, pick the best/most representative quote
 
 ## What is NOT a Value Driver
 
 - Use cases: "I use it for emails" (that's WHAT, not WHY)
-- Feature descriptions without benefit: "It has a dictionary feature"
-- Generic praise without specifics: "It's great", "I love it"
-- Comparisons without benefit stated: "Better than Siri"
-
-## Extraction Rules
-
-1. Extract the **specific benefit or positive outcome** the user experiences
-2. Each value driver should be a clear, standalone statement of value
-3. Include the exact quote that supports the value driver
-4. Keep value driver descriptions concise (5-15 words)
-5. Focus on the BENEFIT to the user, not just feature names
-6. Only extract from genuinely positive statements (not sarcasm or complaints)
+- Feature names without benefit: "It has a dictionary"
+- Generic praise: "It's great", "I love it" (no specific benefit)
+- Comparisons without benefit: "Better than Siri" (why is it better?)

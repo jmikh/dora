@@ -140,7 +140,15 @@ def extract_from_reddit(
             print(f"\nEXTRACTED VALUE DRIVERS ({num_saved}):")
             if value_drivers:
                 for i, vd in enumerate(value_drivers, 1):
-                    print(f"   {i}. {vd['value_driver']}")
+                    # Handle both old format (value_driver) and new format (category)
+                    if "category" in vd:
+                        category = vd["category"]
+                        if category == "other" and "other_description" in vd:
+                            print(f"   {i}. other: {vd['other_description']}")
+                        else:
+                            print(f"   {i}. {category}")
+                    else:
+                        print(f"   {i}. {vd.get('value_driver', 'unknown')}")
                     print(f"      Quote: \"{vd['quote']}\"")
             else:
                 print("   (none)")
@@ -246,7 +254,15 @@ def extract_from_reviews(
             print(f"\nEXTRACTED VALUE DRIVERS ({num_saved}):")
             if value_drivers:
                 for i, vd in enumerate(value_drivers, 1):
-                    print(f"   {i}. {vd['value_driver']}")
+                    # Handle both old format (value_driver) and new format (category)
+                    if "category" in vd:
+                        category = vd["category"]
+                        if category == "other" and "other_description" in vd:
+                            print(f"   {i}. other: {vd['other_description']}")
+                        else:
+                            print(f"   {i}. {category}")
+                    else:
+                        print(f"   {i}. {vd.get('value_driver', 'unknown')}")
                     print(f"      Quote: \"{vd['quote']}\"")
             else:
                 print("   (none)")

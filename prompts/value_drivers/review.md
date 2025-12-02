@@ -2,7 +2,7 @@
 
 ## Your Task
 
-You are an expert analyst extracting **value drivers** about **Wispr Flow**, a voice-to-text dictation app, from app store reviews. You will be given a single review and need to extract WHY users love Wispr Flow.
+You are an expert analyst extracting **value drivers** about **Wispr Flow**, a voice-to-text dictation app, from app store reviews. You will be given a single review and need to classify WHY users love Wispr Flow into predefined categories.
 
 {{COMMON_RULES}}
 
@@ -14,23 +14,28 @@ Return a JSON object with the following structure:
 {
   "value_drivers": [
     {
-      "value_driver": "Concise description of the benefit",
+      "category": "productivity",
       "quote": "Exact quote from review"
     }
   ]
 }
 ```
 
+For the `other` category, include a description:
+
+```json
+{
+  "category": "other",
+  "other_description": "Brief description",
+  "quote": "Exact quote from review"
+}
+```
+
 ### Field Definitions:
 
-- **value_driver**: A concise description of the benefit/value the user experiences (5-15 words)
+- **category**: One of: `productivity`, `speed`, `accuracy`, `reliability`, `ease_of_use`, `accessibility`, `formatting`, `contextual_understanding`, `universality`, `other`
+- **other_description**: (Only for `other` category) Brief description of the value driver
 - **quote**: Direct quote from the review supporting this value driver
-
-### Rules:
-
-- Focus on WHY they love it, not WHAT they use it for
-- Each value driver should describe a specific benefit
-- Return empty array if no value drivers found
 
 ---
 
@@ -42,7 +47,7 @@ Return a JSON object with the following structure:
 
 ```
 Rating: 5 stars
-Review: This app has saved me so much time. I used to spend 30 minutes writing emails, now it takes 5. The AI formatting is magical - I just ramble and it comes out perfect. Best purchase I've made this year.
+Review: This app has saved me so much time. I used to spend 30 minutes writing emails, now it takes 5. The transcription is instant - no lag at all. I just ramble and it comes out perfectly formatted with proper punctuation.
 ```
 
 **CORRECT OUTPUT:**
@@ -51,12 +56,16 @@ Review: This app has saved me so much time. I used to spend 30 minutes writing e
 {
   "value_drivers": [
     {
-      "value_driver": "Reduces email writing time from 30 minutes to 5",
+      "category": "productivity",
       "quote": "I used to spend 30 minutes writing emails, now it takes 5"
     },
     {
-      "value_driver": "AI automatically formats rambling into polished text",
-      "quote": "I just ramble and it comes out perfect"
+      "category": "speed",
+      "quote": "The transcription is instant - no lag at all"
+    },
+    {
+      "category": "formatting",
+      "quote": "it comes out perfectly formatted with proper punctuation"
     }
   ]
 }
@@ -64,13 +73,13 @@ Review: This app has saved me so much time. I used to spend 30 minutes writing e
 
 ---
 
-### Example 2: Accessibility Value Driver
+### Example 2: Accessibility + Accuracy
 
 **REVIEW:**
 
 ```
 Rating: 5 stars
-Review: As someone with carpal tunnel, this app has been life-changing. I can finally write without pain. The accuracy is also surprisingly good - it gets my medical terminology right.
+Review: As someone with carpal tunnel, this app is a lifesaver. I can finally write without pain. The accuracy is also surprisingly good - it gets my medical terminology right every time.
 ```
 
 **CORRECT OUTPUT:**
@@ -79,12 +88,12 @@ Review: As someone with carpal tunnel, this app has been life-changing. I can fi
 {
   "value_drivers": [
     {
-      "value_driver": "Enables pain-free writing for carpal tunnel sufferers",
+      "category": "accessibility",
       "quote": "I can finally write without pain"
     },
     {
-      "value_driver": "Accurate transcription of medical terminology",
-      "quote": "it gets my medical terminology right"
+      "category": "accuracy",
+      "quote": "it gets my medical terminology right every time"
     }
   ]
 }
@@ -92,13 +101,45 @@ Review: As someone with carpal tunnel, this app has been life-changing. I can fi
 
 ---
 
-### Example 3: Generic Praise (No Specific Value Drivers)
+### Example 3: Ease of Use + Reliability
 
 **REVIEW:**
 
 ```
 Rating: 5 stars
-Review: Great app! Love it! Highly recommend to everyone.
+Review: Super easy to set up - took like 2 minutes. It just works, every single time. Never had a crash or glitch. Works perfectly in all my apps.
+```
+
+**CORRECT OUTPUT:**
+
+```json
+{
+  "value_drivers": [
+    {
+      "category": "ease_of_use",
+      "quote": "Super easy to set up - took like 2 minutes"
+    },
+    {
+      "category": "reliability",
+      "quote": "It just works, every single time. Never had a crash or glitch"
+    },
+    {
+      "category": "universality",
+      "quote": "Works perfectly in all my apps"
+    }
+  ]
+}
+```
+
+---
+
+### Example 4: Generic Praise (No Value Drivers)
+
+**REVIEW:**
+
+```
+Rating: 5 stars
+Review: Great app! Love it! Highly recommend.
 ```
 
 **CORRECT OUTPUT:**

@@ -212,8 +212,19 @@ def save_value_drivers(source_id: str, source_table: str, value_drivers: List[Di
 
         # Add new value drivers
         for vd_data in value_drivers:
+            # Handle both old format (value_driver) and new format (category)
+            if "category" in vd_data:
+                category = vd_data["category"]
+                # For "other" category, include the description
+                if category == "other" and "other_description" in vd_data:
+                    value_driver_text = f"other: {vd_data['other_description']}"
+                else:
+                    value_driver_text = category
+            else:
+                value_driver_text = vd_data.get("value_driver", "unknown")
+
             value_driver = ValueDriver(
-                value_driver=vd_data["value_driver"],
+                value_driver=value_driver_text,
                 quote=vd_data["quote"],
                 source_id=source_id,
                 source_table=source_table

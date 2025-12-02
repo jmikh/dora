@@ -15,21 +15,19 @@
                 <img src="https://styles.redditmedia.com/t5_ckro6f/styles/communityIcon_byv66pj34dkf1.png" alt="Wispr Flow" class="logo">
                 <div class="header-text">
                     <h1>Wispr Flow</h1>
-                    <p class="subtitle" id="dashboard-subtitle">Complaints Analytics Dashboard</p>
+                    <p class="subtitle" id="dashboard-subtitle">Dora Analytics Dashboard</p>
                 </div>
             </div>
-            <div class="header-right">
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat-value" id="total-items">--</span>
-                        <span class="stat-label" id="total-items-label">Total Complaints</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value" id="total-categories">--</span>
-                        <span class="stat-label">Categories</span>
-                    </div>
-                </div>
+            <div class="header-center">
+                <button class="search-trigger" id="search-trigger">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <span>Search</span>
+                </button>
             </div>
+            <div class="header-right"></div>
         </header>
 
         <!-- Data Type Toggle -->
@@ -37,6 +35,8 @@
             <div class="data-toggle">
                 <button class="toggle-btn active" data-type="complaints">Complaints</button>
                 <button class="toggle-btn" data-type="useCases">Use Cases</button>
+                <button class="toggle-btn" data-type="valueDrivers">Value Drivers</button>
+                <button class="toggle-btn" data-type="magicMoments">Magic Moments</button>
             </div>
         </div>
 
@@ -142,9 +142,79 @@
             </aside>
         </main>
 
+        <!-- Magic Moments View (hidden by default) -->
+        <div class="magic-moments-container" id="magic-moments-container" style="display: none;">
+            <div class="magic-moments-header">
+                <p class="magic-moments-subtitle">A collection of the most stellar reviews to use for marketing</p>
+                <span class="magic-moments-count" id="magic-moments-count">0 moments</span>
+            </div>
+            <div class="magic-moments-list" id="magic-moments-list"></div>
+        </div>
+
         <footer class="footer">
             <span>© 2025 Dora. All rights reserved.</span>
         </footer>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <div class="search-input-wrapper">
+                    <svg class="search-modal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <input type="text" id="search-modal-input" class="search-modal-input" placeholder="Search posts, comments, reviews..." autofocus>
+                    <div class="search-autocomplete" id="search-autocomplete">
+                        <div class="autocomplete-section">
+                            <div class="autocomplete-label">Search for competitors</div>
+                            <div class="autocomplete-options">
+                                <button class="autocomplete-option" data-query="SuperWhisper">
+                                    <span class="option-text">SuperWhisper</span>
+                                    <span class="option-count" data-count-for="SuperWhisper">--</span>
+                                </button>
+                                <button class="autocomplete-option" data-query="Spokenly">
+                                    <span class="option-text">Spokenly</span>
+                                    <span class="option-count" data-count-for="Spokenly">--</span>
+                                </button>
+                                <button class="autocomplete-option" data-query="Willow">
+                                    <span class="option-text">Willow</span>
+                                    <span class="option-count" data-count-for="Willow">--</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="autocomplete-section">
+                            <div class="autocomplete-label">Search for features</div>
+                            <div class="autocomplete-options">
+                                <button class="autocomplete-option" data-query="command">
+                                    <span class="option-text">command</span>
+                                    <span class="option-count" data-count-for="command">--</span>
+                                </button>
+                                <button class="autocomplete-option" data-query="snippet">
+                                    <span class="option-text">snippet</span>
+                                    <span class="option-count" data-count-for="snippet">--</span>
+                                </button>
+                                <button class="autocomplete-option" data-query="format">
+                                    <span class="option-text">format</span>
+                                    <span class="option-count" data-count-for="format">--</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="search-modal-close" title="Close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-modal-sources" id="search-modal-sources"></div>
+            <div class="search-modal-results" id="search-modal-results">
+                <div class="search-modal-placeholder">Start typing to search across all posts, comments, and reviews...</div>
+            </div>
+        </div>
     </div>
 
     <!-- Expanded Complaints Modal -->

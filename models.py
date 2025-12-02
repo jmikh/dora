@@ -34,6 +34,7 @@ class Review(Base):
     complaints_processed = Column(Boolean, default=False)  # Whether complaints have been extracted
     use_cases_processed = Column(Boolean, default=False)  # Whether use cases have been extracted
     value_drivers_processed = Column(Boolean, default=False)  # Whether value drivers have been extracted
+    magic_moments_processed = Column(Boolean, default=False)  # Whether magic moments have been extracted
 
     # Relationship
     company = relationship("Company")
@@ -267,6 +268,20 @@ class ValueDriver(Base):
         return f"<ValueDriver(value_driver={self.value_driver[:30]}..., source={self.source_table})>"
 
 
+class MagicMoment(Base):
+    """MagicMoment model - extreme emotional reactions suitable for marketing"""
+    __tablename__ = "magic_moments"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    quote = Column(Text, nullable=False)  # Exact quote from source content
+    source_id = Column(String, nullable=False)  # ID of the source content (review_id)
+    source_table = Column(String, nullable=False)  # Source table name (reviews)
+    extracted_at = Column(DateTime, nullable=False, default=datetime.now)
+
+    def __repr__(self):
+        return f"<MagicMoment(quote={self.quote[:50]}..., source_id={self.source_id[:10]}...)>"
+
+
 class ComplaintEmbedding(Base):
     """Complaint embedding model - stores embeddings for complaints at various dimensions"""
     __tablename__ = "complaint_embeddings"
@@ -356,6 +371,7 @@ class RedditContent(Base):
     complaints_processed = Column(Boolean, default=False)  # Whether complaints have been extracted
     use_cases_processed = Column(Boolean, default=False)  # Whether use cases have been extracted
     value_drivers_processed = Column(Boolean, default=False)  # Whether value drivers have been extracted
+    magic_moments_processed = Column(Boolean, default=False)  # Whether magic moments have been extracted
 
     # Relationships
     company = relationship("Company")

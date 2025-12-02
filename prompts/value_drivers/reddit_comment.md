@@ -2,7 +2,7 @@
 
 ## Your Task
 
-You are an expert analyst extracting **value drivers** about **Wispr Flow**, a voice-to-text dictation app, from Reddit comments. You will be given a comment with its full thread context and need to extract WHY users love Wispr Flow.
+You are an expert analyst extracting **value drivers** about **Wispr Flow**, a voice-to-text dictation app, from Reddit comments. You will be given a comment with its full thread context and need to classify WHY users love Wispr Flow into predefined categories.
 
 {{COMMON_RULES}}
 
@@ -14,30 +14,34 @@ Return a JSON object with the following structure:
 {
   "value_drivers": [
     {
-      "value_driver": "Concise description of the benefit",
+      "category": "productivity",
       "quote": "Exact quote from comment"
     }
   ]
 }
 ```
 
+For the `other` category, include a description:
+
+```json
+{
+  "category": "other",
+  "other_description": "Brief description",
+  "quote": "Exact quote from comment"
+}
+```
+
 ### Field Definitions:
 
-- **value_driver**: A concise description of the benefit/value the user experiences (5-15 words)
+- **category**: One of: `productivity`, `speed`, `accuracy`, `reliability`, `ease_of_use`, `accessibility`, `formatting`, `contextual_understanding`, `universality`, `other`
+- **other_description**: (Only for `other` category) Brief description of the value driver
 - **quote**: Direct quote from the TARGET COMMENT (not context)
-
-### Rules:
-
-- Only extract from the TARGET COMMENT, not the context
-- Focus on WHY they love it, not WHAT they use it for
-- Each value driver should describe a specific benefit
-- Return empty array if no value drivers found
 
 ---
 
 ## Few-Shot Examples
 
-### Example 1: Comment with Value Drivers
+### Example 1: Multiple Value Drivers
 
 **THREAD CONTEXT:**
 
@@ -52,7 +56,7 @@ Community: r/WisprFlow
 **TARGET COMMENT:**
 
 ```
-Honestly, the speed difference is night and day. I can get through my inbox in half the time now. And the fact that it works in literally every app means I don't have to switch tools or copy-paste anything.
+The speed difference is night and day. I can get through my inbox in half the time now. And it works in literally every app - no switching tools or copy-pasting. The transcription never misses a word either.
 ```
 
 **CORRECT OUTPUT:**
@@ -61,12 +65,16 @@ Honestly, the speed difference is night and day. I can get through my inbox in h
 {
   "value_drivers": [
     {
-      "value_driver": "Dramatically faster email processing",
+      "category": "productivity",
       "quote": "I can get through my inbox in half the time now"
     },
     {
-      "value_driver": "Works universally in all apps without switching tools",
-      "quote": "it works in literally every app means I don't have to switch tools or copy-paste anything"
+      "category": "universality",
+      "quote": "it works in literally every app - no switching tools or copy-pasting"
+    },
+    {
+      "category": "accuracy",
+      "quote": "The transcription never misses a word"
     }
   ]
 }
@@ -89,7 +97,7 @@ Community: r/WisprFlow
 **TARGET COMMENT:**
 
 ```
-I use it mainly for Slack and email. What I love is that I sound way more articulate than when I type. My messages come out clearer and more professional.
+I use it mainly for Slack and email. What I love is that it just works - no setup, no fiddling. My messages come out way more professional than when I type.
 ```
 
 **CORRECT OUTPUT:**
@@ -98,12 +106,12 @@ I use it mainly for Slack and email. What I love is that I sound way more articu
 {
   "value_drivers": [
     {
-      "value_driver": "Makes user sound more articulate than typing",
-      "quote": "I sound way more articulate than when I type"
+      "category": "ease_of_use",
+      "quote": "it just works - no setup, no fiddling"
     },
     {
-      "value_driver": "Produces clearer, more professional messages",
-      "quote": "My messages come out clearer and more professional"
+      "category": "contextual_understanding",
+      "quote": "My messages come out way more professional than when I type"
     }
   ]
 }
@@ -111,7 +119,35 @@ I use it mainly for Slack and email. What I love is that I sound way more articu
 
 **Why this output?**
 - ❌ "I use it mainly for Slack and email" → NOT extracted (use case)
-- ✅ "sound way more articulate" → Extracted (value driver)
+- ✅ "just works - no setup" → `ease_of_use`
+- ✅ "more professional than when I type" → `contextual_understanding`
+
+---
+
+### Example 3: Accessibility Value Driver
+
+**TARGET COMMENT:**
+
+```
+As someone with carpal tunnel, this has been life-changing. I can finally write all day without pain. It even understands my slight accent perfectly.
+```
+
+**CORRECT OUTPUT:**
+
+```json
+{
+  "value_drivers": [
+    {
+      "category": "accessibility",
+      "quote": "I can finally write all day without pain"
+    },
+    {
+      "category": "accuracy",
+      "quote": "It even understands my slight accent perfectly"
+    }
+  ]
+}
+```
 
 ---
 
