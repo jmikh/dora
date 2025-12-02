@@ -2,7 +2,7 @@
 
 ## Your Task
 
-You are an expert analyst extracting **use cases** about **Wispr Flow**, a voice-to-text dictation app, from Reddit comments. You will be given a comment with its full thread context and need to extract how users are using or want to use Wispr Flow.
+You are an expert analyst extracting **use cases** about **Wispr Flow**, a voice-to-text dictation app, from Reddit comments. You will be given a comment with its full thread context and need to classify how users are using Wispr Flow into predefined categories.
 
 {{COMMON_RULES}}
 
@@ -14,30 +14,40 @@ Return a JSON object with the following structure:
 {
   "use_cases": [
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "Exact quote from comment"
     }
   ]
 }
 ```
 
+For the `other` category, include a description:
+
+```json
+{
+  "category": "other",
+  "other_description": "Writing fiction stories",
+  "quote": "Exact quote from comment"
+}
+```
+
 ### Field Definitions:
 
-- **use_cases**: List of specific ways users are using or want to use **Wispr Flow**
-  - Each use case must have a direct quote from the TARGET COMMENT (not context)
-  - Only extract if clearly about Wispr Flow (use thread context to determine)
-  - Include both explicit and implicit use cases
-  - **CRITICAL**: Break compound use cases into ATOMIC, SINGULAR actions
-  - **IMPORTANT - Formatting**:
-    - Keep use case text SHORT (2-5 words max)
-    - Use gerund form (verb + -ing)
-    - Focus on the ACTION
+- **category**: One of the predefined categories: `emails`, `messaging`, `vibe_coding`, `prompting_llm`, `note_taking`, `brain_dump`, `on_the_go`, `accessibility`, `improving_english`, `content_creation`, `other`
+- **other_description**: (Only for `other` category) Brief description of the use case
+- **quote**: Direct quote from the TARGET COMMENT (not context)
+
+### Rules:
+
+- Only extract if clearly about Wispr Flow (use thread context to determine)
+- Each use case = one category. If someone uses it for multiple things, extract multiple use cases
+- A single activity can map to multiple categories
 
 ---
 
 ## Few-Shot Examples
 
-### Example 1: Comment with Multiple Use Cases
+### Example 1: Multiple Categories
 
 **THREAD CONTEXT:**
 
@@ -52,7 +62,7 @@ Community: r/WisprFlow
 **TARGET COMMENT:**
 
 ```
-I use it constantly for work. Mainly for writing emails to my team, taking notes during 1-on-1s, and dictating long prompts to ChatGPT when I'm coding. Game changer for productivity.
+I use it constantly for work. Mainly for writing emails to my team, taking notes during 1-on-1s, and describing features to Cursor when I'm building stuff. Game changer for productivity.
 ```
 
 **CORRECT OUTPUT:**
@@ -61,29 +71,24 @@ I use it constantly for work. Mainly for writing emails to my team, taking notes
 {
   "use_cases": [
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "writing emails to my team"
     },
     {
-      "use_case": "Taking notes in meetings",
+      "category": "note_taking",
       "quote": "taking notes during 1-on-1s"
     },
     {
-      "use_case": "Prompting AI assistants",
-      "quote": "dictating long prompts to ChatGPT when I'm coding"
-    },
-    {
-      "use_case": "Vibe coding",
-      "quote": "dictating long prompts to ChatGPT when I'm coding"
+      "category": "vibe_coding",
+      "quote": "describing features to Cursor when I'm building stuff"
     }
   ]
 }
 ```
 
 **Why this output?**
-- "Taking notes during 1-on-1s" → "Taking notes in meetings" (activity + context)
-- "Dictating prompts to ChatGPT when coding" → "Prompting AI assistants" + "Vibe coding"
-- All use cases are atomic and in gerund form
+- Cursor → `vibe_coding` (code-focused AI tool)
+- Meeting notes → `note_taking`
 
 ---
 
@@ -111,7 +116,7 @@ Would love better support for coding in Cursor. Right now I mainly use it for em
 {
   "use_cases": [
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "Right now I mainly use it for emails"
     }
   ]
@@ -119,13 +124,13 @@ Would love better support for coding in Cursor. Right now I mainly use it for em
 ```
 
 **Why this output?**
-- ✅ "Right now I mainly use it for emails" → CURRENT use case (they're doing it now)
-- ❌ "better support for coding in Cursor" → SKIPPED (feature request, not current use)
-- ❌ "could see it being useful for describing code" → SKIPPED (hypothetical)
+- ✅ `emails` (current use)
+- ❌ "better support for coding" → SKIPPED (feature request)
+- ❌ "could see it being useful" → SKIPPED (hypothetical)
 
 ---
 
-### Example 3: ❌ BAD vs ✅ GOOD - Generic vs Specific
+### Example 3: No Use Cases Found
 
 **THREAD CONTEXT:**
 
@@ -143,28 +148,7 @@ Community: r/WisprFlow
 The dictation is incredible. Smart formatting works great!
 ```
 
-**❌ WRONG OUTPUT (DO NOT DO THIS):**
-
-```json
-{
-  "use_cases": [
-    {
-      "use_case": "Dictating",
-      "quote": "The dictation is incredible"
-    },
-    {
-      "use_case": "Smart formatting",
-      "quote": "Smart formatting works great"
-    }
-  ]
-}
-```
-
-**Why this is WRONG:**
-- "Dictating" is too generic - that's what the app does
-- "Smart formatting" is a FEATURE, not a use case
-
-**✅ CORRECT OUTPUT:**
+**CORRECT OUTPUT:**
 
 ```json
 {
@@ -172,9 +156,7 @@ The dictation is incredible. Smart formatting works great!
 }
 ```
 
-**Why this is CORRECT:**
-- Comment doesn't mention WHAT they're dictating or WHEN/WHERE
-- Empty array is valid when no specific use cases are found
+**Why:** Only praises features, no specific category of use mentioned.
 
 ---
 

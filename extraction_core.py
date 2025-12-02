@@ -146,8 +146,19 @@ def save_use_cases(source_id: str, source_table: str, use_cases: List[Dict], mar
 
         # Add new use cases
         for use_case_data in use_cases:
+            # Handle both old format (use_case) and new format (category)
+            if "category" in use_case_data:
+                category = use_case_data["category"]
+                # For "other" category, include the description
+                if category == "other" and "other_description" in use_case_data:
+                    use_case_text = f"other: {use_case_data['other_description']}"
+                else:
+                    use_case_text = category
+            else:
+                use_case_text = use_case_data.get("use_case", "unknown")
+
             use_case = UseCase(
-                use_case=use_case_data["use_case"],
+                use_case=use_case_text,
                 quote=use_case_data["quote"],
                 source_id=source_id,
                 source_table=source_table
@@ -167,6 +178,61 @@ def save_use_cases(source_id: str, source_table: str, use_cases: List[Dict], mar
 
         session.commit()
         return len(use_cases) if use_cases else 0
+
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
+
+
+def save_value_drivers(source_id: str, source_table: str, value_drivers: List[Dict], mark_processed: bool = True) -> int:
+    """
+    Save value drivers to database and mark as processed
+
+    Args:
+        source_id: ID of the source content
+        source_table: Source table name (e.g., "reddit_content", "reviews")
+        value_drivers: List of value driver dicts with "value_driver" and "quote" keys
+        mark_processed: Whether to mark value_drivers_processed=True (default: True)
+
+    Returns:
+        Number of value drivers saved
+    """
+    from models import ValueDriver
+
+    session = get_session()
+
+    try:
+        # Remove existing value drivers for this source
+        session.query(ValueDriver).filter(
+            ValueDriver.source_id == source_id,
+            ValueDriver.source_table == source_table
+        ).delete()
+
+        # Add new value drivers
+        for vd_data in value_drivers:
+            value_driver = ValueDriver(
+                value_driver=vd_data["value_driver"],
+                quote=vd_data["quote"],
+                source_id=source_id,
+                source_table=source_table
+            )
+            session.add(value_driver)
+
+        # Mark as processed (even if no value drivers found)
+        if mark_processed:
+            if source_table == "reddit_content":
+                content = session.query(RedditContent).filter(RedditContent.id == source_id).first()
+                if content:
+                    content.value_drivers_processed = True
+            elif source_table == "reviews":
+                review = session.query(Review).filter(Review.review_id == source_id).first()
+                if review:
+                    review.value_drivers_processed = True
+
+        session.commit()
+        return len(value_drivers) if value_drivers else 0
 
     except Exception as e:
         session.rollback()

@@ -33,6 +33,7 @@ class Review(Base):
     ai_processed = Column(Boolean, default=False)  # DEPRECATED: Use complaints_processed and use_cases_processed instead
     complaints_processed = Column(Boolean, default=False)  # Whether complaints have been extracted
     use_cases_processed = Column(Boolean, default=False)  # Whether use cases have been extracted
+    value_drivers_processed = Column(Boolean, default=False)  # Whether value drivers have been extracted
 
     # Relationship
     company = relationship("Company")
@@ -251,6 +252,21 @@ class UseCase(Base):
         return f"<UseCase(use_case={self.use_case[:30]}..., source={self.source_table}, source_id={self.source_id[:10]}...)>"
 
 
+class ValueDriver(Base):
+    """ValueDriver model - tracks value drivers (WHY users love it) extracted from all sources"""
+    __tablename__ = "value_drivers"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    value_driver = Column(Text, nullable=False)  # Description of the benefit/value
+    quote = Column(Text, nullable=False)  # Exact quote from source content
+    source_id = Column(String, nullable=False)  # ID of the source content
+    source_table = Column(String, nullable=False)  # Source table name
+    extracted_at = Column(DateTime, nullable=False, default=datetime.now)
+
+    def __repr__(self):
+        return f"<ValueDriver(value_driver={self.value_driver[:30]}..., source={self.source_table})>"
+
+
 class ComplaintEmbedding(Base):
     """Complaint embedding model - stores embeddings for complaints at various dimensions"""
     __tablename__ = "complaint_embeddings"
@@ -339,6 +355,7 @@ class RedditContent(Base):
     ai_processed = Column(Boolean, default=False)  # DEPRECATED: Use complaints_processed and use_cases_processed instead
     complaints_processed = Column(Boolean, default=False)  # Whether complaints have been extracted
     use_cases_processed = Column(Boolean, default=False)  # Whether use cases have been extracted
+    value_drivers_processed = Column(Boolean, default=False)  # Whether value drivers have been extracted
 
     # Relationships
     company = relationship("Company")

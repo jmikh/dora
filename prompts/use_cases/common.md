@@ -2,133 +2,46 @@
 
 ## What is Wispr Flow?
 
-Wispr Flow is a voice dictation app that users commonly use for:
-- **Writing emails** (Gmail, Outlook, Superhuman)
-- **Messaging** (Slack, Discord, iMessage, WhatsApp, Teams)
-- **AI prompting** (ChatGPT, Claude, Cursor, Windsurf)
-- **Coding assistance** ("vibe coding" - describing code to AI assistants)
-- **Note-taking** (Notion, Obsidian, Apple Notes, brain dumping ideas)
-- **Documentation** (writing docs, creating content)
+Wispr Flow is a voice dictation app that users commonly use for writing, messaging, coding, and capturing ideas by voice.
+
+## PREDEFINED USE CASE CATEGORIES
+
+You MUST classify each use case into one of these predefined categories:
+
+| Category | Description | Examples |
+|----------|-------------|----------|
+| `emails` | Writing or composing emails | Gmail, Outlook, Superhuman, work emails, personal emails |
+| `messaging` | Texting, chat, instant messaging | Slack, Discord, iMessage, WhatsApp, Teams, SMS, texting |
+| `vibe_coding` | Coding with AI assistants, describing code to build software | Cursor, Claude Code, Windsurf, Copilot, using ChatGPT/Claude FOR coding tasks |
+| `prompting_llm` | General AI chat for NON-coding tasks | ChatGPT for writing help, Perplexity for research, Gemini for questions, general AI conversations |
+| `note_taking` | Taking notes, documentation | Notion, Obsidian, Apple Notes, meeting notes, journaling |
+| `brain_dump` | Rambling, synthesizing unstructured ideas, speaking thoughts freely | Stream of consciousness, brainstorming, thinking out loud, capturing raw ideas |
+| `on_the_go` | Getting things done while mobile, hands busy | While walking, driving, cooking, commuting, exercising, multitasking |
+| `accessibility` | Using due to physical/medical conditions | Carpal tunnel, Parkinson's, arthritis, RSI, speech impediment, disability, injury |
+| `improving_english` | ESL users, improving writing/grammar | Non-native speakers, learning English, grammar help, better phrasing |
+| `content_creation` | Creating long-form content | Blog posts, articles, documents, social media posts, newsletters, reports |
+| `other` | Anything that doesn't fit above categories | Specify what it is |
 
 ## CRITICAL RULES
 
 1. Extract use cases ONLY about **Wispr Flow** from the content
-2. If a competitor app use case is mentioned, do NOT extract it as a Wispr Flow use case
-3. Use context clues (subreddit/source, content) to determine if use cases are about Wispr Flow
-4. Use cases should describe HOW users are using or want to use Wispr Flow
+2. Each use case MUST map to one of the predefined categories above
+3. If it doesn't fit any category, use `other` and specify what it is
+4. Only extract **current, working** use cases (not hypotheticals or feature requests)
 
-## ❌ NOT Use Cases vs ✅ USE CASES
+## Category Selection Guidelines
 
-**CRITICAL**: Wispr's core functionality (dictating, voice typing, smart formatting) is NOT a use case by itself. Use cases must describe **WHAT users are doing** or **WHEN/WHERE they're working**.
+- **emails** vs **messaging**: Emails are formal/async, messaging is chat/instant
+- **vibe_coding** vs **prompting_llm**: Coding uses code-focused AI (Cursor, Windsurf), LLM prompting is general AI chat
+- **note_taking** vs **brain_dump**: Notes are structured/organized, brain dump is unstructured rambling
+- If someone mentions "writing" without context, look for clues about WHAT they're writing
+- If unclear, prefer the more specific category
 
-### ❌ NOT valid use cases (features or too generic):
-- "Dictating" (on its own - that's what the app does)
-- "Writing" (too generic - WHAT are they writing?)
-- "Typing" (that's what the app does)
-- "Transcribing" (that's what the app does)
-- "Voice typing" (feature)
-- "Smart formatting" (feature)
-- "AI transcription" (feature)
-- "Hands-free input" (feature)
-- "Writing reviews" (meta - just reviewing the app itself)
-- "Working on projects" (too vague - WHAT projects?)
+## What is NOT a Use Case
 
-### ✅ Valid use cases (activity or context):
-
-**WHAT they're doing (activity-based):**
-- "Writing emails"
-- "Taking notes"
-- "Writing code" or "Vibe coding"
-- "Writing PRDs"
-- "Talking with ChatGPT"
-- "Sending Slack messages"
-- "Creating documentation"
-
-**WHEN/WHERE they're working (context-based):**
-- "Dictating while driving"
-- "Working while walking"
-- "Dictating in meetings"
-- "Working hands-free"
-
-**Combined (activity + context):**
-- "Writing emails while driving"
-- "Taking notes in meetings"
-- "Coding while walking"
-
-**KEY RULE**: If the use case contains "dictating" or similar feature words, it MUST be paired with either:
-- **WHAT**: the specific activity (dictating emails, dictating code, dictating messages)
-- **WHEN/WHERE**: the context (dictating while driving, dictating in meetings, dictating while walking)
-
-## Use Case Extraction Rules
-
-- **CRITICAL - Atomic Use Cases**: Extract each use case as a SEPARATE, DISTINCT item. Each use case should stand on its own as a unique way someone uses Wispr Flow.
-
-  **Goal**: Understand different personas and different ways people use Wispr Flow. Each use case = one distinct activity or context.
-
-  **Examples from real reviews:**
-
-  ❌ BAD: Combine multiple use cases into one
-  - "Writing notes and emails" → This is TWO distinct use cases
-
-  ✅ GOOD: Separate each use case into its own item
-  - "Writing notes"
-  - "Writing emails"
-
-  **Real example:**
-  Input: "I use it to write notes, write essays with just my voice, and write emails. And also write messages."
-
-  ✅ Correct extraction:
-  ```json
-  [
-    {"use_case": "Writing notes", "quote": "write notes"},
-    {"use_case": "Writing essays", "quote": "write essays with just my voice"},
-    {"use_case": "Writing emails", "quote": "write emails"},
-    {"use_case": "Sending messages", "quote": "write messages"}
-  ]
-  ```
-
-  **Context-based use cases should also be separated:**
-  Input: "I'm always on the go working from my phone. Talk and walk and get work done."
-
-  ✅ Correct extraction:
-  ```json
-  [
-    {"use_case": "Working on mobile", "quote": "working from my phone"},
-    {"use_case": "Working while walking", "quote": "talk and walk and get work done"}
-  ]
-  ```
-
-- **IMPORTANT - Be Specific**: Include specific activities, tools, or contexts
-  - ❌ BAD: "Working"
-  - ✅ GOOD: "Writing code"
-  - ❌ BAD: "Using apps"
-  - ✅ GOOD: "Writing in Notion"
-  - ❌ BAD: "Communication"
-  - ✅ GOOD: "Sending Slack messages"
-
-- **IMPORTANT - Formatting**:
-  - Keep use case text SHORT (2-5 words max)
-  - Use gerund form (verb + -ing): "Writing emails", "Taking notes", "Coding"
-  - Use simple, jargon-free language
-  - Remove app name (don't say "Wispr Flow")
-  - Make sure it is clear enough and can be understood if stand alone without additional context
-  - Focus on the ACTION, not the tool
-
-- **CRITICAL - Only CURRENT, WORKING Use Cases**:
-  - ✅ INCLUDE: Use cases the user is ACTUALLY doing successfully
-    - "I use it for writing emails" → ✅ Extract
-    - "I dictate notes every day" → ✅ Extract
-  - ❌ DO NOT INCLUDE:
-    - **Hypothetical use cases**: "It would be great for meetings" → ❌ Skip (not actually using it)
-    - **Feature requests**: "Add support for coding" → ❌ Skip (doesn't work yet)
-    - **Broken/failing use cases**: "I tried using it for coding but it doesn't work" → ❌ Skip (user is upset, not working)
-    - **Wishful thinking**: "Would love to use it while driving" → ❌ Skip (not currently doing it)
-
-## Common Use Case Categories
-
-- **Writing**: emails, messages, documentation, notes, content
-- **Coding**: writing code, describing code, prompting AI assistants
-- **Communication**: messaging, email, chat, social media
-- **Productivity**: note-taking, task management, brain dumping
-- **Content Creation**: writing articles, documentation, creative writing
-- **Contexts**: while driving, in meetings, hands-free, multitasking
+Do NOT extract these as use cases:
+- Generic "dictating" or "voice typing" (that's what the app does)
+- Features like "smart formatting" or "AI transcription"
+- Hypothetical use cases ("would be great for...")
+- Failed/broken use cases ("tried but doesn't work")
+- Meta use cases ("writing this review")

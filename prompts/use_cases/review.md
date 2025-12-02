@@ -2,7 +2,7 @@
 
 ## Your Task
 
-You are an expert analyst extracting **use cases** about **Wispr Flow**, a voice-to-text dictation app, from app store reviews. You will be given a single review (rating + text) and need to extract how users are using or want to use Wispr Flow.
+You are an expert analyst extracting **use cases** about **Wispr Flow**, a voice-to-text dictation app, from app store reviews. You will be given a single review (rating + text) and need to classify how users are using Wispr Flow into predefined categories.
 
 {{COMMON_RULES}}
 
@@ -14,35 +14,45 @@ Return a JSON object with the following structure:
 {
   "use_cases": [
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "Exact quote from review"
     }
   ]
 }
 ```
 
+For the `other` category, include a description:
+
+```json
+{
+  "category": "other",
+  "other_description": "Writing fiction stories",
+  "quote": "Exact quote from review"
+}
+```
+
 ### Field Definitions:
 
-- **use_cases**: List of specific ways users are using or want to use **Wispr Flow**
-  - Each use case must have a direct quote from the review
-  - Include both explicit use cases ("I use it for X") and implicit ones ("Great for Y")
-  - **CRITICAL**: Break compound use cases into ATOMIC, SINGULAR actions
-  - **IMPORTANT - Formatting**:
-    - Keep use case text SHORT (2-5 words max)
-    - Use gerund form (verb + -ing)
-    - Focus on the ACTION
+- **category**: One of the predefined categories: `emails`, `messaging`, `vibe_coding`, `prompting_llm`, `note_taking`, `brain_dump`, `on_the_go`, `accessibility`, `improving_english`, `content_creation`, `other`
+- **other_description**: (Only for `other` category) Brief description of the use case
+- **quote**: Direct quote from the review supporting this use case
+
+### Rules:
+
+- Each use case = one category. If someone uses it for multiple things, extract multiple use cases
+- A single activity can map to multiple categories (e.g., "writing emails while walking" → `emails` + `on_the_go`)
 
 ---
 
-## Few-Shot Examples (Using Real Reviews)
+## Few-Shot Examples
 
-### Example 1: Multiple Distinct Use Cases (Real Review)
+### Example 1: Multiple Categories
 
 **REVIEW:**
 
 ```
 Rating: 5 stars
-Review: As of now, I am using Wispr Flow. It is very good as I use it to write notes, write essays with just my voice, and write emails. And also write messages. I really recommend this app as it's really made my life easier and just easy. Really in general with writing. I recommend giving this a try. If you haven't, do it.
+Review: As of now, I am using Wispr Flow. It is very good as I use it to write notes, write essays with just my voice, and write emails. And also write messages. I really recommend this app as it's really made my life easier.
 ```
 
 **CORRECT OUTPUT:**
@@ -51,33 +61,28 @@ Review: As of now, I am using Wispr Flow. It is very good as I use it to write n
 {
   "use_cases": [
     {
-      "use_case": "Writing notes",
+      "category": "note_taking",
       "quote": "write notes"
     },
     {
-      "use_case": "Writing essays",
+      "category": "content_creation",
       "quote": "write essays with just my voice"
     },
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "write emails"
     },
     {
-      "use_case": "Sending messages",
+      "category": "messaging",
       "quote": "write messages"
     }
   ]
 }
 ```
 
-**Why this output?**
-- **CRITICAL**: Each use case extracted separately, NOT combined
-- Each represents a distinct activity/persona: note-taker, essay writer, emailer, messenger
-- NO generic "Dictating" - each specifies WHAT they're writing
-
 ---
 
-### Example 2: Context-Based Use Cases (Real Review)
+### Example 2: On-the-Go + Messaging
 
 **REVIEW:**
 
@@ -92,30 +97,20 @@ Review: I'm always on the go and working from my phone. So it's fantastic to fin
 {
   "use_cases": [
     {
-      "use_case": "Working on mobile",
-      "quote": "working from my phone"
-    },
-    {
-      "use_case": "Working while walking",
+      "category": "on_the_go",
       "quote": "talk and walk and get work done"
     },
     {
-      "use_case": "Sending messages",
+      "category": "messaging",
       "quote": "format my messaging"
     }
   ]
 }
 ```
 
-**Why this output?**
-- Context-based use cases: "on mobile" and "while walking" are WHEN/WHERE they work
-- Each use case is separated (not "working on mobile while walking")
-- "Messaging" specifies WHAT they're doing
-- NO generic "hands-free" or "dictating" - specific context provided
-
 ---
 
-### Example 3: ❌ BAD vs ✅ GOOD - Feature vs Use Case
+### Example 3: No Use Cases Found
 
 **REVIEW:**
 
@@ -124,28 +119,7 @@ Rating: 4 stars
 Review: Great app for dictating. The smart formatting feature is amazing.
 ```
 
-**❌ WRONG OUTPUT (DO NOT DO THIS):**
-
-```json
-{
-  "use_cases": [
-    {
-      "use_case": "Dictating",
-      "quote": "Great app for dictating"
-    },
-    {
-      "use_case": "Smart formatting",
-      "quote": "The smart formatting feature"
-    }
-  ]
-}
-```
-
-**Why this is WRONG:**
-- "Dictating" is too generic - that's just what Wispr does, not a use case
-- "Smart formatting" is a FEATURE, not a use case
-
-**✅ CORRECT OUTPUT:**
+**CORRECT OUTPUT:**
 
 ```json
 {
@@ -153,60 +127,60 @@ Review: Great app for dictating. The smart formatting feature is amazing.
 }
 ```
 
-**Why this is CORRECT:**
-- Review doesn't mention WHAT they're dictating or WHEN/WHERE
-- No actual use case extracted, just praise for features
-- It's OK to return empty use_cases if none found
+**Why:** Only praises features, no specific category of use mentioned.
 
 ---
 
-### Example 4: ❌ BAD - Generic "Writing" is NOT a use case
+### Example 4: "Other" Category
 
 **REVIEW:**
 
 ```
 Rating: 5 stars
-Review: I'm writing this review with Wispr Flow. It's helped me with all my projects and made things easier.
+Review: I use Wispr Flow to write my fantasy novels. It's so much faster than typing and I can get my creative ideas out while they're fresh.
 ```
 
-**❌ WRONG OUTPUT (DO NOT DO THIS):**
+**CORRECT OUTPUT:**
 
 ```json
 {
   "use_cases": [
     {
-      "use_case": "Writing",
-      "quote": "I'm writing this"
-    },
-    {
-      "use_case": "Writing reviews",
-      "quote": "writing this review with Wispr Flow"
-    },
-    {
-      "use_case": "Working on projects",
-      "quote": "helped me with all my projects"
+      "category": "other",
+      "other_description": "Writing fiction/novels",
+      "quote": "use Wispr Flow to write my fantasy novels"
     }
   ]
 }
 ```
 
-**Why this is WRONG:**
-- "Writing" is too generic - that's what the app does! WHAT are they writing?
-- "Writing reviews" is meta - they're just reviewing the app, not a real use case
-- "Working on projects" is too vague - what KIND of projects?
+---
 
-**✅ CORRECT OUTPUT:**
+### Example 5: ESL User
+
+**REVIEW:**
+
+```
+Rating: 5 stars
+Review: English is my second language and Wispr Flow helps me write better emails. The AI fixes my grammar mistakes automatically!
+```
+
+**CORRECT OUTPUT:**
 
 ```json
 {
-  "use_cases": []
+  "use_cases": [
+    {
+      "category": "improving_english",
+      "quote": "English is my second language and Wispr Flow helps me write better"
+    },
+    {
+      "category": "emails",
+      "quote": "write better emails"
+    }
+  ]
 }
 ```
-
-**Why this is CORRECT:**
-- No specific use cases mentioned (no emails, notes, code, messages, etc.)
-- No specific contexts mentioned (no driving, meetings, walking, etc.)
-- Generic praise doesn't reveal HOW they actually use Wispr
 
 ---
 

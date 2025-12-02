@@ -414,9 +414,26 @@ def cluster_items(
             # Get quote from related object
             if cluster_type == "complaints":
                 quote = emb.complaint.quote if emb.complaint else "N/A"
+                source_id = emb.complaint.source_id if emb.complaint else None
+                source_table = emb.complaint.source_table if emb.complaint else None
             else:
                 quote = emb.use_case.quote if emb.use_case else "N/A"
+                source_id = emb.use_case.source_id if emb.use_case else None
+                source_table = emb.use_case.source_table if emb.use_case else None
             print(f"   Quote: \"{quote}\"")
+
+            # Get full review/content
+            if source_id and source_table:
+                if source_table == "reviews":
+                    review = session.query(Review).filter(Review.review_id == source_id).first()
+                    if review and review.review_text:
+                        print(f"   Full Review: \"{review.review_text}\"")
+                elif source_table == "reddit_content":
+                    reddit = session.query(RedditContent).filter(RedditContent.id == source_id).first()
+                    if reddit:
+                        full_text = f"{reddit.title or ''} {reddit.body or ''}".strip()
+                        if full_text:
+                            print(f"   Full Post: \"{full_text}\"")
 
         print()
 

@@ -2,7 +2,7 @@
 
 ## Your Task
 
-You are an expert analyst extracting **use cases** about **Wispr Flow**, a voice-to-text dictation app, from Reddit posts. You will be given a single Reddit post (title + body) and need to extract how users are using or want to use Wispr Flow.
+You are an expert analyst extracting **use cases** about **Wispr Flow**, a voice-to-text dictation app, from Reddit posts. You will be given a single Reddit post (title + body) and need to classify how users are using Wispr Flow into predefined categories.
 
 {{COMMON_RULES}}
 
@@ -14,34 +14,40 @@ Return a JSON object with the following structure:
 {
   "use_cases": [
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "Exact quote from post"
     }
   ]
 }
 ```
 
+For the `other` category, include a description:
+
+```json
+{
+  "category": "other",
+  "other_description": "Writing fiction stories",
+  "quote": "Exact quote from post"
+}
+```
+
 ### Field Definitions:
 
-- **use_cases**: List of specific ways users are using or want to use **Wispr Flow**
-  - Each use case must have a direct quote from the post
-  - Only extract if clearly about Wispr Flow (use subreddit/context to determine)
-  - If post is in r/WisprFlow or clearly discussing Wispr, extract use cases even without explicit "Wispr" mentions
-  - Include both explicit use cases ("I use it for X") and implicit ones ("It would be great for Y" → use case: "Y")
-  - **CRITICAL**: Break compound use cases into ATOMIC, SINGULAR actions
-    - ❌ "Sending emails while driving" → ✅ ["Writing emails", "Dictating while driving"]
-  - **IMPORTANT - Formatting**:
-    - Keep use case text SHORT (2-5 words max)
-    - Use gerund form (verb + -ing): "Writing emails", "Taking notes"
-    - Use simple, jargon-free language
-    - Remove app name (don't say "Wispr Flow")
-    - Focus on the ACTION, not the tool
+- **category**: One of the predefined categories: `emails`, `messaging`, `vibe_coding`, `prompting_llm`, `note_taking`, `brain_dump`, `on_the_go`, `accessibility`, `improving_english`, `content_creation`, `other`
+- **other_description**: (Only for `other` category) Brief description of the use case
+- **quote**: Direct quote from the post supporting this use case
+
+### Rules:
+
+- Only extract if clearly about Wispr Flow (use subreddit/context to determine)
+- Each use case = one category. If someone uses it for multiple things, extract multiple use cases
+- A single activity can map to multiple categories (e.g., "writing emails while walking" → `emails` + `on_the_go`)
 
 ---
 
 ## Few-Shot Examples
 
-### Example 1: Multiple Use Cases
+### Example 1: Multiple Categories
 
 **POST:**
 
@@ -51,7 +57,7 @@ Body: I've been using Wispr Flow for a few months now and it's been incredible. 
 
 1. Writing long emails to clients - way faster than typing
 2. Taking meeting notes while on Zoom calls
-3. Dictating prompts to ChatGPT and Claude for coding help
+3. Describing code changes to Cursor and Claude Code - vibe coding is amazing
 4. Sending quick Slack messages while I'm cooking dinner
 
 The AI formatting is spot on for emails. I can just ramble and it makes it sound professional.
@@ -65,27 +71,23 @@ Community: r/ProductivityApps
 {
   "use_cases": [
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "Writing long emails to clients - way faster than typing"
     },
     {
-      "use_case": "Taking notes in meetings",
+      "category": "note_taking",
       "quote": "Taking meeting notes while on Zoom calls"
     },
     {
-      "use_case": "Prompting AI assistants",
-      "quote": "Dictating prompts to ChatGPT and Claude for coding help"
+      "category": "vibe_coding",
+      "quote": "Describing code changes to Cursor and Claude Code - vibe coding is amazing"
     },
     {
-      "use_case": "Vibe coding",
-      "quote": "Dictating prompts to ChatGPT and Claude for coding help"
-    },
-    {
-      "use_case": "Sending Slack messages",
+      "category": "messaging",
       "quote": "Sending quick Slack messages while I'm cooking dinner"
     },
     {
-      "use_case": "Multitasking while cooking",
+      "category": "on_the_go",
       "quote": "Sending quick Slack messages while I'm cooking dinner"
     }
   ]
@@ -93,10 +95,9 @@ Community: r/ProductivityApps
 ```
 
 **Why this output?**
-- "Taking meeting notes while on Zoom" → "Taking notes in meetings" (activity + context)
-- "Dictating prompts to ChatGPT for coding" → "Prompting AI assistants" + "Vibe coding"
-- "Sending Slack while cooking" → "Sending Slack messages" + "Multitasking while cooking"
-- Use cases are atomic, specific, and in gerund form
+- Cursor/Claude Code → `vibe_coding` (code-focused AI tools)
+- Slack while cooking → `messaging` + `on_the_go` (activity + context)
+- Meeting notes → `note_taking`
 
 ---
 
@@ -108,7 +109,7 @@ Community: r/ProductivityApps
 Title: Feature request: Better support for coding
 Body: Would love to see better support for describing code to AI assistants like Cursor and Windsurf. Right now I use it for brain dumping ideas into Notion and writing emails, but I think it could be amazing for vibe coding.
 
-Also, it would be great if it worked better while I'm driving. Sometimes I get ideas on my commute and want to capture them.
+Also, it would be great if it worked better while I'm driving.
 
 Community: r/WisprFlow
 ```
@@ -119,11 +120,11 @@ Community: r/WisprFlow
 {
   "use_cases": [
     {
-      "use_case": "Taking notes in Notion",
+      "category": "brain_dump",
       "quote": "brain dumping ideas into Notion"
     },
     {
-      "use_case": "Writing emails",
+      "category": "emails",
       "quote": "writing emails"
     }
   ]
@@ -131,15 +132,14 @@ Community: r/WisprFlow
 ```
 
 **Why this output?**
-- ✅ "brain dumping ideas into Notion" → CURRENT use case (they're doing it now)
-- ✅ "writing emails" → CURRENT use case (they're doing it now)
-- ❌ "better support for coding" → SKIPPED (feature request, not current use)
-- ❌ "it would be great if it worked better while I'm driving" → SKIPPED (hypothetical/wishful)
-- ❌ "I get ideas on my commute and want to capture them" → SKIPPED (wishful, not actually doing it)
+- ✅ "brain dumping ideas" → `brain_dump` (current use)
+- ✅ "writing emails" → `emails` (current use)
+- ❌ "better support for coding" → SKIPPED (feature request)
+- ❌ "it would be great while driving" → SKIPPED (hypothetical)
 
 ---
 
-### Example 3: ❌ BAD vs ✅ GOOD - Generic Features vs Specific Use Cases
+### Example 3: No Use Cases Found
 
 **POST:**
 
@@ -150,33 +150,7 @@ Body: The dictation is so accurate and the smart formatting feature is incredibl
 Community: r/WisprFlow
 ```
 
-**❌ WRONG OUTPUT (DO NOT DO THIS):**
-
-```json
-{
-  "use_cases": [
-    {
-      "use_case": "Dictating",
-      "quote": "The dictation is so accurate"
-    },
-    {
-      "use_case": "Smart formatting",
-      "quote": "the smart formatting feature is incredible"
-    },
-    {
-      "use_case": "Voice typing",
-      "quote": "Voice typing has never been this good"
-    }
-  ]
-}
-```
-
-**Why this is WRONG:**
-- All three are FEATURES/CAPABILITIES, not use cases
-- Doesn't tell us WHAT the user dictates or WHEN/WHERE
-- "Dictating" without context is just describing what Wispr does
-
-**✅ CORRECT OUTPUT:**
+**CORRECT OUTPUT:**
 
 ```json
 {
@@ -186,11 +160,42 @@ Community: r/WisprFlow
 
 **Why this is CORRECT:**
 - Post only praises features/capabilities
-- No mention of actual activities (emails, notes, code, etc.)
-- No mention of contexts (meetings, driving, walking, etc.)
-- Empty use_cases array is valid when no real use cases found
+- No mention of actual activities (emails, notes, coding, etc.)
+- Empty array is valid when no real use cases found
 
-**Remember**: We want to understand HOW and WHY people use Wispr, not just that they like the features!
+---
+
+### Example 4: Accessibility Use Case
+
+**POST:**
+
+```
+Title: Life saver for my carpal tunnel
+Body: I developed RSI from years of typing and Wispr Flow has been incredible. Now I can write all my work emails and Slack messages without any pain.
+
+Community: r/WisprFlow
+```
+
+**CORRECT OUTPUT:**
+
+```json
+{
+  "use_cases": [
+    {
+      "category": "accessibility",
+      "quote": "I developed RSI from years of typing and Wispr Flow has been incredible"
+    },
+    {
+      "category": "emails",
+      "quote": "write all my work emails"
+    },
+    {
+      "category": "messaging",
+      "quote": "Slack messages without any pain"
+    }
+  ]
+}
+```
 
 ---
 

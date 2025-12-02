@@ -89,6 +89,11 @@ def extract_from_reddit(
         RedditContent.company_id == company.id
     )
 
+    # Exclude Wispr team members (usernames ending with "AtWispr")
+    query = query.filter(
+        ~RedditContent.username.like('%AtWispr')
+    )
+
     # Filter by appropriate processed flag
     if extraction_type == "complaints":
         query = query.filter(RedditContent.complaints_processed == False)
@@ -133,7 +138,7 @@ def extract_from_reddit(
                 if record.title:
                     print(f"   Title: {record.title}")
                 if record.body:
-                    print(f"   Body: {record.body[:200]}{'...' if len(record.body) > 200 else ''}")
+                    print(f"   Body: {record.body}")
             else:
                 content = format_comment_for_prompt(record, session)
                 full_prompt = comment_prompt + "\n\n" + content
@@ -141,7 +146,7 @@ def extract_from_reddit(
                 # Print comment content
                 print("\n💬 COMMENT CONTENT:")
                 if record.body:
-                    print(f"   {record.body[:200]}{'...' if len(record.body) > 200 else ''}")
+                    print(f"   {record.body}")
 
             # Call LLM
             print("\n⏳ Calling LLM...")
@@ -178,8 +183,17 @@ def extract_from_reddit(
                 print(f"\n🎯 EXTRACTED USE CASES ({num_use_cases}):")
                 if use_cases:
                     for i, uc in enumerate(use_cases, 1):
-                        print(f"   {i}. {uc['use_case']}")
-                        print(f"      Quote: \"{uc['quote'][:100]}{'...' if len(uc['quote']) > 100 else ''}\"")
+                        # Handle both old format (use_case) and new format (category)
+                        if "category" in uc:
+                            cat = uc["category"]
+                            if cat == "other" and "other_description" in uc:
+                                label = f"other: {uc['other_description']}"
+                            else:
+                                label = cat
+                        else:
+                            label = uc.get("use_case", "unknown")
+                        print(f"   {i}. [{label}]")
+                        print(f"      Quote: \"{uc['quote']}\"")
                 else:
                     print("   (none)")
 
@@ -288,11 +302,11 @@ def extract_from_reviews(
             if review.user_name:
                 print(f"   Author: {review.user_name}")
             if review.review_text:
-                print(f"   Text: {review.review_text[:200]}{'...' if len(review.review_text) > 200 else ''}")
+                print(f"   Text: {review.review_text}")
 
             # Call LLM
             print("\n⏳ Calling LLM...")
-            ai_response = call_llm(full_prompt, client, model="gpt-4o-mini")
+            ai_response = call_llm(full_prompt, client, model="gpt-5-mini")
 
             # Save results based on extraction type
             if extraction_type in ["complaints", "both"]:
@@ -325,8 +339,17 @@ def extract_from_reviews(
                 print(f"\n🎯 EXTRACTED USE CASES ({num_use_cases}):")
                 if use_cases:
                     for i, uc in enumerate(use_cases, 1):
-                        print(f"   {i}. {uc['use_case']}")
-                        print(f"      Quote: \"{uc['quote'][:100]}{'...' if len(uc['quote']) > 100 else ''}\"")
+                        # Handle both old format (use_case) and new format (category)
+                        if "category" in uc:
+                            cat = uc["category"]
+                            if cat == "other" and "other_description" in uc:
+                                label = f"other: {uc['other_description']}"
+                            else:
+                                label = cat
+                        else:
+                            label = uc.get("use_case", "unknown")
+                        print(f"   {i}. [{label}]")
+                        print(f"      Quote: \"{uc['quote']}\"")
                 else:
                     print("   (none)")
 
