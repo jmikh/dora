@@ -361,10 +361,6 @@ body {
     background: var(--bg-primary);
     display: flex;
     flex-direction: column;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .details-content {
@@ -400,6 +396,7 @@ body {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-lg);
     border-bottom: 1px solid var(--border);
+    min-height: 80px;
 }
 
 .source-badges {
@@ -458,7 +455,8 @@ body {
     margin: var(--spacing-lg);
     padding: var(--spacing-lg);
     padding-bottom: 0;
-    min-height: 0;
+    min-height: 400px;
+    max-height: 700px;
     background: var(--bg-primary);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border);
