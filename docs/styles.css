@@ -517,11 +517,13 @@ body {
     display: flex;
     flex: 1;
     background: var(--bg-primary);
+    overflow-x: hidden;
 }
 
 /* Charts panel */
 .charts-panel {
     flex: 1;
+    min-width: 680px;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
@@ -672,7 +674,7 @@ body {
 /* Details panel */
 .details-panel {
     width: 550px;
-    min-width: 550px;
+    flex-shrink: 0;
     background: var(--bg-primary);
     display: flex;
     flex-direction: column;
@@ -1239,11 +1241,84 @@ body {
     text-decoration: underline;
 }
 
+/* Mobile bar list item styles (base - hidden by default) */
+.mobile-bar-list {
+    display: none;
+}
+
+.mobile-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.mobile-bar-item:hover {
+    background: var(--bg-tertiary);
+}
+
+.mobile-bar-item.selected {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.mobile-bar-item.selected .mobile-bar-label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.mobile-bar-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.mobile-bar-name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: var(--spacing-sm);
+}
+
+.mobile-bar-count {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.mobile-bar-track {
+    height: 20px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.mobile-bar-fill {
+    height: 100%;
+    background: var(--teal);
+    border-radius: var(--radius-sm);
+    transition: width 0.3s ease;
+}
+
+.mobile-bar-item.selected .mobile-bar-fill {
+    background: var(--pink-dark);
+}
+
+.mobile-bar-item:hover:not(.selected) .mobile-bar-fill {
+    background: var(--teal-light);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1400px) {
     .details-panel {
         width: 450px;
-        min-width: 450px;
     }
 
     .magic-moments-list {
@@ -1251,19 +1326,205 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .main-content {
         flex-direction: column;
     }
 
+    .charts-panel {
+        min-width: unset;
+    }
+
     .details-panel {
         width: 100%;
-        height: 50vh;
+        height: auto;
+        min-height: 50vh;
         border-left: none;
         border-top: 1px solid var(--border);
     }
 
     .magic-moments-list {
         column-count: 1;
+    }
+
+    .complaints-section {
+        max-height: none;
+    }
+}
+
+/* Mobile styles (phones) */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+        margin: var(--spacing-sm);
+        border-radius: var(--radius-lg);
+    }
+
+    .header-left,
+    .header-center,
+    .header-right {
+        flex: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-left {
+        justify-content: flex-start;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .search-trigger {
+        width: 100%;
+        min-width: unset;
+    }
+
+    /* Data toggle adjustments */
+    .data-toggle-container {
+        padding: var(--spacing-sm);
+    }
+
+    .data-toggle {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: var(--radius-lg);
+    }
+
+    .toggle-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Charts panel */
+    .charts-panel {
+        padding: var(--spacing-md);
+    }
+
+    .chart-card {
+        padding: var(--spacing-md);
+    }
+
+    .chart-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    /* Time filter */
+    .time-filter {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .filter-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.75rem;
+    }
+
+    /* Time chart - smaller on mobile */
+    .time-chart-container {
+        height: 150px;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    /* Hide desktop bar chart, show mobile bar list */
+    .bar-chart-container {
+        display: none;
+    }
+
+    .mobile-bar-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    /* Uncategorized button */
+    .uncategorized-btn {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Details panel */
+    .details-panel {
+        min-height: auto;
+    }
+
+    .ai-summary-card {
+        margin: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
+
+    .complaints-section {
+        margin: var(--spacing-md);
+        padding: var(--spacing-md);
+        min-height: 300px;
+        max-height: none;
+    }
+
+    /* Source badges */
+    .source-badges {
+        flex-wrap: wrap;
+    }
+
+    .source-badge {
+        font-size: 0.7rem;
+    }
+
+    /* Magic moments */
+    .magic-moments-container {
+        padding: var(--spacing-md);
+    }
+
+    .magic-moment-card {
+        padding: var(--spacing-md);
+    }
+
+    .magic-moment-quote {
+        font-size: 1rem;
+        padding: var(--spacing-sm);
+    }
+
+    /* Search modal - full screen on mobile */
+    .search-modal-content {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+
+    .search-modal-header {
+        padding: var(--spacing-md);
+    }
+
+    .search-modal-sources {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .search-source-badge {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    /* Expanded modal */
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+
+    .modal-header {
+        padding: var(--spacing-md);
+    }
+
+    .modal-body {
+        padding: var(--spacing-md);
     }
 }

@@ -110,6 +110,7 @@ async function loadData(dataType) {
         // Initialize charts
         initTimeChart();
         initBarChart();
+        renderMobileBarList();
 
         // Setup event listeners (only once)
         if (!window.listenersInitialized) {
@@ -375,6 +376,55 @@ function initBarChart() {
     });
 }
 
+// Render mobile bar list (for small screens)
+function renderMobileBarList() {
+    const container = document.getElementById('mobile-bar-list');
+    if (!container) return;
+
+    const categories = data.categories.filter(c => c.name.toLowerCase() !== 'other');
+    const maxCount = Math.max(...categories.map(c => c.count));
+
+    container.innerHTML = categories.map((cat, index) => {
+        const percentage = (cat.count / maxCount) * 100;
+        const isSelected = selectedCategory === cat.name;
+        return `
+            <div class="mobile-bar-item ${isSelected ? 'selected' : ''}" data-index="${index}" data-category="${cat.name}">
+                <div class="mobile-bar-label">
+                    <span class="mobile-bar-name">${cat.name}</span>
+                    <span class="mobile-bar-count">${cat.count}</span>
+                </div>
+                <div class="mobile-bar-track">
+                    <div class="mobile-bar-fill" style="width: ${percentage}%"></div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Add click handlers
+    container.querySelectorAll('.mobile-bar-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const categoryName = item.dataset.category;
+            const index = parseInt(item.dataset.index, 10);
+            selectCategory(categoryName, index);
+        });
+    });
+}
+
+// Update mobile bar list selection state
+function updateMobileBarSelection() {
+    const container = document.getElementById('mobile-bar-list');
+    if (!container) return;
+
+    container.querySelectorAll('.mobile-bar-item').forEach(item => {
+        const categoryName = item.dataset.category;
+        if (categoryName === selectedCategory) {
+            item.classList.add('selected');
+        } else {
+            item.classList.remove('selected');
+        }
+    });
+}
+
 // Track hovered bar index
 let hoveredBarIndex = null;
 let selectedBarIndex = null;
@@ -548,6 +598,7 @@ function selectCategory(categoryName, barIndex) {
 
         // Update bar colors
         updateBarColors();
+        updateMobileBarSelection();
 
         // Show loading then category details
         showDetailsLoading();
@@ -926,6 +977,7 @@ function selectOtherCategory() {
     // Deselect current bar selection
     selectedBarIndex = null;
     updateBarColors();
+    updateMobileBarSelection();
 
     // Update button state
     btn.classList.add('active');
