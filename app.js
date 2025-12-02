@@ -10,27 +10,28 @@ let barChart = null;
 let selectedCategory = null;
 let currentTimeRange = 'all';
 let selectedSource = null;
-let currentDataType = 'complaints'; // 'complaints' or 'useCases'
+let currentDataType = 'complaints'; // 'complaints', 'useCases', 'valueDrivers', or 'magicMoments'
+let magicMomentsData = null;
 
 // Data type configuration
 const DATA_CONFIG = {
     complaints: {
         file: 'data/complaints.json',
-        subtitle: 'Complaints Analytics Dashboard',
         chartTitle: 'Top Complaints',
-        totalLabel: 'Total Complaints',
         itemsTitle: 'Complaints',
-        itemKey: 'complaints',
-        metaKey: 'totalComplaints'
+        itemKey: 'complaints'
     },
     useCases: {
         file: 'data/use_cases.json',
-        subtitle: 'Use Cases Analytics Dashboard',
         chartTitle: 'Top Use Cases',
-        totalLabel: 'Total Use Cases',
         itemsTitle: 'Use Cases',
-        itemKey: 'useCases',
-        metaKey: 'totalUseCases'
+        itemKey: 'useCases'
+    },
+    valueDrivers: {
+        file: 'data/value_drivers.json',
+        chartTitle: 'Top Value Drivers',
+        itemsTitle: 'Value Drivers',
+        itemKey: 'valueDrivers'
     }
 };
 
@@ -60,6 +61,9 @@ async function init() {
     // Setup data toggle first
     setupDataToggle();
 
+    // Setup search
+    setupSearch();
+
     // Load initial data
     await loadData(currentDataType);
 }
@@ -78,14 +82,14 @@ async function loadData(dataType) {
             data.categories.forEach(cat => {
                 cat.complaints = cat.useCases || [];
             });
+        } else if (dataType === 'valueDrivers') {
+            data.categories.forEach(cat => {
+                cat.complaints = cat.valueDrivers || [];
+            });
         }
 
         // Update labels
         updateLabels(config);
-
-        // Update stats
-        document.getElementById('total-items').textContent = data.meta[config.metaKey] || data.meta.totalComplaints || data.meta.totalUseCases;
-        document.getElementById('total-categories').textContent = data.meta.totalCategories;
 
         // Reset state
         selectedCategory = null;
@@ -143,21 +147,22 @@ function updateUncategorizedCount() {
 
 // Update UI labels based on data type
 function updateLabels(config) {
-    document.getElementById('dashboard-subtitle').textContent = config.subtitle;
     document.getElementById('chart-title').textContent = config.chartTitle;
-    document.getElementById('total-items-label').textContent = config.totalLabel;
     document.getElementById('items-list-title').textContent = config.itemsTitle;
 
-    // Hide uncategorized button for use cases (no "other" category)
+    // Hide uncategorized button for use cases and value drivers (no "other" category)
     const uncategorizedBtn = document.getElementById('view-uncategorized-btn');
     if (uncategorizedBtn) {
-        uncategorizedBtn.style.display = currentDataType === 'useCases' ? 'none' : 'flex';
+        const hideUncategorized = currentDataType === 'useCases' || currentDataType === 'valueDrivers';
+        uncategorizedBtn.style.display = hideUncategorized ? 'none' : 'flex';
     }
 }
 
 // Setup data type toggle
 function setupDataToggle() {
     const toggleBtns = document.querySelectorAll('.toggle-btn');
+    const mainContent = document.querySelector('.main-content');
+    const magicMomentsContainer = document.getElementById('magic-moments-container');
 
     toggleBtns.forEach(btn => {
         btn.addEventListener('click', async () => {
@@ -168,9 +173,19 @@ function setupDataToggle() {
             toggleBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // Update current type and reload data
+            // Update current type
             currentDataType = newType;
-            await loadData(newType);
+
+            // Handle Magic Moments specially - no charts, just a list
+            if (newType === 'magicMoments') {
+                mainContent.style.display = 'none';
+                magicMomentsContainer.style.display = 'block';
+                await loadMagicMoments();
+            } else {
+                mainContent.style.display = '';
+                magicMomentsContainer.style.display = 'none';
+                await loadData(newType);
+            }
         });
     });
 }
@@ -313,8 +328,9 @@ function initBarChart() {
                     },
                     afterFit: (scale) => {
                         // Fix width to prevent shift when text becomes bold
-                        // Use cases have shorter names than complaints
-                        scale.width = currentDataType === 'useCases' ? 180 : 340;
+                        // Different data types have different label lengths
+                        const widths = { complaints: 340, useCases: 180, valueDrivers: 220 };
+                        scale.width = widths[currentDataType] || 340;
                     },
                     ticks: {
                         autoSkip: false,
@@ -1025,12 +1041,6 @@ function updateChartsForTimeRange() {
 
     barChart.data.datasets[0].data = newCounts;
     barChart.update();
-
-    // Update total count
-    const totalFiltered = data.categories.reduce((sum, cat) => {
-        return sum + filterComplaintsByTime(cat.complaints).length;
-    }, 0);
-    document.getElementById('total-items').textContent = totalFiltered;
 }
 
 // Setup modal functionality
@@ -1195,6 +1205,603 @@ function closeComplaintsModal() {
     const modal = document.getElementById('complaints-modal');
     modal.classList.remove('active');
     document.body.style.overflow = '';
+}
+
+// ============ SEARCH FUNCTIONALITY ============
+
+// Sources data (loaded separately from complaints/use cases)
+let sourcesData = null;
+let selectedSearchSource = null; // 'posts', 'comments', or platform name like 'appstore'
+
+const SOURCE_ICONS = {
+    'reddit': 'icons/reddit.png',
+    'appstore': 'icons/appstore.png',
+    'producthunt': 'icons/producthunt.png',
+    'trustpilot': 'icons/trustpilot.png',
+    'microsoft': 'icons/windows.png'
+};
+
+const SOURCE_NAMES = {
+    'reddit': 'Reddit',
+    'appstore': 'App Store',
+    'producthunt': 'Product Hunt',
+    'trustpilot': 'Trustpilot',
+    'microsoft': 'Microsoft'
+};
+
+// Load sources data for search
+async function loadSourcesData() {
+    if (sourcesData) return sourcesData;
+
+    try {
+        const response = await fetch('data/sources.json');
+        sourcesData = await response.json();
+        return sourcesData;
+    } catch (error) {
+        console.error('Failed to load sources data:', error);
+        return null;
+    }
+}
+
+
+// Count sources from search results (handles both raw sources and { item, matches } format)
+function countSearchSources(results) {
+    const counts = {
+        posts: 0,
+        comments: 0,
+        reviews: 0
+    };
+
+    // Also count by platform
+    const platformCounts = {};
+
+    for (const result of results) {
+        // Handle both raw source and { item, matches } format
+        const source = result.item || result;
+
+        if (source.type === 'reddit') {
+            if (source.contentType === 'post') {
+                counts.posts++;
+            } else {
+                counts.comments++;
+            }
+            platformCounts['reddit'] = (platformCounts['reddit'] || 0) + 1;
+        } else {
+            counts.reviews++;
+            const platform = source.platform || 'unknown';
+            platformCounts[platform] = (platformCounts[platform] || 0) + 1;
+        }
+    }
+
+    return { counts, platformCounts };
+}
+
+// Search across all sources (case-insensitive substring match)
+function searchSources(query, limit = 50) {
+    if (!sourcesData) return [];
+
+    const sources = sourcesData.sources || [];
+
+    if (!query || query.length < 2) {
+        return sources.map(s => ({ item: s }));
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const results = [];
+
+    for (const source of sources) {
+        const title = (source.title || '').toLowerCase();
+        const body = (source.body || '').toLowerCase();
+
+        if (title.includes(lowerQuery) || body.includes(lowerQuery)) {
+            results.push({ item: source });
+            if (results.length >= limit) break;
+        }
+    }
+
+    return results;
+}
+
+// Highlight matching text in search results
+function highlightSearchMatch(text, query) {
+    if (!text) return '';
+    if (!query || query.length < 2) {
+        const maxLength = 250;
+        return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+    }
+
+    const maxLength = 300;
+    const lowerText = text.toLowerCase();
+    const lowerQuery = query.toLowerCase();
+
+    // Find match position
+    const matchIndex = lowerText.indexOf(lowerQuery);
+
+    let truncated;
+    if (matchIndex !== -1 && text.length > maxLength) {
+        // Show context around match
+        const start = Math.max(0, matchIndex - 50);
+        const end = Math.min(text.length, matchIndex + query.length + 200);
+        truncated = (start > 0 ? '...' : '') + text.substring(start, end) + (end < text.length ? '...' : '');
+    } else {
+        truncated = text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+    }
+
+    // Highlight the match
+    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+    return truncated.replace(regex, '<mark>$1</mark>');
+}
+
+// Escape HTML special characters
+function escapeHtml(str) {
+    const htmlEscapes = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    };
+    return str.replace(/[&<>"']/g, char => htmlEscapes[char]);
+}
+
+// Escape special regex characters
+function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Render source badges in search modal
+function renderSearchSources(sources) {
+    const container = document.getElementById('search-modal-sources');
+    const { counts, platformCounts } = countSearchSources(sources);
+
+    // Build badges HTML
+    let html = '';
+
+    // Posts badge
+    if (counts.posts > 0) {
+        const isActive = selectedSearchSource === 'posts' ? 'active' : '';
+        html += `
+            <button class="search-source-badge ${isActive}" data-source-filter="posts">
+                <img src="icons/reddit.png" alt="Posts">
+                <span>Posts</span>
+                <span class="count">${counts.posts}</span>
+            </button>
+        `;
+    }
+
+    // Comments badge
+    if (counts.comments > 0) {
+        const isActive = selectedSearchSource === 'comments' ? 'active' : '';
+        html += `
+            <button class="search-source-badge ${isActive}" data-source-filter="comments">
+                <img src="icons/reddit.png" alt="Comments">
+                <span>Comments</span>
+                <span class="count">${counts.comments}</span>
+            </button>
+        `;
+    }
+
+    // Review badges by platform
+    for (const [platform, count] of Object.entries(platformCounts)) {
+        if (platform === 'reddit') continue; // Already shown as posts/comments
+        const isActive = selectedSearchSource === platform ? 'active' : '';
+        html += `
+            <button class="search-source-badge ${isActive}" data-source-filter="${platform}">
+                <img src="${SOURCE_ICONS[platform] || 'icons/reddit.png'}" alt="${platform}">
+                <span>${SOURCE_NAMES[platform] || platform}</span>
+                <span class="count">${count}</span>
+            </button>
+        `;
+    }
+
+    container.innerHTML = html;
+
+    // Add click handlers to badges
+    container.querySelectorAll('.search-source-badge').forEach(badge => {
+        badge.addEventListener('click', () => {
+            const filter = badge.dataset.sourceFilter;
+
+            // Toggle filter (click again to deselect)
+            if (selectedSearchSource === filter) {
+                selectedSearchSource = null;
+            } else {
+                selectedSearchSource = filter;
+            }
+
+            // Re-run current search with filter
+            triggerSearchWithFilter();
+        });
+    });
+}
+
+// Filter results by selected source
+function filterBySource(results) {
+    if (!selectedSearchSource) return results;
+
+    return results.filter(result => {
+        const source = result.item || result;
+
+        if (selectedSearchSource === 'posts') {
+            return source.type === 'reddit' && source.contentType === 'post';
+        } else if (selectedSearchSource === 'comments') {
+            return source.type === 'reddit' && source.contentType === 'comment';
+        } else {
+            // Platform filter (appstore, trustpilot, etc.)
+            return source.platform === selectedSearchSource;
+        }
+    });
+}
+
+// Trigger search with current query and source filter
+function triggerSearchWithFilter() {
+    const input = document.getElementById('search-modal-input');
+    const query = input.value.trim();
+
+    const results = searchSources(query);
+    const filteredResults = filterBySource(results);
+
+    renderSearchSources(results); // Show all counts
+    renderSearchModalResults(filteredResults, query);
+}
+
+// Render search results in modal (like complaint cards)
+function renderSearchModalResults(results, query) {
+    const container = document.getElementById('search-modal-results');
+
+    if (results.length === 0) {
+        container.innerHTML = '<div class="search-no-results">No results found</div>';
+        return;
+    }
+
+    container.innerHTML = results.map(result => {
+        // Handle both raw source and { item } format
+        const source = result.item || result;
+
+        const isReddit = source.type === 'reddit';
+        const platform = isReddit ? 'reddit' : (source.platform || 'unknown');
+
+        // Format date
+        const date = source.date ? new Date(source.date).toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        }) : '';
+
+        // Build content with highlighting
+        const highlightedBody = highlightSearchMatch(source.body, query);
+        const highlightedTitle = source.title ? highlightSearchMatch(source.title, query) : '';
+
+        // Build meta info
+        let metaHtml = '';
+        if (isReddit) {
+            metaHtml = `
+                <span class="search-result-type">${source.contentType === 'post' ? 'Post' : 'Comment'}</span>
+                ${source.community ? `<span class="search-result-community">${source.community}</span>` : ''}
+                <span class="search-result-upvotes">▲ ${source.upvotes || 0}</span>
+            `;
+        } else {
+            metaHtml = `
+                <span class="search-result-type">${SOURCE_NAMES[platform] || platform}</span>
+                ${source.rating ? `<span class="search-result-rating">${'★'.repeat(source.rating)}${'☆'.repeat(5 - source.rating)}</span>` : ''}
+            `;
+        }
+
+        return `
+            <div class="search-result-card">
+                <div class="search-result-header">
+                    <img src="${SOURCE_ICONS[platform] || 'icons/reddit.png'}" alt="${platform}" class="search-result-icon">
+                    <div class="search-result-meta">
+                        ${metaHtml}
+                        <span class="search-result-date">${date}</span>
+                    </div>
+                </div>
+                ${highlightedTitle ? `<div class="search-result-title">${highlightedTitle}</div>` : ''}
+                <div class="search-result-body">${highlightedBody}</div>
+                ${source.url ? `<a href="${source.url}" target="_blank" rel="noopener" class="search-result-link">View original →</a>` : ''}
+            </div>
+        `;
+    }).join('');
+}
+
+// Open search modal
+async function openSearchModal() {
+    const modal = document.getElementById('search-modal');
+    const input = document.getElementById('search-modal-input');
+    const resultsContainer = document.getElementById('search-modal-results');
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    // Show loading state
+    resultsContainer.innerHTML = '<div class="search-modal-placeholder">Loading sources...</div>';
+
+    // Load sources data if not already loaded
+    await loadSourcesData();
+
+    if (sourcesData) {
+        // Show ALL sources in counts, but only first 50 in results
+        const allSources = sourcesData.sources.map(s => ({ item: s }));
+        const filteredSources = filterBySource(allSources);
+        const displaySources = filteredSources.slice(0, 50);
+
+        renderSearchSources(allSources); // Show all counts
+        renderSearchModalResults(displaySources, '');
+
+        // Update autocomplete suggestion counts
+        updateAutocompleteCounts();
+    } else {
+        resultsContainer.innerHTML = '<div class="search-no-results">Failed to load sources data</div>';
+    }
+
+    // Focus input
+    setTimeout(() => input.focus(), 100);
+}
+
+// Count how many sources match a query
+function countSourceMatches(query) {
+    if (!sourcesData) return 0;
+
+    const lowerQuery = query.toLowerCase();
+    let count = 0;
+
+    for (const source of sourcesData.sources) {
+        const title = (source.title || '').toLowerCase();
+        const body = (source.body || '').toLowerCase();
+
+        if (title.includes(lowerQuery) || body.includes(lowerQuery)) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+// Update counts for all autocomplete suggestions
+function updateAutocompleteCounts() {
+    const countElements = document.querySelectorAll('.option-count[data-count-for]');
+
+    countElements.forEach(el => {
+        const query = el.dataset.countFor;
+        const count = countSourceMatches(query);
+        el.textContent = count;
+    });
+}
+
+// Close search modal
+function closeSearchModal() {
+    const modal = document.getElementById('search-modal');
+    const input = document.getElementById('search-modal-input');
+    const autocomplete = document.getElementById('search-autocomplete');
+
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    input.value = '';
+
+    // Reset autocomplete visibility for next open
+    autocomplete.classList.remove('hidden');
+
+    // Reset source filter
+    selectedSearchSource = null;
+}
+
+// Perform search and update UI
+function performSearch(query) {
+    const input = document.getElementById('search-modal-input');
+    const autocomplete = document.getElementById('search-autocomplete');
+
+    // Update input value
+    input.value = query;
+
+    // Hide autocomplete when searching
+    if (query.trim()) {
+        autocomplete.classList.add('hidden');
+    } else {
+        autocomplete.classList.remove('hidden');
+    }
+
+    // Perform search with source filter
+    const results = searchSources(query);
+    const filteredResults = filterBySource(results);
+
+    renderSearchSources(results); // Show all counts
+    renderSearchModalResults(filteredResults, query);
+}
+
+// Setup search functionality
+function setupSearch() {
+    const trigger = document.getElementById('search-trigger');
+    const modal = document.getElementById('search-modal');
+    const closeBtn = document.getElementById('search-modal-close');
+    const input = document.getElementById('search-modal-input');
+    const autocomplete = document.getElementById('search-autocomplete');
+    const autocompleteOptions = document.querySelectorAll('.autocomplete-option');
+
+    let debounceTimer;
+    let selectedIndex = -1;
+
+    // Open modal on trigger click
+    trigger.addEventListener('click', openSearchModal);
+
+    // Close modal
+    closeBtn.addEventListener('click', closeSearchModal);
+
+    // Close on overlay click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeSearchModal();
+        }
+    });
+
+    // Prevent blur when clicking autocomplete options
+    autocomplete.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+    });
+
+    // Autocomplete option clicks
+    autocompleteOptions.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const query = btn.dataset.query;
+            performSearch(query);
+            input.focus();
+        });
+    });
+
+    // Show autocomplete on focus (if input is empty)
+    input.addEventListener('focus', () => {
+        if (!input.value.trim()) {
+            autocomplete.classList.remove('hidden');
+        }
+    });
+
+    // Hide autocomplete on blur
+    input.addEventListener('blur', () => {
+        autocomplete.classList.add('hidden');
+    });
+
+    // Keyboard navigation for autocomplete
+    input.addEventListener('keydown', (e) => {
+        if (autocomplete.classList.contains('hidden')) return;
+
+        const options = Array.from(autocompleteOptions);
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            selectedIndex = Math.min(selectedIndex + 1, options.length - 1);
+            updateAutocompleteSelection(options, selectedIndex);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            selectedIndex = Math.max(selectedIndex - 1, -1);
+            updateAutocompleteSelection(options, selectedIndex);
+        } else if (e.key === 'Enter' && selectedIndex >= 0) {
+            e.preventDefault();
+            const query = options[selectedIndex].dataset.query;
+            performSearch(query);
+        }
+    });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeSearchModal();
+        }
+    });
+
+    // Search input handler
+    input.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        // Show/hide autocomplete
+        if (query) {
+            autocomplete.classList.add('hidden');
+        } else {
+            autocomplete.classList.remove('hidden');
+            selectedIndex = -1;
+            updateAutocompleteSelection(Array.from(autocompleteOptions), -1);
+        }
+
+        clearTimeout(debounceTimer);
+
+        debounceTimer = setTimeout(() => {
+            const results = searchSources(query);
+            const filteredResults = filterBySource(results);
+
+            renderSearchSources(results); // Show all counts
+            renderSearchModalResults(filteredResults, query);
+        }, 150);
+    });
+}
+
+// Update autocomplete selection highlight
+function updateAutocompleteSelection(options, index) {
+    options.forEach((opt, i) => {
+        opt.classList.toggle('selected', i === index);
+    });
+}
+
+// ============ MAGIC MOMENTS FUNCTIONALITY ============
+
+// Load magic moments data
+async function loadMagicMoments() {
+    const listContainer = document.getElementById('magic-moments-list');
+    const countSpan = document.getElementById('magic-moments-count');
+
+    // Show loading state
+    listContainer.innerHTML = '<div class="loading-spinner"></div>';
+
+    try {
+        if (!magicMomentsData) {
+            const response = await fetch('data/magic_moments.json');
+            magicMomentsData = await response.json();
+        }
+
+        const moments = magicMomentsData.moments || [];
+        // Filter to only show moments with body text less than 300 characters
+        const filteredMoments = moments.filter(m => {
+            const body = m.source?.body || m.quote || '';
+            return body.length < 300;
+        });
+        countSpan.textContent = `${filteredMoments.length} moments`;
+
+        renderMagicMoments(filteredMoments);
+    } catch (error) {
+        console.error('Failed to load magic moments:', error);
+        listContainer.innerHTML = `<div class="search-no-results">Failed to load magic moments: ${error.message}</div>`;
+    }
+}
+
+// Render magic moments cards
+function renderMagicMoments(moments) {
+    const listContainer = document.getElementById('magic-moments-list');
+
+    if (moments.length === 0) {
+        listContainer.innerHTML = '<div class="search-no-results">No magic moments found</div>';
+        return;
+    }
+
+    listContainer.innerHTML = moments.map(moment => {
+        const source = moment.source || {};
+        const isReddit = moment.sourceType === 'reddit_content';
+
+        // Format date
+        const date = moment.date ? new Date(moment.date).toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        }) : '';
+
+        // Show the full body text
+        const fullBody = source.body || moment.quote || '';
+
+        // Build meta info
+        let metaHtml = '';
+        if (isReddit) {
+            const upvotes = source.upvotes || 0;
+            metaHtml = `
+                <span class="magic-moment-type">${source.type === 'post' ? 'Post' : 'Comment'}</span>
+                ${source.community ? `<span class="magic-moment-community">${source.community}</span>` : ''}
+                <span class="magic-moment-upvotes">▲ ${upvotes}</span>
+            `;
+        } else {
+            metaHtml = `
+                <span class="magic-moment-type">${source.platform || 'Review'}</span>
+                ${source.rating ? `<span class="magic-moment-rating">${'★'.repeat(source.rating)}${'☆'.repeat(5 - source.rating)}</span>` : ''}
+            `;
+        }
+
+        return `
+            <div class="magic-moment-card">
+                <div class="magic-moment-header">
+                    <img src="icons/${moment.icon}" alt="" class="magic-moment-icon">
+                    <div class="magic-moment-meta">
+                        ${metaHtml}
+                        <span class="magic-moment-date">${date}</span>
+                    </div>
+                </div>
+                <div class="magic-moment-body">${escapeHtml(fullBody)}</div>
+                ${source.url ? `<a href="${source.url}" target="_blank" rel="noopener" class="magic-moment-link">View original →</a>` : ''}
+            </div>
+        `;
+    }).join('');
 }
 
 // Start the app
