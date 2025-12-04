@@ -588,6 +588,23 @@ body {
     overflow-y: auto;
     padding-left: var(--spacing-sm);
     direction: rtl;
+    /* Fade effect at top and bottom edges */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
 }
 
 .bar-chart-panel .mobile-bar-list > * {
@@ -896,6 +913,22 @@ body {
     column-count: 2;
     column-gap: var(--spacing-md);
     padding-bottom: var(--spacing-lg);
+    /* Fade effect at top and bottom edges */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+    padding-top: var(--spacing-md);
 }
 
 /* Complaint card */
