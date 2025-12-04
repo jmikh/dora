@@ -8,10 +8,11 @@ let data = null;
 let timeChart = null;
 let barChart = null;
 let selectedCategory = null;
-let currentTimeRange = 'all';
+let currentTimeRange = '6m';
 let selectedSource = null;
 let currentDataType = 'complaints'; // 'complaints', 'useCases', 'valueDrivers', or 'magicMoments'
 let magicMomentsData = null;
+let categoryYAxisMax = null; // Fixed Y axis max for current category
 
 // Data type configuration
 const DATA_CONFIG = {
@@ -37,11 +38,11 @@ const DATA_CONFIG = {
 
 // Chart colors - Wispr Flow theme (teal & pink)
 const CHART_COLORS = {
-    teal: '#034f46',
-    tealLight: '#0a7a6d',
-    tealLighter: '#1a9a8a',
-    pink: '#E8D5E7',
-    pinkDark: '#d4b8d3',
+    teal: '#204E46',
+    tealLight: '#345A52',
+    tealLighter: '#4A7A6A',
+    pink: '#ECD8FC',
+    pinkDark: '#ECD8FC',
     grid: '#e8e8d8',
     text: '#5a5a52',
     textMuted: '#8d8d83'
@@ -112,6 +113,11 @@ async function loadData(dataType) {
         initBarChart();
         renderMobileBarList();
 
+        // Apply default time range filter (6m)
+        if (currentTimeRange !== 'all') {
+            updateChartsForTimeRange();
+        }
+
         // Setup event listeners (only once)
         if (!window.listenersInitialized) {
             setupTimeFilter();
@@ -123,15 +129,15 @@ async function loadData(dataType) {
             updateUncategorizedCount();
         }
 
-        // Pre-select first category
+        // Pre-select first category after a small delay to ensure charts are ready
         const categories = data.categories.filter(c => c.name.toLowerCase() !== 'other');
         if (categories.length > 0) {
-            selectCategory(categories[0].name, 0);
+            setTimeout(() => {
+                forceSelectCategory(categories[0].name, 0);
+            }, 50);
         }
     } catch (error) {
         console.error('Failed to load data:', error);
-        document.querySelector('.charts-panel').innerHTML =
-            `<div class="loading">Failed to load data: ${error.message}</div>`;
     }
 }
 
@@ -149,7 +155,6 @@ function updateUncategorizedCount() {
 // Update UI labels based on data type
 function updateLabels(config) {
     document.getElementById('chart-title').textContent = config.chartTitle;
-    document.getElementById('items-list-title').textContent = config.itemsTitle;
 
     // Hide uncategorized button for use cases and value drivers (no "other" category)
     const uncategorizedBtn = document.getElementById('view-uncategorized-btn');
@@ -164,6 +169,7 @@ function setupDataToggle() {
     const toggleBtns = document.querySelectorAll('.toggle-btn');
     const mainContent = document.querySelector('.main-content');
     const magicMomentsContainer = document.getElementById('magic-moments-container');
+    const categoryHeader = document.querySelector('.selected-category-header');
 
     toggleBtns.forEach(btn => {
         btn.addEventListener('click', async () => {
@@ -181,10 +187,12 @@ function setupDataToggle() {
             if (newType === 'magicMoments') {
                 mainContent.style.display = 'none';
                 magicMomentsContainer.style.display = 'block';
+                if (categoryHeader) categoryHeader.style.display = 'none';
                 await loadMagicMoments();
             } else {
                 mainContent.style.display = '';
                 magicMomentsContainer.style.display = 'none';
+                if (categoryHeader) categoryHeader.style.display = 'block';
                 await loadData(newType);
             }
         });
@@ -198,10 +206,14 @@ function initTimeChart() {
     // Start with empty datasets - lines will be added on selection/hover
     const datasets = [];
 
+    // Apply time range filter to labels
+    const startIndex = getCurrentStartIndex();
+    const filteredLabels = data.timeSeries.labels.slice(startIndex);
+
     timeChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: data.timeSeries.labels,
+            labels: filteredLabels,
             datasets: datasets
         },
         options: {
@@ -313,15 +325,8 @@ function initBarChart() {
             },
             scales: {
                 x: {
-                    beginAtZero: true,
-                    grid: {
-                        color: CHART_COLORS.grid,
-                        drawBorder: false
-                    },
-                    ticks: {
-                        color: CHART_COLORS.textMuted,
-                        font: { size: 11 }
-                    }
+                    display: false,
+                    beginAtZero: true
                 },
                 y: {
                     grid: {
@@ -329,9 +334,9 @@ function initBarChart() {
                     },
                     afterFit: (scale) => {
                         // Fix width to prevent shift when text becomes bold
-                        // Different data types have different label lengths
-                        const widths = { complaints: 340, useCases: 180, valueDrivers: 220 };
-                        scale.width = widths[currentDataType] || 340;
+                        // Narrower widths for the dedicated bar chart column
+                        const widths = { complaints: 200, useCases: 150, valueDrivers: 180 };
+                        scale.width = widths[currentDataType] || 200;
                     },
                     ticks: {
                         autoSkip: false,
@@ -566,30 +571,34 @@ function selectCategory(categoryName, barIndex) {
         selectedCategory = categoryName;
         selectedBarIndex = barIndex;
 
+        // Reset source filter when changing categories
+        selectedSource = null;
+
         // Add/update selected category line in time chart
         if (timeChart) {
             const categoryData = data.timeSeries.datasets[categoryName] || [];
             const startIndex = getCurrentStartIndex();
             const filteredData = categoryData.slice(startIndex);
 
-            // Remove existing selected category line if present
-            const selectedIndex = timeChart.data.datasets.findIndex(ds => ds.isSelectedLine);
-            if (selectedIndex !== -1) {
-                timeChart.data.datasets.splice(selectedIndex, 1);
-            }
+            // Set fixed Y axis max based on full category data
+            categoryYAxisMax = Math.max(...filteredData) * 1.1; // Add 10% padding
+            timeChart.options.scales.y.max = categoryYAxisMax;
+
+            // Remove existing lines (both selected and total)
+            timeChart.data.datasets = timeChart.data.datasets.filter(ds => !ds.isSelectedLine && !ds.isTotalLine);
 
             // Add the selected category line (green)
             timeChart.data.datasets.push({
-                label: categoryName,
+                label: 'Total',
                 data: filteredData,
-                borderColor: CHART_COLORS.pinkDark,
-                backgroundColor: CHART_COLORS.pinkDark + '20',
+                borderColor: CHART_COLORS.teal,
+                backgroundColor: CHART_COLORS.teal + '20',
                 borderWidth: 3,
                 tension: 0.3,
                 fill: false,
                 pointRadius: 3,
                 pointHoverRadius: 5,
-                pointBackgroundColor: CHART_COLORS.pinkDark,
+                pointBackgroundColor: CHART_COLORS.teal,
                 isSelectedLine: true  // Custom flag to identify selected line
             });
 
@@ -607,6 +616,58 @@ function selectCategory(categoryName, barIndex) {
             hideDetailsLoading();
         }, 150);
     }
+}
+
+// Force select category - used for initial load, bypasses "already selected" check
+function forceSelectCategory(categoryName, barIndex) {
+    // Deselect "View uncategorized" button if it was selected
+    const otherBtn = document.getElementById('view-uncategorized-btn');
+    if (otherBtn) {
+        otherBtn.classList.remove('active');
+    }
+
+    // Set selection state
+    selectedCategory = categoryName;
+    selectedBarIndex = barIndex;
+    selectedSource = null; // Reset source filter
+
+    // Add selected category line in time chart
+    if (timeChart) {
+        const categoryData = data.timeSeries.datasets[categoryName] || [];
+        const startIndex = getCurrentStartIndex();
+        const filteredData = categoryData.slice(startIndex);
+
+        // Set fixed Y axis max based on full category data
+        categoryYAxisMax = Math.max(...filteredData) * 1.1; // Add 10% padding
+        timeChart.options.scales.y.max = categoryYAxisMax;
+
+        // Remove existing lines (both selected and total)
+        timeChart.data.datasets = timeChart.data.datasets.filter(ds => !ds.isSelectedLine && !ds.isTotalLine);
+
+        // Add the selected category line
+        timeChart.data.datasets.push({
+            label: 'Total',
+            data: filteredData,
+            borderColor: CHART_COLORS.teal,
+            backgroundColor: CHART_COLORS.teal + '20',
+            borderWidth: 3,
+            tension: 0.3,
+            fill: false,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            pointBackgroundColor: CHART_COLORS.teal,
+            isSelectedLine: true
+        });
+
+        timeChart.update('none');
+    }
+
+    // Update bar colors
+    updateBarColors();
+    updateMobileBarSelection();
+
+    // Show category details directly (no loading animation for initial load)
+    showCategoryDetails(categoryName);
 }
 
 // Show/hide loading indicator
@@ -713,6 +774,13 @@ function renderComplaints(category) {
         });
     }
 
+    // Sort by date, most recent first
+    filteredComplaints.sort((a, b) => {
+        const dateA = a.date ? new Date(a.date) : new Date(0);
+        const dateB = b.date ? new Date(b.date) : new Date(0);
+        return dateB - dateA;
+    });
+
     filteredComplaints.slice(0, 50).forEach(complaint => {
         const card = createComplaintCard(complaint);
         complaintsList.appendChild(card);
@@ -741,6 +809,104 @@ function toggleSourceFilter(source, category) {
 
     // Re-render complaints with new filter
     renderComplaints(category);
+
+    // Update time chart line based on source filter
+    updateTimeChartForSource(category);
+}
+
+// Calculate time series data from complaints filtered by source
+function calculateTimeSeriesFromComplaints(complaints) {
+    const rawLabels = data.timeSeries.rawLabels;
+    const counts = new Array(rawLabels.length).fill(0);
+
+    complaints.forEach(complaint => {
+        if (!complaint.date) return;
+        const dateStr = complaint.date.slice(0, 7); // Get YYYY-MM
+        const index = rawLabels.indexOf(dateStr);
+        if (index !== -1) {
+            counts[index]++;
+        }
+    });
+
+    return counts;
+}
+
+// Update time chart line based on selected source
+function updateTimeChartForSource(category) {
+    if (!timeChart || !selectedCategory) return;
+
+    const startIndex = getCurrentStartIndex();
+
+    // Remove existing lines (both selected and total)
+    timeChart.data.datasets = timeChart.data.datasets.filter(ds => !ds.isSelectedLine && !ds.isTotalLine);
+
+    // Get full category data
+    const categoryData = data.timeSeries.datasets[category.name] || [];
+    const fullLineData = categoryData.slice(startIndex);
+
+    if (selectedSource) {
+        // Get source display name
+        const sourceDisplayName = selectedSource.charAt(0).toUpperCase() + selectedSource.slice(1);
+
+        // Add light gray total line first (so it's behind)
+        timeChart.data.datasets.push({
+            label: 'Total',
+            data: fullLineData,
+            borderColor: '#d0d0d0',
+            backgroundColor: 'transparent',
+            borderWidth: 2,
+            tension: 0.3,
+            fill: false,
+            pointRadius: 0,
+            pointHoverRadius: 3,
+            pointBackgroundColor: '#d0d0d0',
+            isTotalLine: true
+        });
+
+        // Calculate time series from source-filtered complaints
+        let filteredComplaints = category.complaints.filter(c => {
+            if (selectedSource === 'reddit') {
+                return c.sourceType === 'reddit_content';
+            } else {
+                const platform = (c.source.platform || '').toLowerCase().replace(/\s+/g, '');
+                return platform === selectedSource;
+            }
+        });
+        const fullData = calculateTimeSeriesFromComplaints(filteredComplaints);
+        const lineData = fullData.slice(startIndex);
+
+        // Add filtered source line in teal
+        timeChart.data.datasets.push({
+            label: sourceDisplayName,
+            data: lineData,
+            borderColor: CHART_COLORS.teal,
+            backgroundColor: CHART_COLORS.teal + '20',
+            borderWidth: 3,
+            tension: 0.3,
+            fill: false,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            pointBackgroundColor: CHART_COLORS.teal,
+            isSelectedLine: true
+        });
+    } else {
+        // No source filter - just show the full category line
+        timeChart.data.datasets.push({
+            label: 'Total',
+            data: fullLineData,
+            borderColor: CHART_COLORS.teal,
+            backgroundColor: CHART_COLORS.teal + '20',
+            borderWidth: 3,
+            tension: 0.3,
+            fill: false,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            pointBackgroundColor: CHART_COLORS.teal,
+            isSelectedLine: true
+        });
+    }
+
+    timeChart.update('none');
 }
 
 // Create complaint card element
@@ -934,6 +1100,8 @@ function setupTimeFilter() {
 // Setup "Other" category button
 function setupOtherButton() {
     const btn = document.getElementById('view-uncategorized-btn');
+    if (!btn) return; // Button removed from UI
+
     const countSpan = document.getElementById('uncategorized-count');
 
     // Find "other" category and set count
@@ -1004,14 +1172,14 @@ function selectOtherCategory() {
         timeChart.data.datasets.push({
             label: otherKey,
             data: filteredData,
-            borderColor: CHART_COLORS.pinkDark,
-            backgroundColor: CHART_COLORS.pinkDark + '20',
+            borderColor: CHART_COLORS.teal,
+            backgroundColor: CHART_COLORS.teal + '20',
             borderWidth: 3,
             tension: 0.3,
             fill: false,
             pointRadius: 3,
             pointHoverRadius: 5,
-            pointBackgroundColor: CHART_COLORS.pinkDark,
+            pointBackgroundColor: CHART_COLORS.teal,
             isSelectedLine: true
         });
 
@@ -1069,14 +1237,46 @@ function updateChartsForTimeRange() {
     const filteredLabels = data.timeSeries.labels.slice(startIndex);
     timeChart.data.labels = filteredLabels;
 
-    // Update selected category line if present
-    const selectedLine = timeChart.data.datasets.find(ds => ds.isSelectedLine);
-    if (selectedLine && selectedCategory) {
+    // Update lines if present
+    if (selectedCategory) {
         // Find the correct category name (handle case sensitivity)
         const categoryObj = data.categories.find(c => c.name.toLowerCase() === selectedCategory.toLowerCase());
         const categoryKey = categoryObj ? categoryObj.name : selectedCategory;
         const categoryData = data.timeSeries.datasets[categoryKey] || [];
-        selectedLine.data = categoryData.slice(startIndex);
+        const filteredData = categoryData.slice(startIndex);
+
+        // Recalculate Y axis max for new time range (always based on full category data)
+        categoryYAxisMax = Math.max(...filteredData) * 1.1;
+        timeChart.options.scales.y.max = categoryYAxisMax;
+
+        // Update total line if present (when source is filtered)
+        const totalLine = timeChart.data.datasets.find(ds => ds.isTotalLine);
+        if (totalLine) {
+            totalLine.data = filteredData;
+        }
+
+        // Update selected line if present
+        const selectedLine = timeChart.data.datasets.find(ds => ds.isSelectedLine);
+        if (selectedLine) {
+            if (selectedSource) {
+                // Recalculate source-filtered data for new time range
+                const category = data.categories.find(c => c.name === categoryKey);
+                if (category) {
+                    let filteredComplaints = category.complaints.filter(c => {
+                        if (selectedSource === 'reddit') {
+                            return c.sourceType === 'reddit_content';
+                        } else {
+                            const platform = (c.source.platform || '').toLowerCase().replace(/\s+/g, '');
+                            return platform === selectedSource;
+                        }
+                    });
+                    const fullData = calculateTimeSeriesFromComplaints(filteredComplaints);
+                    selectedLine.data = fullData.slice(startIndex);
+                }
+            } else {
+                selectedLine.data = filteredData;
+            }
+        }
     }
 
     timeChart.update();
@@ -1101,26 +1301,32 @@ function setupModal() {
     const modal = document.getElementById('complaints-modal');
     const closeBtn = document.getElementById('modal-close-btn');
 
-    // Open modal
-    expandBtn.addEventListener('click', () => {
-        openComplaintsModal();
-    });
+    // Open modal (only if expand button exists)
+    if (expandBtn) {
+        expandBtn.addEventListener('click', () => {
+            openComplaintsModal();
+        });
+    }
 
     // Close modal on X button
-    closeBtn.addEventListener('click', () => {
-        closeComplaintsModal();
-    });
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            closeComplaintsModal();
+        });
+    }
 
     // Close modal on overlay click
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeComplaintsModal();
-        }
-    });
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeComplaintsModal();
+            }
+        });
+    }
 
     // Close modal on Escape key
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
+        if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
             closeComplaintsModal();
         }
     });
@@ -1585,8 +1791,6 @@ async function openSearchModal() {
         resultsContainer.innerHTML = '<div class="search-no-results">Failed to load sources data</div>';
     }
 
-    // Focus input
-    setTimeout(() => input.focus(), 100);
 }
 
 // Count how many sources match a query
@@ -1640,15 +1844,18 @@ function closeSearchModal() {
 function performSearch(query) {
     const input = document.getElementById('search-modal-input');
     const autocomplete = document.getElementById('search-autocomplete');
+    const clearBtn = document.getElementById('search-clear-btn');
 
     // Update input value
     input.value = query;
 
-    // Hide autocomplete when searching
+    // Hide autocomplete and show/hide clear button when searching
     if (query.trim()) {
         autocomplete.classList.add('hidden');
+        clearBtn.classList.remove('hidden');
     } else {
         autocomplete.classList.remove('hidden');
+        clearBtn.classList.add('hidden');
     }
 
     // Perform search with source filter
@@ -1663,8 +1870,8 @@ function performSearch(query) {
 function setupSearch() {
     const trigger = document.getElementById('search-trigger');
     const modal = document.getElementById('search-modal');
-    const closeBtn = document.getElementById('search-modal-close');
     const input = document.getElementById('search-modal-input');
+    const clearBtn = document.getElementById('search-clear-btn');
     const autocomplete = document.getElementById('search-autocomplete');
     const autocompleteOptions = document.querySelectorAll('.autocomplete-option');
 
@@ -1674,9 +1881,6 @@ function setupSearch() {
     // Open modal on trigger click
     trigger.addEventListener('click', openSearchModal);
 
-    // Close modal
-    closeBtn.addEventListener('click', closeSearchModal);
-
     // Close on overlay click
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
@@ -1684,8 +1888,26 @@ function setupSearch() {
         }
     });
 
-    // Prevent blur when clicking autocomplete options
+    // Clear button - clears input text and resets search
+    clearBtn.addEventListener('click', () => {
+        input.value = '';
+        clearBtn.classList.add('hidden');
+        autocomplete.classList.add('hidden');
+        selectedIndex = -1;
+        // Reset source filter
+        selectedSearchSource = null;
+        // Trigger search with empty query to update results
+        const results = searchSources('');
+        renderSearchSources(results);
+        renderSearchModalResults(results, '');
+        input.focus();
+    });
+
+    // Prevent blur when clicking autocomplete options or clear button
     autocomplete.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+    });
+    clearBtn.addEventListener('mousedown', (e) => {
         e.preventDefault();
     });
 
@@ -1742,11 +1964,15 @@ function setupSearch() {
     input.addEventListener('input', (e) => {
         const query = e.target.value.trim();
 
-        // Show/hide autocomplete
+        // Show/hide autocomplete and clear button
+        // Only hide autocomplete when typing, never show it when deleting to empty
         if (query) {
             autocomplete.classList.add('hidden');
+            clearBtn.classList.remove('hidden');
         } else {
-            autocomplete.classList.remove('hidden');
+            // Don't show autocomplete when deleting to empty - only on fresh focus
+            autocomplete.classList.add('hidden');
+            clearBtn.classList.add('hidden');
             selectedIndex = -1;
             updateAutocompleteSelection(Array.from(autocompleteOptions), -1);
         }
@@ -1810,7 +2036,14 @@ function renderMagicMoments(moments) {
         return;
     }
 
-    listContainer.innerHTML = moments.map(moment => {
+    // Sort by date, most recent first
+    const sortedMoments = [...moments].sort((a, b) => {
+        const dateA = a.date ? new Date(a.date) : new Date(0);
+        const dateB = b.date ? new Date(b.date) : new Date(0);
+        return dateB - dateA;
+    });
+
+    listContainer.innerHTML = sortedMoments.map(moment => {
         const source = moment.source || {};
         const isReddit = moment.sourceType === 'reddit_content';
 

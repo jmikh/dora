@@ -19,6 +19,14 @@
                 </div>
             </div>
             <div class="header-center">
+                <div class="data-toggle">
+                    <button class="toggle-btn active" data-type="complaints">Complaints</button>
+                    <button class="toggle-btn" data-type="useCases">Use Cases</button>
+                    <button class="toggle-btn" data-type="valueDrivers">Value Drivers</button>
+                    <button class="toggle-btn" data-type="magicMoments">Magic Moments</button>
+                </div>
+            </div>
+            <div class="header-right">
                 <button class="search-trigger" id="search-trigger">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="8"/>
@@ -27,45 +35,14 @@
                     <span>Search</span>
                 </button>
             </div>
-            <div class="header-right"></div>
         </header>
-
-        <!-- Data Type Toggle -->
-        <div class="data-toggle-container">
-            <div class="data-toggle">
-                <button class="toggle-btn active" data-type="complaints">Complaints</button>
-                <button class="toggle-btn" data-type="useCases">Use Cases</button>
-                <button class="toggle-btn" data-type="valueDrivers">Value Drivers</button>
-                <button class="toggle-btn" data-type="magicMoments">Magic Moments</button>
-            </div>
-        </div>
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Left Panel: Charts -->
-            <section class="charts-panel">
-                <!-- Top Issues Chart Card -->
+            <!-- Left Panel: Bar Chart -->
+            <section class="bar-chart-panel">
                 <div class="chart-card">
-                    <div class="chart-title-row">
-                        <h2 class="chart-title" id="chart-title">Top Complaints</h2>
-                        <button class="other-category-btn" id="other-category-btn">
-                            <span class="other-label" id="other-label">View uncategorized</span>
-                        </button>
-                        <div class="other-tooltip" id="other-tooltip"></div>
-                    </div>
-
-                    <!-- Time Filter -->
-                    <div class="time-filter">
-                        <button class="filter-btn" data-range="3m">3M</button>
-                        <button class="filter-btn" data-range="6m">6M</button>
-                        <button class="filter-btn" data-range="1y">1Y</button>
-                        <button class="filter-btn active" data-range="all">All</button>
-                    </div>
-
-                    <!-- Time Series Chart -->
-                    <div class="chart-container time-chart-container">
-                        <canvas id="time-chart"></canvas>
-                    </div>
+                    <h2 class="chart-title" id="chart-title">Top Complaints</h2>
 
                     <!-- Bar Chart (desktop) -->
                     <div class="chart-container bar-chart-container">
@@ -74,71 +51,58 @@
 
                     <!-- Mobile Bar List (mobile only) -->
                     <div class="mobile-bar-list" id="mobile-bar-list"></div>
-
-                    <!-- Uncategorized Button -->
-                    <button class="uncategorized-btn" id="view-uncategorized-btn">
-                        Uncategorized
-                        <span class="uncategorized-count" id="uncategorized-count"></span>
-                    </button>
                 </div>
             </section>
 
-            <!-- Right Panel: Details -->
+            <!-- Right Panel: Details (one unified card) -->
             <aside class="details-panel">
                 <div class="details-loading" id="details-loading">
                     <div class="loading-spinner"></div>
                 </div>
-                <div class="details-content" id="details-content">
-                    <!-- Category Info & AI Summary -->
-                    <div class="ai-summary-card" id="ai-summary-card">
+                <div class="details-card" id="details-content">
+                    <!-- Category Title + Sources -->
+                    <div class="details-card-header">
                         <h2 class="selected-category-name" id="selected-category-name">--</h2>
-                        <div class="ai-summary-content">
-                            <div class="ai-summary-header">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
-                                    <path d="M12 2a10 10 0 0 1 10 10"/>
-                                    <circle cx="12" cy="12" r="6"/>
-                                </svg>
-                                <span>AI Summary</span>
+                        <div class="source-badges" id="source-badges"></div>
+                    </div>
+
+                    <!-- Top Row: AI Summary + Time Chart -->
+                    <div class="details-top-row">
+                        <!-- AI Summary -->
+                        <div class="ai-summary-section" id="ai-summary-card">
+                            <div class="ai-summary-content">
+                                <div class="ai-summary-header">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
+                                        <path d="M12 2a10 10 0 0 1 10 10"/>
+                                        <circle cx="12" cy="12" r="6"/>
+                                    </svg>
+                                    <span>AI Summary</span>
+                                </div>
+                                <p class="ai-summary" id="selected-category-summary"></p>
                             </div>
-                            <p class="ai-summary" id="selected-category-summary"></p>
+                        </div>
+
+                        <!-- Time Chart -->
+                        <div class="time-chart-section">
+                            <div class="chart-title-row">
+                                <h2 class="chart-title">Trend</h2>
+                                <div class="time-filter">
+                                    <button class="filter-btn" data-range="3m">3M</button>
+                                    <button class="filter-btn active" data-range="6m">6M</button>
+                                    <button class="filter-btn" data-range="1y">1Y</button>
+                                    <button class="filter-btn" data-range="all">All</button>
+                                </div>
+                            </div>
+                            <div class="chart-container time-chart-container">
+                                <canvas id="time-chart"></canvas>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Complaints Card (includes sources) -->
+                    <!-- Items List -->
                     <div class="complaints-section" id="complaints-section">
-                        <!-- Source Breakdown -->
-                        <div class="source-breakdown">
-                            <div class="section-header">
-                                <span class="section-icon">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                                    </svg>
-                                </span>
-                                <h3>Sources</h3>
-                                <button class="expand-btn" id="expand-complaints-btn" title="Expand">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <polyline points="9 21 3 21 3 15"/>
-                                        <line x1="21" y1="3" x2="14" y2="10"/>
-                                        <line x1="3" y1="21" x2="10" y2="14"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="source-badges" id="source-badges"></div>
-                        </div>
-
-                        <!-- Items List -->
-                        <div class="section-header">
-                            <span class="section-icon">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                                </svg>
-                            </span>
-                            <h3 id="items-list-title">Complaints</h3>
-                        </div>
+                        <h2 class="chart-title">Quotes</h2>
                         <div class="complaints-list" id="complaints-list"></div>
                     </div>
                 </div>
@@ -148,7 +112,7 @@
         <!-- Magic Moments View (hidden by default) -->
         <div class="magic-moments-container" id="magic-moments-container" style="display: none;">
             <div class="magic-moments-header">
-                <p class="magic-moments-subtitle">A collection of the most stellar reviews to use for marketing</p>
+                <p class="magic-moments-subtitle">A collection of the most stellar reviewsi</p>
                 <span class="magic-moments-count" id="magic-moments-count">0 moments</span>
             </div>
             <div class="magic-moments-list" id="magic-moments-list"></div>
@@ -168,8 +132,14 @@
                         <circle cx="11" cy="11" r="8"/>
                         <path d="M21 21l-4.35-4.35"/>
                     </svg>
-                    <input type="text" id="search-modal-input" class="search-modal-input" placeholder="Search posts, comments, reviews..." autofocus>
-                    <div class="search-autocomplete" id="search-autocomplete">
+                    <input type="text" id="search-modal-input" class="search-modal-input" placeholder="Search all posts, comments, reviews...">
+                    <button class="search-clear-btn hidden" id="search-clear-btn" title="Clear">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                    <div class="search-autocomplete hidden" id="search-autocomplete">
                         <div class="autocomplete-section">
                             <div class="autocomplete-label">Search for competitors</div>
                             <div class="autocomplete-options">
@@ -206,12 +176,6 @@
                         </div>
                     </div>
                 </div>
-                <button class="modal-close-btn" id="search-modal-close" title="Close">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"/>
-                        <line x1="6" y1="6" x2="18" y2="18"/>
-                    </svg>
-                </button>
             </div>
             <div class="search-modal-sources" id="search-modal-sources"></div>
             <div class="search-modal-results" id="search-modal-results">

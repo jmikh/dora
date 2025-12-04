@@ -2069,7 +2069,7 @@
       "aiSummary": "User complaints about Wispr Flow primarily highlight issues related to its platform compatibility, with many users finding the application poorly optimized for macOS and reliant on Electron, resulting in subpar performance. Key concerns also include a lack of customization options, such as the inability to use personal API keys and the need for multiple voice apps. Additionally, users expressed frustration with buggy features, connection issues, and a perceived emphasis on marketing rather than addressing user needs."
     },
     {
-      "name": "Customer Support Not Responsive",
+      "name": "Customer Support",
       "count": 44,
       "complaints": [
         {
@@ -2828,7 +2828,7 @@
       "aiSummary": "Users have consistently reported significant issues with Wispr Flow's customer support, citing a lack of responsiveness and communication. Many complaints highlight that multiple emails, support tickets, and in-app reports go unanswered, with users expressing frustration over slow resolution times for critical issues and a general lack of transparency from the company. This pattern indicates a concerning gap in customer service effectiveness, leading some to consider switching products."
     },
     {
-      "name": "Ai/Smart Formatting Issues",
+      "name": "Ai/Smart Formatting",
       "count": 32,
       "complaints": [
         {
@@ -4425,7 +4425,7 @@
       "aiSummary": "Users frequently express concerns about Wispr Flow's pricing, describing it as high compared to competitors and emphasizing the lack of free or one-time purchase options. Many feel that the subscription model is not justified by the quality of the service, with some labeling it as overpriced and a poor value relative to free alternatives. Overall, the predominant sentiment highlights dissatisfaction with both the cost and perceived value of Wispr Flow's offerings."
     },
     {
-      "name": "Customization Issues",
+      "name": "Customization",
       "count": 26,
       "complaints": [
         {
@@ -4875,10 +4875,10 @@
         "reddit_content": 23,
         "reviews": 3
       },
-      "aiSummary": "User complaints about Wispr Flow in the \"Customization Issues\" category primarily highlight a lack of robust customization options, such as limited per-app prompt configurations and the inability to create multiple trigger phrases. Additionally, users express disappointment over the absence of features like bulk importing for snippets and dictionaries, and specific modes like \"Gen-Z\" for desktop. Many users are looking for a more personalized experience, indicating the need for greater flexibility and customization capabilities compared to competitor offerings."
+      "aiSummary": "User complaints about Wispr Flow in the \"Customization\" category primarily highlight a lack of robust customization options, such as limited per-app prompt configurations and the inability to create multiple trigger phrases. Additionally, users express disappointment over the absence of features like bulk importing for snippets and dictionaries, and specific modes like \"Gen-Z\" for desktop. Many users are looking for a more personalized experience, indicating the need for greater flexibility and customization capabilities compared to competitor offerings."
     },
     {
-      "name": "Issues With Command Mode",
+      "name": "Command Mode",
       "count": 26,
       "complaints": [
         {
@@ -5330,7 +5330,7 @@
       "aiSummary": "Users have reported multiple issues with the Command Mode in Wispr Flow, primarily focusing on its unreliability and lack of features across platforms. Common complaints include the failure of the global button to initiate audio mode, the absence of command functionalities for composing or editing text, and the non-functionality of Command Mode on both iOS and desktop versions. Additionally, users have expressed a desire for explicit command triggers, snippet support, and improved voice command recognition, indicating a need for enhanced usability and feature consistency."
     },
     {
-      "name": "Mobile Keyboard Issues",
+      "name": "Mobile Keyboard",
       "count": 26,
       "complaints": [
         {
@@ -5783,7 +5783,7 @@
       "aiSummary": "User complaints regarding the Wispr Flow mobile keyboard predominantly focus on issues with setting it as the default keyboard and overall integration within the iOS environment. Many users report that despite efforts to designate Wispr Flow as their default keyboard, it fails to remain selected when switching apps, requiring manual reactivation. Additional frustrations arise from poor user experience on iPad, limited keyboard functionality, unexpected shutdowns, and an outdated UI, all contributing to a perception of the keyboard being unreliable and difficult to use."
     },
     {
-      "name": "Hotkey Issues",
+      "name": "Hotkeys",
       "count": 25,
       "complaints": [
         {
@@ -7057,7 +7057,7 @@
       "aiSummary": "User complaints about Wispr Flow in the \"Latency In Transcription\" category consistently highlight issues with slow transcription speeds and significant delays in processing dictation. Many users report that the system is often laggy, with transcription taking up to 30 seconds or longer, leading them to prefer typing over dictating. Additionally, the lack of live dictation feedback and previews exacerbates frustration, as users are unable to see their input in real-time, further contributing to inefficiency."
     },
     {
-      "name": "Accuracy Issues",
+      "name": "Accuracy",
       "count": 23,
       "complaints": [
         {
@@ -7459,7 +7459,7 @@
       "aiSummary": "Users have consistently reported significant accuracy issues with Wispr Flow, particularly related to unreliable transcription and frequent errors during dictation. Common complaints include the app's tendency to miss the first word of sentences, struggle with background noise, and produce incorrect or ambiguous transcriptions. Many users find that the app requires a near-silent environment for optimal performance, leading to frustration and time wasted on corrections."
     },
     {
-      "name": "Reliability And Performance Problems",
+      "name": "Reliability And Performance",
       "count": 23,
       "complaints": [
         {
@@ -7861,7 +7861,7 @@
       "aiSummary": "User complaints about Wispr Flow predominantly highlight significant reliability and performance issues, including a clunky interface, slow menus, and frequent bugs that hinder functionality. Many users reported unstable servers and intermittent performance, particularly on iOS devices, where features like the global button are unreliable. Additionally, concerns about context loss, version stability, and frequent outages further diminish the app's overall trustworthiness and effectiveness compared to alternative solutions."
     },
     {
-      "name": "Subscription Problems",
+      "name": "Subscription",
       "count": 19,
       "complaints": [
         {
@@ -8192,7 +8192,7 @@
         "reddit_content": 14,
         "reviews": 5
       },
-      "aiSummary": "User complaints about Wispr Flow in the \"Subscription Problems\" category highlight several key issues, including limited access to premium features, discrepancies between desktop and mobile app subscriptions, and confusion surrounding billing and trial periods. Many users report being unintentionally switched to trial modes despite holding Pro subscriptions, encountering limits on word counts, and facing difficulties in managing or canceling subscriptions. Additionally, issues with student discounts and persistent bugs related to trial periods are frequently mentioned, contributing to overall dissatisfaction with the service."
+      "aiSummary": "User complaints about Wispr Flow in the \"Subscription\" category highlight several key issues, including limited access to premium features, discrepancies between desktop and mobile app subscriptions, and confusion surrounding billing and trial periods. Many users report being unintentionally switched to trial modes despite holding Pro subscriptions, encountering limits on word counts, and facing difficulties in managing or canceling subscriptions. Additionally, issues with student discounts and persistent bugs related to trial periods are frequently mentioned, contributing to overall dissatisfaction with the service."
     },
     {
       "name": "Microphone Runs In The Background",
@@ -8461,7 +8461,7 @@
       "aiSummary": "Users have raised multiple concerns regarding the microphone functionality in Wispr Flow, particularly focusing on its always-on background processes. Many report needing to frequently re-enable microphone access, especially when switching input devices, and express frustration that the app's microphone remains active even when not in use, leading to issues such as interference with phone functions and difficulties in dictation. Additionally, some users seek clarity on available settings to manage microphone activity, indicating a lack of intuitive controls within the app."
     },
     {
-      "name": "Punctuation Issues",
+      "name": "Punctuation",
       "count": 15,
       "complaints": [
         {
@@ -8908,7 +8908,7 @@
       "aiSummary": "Users consistently report that Wispr Flow significantly drains battery life and increases CPU usage, leading to performance issues on devices like MacBooks and iPhones. Complaints highlight its heavy memory consumption, which results in system lag and prevents auto-lock features, exacerbating battery drain. Overall, the app is perceived as inefficient, particularly when running in the background or in always-on mode."
     },
     {
-      "name": "Microphone Compatibility Issues",
+      "name": "Microphone Compatibility",
       "count": 10,
       "complaints": [
         {
@@ -9086,7 +9086,7 @@
         "reddit_content": 8,
         "reviews": 2
       },
-      "aiSummary": "User complaints about Wispr Flow in the \"Microphone Compatibility Issues\" category highlight significant problems with microphone recognition and performance. Many users reported that their microphones, especially AirPods and other Bluetooth devices, either fail to function properly or are not recognized by the app, leading to frustration. Additionally, concerns about using Whisper Mode in public and issues with auto mic switching further contribute to the overall dissatisfaction with the microphone compatibility of the app."
+      "aiSummary": "User complaints about Wispr Flow in the \"Microphone Compatibility\" category highlight significant problems with microphone recognition and performance. Many users reported that their microphones, especially AirPods and other Bluetooth devices, either fail to function properly or are not recognized by the app, leading to frustration. Additionally, concerns about using Whisper Mode in public and issues with auto mic switching further contribute to the overall dissatisfaction with the microphone compatibility of the app."
     },
     {
       "name": "No Offline Or Local Model",
@@ -9270,7 +9270,7 @@
       "aiSummary": "User complaints regarding Wispr Flow in the \"No Offline Or Local Model\" category primarily highlight the lack of offline capabilities and support for local models or Bring Your Own Key (BYOK) options. Many users express frustration over the complexity involved in installing Whisper locally and mention that competing services like Spokenly offer free usage with local models or BYOK support. Overall, the absence of these features in Wispr Flow leads users to seek alternatives that provide faster performance and greater flexibility."
     },
     {
-      "name": "Onboarding Issues",
+      "name": "Onboarding",
       "count": 10,
       "complaints": [
         {
@@ -9451,7 +9451,7 @@
       "aiSummary": "User complaints about the Wispr Flow onboarding process highlight significant frustration with its complexity and lack of seamlessness. Many users report an excessive number of steps, repeated prompts to activate features, and issues with installation and access settings on macOS. Additionally, the onboarding wizard fails to recognize completed tasks, and users are unable to skip or exit the onboarding flow, leading to a tedious and confusing experience that needs improvement."
     },
     {
-      "name": "Authentication And Login Issues",
+      "name": "Authentication And Login",
       "count": 9,
       "complaints": [
         {
@@ -9615,7 +9615,7 @@
       "aiSummary": "Users of Wispr Flow are experiencing significant authentication and login issues, including blocked access in the UAE and persistent errors during login attempts. Many report difficulties with account recovery, frequent sign-in requirements, and failure to receive verification codes. Additionally, technical glitches such as recurring white screens on multiple devices and after troubleshooting efforts highlight ongoing usability challenges within the platform."
     },
     {
-      "name": "Language Detection Issues",
+      "name": "Language Detection",
       "count": 9,
       "complaints": [
         {
@@ -9926,7 +9926,7 @@
       "aiSummary": "Users have reported multiple issues with the Wispr Flow app that contribute to its difficulty of use. Key complaints include unclear processes for submitting in-app reports, challenges in remembering snippet trigger phrases, and confusion regarding app count labels. Additionally, users found features like deleting recordings on iOS and retrying transcripts to be difficult to locate, while the overall mobile experience was described as clunky and lacking a user-friendly editing workflow."
     },
     {
-      "name": "Lack Of Public Roadmap Or Feature Requests",
+      "name": "Lack Of Public Roadmap",
       "count": 7,
       "complaints": [
         {
@@ -10055,7 +10055,7 @@
       "aiSummary": "Users have expressed frustration with Wispr Flow due to the lack of a centralized feature request tool, which complicates the submission and management of feedback. They also highlighted the need for seamless integration with tools like Raycast and the ability to sync transcription history across devices. Additional concerns include the requirement of a Reddit account for feedback and the absence of a voting mechanism for feature requests, leading to difficulties in handling duplicate submissions and unmet promises for features."
     },
     {
-      "name": "Issues Related To Updates",
+      "name": "Updates",
       "count": 6,
       "complaints": [
         {
@@ -10165,7 +10165,7 @@
         "reddit_content": 4,
         "reviews": 2
       },
-      "aiSummary": "Users have expressed frustration in the \"Issues Related To Updates\" category, primarily due to a loss of functionality following recent updates, particularly the inability to directly paste dictation text. Additional complaints include being stuck on an old version, unsuccessful attempts to update or reinstall the app, and concerns that the latest update has rendered the application ineffective. These patterns indicate significant dissatisfaction with the app's current update process and performance."
+      "aiSummary": "Users have expressed frustration in the \"Updates\" category, primarily due to a loss of functionality following recent updates, particularly the inability to directly paste dictation text. Additional complaints include being stuck on an old version, unsuccessful attempts to update or reinstall the app, and concerns that the latest update has rendered the application ineffective. These patterns indicate significant dissatisfaction with the app's current update process and performance."
     },
     {
       "name": "Lack Of Android Version",
@@ -10544,7 +10544,7 @@
       "2025-11"
     ],
     "datasets": {
-      "Ai/Smart Formatting Issues": [
+      "Ai/Smart Formatting": [
         0,
         0,
         0,
@@ -10557,7 +10557,7 @@
         11,
         17
       ],
-      "Accuracy Issues": [
+      "Accuracy": [
         0,
         1,
         0,
@@ -10570,7 +10570,7 @@
         6,
         7
       ],
-      "Authentication And Login Issues": [
+      "Authentication And Login": [
         0,
         0,
         0,
@@ -10583,7 +10583,7 @@
         4,
         1
       ],
-      "Customer Support Not Responsive": [
+      "Customer Support": [
         0,
         0,
         0,
@@ -10596,7 +10596,7 @@
         14,
         6
       ],
-      "Customization Issues": [
+      "Customization": [
         0,
         0,
         0,
@@ -10648,7 +10648,7 @@
         14,
         4
       ],
-      "Hotkey Issues": [
+      "Hotkeys": [
         1,
         0,
         0,
@@ -10661,7 +10661,7 @@
         11,
         0
       ],
-      "Issues Related To Updates": [
+      "Updates": [
         0,
         0,
         0,
@@ -10674,7 +10674,7 @@
         3,
         0
       ],
-      "Issues With Command Mode": [
+      "Command Mode": [
         0,
         0,
         0,
@@ -10700,7 +10700,7 @@
         1,
         1
       ],
-      "Lack Of Public Roadmap Or Feature Requests": [
+      "Lack Of Public Roadmap": [
         0,
         0,
         0,
@@ -10726,7 +10726,7 @@
         1,
         0
       ],
-      "Language Detection Issues": [
+      "Language Detection": [
         0,
         0,
         0,
@@ -10752,7 +10752,7 @@
         14,
         5
       ],
-      "Microphone Compatibility Issues": [
+      "Microphone Compatibility": [
         0,
         0,
         0,
@@ -10778,7 +10778,7 @@
         2,
         6
       ],
-      "Mobile Keyboard Issues": [
+      "Mobile Keyboard": [
         0,
         0,
         0,
@@ -10830,7 +10830,7 @@
         2,
         6
       ],
-      "Onboarding Issues": [
+      "Onboarding": [
         0,
         0,
         0,
@@ -10869,7 +10869,7 @@
         8,
         9
       ],
-      "Punctuation Issues": [
+      "Punctuation": [
         0,
         0,
         0,
@@ -10882,7 +10882,7 @@
         4,
         2
       ],
-      "Reliability And Performance Problems": [
+      "Reliability And Performance": [
         0,
         0,
         0,
@@ -10895,7 +10895,7 @@
         7,
         5
       ],
-      "Subscription Problems": [
+      "Subscription": [
         0,
         0,
         0,
