@@ -661,7 +661,7 @@ body {
 
 .ai-summary-section {
     flex: 1 1 400px;
-    min-width: 380px;
+    min-width: 350px;
     background: var(--teal);
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
@@ -669,7 +669,7 @@ body {
 
 .time-chart-section {
     flex: 1 1 400px;
-    min-width: 380px;
+    min-width: 350px;
 }
 
 .time-chart-section .time-filter {
@@ -1472,6 +1472,13 @@ body {
 
     .magic-moments-list {
         column-count: 2;
+    }
+}
+
+/* When AI summary and chart stack (details panel narrower than ~800px) */
+@media (max-width: 1200px) {
+    .details-card {
+        min-height: 1200px;
     }
 }
 
